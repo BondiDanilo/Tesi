@@ -1,0 +1,13 @@
+%% Server
+git pull origin branch			% scarica dal server tutte le modifiche aggiornate
+
+%% Locale
+
+git add * 						% aggiunge al commit tutta la cartella
+git add filename.tex			% aggiunge solo i file
+
+git commit -m "nome commit" 	% raggruppa tutti add in cartella da caricare su server
+
+%% Server
+git push origin branch			% carica sul server nel branch selezionato (default: master)
+
