@@ -1,0 +1,116 @@
+\section{Varietà differenziali}
+\label{sec:vardiff}
+In relazione alla definizione \ref{def:var_topologica}.
+\begin{definition}{(Varietà differenziale)}
+   Uno spazio topologico $M$ si dice \emph{varietà differenziale} se è una
+   varietà topologica in cui le funzioni coordinate e le funzioni di transizione
+   sono funzioni differenziabili $C^\infty$
+\end{definition}
+
+Struttura differenziale e dipendenza da atlante\\
+
+Una funzione differenziabile, invertibile e con inversa differenziabile si dice
+\textbf{diffeomorfismo} (quando serve, viene indicata la classe $C^k$ di differenziabilità).
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\subsection{Spazio tangente e cotangente}
+Si vuole generalizzare la nozione di vettore tangente ad uno spazio
+$M \subset \mathbb{R}^n$ (si pensi pure a una superficie in $\mathbb{R}^3$
+o una curva in $\mathbb{R}^2$). Un vettore identifica univocamente una direzione
+in $\mathbb{R}^n$. Si vuole associare ad ogni vettore l'operazione derivata direzionale
+lungo la direzione individuata dal vettore, valutata nel punto $p \in \mathbb{R}^n$.\\
+Scelta una base $\{\vec e _i\}$ di $\mathbb{R}^n$, ogni vettore $\vec v \in \mathbb{R}^n$
+si può esprimere in maniera unica come combinazione lineare degli elementi della base
+$$ \vec v = v_1\vec e _1 + \dots + v_n\vec e _n $$
+Sia $f$ una funzione differenziabile definita in un opportuno intorno $U$ del punto $p$
+(per semplicità nel seguito si indica con $C^\infty(p)$ l'insieme delle funzioni lisce definite su
+opportuni intorni del punto $p \in \mathbb{R}^n$).\\
+La derivata direzionale di $f$ lungo $\vec v$ è quindi data da
+   $$ \left. \frac{\partial f}{\partial \vec v} \right |_p =
+         \left. v_1\frac{\partial f}{\partial x_1} \right |_p + \dots +
+         \left. v_n\frac{\partial f}{\partial x_n} \right |_p $$
+Inoltre, per le proprietà delle derivate $\forall \alpha,\beta \in \mathbb{R}$
+e $\forall f,g \in C^\infty(p)$:
+$$
+      \left. \frac{\partial}{\partial \vec v}(\alpha f + \beta g) \right |_p
+         = \alpha \left. \frac{\partial f}{\partial \vec v} \right |_p +
+           \beta  \left. \frac{\partial g}{\partial \vec v} \right |_p
+      \quad \mathrm{e} \quad
+      \left. \frac{\partial}{\partial \vec v}(fg) \right |_p
+         = \left. \frac{\partial f}{\partial \vec v} \right |_p g(p) +
+           \left. f(p)\frac{\partial g}{\partial \vec v} \right |_p
+$$
+Il vettore $\vec v$ è allora individuato in maniera univoca dal modo in cui agisce
+la derivata direzionale su tutte le funzioni differenziabili in un intorno di $p$.
+Si definisce allora il \emph{vettore tangente} alla varietà $M$ nel punto $p$:
+\begin{definition}{(Vettore tangente)}
+      Sia $M$ una varietà differenziale e $p \in M$. Si dice \emph{vettore tangente}
+      a $X$ nel punto $p$ un'applicazione $\vec V _p : C^\infty(p) \to \mathbb{R}$ tale che:
+      \begin{itemize}
+         \item $\vec V _p[\alpha f + \beta g] = \alpha \vec V _p[f] + \beta \vec V_p [g]
+            \quad \forall f,g \in C^\infty(p) \mathrm{\:e\:} \forall \alpha,\beta \in \mathbb{R}$
+         \item $\vec V _p [fg] = \vec V _p[f] g(p) + f(g)\vec V _p [g]
+            \quad \forall f,g \in C^\infty(p)$
+      \end{itemize}
+\end{definition}
+L'insieme dei vettori tangenti a una varietà $M$ nel punto $p$ è detto \textbf{spazio tangente}
+alla varietà nel punto $p$ e si indica con $T_p(M)$.
+Si può mostrare facilmente che $T_p(M)$ è uno spazio vettoriale.\\
+
+Si definisce \textbf{spazio cotangente} $T_p^*(M)$ a una varietà $M$ nel punto
+$p \in M$ il duale\footnote{Si ricorda che il duale $V^*$ di uno spazio vettoriale $V$ è l'insieme
+delle applicazioni lineari $\phi : V \to \mathbb{R}$. Data una base $\{e_i\}$ di $V$,
+la base canonica per $V^*$ è definita dalle proiezioni nella i-esima coordinata $dx^i$,
+quindi $dx^i(e_j)=\delta^i_j$. Data una qualsiasi $\phi\in V^*$ applicazione lineare
+su $V$, si ha $\phi = \sum_i a_i dx^i$ per $\{a_i\}\in\mathbb{R}$. }
+dello spazio tangente $T_p(M)$.\\
+
+Data una base di $\mathbb{R}^n$ si definiscono:
+\begin{itemize}
+   \item $ e_i = \left. \frac{\partial}{\partial x_i}\right |_p $
+      le derivate parziali lungo la coordinata i-esima sono base di $T_p(M)$.
+   \item $ e^i = \mathrm{d}x^i $ gli elementi di linea differenziali lungo la
+      coordinata i-esima sono base di $T_p^*(M)$.
+\end{itemize}
+
+Si definisce \textbf{campo vettoriale} un'applicazione che a un punto $p$
+della varietà $M$ associa un vettore tangente al punto. Si vuole richiedere anche
+una dipendenza continua o liscia dal punto base $p$\footnote{Si veda \ref{sec:fibratotangente}
+per chiarificare questa affermazione.}.
+Lo spazio dei campi vettoriali sulla varietà $M$ si indica con $\mathcal{X}(M)$
+$$ \vec V : M \to T_p(M) \: ,\: p \mapsto \vec V _p $$
+
+Si definisce \textbf{campo covettoriale} un'applicazione che a un punto $p$
+della varietà $M$ associa un vettore cotangente al punto. Si vuole richiedere anche
+una dipendenza continua o liscia dal punto base $p$.
+$$ \vec U : M \to T_p^*(M) \: ,\: p \mapsto \vec U _p $$
+
+Siano $V = \sum_i v^i\frac{\partial}{\partial x^i}$ e $U = u_i dx^i$ campi
+vettoriali/covettoriali e si consideri una generica trasformazione di coordinate
+$x \mapsto y(x)$ $V$ e $U$ sono invarianti (indipendenti dalla scelta della base).
+Si ha che:
+$$
+   dy^i = \sum_j \frac{\partial y^i}{\partial x^j} dx^j \mathrm{\quad e \quad}
+   \frac{\partial}{\partial y^i} = \sum_j \frac{\partial x^j}{\partial y^i}
+      \frac{\partial }{\partial x^j}
+$$
+
+In base a queste leggi di trasformazione in seguito a cambio di coordinate,
+i vettori tangenti si dicono \textbf{covarianti} e i vettori cotangenti
+si dicono \textbf{controvarianti}.\\
+(o il contrario?)\\
+%------------------------------------------------------------------------------%
+due parole su funzioni tra varietà e Differenziali $F_*$\\
+
+Per le coordinate si deve quindi avere:
+$$
+   v'^i = \sum_j \frac{\partial y^i}{\partial x^j} v^j \mathrm{\quad e \quad}
+   u'_i = \sum_j \frac{\partial x^j}{\partial y^i} u_j
+$$
+Di conseguenza il prodotto interno $<U,V> $ è invariante:
+$ <U,V> = \sum_i u_i v^i = \sum_j u'_j v^j $\\
+(lo metto?)\\
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\subsection{Varietà con bordo}
+\textbf{Orientazione}\\

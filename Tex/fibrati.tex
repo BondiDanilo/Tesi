@@ -1,0 +1,160 @@
+\section{Fibrati}\label{}
+Si vuole iniziare con un esempio per rendere più chiaro l'argomento.
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\subsection{Fibrato Tangente}\label{sec:fibratotangente}
+Sia $M$ una varietà differenziale di dimensione $n$. Si definisce il \emph{fibrato tangente}
+su $M$ (detta \emph{spazio base}) l'unione di tutti gli spazi tangenti alla varietà, indicato con $TM$.
+   $$ TM := \bigcup\limits_{p \in M} T_p(M) $$
+Si consideri una carta $(U,\phi)$, $U$ intorno di $p \in M$ e $x^i = \phi^i(p)$
+coordinate. Gli elementi dello spazio $TU = \cup_{p \in U} T_p(M)$ sono
+individuati da un punto $p \in U$ e un vettore tangente $V = \sum_i V^i
+\left. \frac{\partial}{\partial x^i} \right|_p \in T_p(M)$. Per costruzione
+$U$ è omeomorfo all'aperto $\phi(U) \subset \mathbb{R}^n$ e $T_p(M)$ è omeomorfo
+a $\mathbb{R}^n$ stesso tramite l'identificazione tra derivata direzionale e
+vettore (si veda la sezione \ref{sec:vardiff}).\\
+Allora ogni punto $P \in TU$ può essere identificato con il punto
+$(x^1,\dots,x^n,V^1,\dots,V^) \in \mathbb{R}^n \times \mathbb{R}^n$ in maniera
+univoca. $TU$ è quindi una varietà differenziale di dimensione $2n$.\\
+Inoltre $TU$ è identificato con $\mathbb{R}^n \times \mathbb{R}^n$ ed è
+esattamente decomposto nel prodotto diretto $U \times \mathbb{R}^n$, cioè
+ogni $P \in TU$ può essere scritto come $(p,V),\: p\in U V \in T_p(M)$.\\
+Si può quindi definire la \emph{proiezione} $\pi : TU \to U \:,\: P=(p,V) \mapsto p$.
+Lo spazio $T_p(M) = \pi^{-1}(p)$ viene detto \emph{fibra} in $p$.\\
+Se $M = \mathbb{R}^n$ si ha che $TM = \mathbb{R}^n \times \mathbb{R}^n$ e si dice
+che il fibrato ha struttura \emph{banale}. In generale però si ha una struttura
+non banale ed occorre tener conto di tutte le carte possibili.\\
+Siano $(U,\phi)$ e $(V,\psi)$ due carte tali che $U \cap V \neq \varnothing
+\:,\: p\in U \cap V$. Siano $x^i = \phi^i(p)$ e $y^j = \psi^j(p)$, e sia $V \in T_p(M)$.
+$V$ in coordinate è espresso come
+$$
+   V = \sum_i V^i  \left. \frac{\partial}{\partial x^i} \right |_p
+     = \sum_j V'^j \left. \frac{\partial}{\partial y^j} \right |_p
+     = \sum_{j,k}  V^k \left. \frac{\partial y^j}{\partial x^k} \right |_p
+        \left. \frac{\partial}{\partial y^j} \right |_p
+$$
+dove $V'^j = \sum_k \left. \frac{\partial y^j}{\partial x^k}\right |_pV^k $.
+L'applicazione $\psi \circ \phi$ deve essere invertibile, quindi la matrice Jacobiana
+deve essere non singolare, cioè $J^j_i = \frac{\partial y^j}{\partial x^i} \in GL(n,\mathbb{R})$.
+Il gruppo $GL(n,\mathbb{R})$ viene chiamato \emph{gruppo di struttura} di $TM$.
+Le coordinate delle fibre, in seguito a un cambio di coordinate, risultano ruotate
+per un elemento del gruppo di struttura.\\
+Infine si definisce \emph{sezione} di $TM$ una mappa liscia $s : M \to TM$ tale
+che $\pi \circ s = id_M$, ossia che a $p \in M$ associa un elemento di $TM$ $(p,V)
+\: ,\: V \in T_p(M)$. Se $s$ è definita solo in un intorno $U$ viene detta sezione locale.\\
+
+Avendo definito una struttura differenziale su $TM$, un campo vettoriale su $M$
+può essere visto come una mappa liscia $M \to TM$ che a $p \in M$ associa $V_p \in T_p(M)$\\
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\subsection{Fibrato}
+Siano $M$ (detta \emph{spazio base}) e $F$ (detta \emph{fibra}) varietà diferenziali
+(si pensi all'analogia con il fibrato tangente in cui $F=T_p(M)$) e sia
+$\mathcal{U} = \{U_i\}$ un ricoprimento aperto di $M$.\\
+
+Intuitivamente, un \emph{fibrato} $E$ su $M$ con fibra $F$ è una varietà diferenziale
+(detta anche \emph{spazio totale}) che è localmente un prodotto diretto di $M$ e $F$,
+ossia il fibrato $E$ è descritto topologicamente in ogni intorno $U_i$
+dalla varietà prodotto $U_i \times F$.\\
+
+Si definisce una funzione $\pi : E \to M$ continua e suriettiva (la
+\emph{proiezione di fibra}) che mappa ogni fibra $F_p = \{ (p,f) | f \in F\}
+\subset E$ nel punto $ p\in M$, e che rispetti la seguente condizione.\\
+
+\begin{axiom}\textbf{Condizione di non trivialità:} \label{nontriv}
+      Per ogni punto $p \in M$ esiste un intorno $U_i \in \mathcal{U}$ di $p$ e un isomorfismo
+      $\phi_i : U_i \times F \to \pi^{-1}(U_i) \subset E$ tale che per ogni
+      $(p,f) \in U_i \times F$ si ha $\pi \circ \phi_i(p,f) = p$
+\end{axiom}
+
+Occorre specificare inoltre un insieme di \emph{funzioni di transizione} $\{\Phi_{ij}\}$ che
+descrivono come si trasformano le coordinate delle fibre nella regione di
+sovrapposizione tra due intorni $U_i \cap U_j$. Per ogni $x \in U_i \cap U_j$ fissato si
+cosidera $\phi_{i,x}$ come una mappa di $F$ in $F_x$.
+Allora si definiscono le mappe
+$$ \Phi_{ij} : F \to F \quad , \quad \Phi_{ij} = \phi_i^{-1} \circ\phi_j $$
+che rispettano le condizioni:
+$$ \Phi_{ii} = id \quad , \quad \Phi_{ij} \circ \Phi_{jk} = \Phi_{ik}
+   \quad \forall x \in U_i \cap U_j \cap U_k $$
+Grazie a queste proprietà, le funzioni di transizione formano un gruppo $G$ detto
+\emph{gruppo di struttura} del fibrato, che agisce su $F$ a sinistra.\\
+Gli elementi di $G$, le funzioni di transizione, sono anche detti
+\emph{local trivialization}.\\
+
+Sebbene la topologia locale del fibrato sia banale, le funzioni di transizione
+possono essere fortemente influenzate dalla topologia globale a causa di torsioni
+relative tra fibre adiacenti (si veda l'esempio del nastro di Möbius). Un fibrato
+è completamente determinato dalle sue funzioni di transizione.\\
+
+\begin{definition}
+   Un \emph{fibrato} $E$ con fibra $F$ sullo spazio base $M$ è uno spazio topologico
+   $E$ dotato di una proiezione $\pi : E \to M$ che soddisfa la condizione di
+   non trivialità \ref{nontriv}.
+\end{definition}
+
+\begin{example}\emph{(Cilindro): }
+   Il cilindro è il primo esempio di fibrato banale, ossia la cui topologia globale
+   è quella prodotto diretto $E = M\times F$. Sia lo spazio base $M=S^1$ il cerchio
+   unitario, parametrizzato dall'angolo $\theta \in [0,2\pi]$ e sia $F$ il segmento
+   parametrizzato da $t \in [-1,1]$. Sia $\mathcal{U} = U_+ \cup U_-$ un ricoprimento
+   formato dai due intorni semicircolari:
+   \begin{equation*}
+      \begin{aligned}
+         U_+ &= \{\theta : \epsilon < \theta < \pi + \epsilon \} \quad ,&
+         U_- &= \{\theta : \pi - \epsilon < \theta < 2\pi + \epsilon = \epsilon \}
+      \end{aligned}
+   \end{equation*}
+   Il fibrato consiste in
+      $$ U_+ \times F \: , \: (\theta_+,t_+) \mathrm{\quad e \quad}
+         U_- \times F \: , \: (\theta_-,t_-) $$
+  e le funzioni di transizione che legano $t_+$ e $t_-$ sono definite in
+  $U_+\cap U_- = A \cup B$
+  $$ A = \{ -\epsilon < \theta < \epsilon \} \quad , \quad
+     B = \{ \pi-\epsilon < \theta < \pi + \epsilon \} $$
+  Le funzione di transizione sono:
+  $$ \begin{cases}
+     t_+= t_- \mathrm{\: in \:} A \\
+     t_+= t_- \mathrm{\: in \:} B
+  \end{cases}$$
+  Si ha quindi un fibrato banale uguale al cilindro $E = S^1 \times [-1,1]$.
+\end{example}
+
+\begin{example}\emph{(Nastro di Möbius): }
+   Con la stessa notazione dell'esempio precedente, si scelgano le funzioni di
+   transizione:
+   $$ \begin{cases}
+      t_+= t_- \mathrm{\: in \:} A \\
+      t_+= -t_- \mathrm{\: in \:} B
+   \end{cases}$$
+   L'identificazione di $t$ con $-t$ nella regione $B$ torce il fibrato e gli dà
+   la topologia non banale del Nastro di Möbius.
+\end{example}
+
+Si definisce un'operazione duale alla proiezione, la \emph{sezione} del fibrato
+come una mappa tra lo spazio base $M$ ed il fibrato $E$
+$$
+s : M \to E \quad \mathrm{t.c.}\quad \pi \circ s (p) = p \quad \forall p \in M
+$$
+Se definita solo in un intorno $U$ di un punto $p$ è detta \emph{sezione locale.}
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%s
+\subsection{Fibrato Principale e Connessione}
+\begin{definition}{(Fibrato principale)}:
+   Un \emph{fibrato principale} è un fibrato la cui fibra $F$ è un gruppo di Lie
+   e coincide con il gruppo di struttura $G$\footnote{Si veda \cite{nakahara},
+   \cite{shnir}, \cite{eguchi} per una definizione più completa}.
+\end{definition}
+
+Si vuole ora generalizzare il concetto di connessione\footnote{Il concetto di
+connessione generalizza quello di derivata direzionale ai tensori}
+(e di trasporto parallelo) estendendolo alla struttura del fibrato principale.
+Per la definizione generale, si veda \cite{nakahara}. \\
+In questa trattazione si definirà la connesione su un fibrato principale come
+una 1-forma sul fibrato $E$\footnote{Si ricorda che è una varietà differenziale}
+a valori nell'algebra di Lie $\mathfrak{g}$ associata al gruppo di struttura $G$ \\
+
+Sia $M$ lo spazio base di dimensione $n$, $G$ il gruppo di struttura e fibra ed
+$E$ il fibrato principale. Sia $(U,\phi)$ una carta con coordinate
+$x_\mu = \phi_\mu(p) \:,p \in M$.

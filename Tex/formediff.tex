@@ -1,0 +1,266 @@
+\section{Tensori e Forme differenziali}
+Sia $V$ uno spazio vettoriale su su $\mathbb{R}$.\\
+Si definisce \textbf{tensore} misto con $r$ indici covarianti e $s$ indici
+controvarianti un'\emph{applicazione multilineare} $F : V^r \times V^{*s} \to
+\mathbb{R}$ , dove $V^r = V \times \dots \times V$ e
+$V^{*s} =  V^* \times \dots \times V^*$.\\
+
+Si indica con $\mathcal{T}^{(r,s)}(V)$ lo spazio dei (r,s)-tensori su $V$\\
+
+Si definisce il \textbf{prodotto tensoriale} (indicato col simbolo $\otimes$) tra
+$F \in \mathcal{T}^r$(V) e $G \in \mathcal{T}^s(V)$ il $r+s$ tensore definito da:
+$$ F \otimes G (v_1,\dots,v_{r+s}) = F(v_1,\dots,v_r)G(v_{r+1},\dots,v_{r+s})$$
+dove a destra dell'uguale si ha il prodotto tra i due numeri reali
+$F(v_1,\dots,v_r)$ e $G(v_{r+1},\dots,v_{r+s})$.\\
+Analogamente, si definisce il prodotto tensoriale tra due tensori controvarianti.\\
+
+Si può facilmente dimostrare la seguente
+\begin{proposition}\label{prop:base1}
+   Sia $M$ varietà differenziale e $p \in M$. Siano $V = T_p(M)$ e $V^* = T_p^*(M)$
+   Sia $F \in \mathcal{T}^{(r,s)}(V)$, allora esistono $a_{i_1,\dots i_r}^{j_1,\dots,j_s}$
+   tali che in coordinate locali\\
+   $$
+      F = \sum_{\substack{(i_1,\dots, i_r)\\(j_1,\dots,j_s)}}
+         a_{i_1,\dots, i_r}^{j_1,\dots,j_s}
+         \frac{\partial}{\partial x^{i_1}} \otimes \dots
+         \otimes \frac{\partial}{\partial x^{i_r}}
+         \otimes dx^{j_1} \otimes \dots \otimes dx^{j_s}
+   $$
+\end{proposition}
+Ovvero le basi di $T_p(M)$ e $T_p^*(M)$ inducono una base per $\mathcal{T}^r(T_p(M))$
+e $\mathcal{T}^s(T_p^*(M))$.\\
+
+Si definisce \textbf{campo tensoriale} sulla varietà $M$ con $r$ indici covarianti
+e $s$ indici controvarianti un'applicazione $ M \to \mathcal{T}^{(r,s)}(T_p^*(M)) $
+che a ogni $p$ associa un tensore con punto base $p$. Si vuole richiedere anche
+una dipendenza continua o liscia da $p$.\\
+
+Si definice \textbf{r-forma} un r-tensore covariante \emph{totalmente antisimmetrico}.\\
+
+Lo spazio delle r-forme sulla varietà $M$ nel punto $p$ si indica con $\Lambda^r(p)$.
+La dimensione di $\Lambda^r(p)$ è ${n}\choose{k}$ se $n$ è la dimensione di $M$
+\footnote{ \cite{} }.\\
+%------------------------------------------------------------------------------%
+\begin{definition}{(Forma differenziale)}
+   Si definice \emph{r-forma differenziale} un campo tensoriale covariante
+  totalmente antisimmetrico, ossia un'applicazione multilineare
+  $\omega : M \to \Lambda^r(p)$ che a $p \in M$ associa la $r$-forma $\omega_p$
+\end{definition}
+Lo spazio delle r-forme differenziali su $M$ si indica con $\Omega^r(M)$.\\
+
+Analogamente a quanto fatto per il prodotto tensoriale, si vuole definire un prodotto
+tra $r$ e $s$ forme differenziali che dia una $r+s$ forma differenziale (cioè un
+prodotto tensoriale che mantenga l'antisimmetria del tensore).\\
+
+Si definisce \textbf{prodotto esterno} o \textbf{prodotto wedge} tra due forme
+differenziali $\alpha \in \Omega^r(M)$ e $\omega \in \Omega^s(M)$ la $r+s$ forma
+differenziale definita da:
+$$ \alpha \wedge \omega (V_1,\dots,V_{r+s})(p) =
+   \frac{1}{r!s!}\sum_{\sigma \in S^{r+s} } (-1)^\sigma
+   \alpha_p\otimes\omega_p (V_{\sigma(1)}, \dots , V_{\sigma(r),
+      V_{\sigma(r+1)}, \dots , V_,\sigma(r+s)})$$
+Dove $S^{r+s}$ è il gruppo delle permutazioni di $r+s$ elementi e $(-1)^\sigma$
+è il segno della permutazione $\sigma$.\\
+E gode delle seguenti proprietà, di immediata dimostrazione:
+\begin{enumerate}
+    \item $(\alpha + \beta) \wedge \omega = \alpha\wedge\omega + \beta\wedge\omega$ e
+          $\omega \wedge(\alpha + \beta)  = \omega\wedge\alpha + \omega\wedge\beta$
+    \item $(c\alpha)\wedge\omega = c(\alpha\wedge\omega) = \alpha\wedge(c\omega)$
+    \item $\omega\wedge\alpha = (-1)^{r+s} \alpha\wedge\omega$
+    \item $(\alpha\wedge\omega)\wedge\tau = \alpha\wedge(\omega\wedge\tau)$
+       (valida grazie alla normalizzazione scelta nella definizione di $\wedge$)
+\end{enumerate}
+$\forall c\in \mathbb{R} \: , \: \forall \alpha,\beta \in \Omega^r(M) \: , \:
+   \forall \omega \in \Omega^s(M) \: , \: \forall \tau \in \Omega^k(M)$
+\\
+
+Analogamente alla \ref{prop:base1}, vale anche
+\begin{proposition}\label{prop:base2}
+   Sia $M$ varietà differenziale e $p \in M$. Sia $\omega \in \Omega^r(T_p(M))$,
+   allora esistono le funzioni $a_{i_1,\dots i_r}$ tali che in coordinate locali\\
+   $$
+      \omega = \sum_{(i_1,\dots, i_r)} a_{i_1,\dots, i_r}
+         dx^{i_1} \wedge \dots \wedge dx^{i_r}
+   $$
+\end{proposition}
+
+Si osservi che per la proprietà di antisimmetria se $u = v$ si ha
+$$\omega(v,\dots,u,\dots) = - \omega(u,\dots,v,\dots) = - \omega(v,\dots,u,\dots) = 0$$
+Per una varietà di dimensione $n$ si ha al massimo $n$ vettori linearmente indipendenti.
+Se si prende in considerazione un vettore aggiuntivo, esso è combinazione lineare dei precedenti.\\
+Di conseguenza \textbf{tutte le (r$>$n)-forme} su una varietà di dimensione $n$ sono \textbf{nulle}.\\
+Se $u= a_1v^1 + \dots + a_nv^n$
+$$
+   \omega(v^1,\dots,v^n,u) = \dots = a_1\omega(v^1,\dots,v^n,v^1) + \dots
+      + a_n\omega(v^1,\dots,v^n,v^n) = 0
+$$
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\textbf{Differenziale esterno}: si definisce l'operatore che a una r-forma
+$\omega \in \Lambda^r(p)$ associa la (r+1)-forma $d\omega \in \Lambda^{r+1}(p)$,
+definita in coordinate locali da\\
+$$
+   \omega = \sum_{(i_1,\dots, i_r)} a_{i_1,\dots, i_r}
+      dx^{i_1} \wedge \dots \wedge dx^{i_r} \to
+   d\omega = \sum_{(i_1,\dots, i_r)} da_{i_1,\dots, i_r}\wedge
+      dx^{i_1} \wedge \dots \wedge dx^{i_r}
+$$
+ossia
+$$
+   d : \Lambda^r(p) \to \Lambda^{r+1}(p) \quad \omega \mapsto
+   d\omega = \sum_{(i_1,\dots, i_r,k)} \frac {\partial a_{i_1,\dots, i_r}}{\partial x^k} dx^k
+   \wedge dx^{i_1} \wedge \dots \wedge dx^{i_r}
+$$
+Dall'antisimmetria del prodotto wedge discende immediatamente che $d^2\omega = d(d\omega) = 0$
+\begin{equation*}
+   \begin{split}
+      d^2\omega & = d \left( \sum_{(i_1,\dots, i_r,k)}
+            \frac {\partial a_{i_1,\dots, i_r}}{\partial x^k} dx^k
+               \wedge dx^{i_1} \wedge \dots \wedge dx^{i_r} \right)
+          = \sum_{(i_1,\dots, i_r,k)}
+            d\left( \frac {\partial a_{i_1,\dots, i_r}}{\partial x^k} \right)
+               \wedge dx^k \wedge dx^{i_1} \wedge \dots \wedge dx^{i_r} \\
+       & = \sum_{(i_1,\dots, i_r,k,j)}
+            \frac {\partial^2 a_{i_1,\dots, i_r}}{\partial x^k \partial x^j}
+               \wedge dx^j \wedge dx^k \wedge dx^{i_1} \wedge \dots \wedge dx^{i_r}
+         = 0
+   \end{split}
+\end{equation*}
+in quanto contrazione del termine simmetrico $\frac {\partial^2 a_{i_1,\dots, i_r}}
+{\partial x^k \partial x^j}$ e del termine antisimmetrico $dx^j \wedge dx^k $\\
+
+Si definisce forma \textbf{esatta} una r-forma $\omega$ se esiste una
+(r-1)-forma $\alpha$ che verifica $\omega = d\alpha$\\
+Si definisce forma \textbf{chiusa} una r-forma $\omega$ tale che $d\omega = 0$.\\
+Segue immediatamente che ogni forma esatta è chiusa. L'inverso è vero solo localmente.
+\begin{lemma}{(di Poincarè)}
+    Sia $M \subset \mathbb{R}^n$ una palla aperta. Una r-forma $\omega$ chiusa
+    definita su $M$ è esatta.
+\end{lemma}
+\textbf{Coomologia di de Rham}\\
+%------------------------------------------------------------------------------%
+\textbf{Integrazione}: l'integrazione di una forma su una varietà può essere definita
+tramite coordinate locali e ricondotta a integrazione su aperti di $\mathbb{R}^n$.
+Una trattazione rigorosa richiederebbe l'introduzione del concetto di \emph{partizione dell'unità},
+che esula dallo scopo di questo elaborato. Si vedano \cite{},\cite{},\cite{} per
+una trattazione rigorosa. \\
+In maniera intuitiva, sia $(U,\phi)$ una carta della
+varietà $M$, dove $U$ intorno del punto $p \in M$, e $R = \phi(U)$ e
+$\omega = dx^1 \wedge \dots \wedge dx^n$ una n-forma.
+Sia $f : U \to \mathbb{R}$ una funzione integranda.
+Si definisce automaticamente la misura di integrazione $d\mu = dx^1 \dots dx^n$.
+e si può dare senso all'espressione in coordinate locali:
+$$
+   \int_U f\omega = \int_R f(x_1,\dots,x_n) dx^1 \dots dx ^n
+$$
+Si vuole poi ripetere questa operazione per tutte le carte di un atlante dato e
+"incollare" assieme i risultati in maniera che l'integrale sulla varietà sia uguale
+alla somma degli integrali sulle singole carte.\\
+
+Si osserva che è possibile integrare solamente n-forme su varietà di dimensione $n$
+perchè le forme con $r>n$ sono tutte nulle, e gli spazi di dimensione $r<n$ hanno
+misura nulla in $\mathbb{R}^n$.\\
+
+\textbf{Hodge star}:\\
+\textbf{Teorema di Stokes}:\\
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+\subsection{Varietà Riemanniane}
+\begin{definition}
+   Una \emph{metrica Riemanniana} $g$ su una varietà $M$ è un (2,0)-campo tensoriale
+   su $M$ che per ogni punto $p \in M$ soddisfa:
+   \begin{enumerate}
+      \item $ g_p(U,V) = g_p(V,U) $
+      \item $ g_p(U,U) \geq 0 $ dove $ g(U,U) = 0 \iff U = 0$
+   \end{enumerate}
+   dove $U,V \in T_p(M)$.\\
+
+   Una \emph{metrica pseudo-Riemanniana} $g$ su una varietà $M$ è un
+   (2,0)-campo tensoriale su $M$ che per ogni punto $p \in M$ soddisfa:
+   \begin{enumerate}
+      \item $ g_p(U,V) = g_p(V,U) $
+      \item $ g_p(U,V) = 0 \: \forall U \in T_p(M) \Rightarrow V = 0$
+   \end{enumerate}
+\end{definition}
+
+Data una carta $(U,\phi)$ di $M$ con coordinate $\{x^\mu\}$ il tensore $g$ può
+essere scritto come
+$$ g_p = g_{\mu\nu}(p) dx^\mu dx^\nu =: ds^2$$
+Dove $g_{\mu\nu}(p)$ può essere considerato come la $\mu\nu$-esima entrata di una matrice.\\
+Il numero $(p,n)$ di autovalori positivi $p$ e negativi $n$ è detto \emph{indice} della
+metrica. Se $n=1$ la metrica è detta Lorentziana.\\
+Si può diagonalizzare la metrica e riscalare gli autovettori in modo da ottenere
+solamente $\pm 1$ sulla diagonale. Ad esempio si ha la metrica Euclidea
+$\delta = diag(1,1,\dots,1)$ o Minkowskiana $\eta = diag(-1,1,...,1)$.\\
+
+Se una varietà differenziale $M$ è dotata di una metrica Riemanniana $g$, la coppia $(M,g)$
+è detta \textbf{varietà Riemanianna} (analogamente se $g$ è pseudo-Riemann).\\
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+
+Si vuole estendere il concetto di derivata direzionale agli (r,s)-tensori,
+analogamente a quanto fatto nella sezione \ref{sec:vardiff} per i vettori.\\
+
+Sia $X$ un campo vettoriale sulla varietà $M$ (supponiamo $M = \mathbb{R}^n$,
+per semplicità), $p \in M$ e $h \in M$ pensato come piccolo spostamento da $p$, in $M$.
+Volendo definire la derivata direzionale di un campo vettoriale nel modo usuale
+$$
+   \lim_{|h| \to 0} \frac{X_{p+h}-X_p}{|h|}(f)
+$$
+si riscontra subito un problema. I due vettori $X_{p+h} \in T_{p+h}(M)$ e
+$X_p \in T_p(M)$ appartengono a due spazi differenti e non possono essere confontati.\\
+Occorre un modo di trasportare il vettore $X_{p+h}$ da $T_{p+h}(M)$ a $T_p(M)$
+lasciandolo inalterato. Questo processo è chiamato \textbf{trasporto parallelo}.
+Purtroppo non esiste una maniera univoca per trasportare un vettore tangente in
+una varietà, quindi è necessario specificare come viene effettuato il trasporto
+parallelo.\\
+
+\begin{definition}{(Connessione affine):}
+   Una connessione affine $\nabla$ è una mappa $\nabla : \mathcal{X}(M) \times
+   \mathcal{X}(M)\to \mathcal{X}(M)$ t.c $(X,Y) \mapsto \nabla_X Y$ che verifica
+   \begin{enumerate}
+      \item $ \nabla_X (Y+Z) = \nabla_X Y + \nabla_X Z $
+      \item $ \nabla_{X+Y} Z = \nabla_X Z + \nabla_Y Z $
+      \item $ \nabla_{fX} Y = f\nabla_X Y $
+      \item $ \nabla_X (fY) = X[f] Y + f\nabla_X Y $
+   \end{enumerate}
+   per $f \in C^\infty(M)$ e $X,Y,Z \in \mathcal{X}(M)$
+\end{definition}
+
+Sia $(U,\phi)$ una carta di $M$ con coordinate $x = \phi(p) \:,\: p\in M$.
+L'azione di $\nabla$ sugli elementi $\{ e_\mu = \partial/ \partial x^\mu \}$
+della base di $T_p(M)$ ne determina univocamente l'azione su qualsiasi vettore $X_p$.\\
+
+Si definiscono i \textbf{coefficienti di connessione} $\Gamma^\lambda_{\nu\mu}$ da
+(per semplicità di notazione si indica $\nabla_{e_\nu} = \nabla_\nu$):
+$$
+   \nabla (e_\nu,e_\mu) = \nabla_\nu e_\mu =
+      e_\lambda \Gamma^\lambda_{\nu\mu}
+$$
+Presi allora due campi $X = X^\mu e_\mu \: , \: Y = Y^\nu e_\nu \:
+\in \mathcal{X}(M)$ si ha:
+$$
+   \nabla_X Y
+      = X^\mu \nabla_\mu(Y^\nu e_\nu)
+      = X^\mu(e_\mu[Y^\nu]e_\nu + Y^\nu \nabla_\mu e_\nu)
+      = X^\mu \left(\frac{\partial Y^\lambda }{\partial x^\mu}
+         + Y^\nu \Gamma^\lambda_{\nu\mu} \right)
+$$
+il risultato dipende solo dalle $(\mathrm{dim} M)^3$ funzioni $\Gamma^\lambda_{\nu\mu}$.\\
+
+Una connessione $\nabla$ è dette simmetrica se in coordinate vale
+$\Gamma^\lambda_{\nu\mu} = \Gamma^\lambda_{\mu\nu}$
+
+\begin{theorem}{(Teorema fondamentale della geometria (pseudo-)Riemanniana):}
+  Sia $(M,g)$ una varietà (pseudo-)Riemanniana. Esiste un unica connessione
+  \emph{simmetrica} che è \emph{compatibile} con la metrica $g$. Questa connessione
+  è chiamata \textbf{connessione di Levi-Civita} definita da
+  $$
+       \Gamma^\kappa_{\mu\nu} = \frac{1}{2} g^{\kappa\lambda}
+           (\partial_\mu g_{\lambda\nu}  + \partial_\nu g_{\lambda\mu}
+              - \partial_\lambda g_{\mu\nu}) = : \chrsym{\kappa}{\mu\nu}
+  $$
+\end{theorem}
+$\chrsym{\kappa}{\mu\nu}$ è detto simbolo di Christoffel.
+Si veda \cite{nakahara} per la dimostrazione del teorema.\\

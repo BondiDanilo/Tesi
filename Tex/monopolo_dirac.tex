@@ -1,0 +1,86 @@
+\chapter{Monopolo di Dirac}
+%------------------------------------------------------------------------%
+\section{Potenziale di Dirac}
+%
+introduzione, dire cose bla bla bla
+Campo magnetico generato da una carica magnetica $g$ situata nell'origine
+$$
+   B = g \frac{\vec r}{r^3} = \frac{g}{r^2} \vec u _r
+$$
+dove $\vec r = (x,y,z)$ , $r = \sqrt (x^2 + y^2 + z^2)$ e $\vec u _r = \frac{\vec r}{r}$
+il versore radiale.\\
+Le equazioni del moto di una carica elettrica $e$ nel campo $\vec B$,
+generate dalla Lagrangiana di minima interazione tra una carica elettrica e un campo
+magnetico
+$$
+   L = \frac{1}{2} m \dot{\vec r} ^2 + e \dot{\vec r} \cdot \vec A
+$$
+sono
+$$
+   m \ddot{\vec r} = e\dot{\vec r} \times \vec B =
+      \frac{eg}{r^3}(\dot{\vec r} \times \vec r)
+$$
+dove il vettore potenziale che compare nella Lagrangiana deve soddisfare
+$B = \nabla \times \vec A = g \frac{\vec r}{r^3}$.\\
+
+Come calcolato nella sezione \ref{sec:dirac_potential} un potenziale che soddisfa
+questa relazione è:
+$$
+  \vec A = g(1 + \cos\theta)\left( \frac{\sin\phi}{r\sin\theta},
+     \frac{-\cos\phi}{r\sin\theta},0 \right)
+$$
+Si presenta immediatamente il seguente problema. Se si ammette l'esistenza di una carica
+magnetica, il teorema di Gauss garantsce che $\nabla \cdot \vec B = 4\pi g\delta^{(3)}(\vec r)$,
+ossia che il flusso del campo attraverso una qualsiasi superficie chiusa contenente
+la carica magnetica $g$ è pari a $4\pi g$, in contraddizione con
+$\nabla \cdot \vec B = \nabla \cdot (\nabla \times \vec A) = 0$, che genera un
+flusso nullo.\\
+
+Il potenziale $\vec A$ presenta però delle discontinuità per $\sin\theta = 0$.
+Si verifica immediatamente che $\theta = 0$ è un punto singolare, mentre $\vec A$
+è continuo in $\theta = \pi$. Il calcolo fatto non è quindi corretto lungo l'asse z
+positivo ($\theta = 0$), e occorre regolarizzare il potenziale.\\
+Siano $\epsilon > 0$  e $r_\epsilon = \sqrt{r^2 + \epsilon^2}$. Si definiscono ora
+%
+\begin{align*}
+   \vec A_\epsilon &:= \frac{g}{r_\epsilon}\frac{1}{r_\epsilon - z} \vec u _\phi  \\
+   \vec B _\epsilon & = \nabla \times \vec A_\epsilon = \frac{g}{r_\epsilon^3}\vec r
+      - g\epsilon^2 \left( \frac{1}{r_\epsilon^3(r_\epsilon - z)}
+         + \frac{1}{r_\epsilon^2(r_\epsilon-z)^2} \right)\vec u _z
+\end{align*}
+%
+e si vuole definire $\tilde{\vec B} := \lim_{\epsilon \to 0} \vec B _\epsilon$
+$$
+   \lim_{\epsilon \to 0} \vec B_\epsilon = \lim_{\epsilon \to 0} \left[
+      \frac{g}{r^3}\vec r - 2g\epsilon^2 \left( \frac{1}{r^2(x^2 + y^2 + \epsilon^2)}
+            + \frac{2}{(x^2 + y^2 + \epsilon^2)^2} \right) \Theta(z) \vec u _z \right]
+$$
+dove $\Theta(z)$ è la funzione di Heaviside per l'asse z.\\
+Si vuole ora valutare il flusso del campo magnetico regolarizzato $\tilde{\vec B}$
+attraverso una superficie chiusa $S$ centrata nell'origine e di raggio unitario, supponendo
+che sia possibile scambiare il limite e l'integrale
+$$
+  \int_S \mathrm{d} \sigma \lim_{\epsilon \to 0} \vec B_\epsilon = \lim_{\epsilon \to 0} \int_S \mathrm{d}\sigma \vec B_\epsilon
+$$
+Si veda la sezione \ref{sec:flusso_regolarizzato} per il calcolo esplicito.
+L'unico termine in $\epsilon$ che porta contributo al flusso è il secondo e si
+ha:
+$$
+   \int_S \mathrm{d}\sigma \tilde{\vec B}
+      = \int_S \mathrm{d}\sigma \left( \frac{g}{r^3}\vec r
+         - 4\pi g \delta(x)\delta(y)\Theta(z) \vec u _z \right)
+      = 4\pi g - 4\pi g = 0
+$$
+%
+Il campo regolarizzato è composto da due termini:
+$$
+   \tilde{\vec B} = \vec B + \vec B _{string} = \frac{g}{r^3}\vec r
+      - 4\pi g \delta(x)\delta(y)\Theta(z) \vec u _z
+$$
+L'effetto del campo generato dalla stringa di singolarità lungo l'asse z positivo
+è quello di annullare il flusso del campo prodotto dalla carica, risolvendo la
+contraddizione evidenziata in precedenza.
+%------------------------------------------------------------------------%
+\section{Trasformazione di gauge}
+Come evidenziato nella sezione precedente, non è possibile definire ovunque un
+potenziale di monopolo continuo e derivabile

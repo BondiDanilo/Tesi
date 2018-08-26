@@ -1,0 +1,207 @@
+\chapter{Gruppo e azione di gruppo}
+\begin{definition}{(Gruppo)}:
+   Sia $G$ un insieme e $*$ un'operazione binaria su $G$. $G$ si definisce
+   \emph{gruppo} con l'operazione $*$ se valgono le seguenti proprietà:
+   \begin{enumerate}
+      \item $ \forall f,g,h \in G \to f*(g*h) = (f*g)*h \quad$ associativa
+      \item $ \exists e \in G $ t.c. $ e*g = g*e = g ,\quad \forall g \in G \quad$
+       esistenza elemento neutro
+      \item $ \forall a \in G \exists a^{-1} \in G $ t.c. $a*a^{-1} = a^{-1}*a = e \quad$
+         esistenza dell'inverso
+   \end{enumerate}
+   Se vale anche la proprietà commutativa, il gruppo è detto \emph{abeliano}
+   \begin{enumerate}\setcounter{enumi}{3}
+      \item $ \forall g,h \in G \to g*h = h*g \quad$ commutativa
+   \end{enumerate}
+\end{definition}
+Sovente si usa omettere il simbolo dell'operazione: $ g*h = gh $
+%------------------------------------------------------------------------------%
+\begin{definition}{(Azione di gruppo):}\label{def:groupaction}
+   Sia $G$ un gruppo e $X$ un insieme non vuoto. \\
+   Si definisce l'azione destra di $G$ su $X$
+   una funzione $\phi : X \times G \to X$ che $(x,g) \mapsto \phi(x,g) = x \cdot g$
+   con le seguenti proprietà:
+   \begin{enumerate}
+      \item $x \cdot e = x \quad$ identità
+          ($e$ denota l'elemento neutro di $G$)
+      \item $\forall g,h \in G \: , \: \forall x \in X \to
+         x\cdot (gh) = (x \cdot g) \cdot h \quad $ compatibilità
+   \end{enumerate}
+   Si definisce l'azione sinistra di $G$ su $X$
+   una funzione $\phi : G \times X \to X$ che $(g,x) \mapsto \phi(g,x) =  g \cdot x $
+   con le seguenti proprietà:
+   \begin{enumerate}
+      \item $e \cdot x = x \quad$ identità
+          ($e$ denota l'elemento neutro di $G$)
+      \item $\forall g,h \in G \: , \: \forall x \in X \to
+         (gh) \cdot x  = g \cdot (h \cdot x) \quad $ compatibilità
+   \end{enumerate}
+\end{definition}
+La differenza tra azione destra e azione sinistra sta nell'ordine in cui $gh$
+agisce sull'insieme, evidente per gruppi non abeliani.\\
+
+L'azione di $G$ su $X$ si dice:
+\begin{itemize}
+   \item \emph{transitiva}: \quad $\forall x,y \in X \: \exists g \in G$ t.c. $g\cdot x = y$
+   \item \emph{libera}: \quad Sia $g \in G$. Se $\exists x \in X$ t.c.$ g\cdot x = x
+      \Rightarrow g$ è l'identità
+\end{itemize}
+%------------------------------------------------------------------------------%
+Si veda la sezione \ref{sec:vardiff} per una breve trattazione su varietà differenziali,
+spazi tangenti e campi vettoriali.
+
+\begin{definition}{(Gruppo di Lie):}
+   Un gruppo di Lie $G$ è una varietà differenziale\footnote{Si veda la sezione
+   \ref{sec:vardiff}}, dotata di di una struttura di gruppo in cui la
+   moltiplicazione e l'inverso sono funzioni lisce. In altre parole è liscia la mappa
+      $$ (x.y) \mapsto x^{-1}y \quad \forall x,y \in G$$
+\end{definition}
+La dimensione del gruppo equivale alla dimensione della varietà.
+Esempi di gruppi di Lie sono $GL(n,\mathbb{R})$ e $GL(n,\mathbb{C})$ i gruppi
+delle matrici quadrate $n \times n$ non singolari a coefficenti reali/complessi.\\
+Vale il seguente Teorema che non verrà qui dimostrato.
+\begin{theorem}
+   Ogni sottogruppo chiuso $H$ di un gruppo di Lie $G$ è un sottogruppo di Lie
+\end{theorem}
+Che garantisce che $O(n), SO(n), SL(n,\mathbb{R})$ sono sottogruppi di Lie di
+$GL(n,\mathbb{R})$.
+%------------------------------------------------------------------------------%
+\begin{definition}{(Algebra di Lie):}\label{def:LieAlgebra}
+   Un'algebra di Lie $\mathfrak{g}$ è uno spazio vettoriale (su un opportuno campo)
+   dotato di un'operazione binaria $[,] : \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$
+   che rispetta le seguenti proprietà:
+   \begin{enumerate}
+       \item \emph{Bilinearità} \quad $[ax+by,z] = a[x,z]+b[y,z]$ \quad e \quad
+          $[x,ay+bz] = a[x,y] + b[x,z]$ \\
+          per tutti gli scalari $a,b$ e $\forall x,y,z \in \mathfrak{g}$
+       \item \emph{Identità di Jacobi} \quad $\forall x,y,z \in \mathfrak{g} \quad
+          [x,[y,z]] + [z,[x,y]] + [y,[z,x]] = 0$
+       \item \emph{Anticommutatività} \quad $[x,y] = -[y,x] \quad
+          \forall x,y \in \mathfrak{g} $
+       \item \emph{Alternanza} \quad $[x,x]=0 \quad \forall x \in \mathfrak{g}$ \quad
+          (discende dalla precedente)
+   \end{enumerate}
+\end{definition}
+La dimensione dell'algebra di Lie è la sua dimensione come spazio vettoriale.\\
+Un set di elementi dell'algebra $\mathfrak{g}$ si dice set di \emph{generatori}
+se la sottoalgebra più piccola che lo contiene è $\mathfrak{g}$ stessa.\\
+
+Ad ogni gruppo di Lie si può associare un'algebra di Lie.\\
+
+Siano $a,g \in G$. Si definiscono la \textbf{traslazione destra} $R_a : G \to G$
+e la \textbf{traslazione sinistra} $L_a : G \to G$
+$$
+   R_a(g) = ga \quad,\quad L_a(g) = ag
+$$
+$R_a$ e $L_a$ sono diffeomorfismi di $G$ in se stesso per costruzione e inducono
+quindi le mappe sugli spazi tangenti $L_{a*} : T_g(G) \to T_{ag}(G)$ e
+$R_{a*} : T_g(G) \to T_{ga}(G)$ (si veda \ref{}).\\
+
+Dato un gruppo di Lie $G$ esiste una speciale classe di campi vettoriali
+(si veda \ref{}) che sono invarianti sotto l'azione di gruppo\footnote{
+Ciò non accade, ad esempio, con le varietà differenziali usuali, in cui non vi è
+modo di evidenziare una classe privilegiata di campi vettoriali
+}.\\
+
+Sia X un campo vettoriale sul gruppo di Lie $G$. X si dice campo vettoriale
+\textbf{invariante a sinistra} se vale $L_{a*}X|_g = X|_{ag}$ (analogamente,
+invariante a destra).\\
+
+Un vettore tangente all'identità $e$ del gruppo di Lie $V \in T_e(G)$
+definisce un unico campo vettoriale $X_V$ su $G$ invariante a sinistra tramite
+l'azione sinistra (analogamente a destra)
+$$
+   X_V|_g : = L_{g*} V \quad , \quad g \in G
+$$
+Poichè
+$$
+   X_V|_{ag} = L_{ag*} V = (L_a L_g)_* V = L_{a*}L_{g*} V = L_{a*} X_V|_g
+$$
+
+Viceversa, un campo vettoriale $X_V$ invariante a sinistra (analogamente a destra)
+definisce un unico vettore $V$ tangente all'identità in $G$
+$$
+   V := X_V|_e \quad \in T_e(G)
+$$
+\begin{definition}\label{def:GroupLieLlgebra}
+  Si indica con $\mathfrak{g}$ l'insieme dei campi vettoriali su $G$ invarianti
+  a sinistra (denotando con $\mathcal{X}(G)$ l'insieme dei campi vettoriali su G)
+  $$
+    \mathfrak{g} := \{ X_V \in \mathcal{X}(G) \mathrm{\: t.c. \:}
+       L_{a*}X_V|_g = X_V|_{ag} \forall a \in G \}
+  $$
+\end{definition}
+La mappa che a un vettore tangente all'identità in $G$ associa un campo vettoriale
+invariante a sinistra
+$$
+   T_e(G) \to \mathfrak{g}  \quad V \mapsto X_V
+$$
+è un isomorfismo. \\
+Si dimostra che $\mathfrak{g}$ è uno spazio vettoriale con l'operazione di
+traslazione a sinistra (?), e quindi $\mathfrak{g} \cong T_e(G)$.
+In particolare dim $\mathfrak{g}$ = dim $G$.\\
+
+Resta da definire un'operazione di parentesi di Lie affinchè lo spazio dei campi
+invarianti a sinistra sia un'algebra di Lie.\\
+\begin{definition}\label{def:parentesiLie}
+   Si definisce parentesi di Lie tra due campi $X,Y \in \mathcal{X}(G)$ l'operazione
+   $[,] : \mathcal{X}(G) \times \mathcal{X}(G) \to \mathcal{X}(G)$ definita da
+   $$
+      [X,Y]f = X(Yf) - Y(Xf) \quad \forall f \in C^\infty(G)
+   $$
+\end{definition}
+Si sottolinea che $Xf$ così scritto è una funzione liscia definita su $G$ da
+$Xf : G \in \mathbb{R}$ che agisce $p \mapsto X_p[f]\in \mathbb{R}$\\
+
+Si verifica immediatamente che l'operazione così definita rispetta le proprietà
+definite in \ref{def:LieAlgebra}\footnote{Intuitivamente, $[X,Y]$ è il commutatore
+dei campi $X$ e $Y$, ed è noto che un commutatore rispetti suddette proprietà.}\\
+
+Siano $X,Y \in \mathcal{X}(G)$ e si fissino due punti $g, ag \in G$ dove
+$ag = L_a g$. Applicando $L_{a*}$ a $[X,Y]$ si ha
+$$
+   L_{a*}[X,Y]|_g = [L_{a*}X|_g,L_{a*}Y|_g] = [X,Y]|_{ag} \in \mathfrak{g}
+$$
+quindi $\mathfrak{g}$ è chiuso rispetto all'operazione $[,]$ così definita.\\
+
+\begin{definition}\label{}
+   L'insieme $\mathfrak{g}$ dei campi vettoriali su $G$ invarianti a sinistra ()
+   dotato delle parentesi di lie \ref{def:parentesiLie} si definisce
+   \textbf{Algebra di Lie} associata al gruppo di Lie $G$.
+\end{definition}
+L'algebra di Lie associata a un gruppo viene indicata con lo stesso nome del gruppo,
+in carattere gotico minuscolo, ad esempio $SO(n)\to \mathfrak{so(n)}$.\\
+
+Poichè si ha che $\mathfrak{g} \cong T_e(G)$ sia $\{ V_1,\dots,V_n \}$ una base
+per $T_e(G)$. Questa definisce, tramite l'azione sinistra, un set di campi vettoriali
+$\{ X_1, \dots, X_n \} \in \mathfrak{g}$ linearmente indipendenti in ogni punto $g \in G$
+$$
+   X_\mu |_g := L_{g*}V_\mu \quad \forall \mu = 1,\dots,n
+$$
+che per ogni $T_g(G)$ è una base. Poichè anche $[X_\mu,X_\nu]|_g \in \mathfrak{g}$
+nel punto $g$, può essere sviluppato $ \forall g \in G$ in termini dei vettori
+$\{X_\mu|_g\}$, e quindi si ha:
+$$
+   [X_\mu,X_\nu] = \sum_\lambda c_{\mu\nu}^{\hphantom{\mu\nu}\lambda} X_\lambda
+$$
+i coefficienti $c_{\mu\nu}^{\hphantom{\mu\nu}\lambda}$ si chiamano
+\textbf{costanti di struttura}.
+Si dimostrano essere indipendenti dal particolare $g \in G$ preso in considerazione,
+e determinano quindi completamente la struttura del gruppo di Lie $G$ (Teorema di Lie).\\
+
+Nel caso di un gruppo di Lie $G$ di matrici reali, l'algebra di Lie può essere
+formulata in termini della funzione esponenziali di matrici, ovvero
+$$
+\mathfrak{g} = \{ A \in \mathrm{Mat}(n,\mathbb{C}) \: | \:
+\forall t \in \mathbb{R} \:\to \exp (tA) \in G \}
+$$
+Gli elementi dell'algebra di Lie vengono detti \emph{generatori} del gruppo di Lie
+e, come visto sopra, la struttura del gruppo $G$ è completamente determinata
+dalle costanti di struttura. In questo caso in cui $G$ è un gruppo di matrici,
+la parentesi di Lie è il commutatore di matrici e quindi le costanti di struttura
+si dice sono determinate dalle regole di commutazione dei generatori $\{T_\mu\}$:
+$$
+   [T_\mu, T_\nu] = T_\mu T_\nu - T_\nu T_\mu
+      = c_{\mu\nu}^{\hphantom{\mu\nu}\lambda} T_\lambda
+$$
+%------------------------------------------------------------------------------%
