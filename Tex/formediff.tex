@@ -39,8 +39,9 @@ Si definice \textbf{r-forma} un r-tensore covariante \emph{totalmente antisimmet
 
 Lo spazio delle r-forme sulla varietà $M$ nel punto $p$ si indica con $\Lambda^r(p)$.
 La dimensione di $\Lambda^r(p)$ è ${n}\choose{k}$ se $n$ è la dimensione di $M$
-\footnote{ \cite{} }.\\
+\footnote{ Si veda \cite{sernesi},\cite{boothby},\cite{nakahara} }.\\
 %------------------------------------------------------------------------------%
+\subsection{Forme differenziali}
 \begin{definition}{(Forma differenziale)}
    Si definice \emph{r-forma differenziale} un campo tensoriale covariante
   totalmente antisimmetrico, ossia un'applicazione multilineare
@@ -96,7 +97,8 @@ $$
 $$
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
-\textbf{Differenziale esterno}: si definisce l'operatore che a una r-forma
+\subsection{Differenziale esterno}
+Si definisce l'operatore che a una r-forma
 $\omega \in \Lambda^r(p)$ associa la (r+1)-forma $d\omega \in \Lambda^{r+1}(p)$,
 definita in coordinate locali da\\
 $$
@@ -137,13 +139,15 @@ Segue immediatamente che ogni forma esatta è chiusa. L'inverso è vero solo loc
     Sia $M \subset \mathbb{R}^n$ una palla aperta. Una r-forma $\omega$ chiusa
     definita su $M$ è esatta.
 \end{lemma}
-\textbf{Coomologia di de Rham}\\
 %------------------------------------------------------------------------------%
-\textbf{Integrazione}: l'integrazione di una forma su una varietà può essere definita
+\subsection{Coomologia di de Rham}
+%------------------------------------------------------------------------------%
+\subsection{Integrazione}
+L'integrazione di una forma su una varietà può essere definita
 tramite coordinate locali e ricondotta a integrazione su aperti di $\mathbb{R}^n$.
-Una trattazione rigorosa richiederebbe l'introduzione del concetto di \emph{partizione dell'unità},
-che esula dallo scopo di questo elaborato. Si vedano \cite{},\cite{},\cite{} per
-una trattazione rigorosa. \\
+Una trattazione rigorosa richiederebbe l'introduzione del concetto di
+\emph{partizione dell'unità}, che esula dallo scopo di questo elaborato.
+Si vedano \cite{boothby},\cite{nakahara} per una trattazione rigorosa. \\
 In maniera intuitiva, sia $(U,\phi)$ una carta della
 varietà $M$, dove $U$ intorno del punto $p \in M$, e $R = \phi(U)$ e
 $\omega = dx^1 \wedge \dots \wedge dx^n$ una n-forma.
@@ -198,9 +202,10 @@ Se una varietà differenziale $M$ è dotata di una metrica Riemanniana $g$, la c
 
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
-
-Si vuole estendere il concetto di derivata direzionale agli (r,s)-tensori,
-analogamente a quanto fatto nella sezione \ref{sec:vardiff} per i vettori.\\
+\subsection{Derivata covariante}
+Cosa cazzo è. Cosa è in questo contesto.\\
+Si vuole estendere il concetto di derivata direzionale agli (r,s)-tensori definiti
+su una varietà differenziale $M$\\
 
 Sia $X$ un campo vettoriale sulla varietà $M$ (supponiamo $M = \mathbb{R}^n$,
 per semplicità), $p \in M$ e $h \in M$ pensato come piccolo spostamento da $p$, in $M$.
@@ -216,7 +221,8 @@ Purtroppo non esiste una maniera univoca per trasportare un vettore tangente in
 una varietà, quindi è necessario specificare come viene effettuato il trasporto
 parallelo.\\
 
-\begin{definition}{(Connessione affine):}
+(qua si può tagliare o riassumere ulteriormente)
+\begin{definition}{(Connessione affine):}\label{def:affineconnection}
    Una connessione affine $\nabla$ è una mappa $\nabla : \mathcal{X}(M) \times
    \mathcal{X}(M)\to \mathcal{X}(M)$ t.c $(X,Y) \mapsto \nabla_X Y$ che verifica
    \begin{enumerate}

@@ -7,7 +7,14 @@ In relazione alla definizione \ref{def:var_topologica}.
    sono funzioni differenziabili $C^\infty$
 \end{definition}
 
-Struttura differenziale e dipendenza da atlante\\
+Nel seguito viene usato "differenziabile" come sinonimo di "$C^\infty$", senza
+perdita di generalità della trattazione.\\
+
+La compatibilità tra due carte è una relazione di equivalenza. L'insieme delle
+classi di equivlanza di compatibilità è detto \emph{struttura differenziale}.
+
+Di norma non vi è un unico atlante che appartiene a una struttura differenziale,
+ma si dimostra che dato un'atlante è unica la struttura differenziale a cui appartiene.
 
 Una funzione differenziabile, invertibile e con inversa differenziabile si dice
 \textbf{diffeomorfismo} (quando serve, viene indicata la classe $C^k$ di differenziabilità).
@@ -85,6 +92,7 @@ della varietà $M$ associa un vettore cotangente al punto. Si vuole richiedere a
 una dipendenza continua o liscia dal punto base $p$.
 $$ \vec U : M \to T_p^*(M) \: ,\: p \mapsto \vec U _p $$
 
+(togliere?)
 Siano $V = \sum_i v^i\frac{\partial}{\partial x^i}$ e $U = u_i dx^i$ campi
 vettoriali/covettoriali e si consideri una generica trasformazione di coordinate
 $x \mapsto y(x)$ $V$ e $U$ sono invarianti (indipendenti dalla scelta della base).
@@ -98,18 +106,52 @@ $$
 In base a queste leggi di trasformazione in seguito a cambio di coordinate,
 i vettori tangenti si dicono \textbf{covarianti} e i vettori cotangenti
 si dicono \textbf{controvarianti}.\\
-(o il contrario?)\\
-%------------------------------------------------------------------------------%
-due parole su funzioni tra varietà e Differenziali $F_*$\\
 
-Per le coordinate si deve quindi avere:
-$$
-   v'^i = \sum_j \frac{\partial y^i}{\partial x^j} v^j \mathrm{\quad e \quad}
-   u'_i = \sum_j \frac{\partial x^j}{\partial y^i} u_j
-$$
-Di conseguenza il prodotto interno $<U,V> $ è invariante:
-$ <U,V> = \sum_i u_i v^i = \sum_j u'_j v^j $\\
-(lo metto?)\\
+%------------------------------------------------------------------------------%
+\subsection{Mappe tra varietà}
+Sia $F : M \to N$ una mappa tra le due varietà differenziali $M$ e $N$.
+Sia $(U,\phi)$ una carta per $M$ e $(V,\psi)$ una carta per $N$. Sia $p \in U$ e
+$q = F(p) \in V$.
+\begin{definition}
+   La mappa $F$ è detta differenziabile in $p$ se è differenziabile
+   in senso tradizionale la mappa tra gli aperti di $\mathbb{R}^m$ e
+   $\mathbb{R}^n$
+   $$ f : \phi(U) \to \psi(V) \quad , \quad f = \psi \circ F \circ \phi^{-1} $$
+\end{definition}
+
+\begin{definition}
+   Una mappa $F : M \to N$ tra due varietà induce una mappa
+   $F_* : T_p M \to T_q N$ tra gli spazi tangenti denominata
+   \emph{mappa differenziale}, definita da:
+   $$ (F_*X)_q [g] := X_p [g \circ F] $$
+   per ogni vettore $X_p \in T_p M$ e ogni funzione $g \in C^\infty(N)$.
+\end{definition}
+
+Siano $F : M \to N$, $G : N \to O$ e $G \circ F : M \to O$, vale che
+   $$ (G \circ F)_* = G_* \circ F_* $$
+
+\begin{definition}
+   Una mappa $F : M \to N$ tra due varietà induce una mappa
+   $F^* : T^*_q N \to T^*_p M$ tra gli spazi cotangenti denominata
+   \emph{pullback}, definita da:
+   $$ F_*\omega (X_p) := \omega (F_* X_p) $$
+   per ogni $\omega \in T^*_q N$ e ogni vettore $X_p \in T_p M$.
+\end{definition}
+
+Si noti che la mappa differenziale agisce nella stessa direzione di $F$ (covariante),
+mentre il pullback agisce in direzione opposta (controvariante).
+
+Per trasportare campi vettoriali occorre che $F$ sia un diffeomorfismo, per problemi
+di iniettività e suriettività.\\
+
+%Per le coordinate si deve quindi avere:
+%$$
+%   v'^i = \sum_j \frac{\partial y^i}{\partial x^j} v^j \mathrm{\quad e \quad}
+%   u'_i = \sum_j \frac{\partial x^j}{\partial y^i} u_j
+%$$
+%Di conseguenza il prodotto interno $<U,V> $ è invariante:
+%$ <U,V> = \sum_i u_i v^i = \sum_j u'_j v^j $\\
+%(lo metto?)\\
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \subsection{Varietà con bordo}

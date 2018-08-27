@@ -62,6 +62,14 @@ Si definisce una funzione $\pi : E \to M$ continua e suriettiva (la
 \emph{proiezione di fibra}) che mappa ogni fibra $F_p = \{ (p,f) | f \in F\}
 \subset E$ nel punto $ p\in M$, e che rispetti la seguente condizione.\\
 
+Si definisce un'operazione duale alla proiezione, la \emph{sezione} del fibrato
+come una mappa tra lo spazio base $M$ ed il fibrato $E$
+$$
+s : M \to E \quad \mathrm{t.c.}\quad \pi \circ s (p) = p \quad \forall p \in M
+$$
+Se la sezione è definita solo in un intorno $U$ di un punto $p$ è detta \emph{sezione locale.}
+
+
 \begin{axiom}\textbf{Condizione di non trivialità:} \label{nontriv}
       Per ogni punto $p \in M$ esiste un intorno $U_i \in \mathcal{U}$ di $p$ e un isomorfismo
       $\phi_i : U_i \times F \to \pi^{-1}(U_i) \subset E$ tale che per ogni
@@ -73,10 +81,14 @@ descrivono come si trasformano le coordinate delle fibre nella regione di
 sovrapposizione tra due intorni $U_i \cap U_j$. Per ogni $x \in U_i \cap U_j$ fissato si
 cosidera $\phi_{i,x}$ come una mappa di $F$ in $F_x$.
 Allora si definiscono le mappe
-$$ \Phi_{ij} : F \to F \quad , \quad \Phi_{ij} = \phi_i^{-1} \circ\phi_j $$
+\begin{equation}\label{eq:transfunctions}
+   \Phi_{ij} : F \to F \quad , \quad \Phi_{ij} = \phi_i^{-1} \circ\phi_j
+\end{equation}
 che rispettano le condizioni:
-$$ \Phi_{ii} = id \quad , \quad \Phi_{ij} \circ \Phi_{jk} = \Phi_{ik}
-   \quad \forall x \in U_i \cap U_j \cap U_k $$
+\begin{equation}
+   \Phi_{ii} = id \quad , \quad \Phi_{ij} \circ \Phi_{jk} = \Phi_{ik}
+   \quad \forall x \in U_i \cap U_j \cap U_k
+\end{equation}
 Grazie a queste proprietà, le funzioni di transizione formano un gruppo $G$ detto
 \emph{gruppo di struttura} del fibrato, che agisce su $F$ a sinistra.\\
 Gli elementi di $G$, le funzioni di transizione, sono anche detti
@@ -93,7 +105,7 @@ relative tra fibre adiacenti (si veda l'esempio del nastro di Möbius). Un fibra
    non trivialità \ref{nontriv}.
 \end{definition}
 
-\begin{example}\emph{(Cilindro): }
+\begin{example}\emph{(Cilindro): }\label{ex:cilindro}
    Il cilindro è il primo esempio di fibrato banale, ossia la cui topologia globale
    è quella prodotto diretto $E = M\times F$. Sia lo spazio base $M=S^1$ il cerchio
    unitario, parametrizzato dall'angolo $\theta \in [0,2\pi]$ e sia $F$ il segmento
@@ -120,7 +132,7 @@ relative tra fibre adiacenti (si veda l'esempio del nastro di Möbius). Un fibra
   Si ha quindi un fibrato banale uguale al cilindro $E = S^1 \times [-1,1]$.
 \end{example}
 
-\begin{example}\emph{(Nastro di Möbius): }
+\begin{example}\emph{(Nastro di Möbius): }\label{ex:mobius}
    Con la stessa notazione dell'esempio precedente, si scelgano le funzioni di
    transizione:
    $$ \begin{cases}
@@ -131,30 +143,28 @@ relative tra fibre adiacenti (si veda l'esempio del nastro di Möbius). Un fibra
    la topologia non banale del Nastro di Möbius.
 \end{example}
 
-Si definisce un'operazione duale alla proiezione, la \emph{sezione} del fibrato
-come una mappa tra lo spazio base $M$ ed il fibrato $E$
-$$
-s : M \to E \quad \mathrm{t.c.}\quad \pi \circ s (p) = p \quad \forall p \in M
-$$
-Se definita solo in un intorno $U$ di un punto $p$ è detta \emph{sezione locale.}
+(questa parte serve solo per far capire la notazione nella definizione \ref{def:connection1form},
+si può anche togliere).\\
 
-%------------------------------------------------------------------------------%
-%------------------------------------------------------------------------------%s
-\subsection{Fibrato Principale e Connessione}
-\begin{definition}{(Fibrato principale)}:
-   Un \emph{fibrato principale} è un fibrato la cui fibra $F$ è un gruppo di Lie
-   e coincide con il gruppo di struttura $G$\footnote{Si veda \cite{nakahara},
-   \cite{shnir}, \cite{eguchi} per una definizione più completa}.
+Un \textbf{fibrato vettore} è un fibrato la cui fibra è uno spazio vettoriale.\\
+
+Il \textbf{fibrato cotangente} è definito analogamente al fibrato tangente.
+$ TM^* := \bigcup\limits_{p \in M} T^*_p(M) $\\
+
+Siano $E,E'$ fibrati con spazio base $M,M'$ e fibra $F,F'$ rispettivamente\\
+
+Un \textbf{fibrato prodotto} $E \times E'$ è un fibrato con spazio base
+$M \times M'$ e fibra $F \oplus F'$. Gli elementi della fibra $F \oplus F'$ sono
+vettori del tipo
+${f}\choose{f'}$, dove  $f \in F$ e $f' \in F'$.\\
+
+Il \textbf{fibrato prodotto tensore} $E \otimes E'$ è un fibrato vettore in cui
+a ogni punto $p \in M$ è assegnato il prodotto di fibre $F_p \otimes F'_p$.
+Date due basi $\{e_\alpha\}$ ed $\{f_\beta\}$ di $F$ e $F'$, la fibra prodotto
+è lo spazio generato da $\{ e_\alpha \otimes f\beta \}$.
+
+\begin{definition}\label{def:liealgebraform} \textbf{(Forma a valori in un'algebra di Lie):}
+   Una k-forma differenziale su una varietà $M$ a valori in un'algebra di Lie è
+   una \emph{sezione} del fibrato $(\mathfrak{g} \times M)\otimes \Lambda^k(T^*M)$
 \end{definition}
-
-Si vuole ora generalizzare il concetto di connessione\footnote{Il concetto di
-connessione generalizza quello di derivata direzionale ai tensori}
-(e di trasporto parallelo) estendendolo alla struttura del fibrato principale.
-Per la definizione generale, si veda \cite{nakahara}. \\
-In questa trattazione si definirà la connesione su un fibrato principale come
-una 1-forma sul fibrato $E$\footnote{Si ricorda che è una varietà differenziale}
-a valori nell'algebra di Lie $\mathfrak{g}$ associata al gruppo di struttura $G$ \\
-
-Sia $M$ lo spazio base di dimensione $n$, $G$ il gruppo di struttura e fibra ed
-$E$ il fibrato principale. Sia $(U,\phi)$ una carta con coordinate
-$x_\mu = \phi_\mu(p) \:,p \in M$.
+%------------------------------------------------------------------------------%

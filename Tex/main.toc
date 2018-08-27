@@ -8,17 +8,31 @@
 \contentsline {section}{\numberline {2.1}Elettrodinamica classica}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Fibrato di Monopolo di Wu\IeC {\textendash }Yang}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Fibrato di Hopf}{6}{section.2.3}
-\contentsline {chapter}{\numberline {A}Gruppo e azione di gruppo}{7}{appendix.A}
-\contentsline {chapter}{\numberline {B}Cenni di topologia e geometria differenziale}{9}{appendix.B}
-\contentsline {section}{\numberline {B.1}Definizioni di base}{9}{section.B.1}
-\contentsline {section}{\numberline {B.2}Omotopia e gruppi di omotopia}{11}{section.B.2}
-\contentsline {section}{\numberline {B.3}Variet\IeC {\`a} differenziali}{11}{section.B.3}
-\contentsline {subsection}{\numberline {B.3.1}Spazio tangente e cotangente}{11}{subsection.B.3.1}
-\contentsline {subsection}{\numberline {B.3.2}Variet\IeC {\`a} con bordo}{12}{subsection.B.3.2}
-\contentsline {section}{\numberline {B.4}Tensori e Forme differenziali}{12}{section.B.4}
-\contentsline {section}{\numberline {B.5}Fibrati}{14}{section.B.5}
-\contentsline {subsection}{\numberline {B.5.1}Fibrato Tangente}{14}{subsection.B.5.1}
-\contentsline {subsection}{\numberline {B.5.2}Fibrato}{15}{subsection.B.5.2}
-\contentsline {subsection}{\numberline {B.5.3}Fibrato Principale e Connessione}{16}{subsection.B.5.3}
-\contentsline {chapter}{\numberline {C}Notazione}{17}{appendix.C}
-\contentsline {chapter}{Bibliography}{18}{appendix*.3}
+\contentsline {chapter}{\numberline {3}Monopoli in teorie di gauge non abeliane}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Monopolo di \IeC {\textquoteright }t Hooft\IeC {\textendash }Polyakov}{7}{section.3.1}
+\contentsline {chapter}{\numberline {A}Cenni preliminari di matematica}{8}{appendix.A}
+\contentsline {section}{\numberline {A.1}Topologia Generale e Algebrica}{8}{section.A.1}
+\contentsline {section}{\numberline {A.2}Definizioni base}{8}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Omotopia e Classi di omotopia}{10}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.3}Variet\IeC {\`a} differenziali}{10}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Spazio tangente e cotangente}{10}{subsection.A.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Mappe tra variet\IeC {\`a}}{11}{subsection.A.3.2}
+\contentsline {subsection}{\numberline {A.3.3}Variet\IeC {\`a} con bordo}{11}{subsection.A.3.3}
+\contentsline {section}{\numberline {A.4}Tensori e Forme differenziali}{12}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Forme differenziali}{12}{subsection.A.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Differenziale esterno}{13}{subsection.A.4.2}
+\contentsline {subsection}{\numberline {A.4.3}Coomologia di de Rham}{13}{subsection.A.4.3}
+\contentsline {subsection}{\numberline {A.4.4}Integrazione}{13}{subsection.A.4.4}
+\contentsline {subsection}{\numberline {A.4.5}Variet\IeC {\`a} Riemanniane}{14}{subsection.A.4.5}
+\contentsline {subsection}{\numberline {A.4.6}Derivata covariante}{14}{subsection.A.4.6}
+\contentsline {section}{\numberline {A.5}Gruppo e azione di gruppo}{15}{section.A.5}
+\contentsline {subsection}{\numberline {A.5.1}Gruppi e Algebre di Lie}{16}{subsection.A.5.1}
+\contentsline {section}{\numberline {A.6}Fibrati}{18}{section.A.6}
+\contentsline {subsection}{\numberline {A.6.1}Fibrato Tangente}{19}{subsection.A.6.1}
+\contentsline {subsection}{\numberline {A.6.2}Fibrato}{19}{subsection.A.6.2}
+\contentsline {subsection}{\numberline {A.6.3}Fibrato Principale e Connessione}{21}{subsection.A.6.3}
+\contentsline {subsubsection}{Definizione geometrica }{21}{section*.3}
+\contentsline {subsubsection}{Definizione tramite 1-forma}{22}{section*.4}
+\contentsline {subsection}{\numberline {A.6.4}Classi caratteristiche}{24}{subsection.A.6.4}
+\contentsline {chapter}{\numberline {B}Notazione}{25}{appendix.B}
+\contentsline {chapter}{Bibliography}{26}{appendix*.5}

@@ -46,6 +46,7 @@
 \graphicspath{{/home/dan/Desktop/UNI/TESI/Images/}}	%Default path for graphics
 \renewcommand{\vec}[1]{\mathbf{#1}}
 \newcommand{\chrsym}{\genfrac{\{}{\}}{0pt}{}} % Simboli Christoffel
+\renewcommand\qedsymbol{$\blacksquare$} % quadrato della dimostrazione
 
 
 % Remove default parindent
@@ -71,19 +72,20 @@
 
 \begin{document}
 
-%\input{intro}        % Intro page and index
-%\input{monopolo_dirac}
-%\input{calcoli}
-%\input{monopolo_abeliano}
-%\input{monopolo_non_abeliano}
-%\input{quantistica}
+\input{intro}        % Intro page and index
+\input{monopolo_dirac}
+\input{calcoli}
+\input{monopolo_abeliano}
+\input{monopolo_non_abeliano}
 
 \appendix
 \input{topologia}
+\input{omotopia}
 \input{varieta}
 \input{formediff}
 \input{gruppo}
 \input{fibrati}
+\input{fibratoprincipale}
 \input{notazione}
 \input{bibliografia}
 %------------------------------------------------------------------------%

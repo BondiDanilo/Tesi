@@ -1,4 +1,4 @@
-\chapter{Gruppo e azione di gruppo}
+\section{Gruppo e azione di gruppo}
 \begin{definition}{(Gruppo)}:
    Sia $G$ un insieme e $*$ un'operazione binaria su $G$. $G$ si definisce
    \emph{gruppo} con l'operazione $*$ se valgono le seguenti proprietà:
@@ -47,6 +47,7 @@ L'azione di $G$ su $X$ si dice:
       \Rightarrow g$ è l'identità
 \end{itemize}
 %------------------------------------------------------------------------------%
+\subsection{Gruppi e Algebre di Lie}
 Si veda la sezione \ref{sec:vardiff} per una breve trattazione su varietà differenziali,
 spazi tangenti e campi vettoriali.
 
@@ -64,7 +65,25 @@ Vale il seguente Teorema che non verrà qui dimostrato.
    Ogni sottogruppo chiuso $H$ di un gruppo di Lie $G$ è un sottogruppo di Lie
 \end{theorem}
 Che garantisce che $O(n), SO(n), SL(n,\mathbb{R})$ sono sottogruppi di Lie di
-$GL(n,\mathbb{R})$.
+$GL(n,\mathbb{R})$.\\
+
+Essendo un gruppo di Lie $G$ contemporaneamente gruppo e varietà differenziale, si
+può definire l'azione di $G$ (come gruppo) su se stesso (come varietà differenziale).
+
+\begin{definition}\label{def:adjrep}
+   Sia $h \in G$ si definisce la \emph{rappresentazione aggiunta} di G come
+   l'omomorfismo $ ad_a : G \to G $
+   $$
+      ad_h : g \mapsto h g h^{-1}
+   $$
+\end{definition}
+E induce la mappa tra gli spazi tangenti $(ad_h)_* : T_g(G) \to T_{h^{-1}gh}$.
+Poichè $ad_h e = e$ si può valutare la restrizione di $(ad_h)_*$ al solo $g=e$,
+ottenendo una mappa di $T_e(G)$ in se stesso
+$$
+   Ad_h : T_e(G) \to T_e(G) \quad Ad_h := (ad_h)_* |_{T_e(G)}
+$$
+
 %------------------------------------------------------------------------------%
 \begin{definition}{(Algebra di Lie):}\label{def:LieAlgebra}
    Un'algebra di Lie $\mathfrak{g}$ è uno spazio vettoriale (su un opportuno campo)
@@ -115,7 +134,7 @@ $$
 $$
 Poichè
 $$
-   X_V|_{ag} = L_{ag*} V = (L_a L_g)_* V = L_{a*}L_{g*} V = L_{a*} X_V|_g
+   X_V|_{ag} = (L_{ag})_* V = (L_a L_g)_* V = (L_a)_*(L_g)_* V = (L_a)_* X_V|_g
 $$
 
 Viceversa, un campo vettoriale $X_V$ invariante a sinistra (analogamente a destra)
@@ -172,6 +191,46 @@ quindi $\mathfrak{g}$ è chiuso rispetto all'operazione $[,]$ così definita.\\
 L'algebra di Lie associata a un gruppo viene indicata con lo stesso nome del gruppo,
 in carattere gotico minuscolo, ad esempio $SO(n)\to \mathfrak{so(n)}$.\\
 
+\begin{definition}
+   Identificando $\mathfrak{g}$ con $T_e(G)$ tramite l'isomorfismo dell'azione sinistra
+   (indicato qua con $\lambda : T_e(G) \to \mathfrak{g}$) e richiamando la definizione
+   \ref{def:adjrep}, si definisce la \textbf{mappa aggiunta} del gruppo di Lie $G$.
+   $$
+      Ad : G \times \mathfrak{g} \to \mathfrak{g} \quad , \quad
+      (h,X) \mapsto \lambda \circ Ad_h \circ \lambda^{-1}(X)
+   $$
+   dove $h \in G$, $X \in \mathfrak{g}$.
+   Applicando la definizione si trova che $Ad_a Ad_b = Ad_ab$ e $Ad_{a^{-1}} = Ad_a^{-1}$ .\\
+\end{definition}
+
+\begin{definition}\label{def:inducedvectfield}
+   Sia $G$ un gruppo di Lie che agisce sulla varietà $M$ a sinistra. Sia $V \in T_e(G)$
+   un vettore tangente all'identità di $G$.
+   Si definisce il \textbf{campo vettoriale indotto} da $V$ il campo $V^\#$ su $M$
+   $$
+      V^\# |_p = \left. \frac{d}{dt} (\exp(tV)p) \right |_{t=0} \quad p \in M
+   $$
+   E si definisce quindi una mappa $\# : T_e(G) \to \mathcal{X}(M)$
+   con $V \mapsto V^\#$
+\end{definition}
+
+Nel caso di un gruppo di Lie $G$ di matrici reali, l'algebra di Lie può essere
+formulata in termini della funzione esponenziali di matrici, ovvero
+$$
+\mathfrak{g} = \{ A \in \mathrm{Mat}(n,\mathbb{C}) \: | \:
+\forall t \in \mathbb{R} \:\to \exp (tA) \in G \}
+$$
+Gli elementi dell'algebra di Lie vengono detti \emph{generatori} del gruppo di Lie
+e, come visto sopra, la struttura del gruppo $G$ è completamente determinata
+dalle costanti di struttura. In questo caso in cui $G$ è un gruppo di matrici,
+la parentesi di Lie è il commutatore di matrici e quindi le costanti di struttura
+si dice sono determinate dalle regole di commutazione dei generatori $\{T_\mu\}$:
+$$
+   [T_\mu, T_\nu] = T_\mu T_\nu - T_\nu T_\mu
+      = c_{\mu\nu}^{\hphantom{\mu\nu}\lambda} T_\lambda
+$$
+
+(non ancora usato)
 Poichè si ha che $\mathfrak{g} \cong T_e(G)$ sia $\{ V_1,\dots,V_n \}$ una base
 per $T_e(G)$. Questa definisce, tramite l'azione sinistra, un set di campi vettoriali
 $\{ X_1, \dots, X_n \} \in \mathfrak{g}$ linearmente indipendenti in ogni punto $g \in G$
@@ -189,19 +248,5 @@ i coefficienti $c_{\mu\nu}^{\hphantom{\mu\nu}\lambda}$ si chiamano
 Si dimostrano essere indipendenti dal particolare $g \in G$ preso in considerazione,
 e determinano quindi completamente la struttura del gruppo di Lie $G$ (Teorema di Lie).\\
 
-Nel caso di un gruppo di Lie $G$ di matrici reali, l'algebra di Lie può essere
-formulata in termini della funzione esponenziali di matrici, ovvero
-$$
-\mathfrak{g} = \{ A \in \mathrm{Mat}(n,\mathbb{C}) \: | \:
-\forall t \in \mathbb{R} \:\to \exp (tA) \in G \}
-$$
-Gli elementi dell'algebra di Lie vengono detti \emph{generatori} del gruppo di Lie
-e, come visto sopra, la struttura del gruppo $G$ è completamente determinata
-dalle costanti di struttura. In questo caso in cui $G$ è un gruppo di matrici,
-la parentesi di Lie è il commutatore di matrici e quindi le costanti di struttura
-si dice sono determinate dalle regole di commutazione dei generatori $\{T_\mu\}$:
-$$
-   [T_\mu, T_\nu] = T_\mu T_\nu - T_\nu T_\mu
-      = c_{\mu\nu}^{\hphantom{\mu\nu}\lambda} T_\lambda
-$$
+
 %------------------------------------------------------------------------------%

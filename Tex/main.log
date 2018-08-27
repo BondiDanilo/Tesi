@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  26 AUG 2018 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  28 AUG 2018 00:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -639,9 +639,9 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 \c@example=\count134
 \c@axiom=\count135
 \tindent=\skip50
-Package hyperref Info: Option `colorlinks' set `true' on input line 66.
-Package hyperref Info: Option `linktocpage' set `true' on input line 66.
-Package hyperref Info: Option `pageanchor' set `true' on input line 66.
+Package hyperref Info: Option `colorlinks' set `true' on input line 67.
+Package hyperref Info: Option `linktocpage' set `true' on input line 67.
+Package hyperref Info: Option `pageanchor' set `true' on input line 67.
  (./main.aux
 
 LaTeX Warning: Label `' multiply defined.
@@ -658,20 +658,20 @@ LaTeX Warning: Label `label' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count136
@@ -743,7 +743,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -753,23 +753,91 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
 
-(./topologia.tex
-Appendix A.
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+(./intro.tex
+</home/dan/Desktop/UNI/TESI/Images/logo.jpg, id=4, 444.91219pt x 476.53032pt>
+File: /home/dan/Desktop/UNI/TESI/Images/logo.jpg Graphic file (type jpg)
+
+<use /home/dan/Desktop/UNI/TESI/Images/logo.jpg>
+Package pdftex.def Info: /home/dan/Desktop/UNI/TESI/Images/logo.jpg used on inp
+ut line 14.
+(pdftex.def)             Requested size: 154.35889pt x 165.32658pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
+
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/dan/Desktop/UNI/TESI
+/Images/logo.jpg>] (./main.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+))
+\tf@toc=\write3
+\openout3 = `main.toc'.
 
+)
+(./monopolo_dirac.texpdfTeX warning (ext4): destination with the same identifie
+r (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Monopolo di Dirac} [1
+
+]
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--38
+
+ []
+
+[2
+
+]) (./calcoli.tex
+Overfull \hbox (13.3524pt too wide) detected at line 71
+\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = ([] \OML/cmm/m/it/10 ^^R [] ^^^u[] \OT1/
+cmr/m/n/10 + [] \OML/cmm/m/it/10 ^^R [] ^^^u[] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm
+/m/it/10 ^^Ru[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 a\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OMS/cmsy/m/n/
+10 r\OML/cmm/m/it/10 ^^^ \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g [] \OT1/cmr/m/n/10 = 0
+ []
+
+[3]
+Overfull \hbox (0.77348pt too wide) in paragraph at lines 138--142
+[]\OT1/cmr/m/n/10 Il sec-ondo in-te-grale ha con-trib-uto non nullo so-la-mente
+ sulla fac-cia su-pe-ri-ore del cilin-dro $\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 =
+ \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \
+OMS/cmsy/m/n/10 2
+ []
+
+[4]) (./monopolo_abeliano.tex [5]
+Chapter 2.
+) (./monopolo_non_abeliano.tex [6
+
+]
+Chapter 3.
+) (./topologia.tex [7
+
+]
+Appendix A.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -798,10 +866,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
  []
 
-[1
+[8
 
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
@@ -811,33 +878,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--121
 
  []
 
-) (./varieta.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+) (./omotopia.tex) (./varieta.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--67
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 98--104
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--115
+Underfull \hbox (badness 10000) in paragraph at lines 67--74
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 106--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
 ) (./formediff.tex
-Underfull \hbox (badness 10000) in paragraph at lines 116--1
+Underfull \hbox (badness 10000) in paragraph at lines 158--1
 
  []
 
@@ -846,7 +913,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
 
-
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -866,7 +933,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
-[4]
+
 Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
  []
@@ -887,151 +954,137 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--44
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--54
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--102
-
- []
-
-[5]
-Overfull \hbox (12.93364pt too wide) in paragraph at lines 128--128
+Overfull \hbox (12.93364pt too wide) in paragraph at lines 130--130
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--131
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--159
+Underfull \hbox (badness 10000) in paragraph at lines 164--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
+Underfull \hbox (badness 10000) in paragraph at lines 168--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--168
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 188--195
+Underfull \hbox (badness 10000) in paragraph at lines 192--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 206--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--218
+Underfull \hbox (badness 10000) in paragraph at lines 215--223
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 ) (./gruppo.tex
-Underfull \hbox (badness 10000) in paragraph at lines 265--1
+Underfull \hbox (badness 10000) in paragraph at lines 271--1
 
  []
 
-[7] [8]
-Appendix B.
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
-[9
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--99
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--105
+Underfull \hbox (badness 10000) in paragraph at lines 119--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--143
+Underfull \hbox (badness 10000) in paragraph at lines 157--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
 
  []
 
@@ -1041,11 +1094,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--174
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--191
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
-) (./fibrati.tex [11]
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--250
+
+ []
+
+) (./fibrati.tex [18]
 Underfull \hbox (badness 10000) in paragraph at lines 35--45
 
  []
@@ -1070,23 +1143,125 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--84
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--157
+Underfull \hbox (badness 10000) in paragraph at lines 97--101
 
  []
 
-) (./notazione.tex [13]
-Appendix C.
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
+
+ []
+
+) (./fibratoprincipale.tex [20]
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
+
+ []
+
+
+Overfull \hbox (8.48448pt too wide) in paragraph at lines 80--96
+\OT1/cmr/m/n/10 Il trasporto ver-ti-cale ^^Re uni-vo-ca-mente de-ter-mi-nato da
+ll'azione del gruppo $\OML/cmm/m/it/10 G$ \OT1/cmr/m/n/10 (pro-priet^^Ra 3 dell
+a definizione),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--96
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 251--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
+
+ []
+
+) (./notazione.tex [24]
+Appendix B.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
@@ -1102,49 +1277,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-) (./bibliografia.tex [14
+) (./bibliografia.tex [25
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
- [15
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+ [26
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.label}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.91 \end{document}
+l.93 \end{document}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{cite.label}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.91 \end{document}
+l.93 \end{document}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{cite.label}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.91 \end{document}
+l.93 \end{document}
                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 91.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 7814 strings out of 493029
- 108164 string characters out of 6136234
- 213472 words of memory out of 5000000
- 11114 multiletter control sequences out of 15000+600000
- 15352 words of font info for 57 fonts, out of 8000000 for 9000
+ 7953 strings out of 493029
+ 110063 string characters out of 6136234
+ 218095 words of memory out of 5000000
+ 11157 multiletter control sequences out of 15000+600000
+ 15651 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,18n,30p,243b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,18n,30p,243b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
@@ -1156,21 +1331,24 @@ s/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb>
-Output written on main.pdf (15 pages, 313606 bytes).
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (27 pages, 536206 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 620 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 172 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 
