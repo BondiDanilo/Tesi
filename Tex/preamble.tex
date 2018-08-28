@@ -1,0 +1,71 @@
+
+\documentclass[10pt,a4paper]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}             %stili teoremi
+\usepackage{amssymb,amsmath}
+\usepackage[colorlinks = true,
+          linkcolor = blue,
+          urlcolor  = blue,
+          citecolor = blue,
+          anchorcolor = blue]{hyperref}
+\usepackage{bookmark}
+\usepackage{wrapfig}
+
+\usepackage{geometry}
+\geometry{
+	top=25mm,
+	bottom=25mm,
+	left=30mm,
+	right=25mm
+}
+\usepackage[ampersand]{easylist}
+\usepackage[nottoc]{tocbibind} %bibliografia
+%------------------------------------------------------------------------------%
+
+% Stile+numerazione teoremi, definizinoni, etc...
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[equation]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definizione}[equation]
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposizione}[equation]
+
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}[equation]
+
+\theoremstyle{remark}
+\newtheorem{example}{Esempio}[equation]
+
+\theoremstyle{definition}
+\newtheorem{axiom}{}[section]
+
+\renewcommand\qedsymbol{$\blacksquare$} % quadrato della dimostrazione
+%------------------------------------------------------------------------------%
+\renewcommand{\vec}[1]{\mathbf{#1}} % simbolo di vettore = grassetto
+\newcommand{\chrsym}{\genfrac{\{}{\}}{0pt}{}} % Simboli Christoffel
+%------------------------------------------------------------------------------%
+\graphicspath{{/home/dan/Desktop/UNI/TESI/Images/}}	%Default path for graphics
+%------------------------------------------------------------------------------%
+% Remove default parindent
+\newlength\tindent
+\setlength{\tindent}{\parindent}
+\setlength{\parindent}{0pt}
+\renewcommand{\indent}{\hspace*{\tindent}}
+
+\newcommand{\tab}[1][1cm]{\hspace*{#1}} % ridefinisce la tabulazione
+
+%------------------------------------------------------------------------------%
+% Metadati
+\hypersetup{
+	pdftitle={Tesi},%
+	pdfauthor={Danilo Bondì},%
+	pdfsubject={Aspetti classici e quantistici dei monopoli magnetici in teorie di gauge},%
+	pdfkeywords={},%
+	colorlinks=true,%
+	linkcolor=blue,%
+	linktocpage=true,%
+	pageanchor=true
+}

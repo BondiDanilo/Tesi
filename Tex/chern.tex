@@ -1,0 +1,72 @@
+\subsection{Classi caratteristiche}
+Riprendere la notazione della sezione precedente \\
+
+Si è visto (esempi \ref{ex:cilindro} e \ref{ex:mobius}) che a uno stesso spazio
+base e a una stessa fibra possono corrispondere diversi fibrati. Si vuole trovare
+un modo per classificare le diverse tipologie di fibrati principali possibili dato uno
+spazio base $M$ e un gruppo di struttura $G$.\\
+
+Si consideri il seguente esempio. Sia $H^r(M)$ il r-gruppo di Coomologia di de Rham
+di una varietà $M$, compatta e senza bordo $\partial M = 0$.
+Sia $[\omega] \in H^r(M)$.\\
+Un modo per classificare le classi di equivalenza si ottiene integrando una forma
+nella stessa classe $[\omega]$. Si ricorda che esiste quindi una forma $\alpha$
+tale che $\omega' = \omega + d\alpha$. Per il teorema di Stokes:
+$$ int_M \omega' = \int_M (\omega + d\alpha) = \int_M \omega
+   + \int_{\partial M} \alpha = int_M \omega $$
+I due integrali si equivalgono perchè la varietà è senza bordo. Allora questo integrale
+può essere usato come caratteristica, per classificare le classi di equivalenza.\\
+
+In analogia con l'esempio appena citato, si vuole definire una caratteristica
+analoga per la forma di curvatura $\Omega$. Una classe di equivalenza è formata
+da tutte le 1-forme di connessione a cui corrisponde la stessa 2-forma di curvatura.\\
+Si introduce ora il \emph{polinomio caratteristico} della forma $\Omega$ una quantità
+invariante della algebra di Lie $\mathfrak{g}$ nella fibra
+$$ det(1+\Omega) = 1 + tr\Omega + \frac{1}{2}[(tr\Omega)^2 - tr(\Omega^2)] + \dots $$
+che permette di definire una forma sullo spazio base $M$, detta \emph{forma di Chern}
+$$ det(1 + \frac{\lambda}{2\pi}F) = \sum_{k=0}^\infty \lambda^k c_k $$
+dove $1/2\pi$ è solo un fattore di normalizzazione. Si ricorda che $F$ è il pullback
+di $\Omega$. I coefficienti di espansione $c_k$ sono forme chiuse invarianti su $M$,
+la cui espressione esplicita per $k = 1,2$ è:
+\begin{equation}
+   \begin{aligned}
+      c_1 &= \frac{1}{2\pi} trF &,
+      c_2 & = \frac{1}{8\pi^2}[ tfF \wedge trF - tr(F \wedge F)]
+   \end{aligned}
+\end{equation}
+I fattori del tipo $1/2\pi$ fanno si che sia normalizzato l'integrale sulla varietà
+compatta senza bordo $M$
+\begin{equation}
+   \int_M c_k = n \quad , \quad n \in \mathbb{Z}
+\end{equation}
+Questi integrali sono detti \emph{classi caratteristiche di Chern}.
+
+\begin{example}\label{ex:monopolechern}
+   Si consideri un fibrato principale con $M = S^2$ e $G = U(1)$. Si hanno i due
+   coefficienti $c_0 = 1$ (fibrato banale) e $c_1 = F/2\pi$. Di quest'ultimo si
+   terra conto in \ref{}.
+\end{example}
+
+\begin{example}\label{ex:istantonchern}
+   Si consideri un fibrato principale su $M = S^4$ con gruppo di struttura
+   $G = SU(2)$ la forma di curvatura è a valori in $\mathfrak{su(2)}$ e può
+   essere scritta localmente come $F = 1/2\sigma_a F^a$ dove $\sigma_a$ sono le
+   matrici di Pauli con $a = 1,2,3$.
+   \begin{equation}
+      \begin{aligned}
+         \sigma_1 &= \begin{pmatrix} 0 & 1  \\ 1 & 0  \end{pmatrix}&
+         \sigma_2 &= \begin{pmatrix} 0 & -i \\ i & 0  \end{pmatrix}&
+         \sigma_3 &= \begin{pmatrix} 1 & 0  \\ 0 & -1 \end{pmatrix}&
+      \end{aligned}
+   \end{equation}
+   Si ha quindi trF = 0 e i coefficienti $k = 0,1,2$ sono
+   \begin{equation}
+      \begin{aligned}
+         c_0 & = 1
+         c_1 & = 0
+         c_2 & = \frac{1}{32\pi^2}[ F^a \wedge F^a ]
+      \end{aligned}
+   \end{equation}
+   Il fibrato caratterizzato dalla seconda classe di Chern è noto come
+   \emph{fibrato di istantone}.
+\end{example}

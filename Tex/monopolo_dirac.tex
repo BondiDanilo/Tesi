@@ -7,7 +7,7 @@ Campo magnetico generato da una carica magnetica $g$ situata nell'origine
 $$
    B = g \frac{\vec r}{r^3} = \frac{g}{r^2} \vec u _r
 $$
-dove $\vec r = (x,y,z)$ , $r = \sqrt (x^2 + y^2 + z^2)$ e $\vec u _r = \frac{\vec r}{r}$
+dove $\vec r = (x,y,z)$ , $r = \sqrt{x^2 + y^2 + z^2}$ e $\vec u _r = \frac{\vec r}{r}$
 il versore radiale.\\
 Le equazioni del moto di una carica elettrica $e$ nel campo $\vec B$,
 generate dalla Lagrangiana di minima interazione tra una carica elettrica e un campo
@@ -25,17 +25,23 @@ $B = \nabla \times \vec A = g \frac{\vec r}{r^3}$.\\
 
 Come calcolato nella sezione \ref{sec:dirac_potential} un potenziale che soddisfa
 questa relazione è:
-$$
+\begin{equation}\label{eq:diracpotential}
   \vec A = g(1 + \cos\theta)\left( \frac{\sin\phi}{r\sin\theta},
      \frac{-\cos\phi}{r\sin\theta},0 \right)
-$$
+\end{equation}
 Si presenta immediatamente il seguente problema. Se si ammette l'esistenza di una carica
 magnetica, il teorema di Gauss garantsce che $\nabla \cdot \vec B = 4\pi g\delta^{(3)}(\vec r)$,
 ossia che il flusso del campo attraverso una qualsiasi superficie chiusa contenente
 la carica magnetica $g$ è pari a $4\pi g$, in contraddizione con
 $\nabla \cdot \vec B = \nabla \cdot (\nabla \times \vec A) = 0$, che genera un
-flusso nullo.\\
-
+flusso nullo.
+\begin{equation}\label{eq:B4gpi}
+   \int_S d\sigma \vec B = \int_V d^3 x \nabla \cdot \vec B = 4g\pi
+\end{equation}
+\begin{equation}
+   \int_S d\sigma \vec B = \int_V d^3 x \nabla \cdot \vec B
+      = \int_V d^3 x \nabla \cdot (\nabla \times \vec A) = 0
+\end{equation}
 Il potenziale $\vec A$ presenta però delle discontinuità per $\sin\theta = 0$.
 Si verifica immediatamente che $\theta = 0$ è un punto singolare, mentre $\vec A$
 è continuo in $\theta = \pi$. Il calcolo fatto non è quindi corretto lungo l'asse z
@@ -80,7 +86,112 @@ $$
 L'effetto del campo generato dalla stringa di singolarità lungo l'asse z positivo
 è quello di annullare il flusso del campo prodotto dalla carica, risolvendo la
 contraddizione evidenziata in precedenza.
-%------------------------------------------------------------------------%
-\section{Trasformazione di gauge}
+
+%------------------------------------------------------------------------------%
+
+\section{Trasformazione della stringa}\label{sec:gaugestring}
 Come evidenziato nella sezione precedente, non è possibile definire ovunque un
-potenziale di monopolo continuo e derivabile
+potenziale di monopolo continuo e derivabile. L'effetto del potenziale singolare
+\ref{eq:diracpotential} conduce a un termine extra di campo della stringa,
+diretto lungo la singolarità.
+Per rimuovere questo termine singolare, si vuole far sì che non corrisponda a una
+configurazione fisica.\\
+Naturalmente la scelta del sistema di coordinate per la descrizione del monopolo
+è arbitraria, quindi il primo approccio è di richiedere che tutte le configurazioni
+possibili della stringa ($\theta$) siano fisicamente equivalenti.
+Ossia si vogliono trovare le trasformazioni tra le configurazioni di stringa e
+le condizioni che rendano tali configurazioni identiche.\\
+
+Si ricorda che l'elettrodinamica è invariante per trasformazioni del potenziale
+vettore del tipo
+\begin{equation}
+   \vec A \mapsto \vec A' = A + \nabla \lambda (\vec r) = A + \frac{i}{e
+   \footnote{Carica dell'elettrone} } U^{-1}\nabla U
+\end{equation}
+dove $U(\vec r) = \exp(ie\lambda(\vec r))$ e $\lambda$ è un'arbitraria funzione
+delle coordinate. Una trasformazione di questo tipo è detta
+\textbf{trasformazione di gauge}  del gruppo $U(1)$, in quanto $U$ appartiene
+al gruppo $U(1)$ delle matrici unitarie $1x1$ a coefficienti complessi.\\
+
+Si vuole trovare la trasformazione di gauge che risolve la singolarità.\\
+
+Si consideri il flusso del campo magnetico attraverso una superficie chiusa $S$
+prima e dopo la trasformazione di gauge e si valuti quale è la sua variazione
+$$
+   \int_S d\sigma B' - \int_S d\sigma B = \int_S d\sigma (\nabla \times \nabla \lambda)
+      = \oint_{\partial S} d\vec l \cdot \nabla \lambda
+$$
+Il flusso non cambia solo se la funzione $\nabla \lambda$ è periodica $\nabla
+\lambda(\phi) = \nabla \lambda( \phi + 2\pi)$. Si consideri allora la trasformazione
+$$
+\lambda(\vec r) = 2g\phi = 2g\arctan\left(\frac{y}{x}\right) \to U = \exp(2ieg\phi)
+$$
+Si nomina $\vec A^-$ il potenziale di dirac trovato in precedenza (in quanto ben
+definito per $z$ negative)
+$$
+   \vec A^- = \frac{g}{r}\frac{-1 - \cos\theta}{\sin\theta} \vec u _\phi  \\
+$$
+$$
+  \vec A ^- \mapsto \vec A ^- - \frac{i}{e} \exp( -2ieg\phi )\nabla \exp(2ieg\phi ) =
+     -\frac{g}{r}\frac{1+\cos\theta}{\sin\theta}\vec u _\phi
+     + \frac{2g}{r\sin\theta}\vec u _\phi
+     = \frac{g}{r}\frac{1 - \cos\theta}{\sin\theta} \vec u _\phi
+     =: \vec A ^+
+$$
+Il potenziale trasformato è singolare per $\theta = \pi$ e regolare per
+$\theta =  0$ quindi, analogamente a quanto visto per $\vec A^-$ produce un termine
+di campo di stringa lungo l'asse $z$ negativo.\\
+La trasformazione di gauge scelta agisce come una rotazione della stringa
+di un angolo $\theta = \pi$, quindi il campo generato in questo modo non è
+considerato fisico (?).\\
+
+Si sottolinea che l'approccio di regolarizzazione dei potenziali singolari
+utilizzato in questo capitolo è non rigoroso e serve solo per dare un'introduzone
+al problema. Lo si potrebbe rendere rigoroso trattandolo in teoria delle
+distribuzioni, che esula dallo scopo di questo elaborato. Si seguirà quindi
+un approccio differente nelle sezioni successive
+
+Si riporta l'espressione dei due potenziali di dirac definiti in precedenza, che
+sarà utile nella trattazione successiva.
+\begin{equation}\label{eq:localdiracpotential}
+  \vec A^\pm = \frac{g}{r}\frac{\pm 1 - \cos\theta}{\sin\theta} \vec u _\phi
+\end{equation}
+
+%------------------------------------------------------------------------------%
+
+\subsection{Condizione di quantizzazione della carica}
+Si consideri una particella di massa $m$ e di cariche elettrica $e$ e magnetica
+$g$ in interazione con un campo di monopolo magnetico, descritto dal potenziale
+$A$. Sia $\psi$ la funzione d'onda della particella. L'equazione di Schrödinger
+della particella è
+\begin{equation}
+   \frac{1}{2m}\left( \vec{\hat{p}} - \frac{e}{c} \vec{\hat{A}} \right)^2 \psi(\vec r) = E\psi(\vec r)
+\end{equation}
+Siano $\vec A^\pm$ su $U^\pm$ e le funzioni d'onda $\psi^\pm$ su $U^\pm$ e $\lambda =2g\phi$.
+In seguito alla trasformazione di gauge $ \vec A^+ \mapsto \vec A + \nabla (2g\phi)$ (dimostrare)
+la funzione d'onda trasforma
+$$ \psi^- \mapsto \exp \left( - \frac{2ige}{\hbar c} \phi \right) \psi^+$$
+Affinchè la funzione d'onda non sia multivalore, la fase deve essere periodica di
+periodo $2\pi$ in $\phi$, ossia
+$$
+   \exp \left( - \frac{2ige}{\hbar c} \phi \right)
+      = \exp \left( - \frac{2ige}{\hbar c} (\phi + 2\pi) \right)
+   \Rightarrow
+   \exp \left( - \frac{2ige}{\hbar c} 2\pi \right) = 1
+   \Rightarrow
+   \left( - \frac{2ige}{\hbar c} 2\pi \right) = 2n\pi \quad n \in \mathbb{Z}
+$$
+Allora si deve avere che
+
+\begin{equation}\label{eq:diracquantumcharge}
+   \boxed{
+      \frac{2eg}{\hbar c} = n \quad  n \in \mathbb{Z}
+   }
+\end{equation}
+Questa condizione è la celebre \textbf{condizione di quantizazione della carica
+di Dirac}, da cui risulta che se esiste una carica magnetica di monopolo $g$,
+la carica elettrica è quantizzata. Poichè si osserva che la carica elettrica è
+quantizzata, questa condizione costituirebbe uno spunto di ricerca dei monopoli
+magnetici.\\
+Esistono altre teorie che spiegano equivalentemente la quantizzazione della carica
+elettrica, ma non verranno qui indagate.\\
