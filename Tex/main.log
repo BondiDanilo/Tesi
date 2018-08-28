@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  28 AUG 2018 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  29 AUG 2018 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -366,6 +366,32 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/02/24 3.9q The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
+Language: italian 2015/03/26 v1.3n Italian support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/02/24 3.9q Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen105
+)
+\it@lettering=\count90
+\it@doublequoteactive=\count91
+\it@ISOcompliance=\count92
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count93
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks17
@@ -400,46 +426,46 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
-\ex@=\dimen105
+\ex@=\dimen106
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen106
+\pmbraise@=\dimen107
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count89
+\inf@bad=\count94
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count90
-\leftroot@=\count91
+\uproot@=\count95
+\leftroot@=\count96
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count92
-\DOTSCASE@=\count93
+\classnum@=\count97
+\DOTSCASE@=\count98
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen107
+\big@size=\dimen108
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count94
-\c@MaxMatrixCols=\count95
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
-\c@parentequation=\count96
-\dspbrk@lvl=\count97
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
 \tag@help=\toks25
-\row@=\count98
-\column@=\count99
-\maxfields@=\count100
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
 \andhelp@=\toks26
-\eqnshift@=\dimen108
-\alignsep@=\dimen109
-\tagshift@=\dimen110
-\tagwidth@=\dimen111
-\totwidth@=\dimen112
-\lineht@=\dimen113
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
 \@envbody=\toks27
 \multlinegap=\skip47
 \multlinetaggap=\skip48
@@ -490,7 +516,6 @@ Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
 Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
@@ -504,16 +529,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen114
-\Hy@linkcounter=\count101
-\Hy@pagecounter=\count102
+\@linkdim=\dimen115
+\Hy@linkcounter=\count106
+\Hy@pagecounter=\count107
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count103
+\Hy@SavedSpaceFactor=\count108
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -526,17 +551,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count104
+\c@Hy@tempcnt=\count109
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen115
-\Fld@menulength=\count105
-\Field@Width=\dimen116
-\Fld@charsize=\dimen117
+\XeTeXLinkMargin=\dimen116
+\Fld@menulength=\count110
+\Field@Width=\dimen117
+\Fld@charsize=\dimen118
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -546,17 +571,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count106
-\c@Item=\count107
-\c@Hfootnote=\count108
+\Hy@abspage=\count111
+\c@Item=\count112
+\c@Hfootnote=\count113
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count109
-\c@bookmark@seq@number=\count110
+\Fld@listcount=\count114
+\c@bookmark@seq@number=\count115
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -570,52 +595,52 @@ Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
-\BKM@id=\count111
+\BKM@id=\count116
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen118
-\WF@size=\dimen119
-\c@WF@wrappedlines=\count112
+\wrapoverhang=\dimen119
+\WF@size=\dimen120
+\c@WF@wrappedlines=\count117
 \WF@box=\box28
 \WF@everypar=\toks29
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count113
-\Gm@cntv=\count114
-\c@Gm@tempcnt=\count115
-\Gm@bindingoffset=\dimen120
-\Gm@wd@mp=\dimen121
-\Gm@odd@mp=\dimen122
-\Gm@even@mp=\dimen123
-\Gm@layoutwidth=\dimen124
-\Gm@layoutheight=\dimen125
-\Gm@layouthoffset=\dimen126
-\Gm@layoutvoffset=\dimen127
+\Gm@cnth=\count118
+\Gm@cntv=\count119
+\c@Gm@tempcnt=\count120
+\Gm@bindingoffset=\dimen121
+\Gm@wd@mp=\dimen122
+\Gm@odd@mp=\dimen123
+\Gm@even@mp=\dimen124
+\Gm@layoutwidth=\dimen125
+\Gm@layoutheight=\dimen126
+\Gm@layouthoffset=\dimen127
+\Gm@layoutvoffset=\dimen128
 \Gm@dimlist=\toks30
 )
 (/usr/share/texlive/texmf-dist/tex/latex/easylist/easylist.sty
 Package: easylist 2014/01/11 v.1.4 Numbered items with a single command.
-\el@CounterTotal=\count116
-\el@Scratch=\count117
-\el@ControlCounter=\count118
-\el@CounterLevel=\count119
-\c@List1=\count120
-\c@List2=\count121
-\c@List3=\count122
-\c@List4=\count123
-\c@List5=\count124
-\c@List6=\count125
-\c@List7=\count126
-\c@List8=\count127
-\c@List9=\count128
-\c@List10=\count129
-\el@ProgressiveDimension=\dimen128
+\el@CounterTotal=\count121
+\el@Scratch=\count122
+\el@ControlCounter=\count123
+\el@CounterLevel=\count124
+\c@List1=\count125
+\c@List2=\count126
+\c@List3=\count127
+\c@List4=\count128
+\c@List5=\count129
+\c@List6=\count130
+\c@List7=\count131
+\c@List8=\count132
+\c@List9=\count133
+\c@List10=\count134
+\el@ProgressiveDimension=\dimen129
 \el@CounterBox=\box29
 \el@ControlBox=\box30
-\el@TotalMargin=\dimen129
-\el@LeftMove=\dimen130
+\el@TotalMargin=\dimen130
+\el@LeftMove=\dimen131
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -625,16 +650,16 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
 )
-\c@theorem=\count130
-\c@definition=\count131
-\c@proposition=\count132
-\c@lemma=\count133
-\c@example=\count134
-\c@axiom=\count135
+\c@theorem=\count135
+\c@definition=\count136
+\c@proposition=\count137
+\c@lemma=\count138
+\c@example=\count139
+\c@axiom=\count140
 \tindent=\skip50
-Package hyperref Info: Option `colorlinks' set `true' on input line 71.
-Package hyperref Info: Option `linktocpage' set `true' on input line 71.
-Package hyperref Info: Option `pageanchor' set `true' on input line 71.
+Package hyperref Info: Option `colorlinks' set `true' on input line 74.
+Package hyperref Info: Option `linktocpage' set `true' on input line 74.
+Package hyperref Info: Option `pageanchor' set `true' on input line 74.
 ) (./main.aux
 
 LaTeX Warning: Label `label' multiply defined.
@@ -661,16 +686,16 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count136
-\scratchdimen=\dimen131
+\scratchcounter=\count141
+\scratchdimen=\dimen132
 \scratchbox=\box31
-\nofMPsegments=\count137
-\nofMParguments=\count138
+\nofMPsegments=\count142
+\nofMParguments=\count143
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count139
-\MPscratchDim=\dimen132
-\MPnumerator=\count140
-\makeMPintoPDFobject=\count141
+\MPscratchCnt=\count144
+\MPscratchDim=\dimen133
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -687,6 +712,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+LaTeX Info: Redefining \it@ocap on input line 7.
+LaTeX Info: Redefining \it@ccap on input line 7.
 \AtBeginShipoutBox=\box32
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
@@ -705,7 +732,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count142
+\c@section@level=\count147
 )
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
@@ -762,12 +789,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/dan/Desktop/UNI/TESI
 /Images/logo.jpg>] (./main.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -784,41 +811,46 @@ l.1 \chapter
             {Monopolo di Dirac} [1
 
 ]
-Chapter 1.
+Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 93--104
+Underfull \hbox (badness 10000) in paragraph at lines 94--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--115
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--147
+Underfull \hbox (badness 10000) in paragraph at lines 141--148
 
  []
 
 [3]) (./calcoli.tex
-Underfull \hbox (badness 10000) in paragraph at lines 190--1
+Underfull \hbox (badness 10000) in paragraph at lines 191--1
 
  []
 
 [4]
-Overfull \hbox (13.3524pt too wide) detected at line 71
+Overfull \hbox (13.3524pt too wide) detected at line 72
 \OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = ([] \OML/cmm/m/it/10 ^^R [] ^^^u[] \OT1/
 cmr/m/n/10 + [] \OML/cmm/m/it/10 ^^R [] ^^^u[] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm
 /m/it/10 ^^Ru[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 a\OT1/cm
@@ -828,29 +860,65 @@ OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g [] \OT1/cmr/m/n/10 = 0
  []
 
 [5]
-Overfull \hbox (0.77348pt too wide) in paragraph at lines 139--143
-[]\OT1/cmr/m/n/10 Il sec-ondo in-te-grale ha con-trib-uto non nullo so-la-mente
- sulla fac-cia su-pe-ri-ore del cilin-dro $\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 =
- \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \
-OMS/cmsy/m/n/10 2
+Overfull \hbox (0.68169pt too wide) in paragraph at lines 140--144
+[]\T1/cmr/m/n/10 Il se-con-do in-te-gra-le ha con-tri-bu-to non nul-lo so-la-me
+n-te sul-la fac-cia su-pe-rio-re del ci-lin-dro $\OML/cmm/m/it/10 C \OT1/cmr/m/
+n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/
+10 ) \OMS/cmsy/m/n/10 2
  []
 
 ) (./gauge.tex [6]
-Chapter 2.
+Capitolo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--14
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 ) (./monopolo_abeliano.tex
-Underfull \hbox (badness 10000) in paragraph at lines 15--1
+Underfull \hbox (badness 10000) in paragraph at lines 11--1
 
  []
 
 [7
 
 ]
-Chapter 3.
+Capitolo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--14
 
@@ -879,37 +947,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--70
 [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+Underfull \hbox (badness 10000) in paragraph at lines 115--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--130
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--136
+Underfull \hbox (badness 10000) in paragraph at lines 133--140
 
  []
 
-[9]) (./monopolo_non_abeliano.tex [10]
-Chapter 4.
-) (./appendice.tex (./topologia.tex [11
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--208
+
+ []
+
+[10]) (./monopolo_non_abeliano.tex [11]
+Capitolo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+) (./appendice.tex (./topologia.tex [12
 
 ]
-Appendix A.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+Appendice A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--25
 
@@ -933,7 +1020,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
  []
 
-[12
+[13
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
@@ -945,12 +1032,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--121
 
  []
 
-) (./omotopia.tex) (./varieta.tex
+) (./omotopia.tex [14]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+) (./varieta.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-[13]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
@@ -960,22 +1067,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--74
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
  []
 
-
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
 ) (./formediff.tex
-Underfull \hbox (badness 10000) in paragraph at lines 158--1
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -985,12 +1087,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[15]
+
 Underfull \hbox (badness 10000) in paragraph at lines 12--16
 
  []
 
-
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
@@ -1030,7 +1132,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
 
-[16]
+
 Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
@@ -1040,7 +1142,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
 
-
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
@@ -1055,67 +1157,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--164
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 169--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--172
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 193--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--199
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--209
+Underfull \hbox (badness 10000) in paragraph at lines 216--224
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 238--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--223
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 237--240
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
 
  []
 
 ) (./gruppo.tex
-Underfull \hbox (badness 10000) in paragraph at lines 271--1
+Underfull \hbox (badness 10000) in paragraph at lines 272--1
 
  []
 
-[19]
+
 Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
@@ -1130,7 +1232,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-[20]
+
 Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
@@ -1140,7 +1242,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--124
 
  []
 
-
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 125--128
 
  []
@@ -1170,12 +1272,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
 
-[21]
+
 Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 201--204
 
  []
@@ -1185,7 +1287,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--250
 
  []
 
-) (./fibrati.tex [22]
+) (./fibrati.tex [25]
 Underfull \hbox (badness 10000) in paragraph at lines 35--45
 
  []
@@ -1210,13 +1312,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
-[23]
+
 Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 97--101
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
@@ -1245,7 +1352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--160
 
  []
 
-) (./fibratoprincipale.tex [24]
+) (./fibratoprincipale.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
@@ -1255,7 +1362,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
-
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 18--27
 
  []
@@ -1281,18 +1388,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--62
  []
 
 
-Overfull \hbox (8.48448pt too wide) in paragraph at lines 80--96
-\OT1/cmr/m/n/10 Il trasporto ver-ti-cale ^^Re uni-vo-ca-mente de-ter-mi-nato da
-ll'azione del gruppo $\OML/cmm/m/it/10 G$ \OT1/cmr/m/n/10 (pro-priet^^Ra 3 dell
-a definizione),
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 80--96
 
  []
 
-[25]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -1312,12 +1412,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
-[26]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-[27]) (./chern.tex
+) (./chern.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -1327,13 +1427,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
-) (./notazione.tex [28]
-Appendix B.
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--48
+
+ []
+
+) (./notazione.tex [31]
+Appendice B.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
@@ -1349,75 +1459,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-) (./bibliografia.tex [29
+)) (./bibliografia.tex [32
 
-]))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 20.
- [30
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
+ [33
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.label}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.20 \end{document}
+l.22 \end{document}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{cite.label}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.20 \end{document}
+l.22 \end{document}
                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 20.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 20.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 20.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 22.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 20.
  ) 
 Here is how much of TeX's memory you used:
- 7982 strings out of 493029
- 110235 string characters out of 6136234
- 215494 words of memory out of 5000000
- 11165 multiletter control sequences out of 15000+600000
- 15651 words of font info for 58 fonts, out of 8000000 for 9000
+ 8958 strings out of 493029
+ 121671 string characters out of 6136234
+ 235791 words of memory out of 5000000
+ 12077 multiletter control sequences out of 15000+600000
+ 25838 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,18n,30p,260b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,18n,30p,810b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (31 pages, 554835 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/eu
+ler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1000.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+rm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on main.pdf (34 pages, 726329 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 605 compressed objects within 7 object streams
- 188 named destinations out of 1000 (max. 500000)
- 310 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 683 compressed objects within 7 object streams
+ 217 named destinations out of 1000 (max. 500000)
+ 318 words of extra memory for PDF output out of 10000 (max. 10000000)
 

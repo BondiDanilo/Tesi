@@ -1,1 +1,151 @@
 \subsection{Omotopia e Classi di omotopia}
+\textcolor{red}{(da scrivere)}\\
+Nel seguito, se non diversamente specificato siano $X,Y$ spazi topologici con
+topologia assegnata $T_X , T_Y$ rispettivamente. \\
+Le dimostrazioni dei teoremi vengono omesse per brevità di trattazione. Si veda
+\cite{sernesi}, \cite{fulton}, \cite{nakahara}.
+
+\begin{definition}(\emph{Omotopia tra funzioni continue}):
+   Siano $f,g : X \to Y$ funzioni continue. Si definisce \textbf{omotopia} tra
+   $f$ e $g$ un'applicazione continua $H : X \times [0,1] \to Y$ tale che
+   $$ H(x,0) = f(x) \quad \mathrm{e} \quad H(x,1) = g(x) \quad \forall x \in X$$
+   Se esiste un'omotopia tra le funzioni $f$ e $g$, si dicono \emph{omotope} $f \sim g$.
+   \label{def:omotopia}
+\end{definition}
+
+Intuitivamente, due funzioni sono omotope se le loro immagini $f(X),g(X)$ possono essere
+deformate con continuità (senza "strappare" l'insieme) una nell'altra.
+
+\begin{definition}(\emph{Equivalenza omotopica}):
+   Due spazi topologici $X,Y$ si dicono \emph{omotopicamente equivalenti} o che hanno
+   \emph{lo stesso tipo di omotopia} se esistono due applicazioni $f : X \to Y$ e
+   $g : Y \to X$ tali che le composizioni $f \circ g : Y \to Y$ e
+   $g \circ f : X \to X$:
+      $$  f \circ g \sim id_Y \quad , \quad g \circ f \sim id_X $$
+   Le due applicazioni così definite si dicono \emph{equivalenze omotopiche}.
+\end{definition}
+
+\begin{lemma}
+   La relazione di omotopia è una relazione di equivalenza tra funzioni.
+   L'equivalenza omotopica è una relazione di equivalenza tra spazi topologici.
+\end{lemma}
+
+Esempi:
+\begin{example}
+   Siano $X = \mathbb{R}^n\setminus\{0\}$ e $Y = S^{n-1}$. I due spazi sono
+   omotopicamente equivalenti. Le funzioni di equivalenza omotopica sono
+   $f : x \in \mathbb{R}^n\setminus\{0\} \mapsto \frac{x}{|x|}$ e
+   $g : S^{n-1} \to \mathbb{R}^n\setminus\{0\}$ l'inclusione
+   $y \in S^{n-1} \mapsto y \in \mathbb{R}^n\setminus\{0\}$. \\
+   Un'omotopia è ad esempio $H(x,t) = x e^{(t-1)log|x|}$. È di immediata verifica
+   che si tratta dell'omotopia cercata.
+\end{example}
+
+\begin{definition}
+   Si definisce \textbf{cammino} o \emph{arco} in $X$ una funzione continua
+   $\sigma : [0,1] \to X$. Un cammino si dice \textbf{laccio} o \emph{circuito}
+   se è chiuso, ossia $\sigma(0) = \sigma(1)$.
+\end{definition}
+
+\begin{definition}(\emph{Omotopia tra cammini}):
+   Siano $\sigma,\tau : [0,1] \to X$ cammini con lo \emph{stesso} punto iniziale
+   $\sigma(0) = \tau(0)$ e punto finale $\sigma(1) = \tau(1)$.
+   Si definisce \textbf{omotopia} tra $\sigma$ e $\tau$ un'applicazione continua
+   $H : [0,1] \times [0,1] \to X$ tale che
+      $$ H(t,0) = \sigma(t) \quad \mathrm{e} \quad H(t,1) = \tau(t) $$
+   inoltre si richiede che lasci inalterati i punti iniziale e finale del cammino
+      $$ H(0,s) = \sigma(0) = \tau(0) \quad , \quad
+         H(1,s) = \sigma(1) = \tau(1) \quad \forall s \in [0,1] $$
+   Cammini omotopi si dicono \emph{equivalenti}.
+\end{definition}
+
+\begin{definition}(\emph{Prodotto di cammini}):
+   Siano $\sigma,\tau$ cammini in $X$ tali che $\sigma(1) = \tau(0)$. Si definisce
+   il \emph{cammino prodotto} o l'\emph{incollamento} $\sigma \cdot \tau$ in $X$:
+   \begin{equation}
+      \sigma \cdot \tau (t) = \begin{cases}
+         \sigma(2t) & t \in [0,1/2] \\
+         \tau(2t-1) & t \in (1/2,1]
+      \end{cases}
+   \end{equation}
+\end{definition}
+
+Sia $x_0\ in X$. Un laccio $\sigma$ tale che $\sigma(0) = x_0$ si dice
+\emph{laccio di base $x_0$}.
+
+\begin{definition}(\emph{Gruppo fondamentale}):
+   Si definisce il \textbf{gruppo fondamentale} o \emph{primo gruppo di omotopia}
+   dello spazio $X$, denotato con $\pi_1(X,x_0)$, l'insieme delle classi di
+   equivalenza dei lacci di base $x_0$.
+\end{definition}
+\textcolor{red}{Intuitivamente, ...}\\
+
+Uno gruppo fondamentale composto da una sola classe di equivalenza è detto \emph{banale}.
+
+\begin{definition}
+   Uno spazio con gruppo fondamentale \emph{isomorfo} al gruppo banale si dice
+   \textbf{contraibile}.
+\end{definition}
+
+\begin{definition}
+   Sia
+\end{definition}
+
+Se $\sigma,\tau$ sono lacci di base $x_0$ anche $\sigma \cdot \tau$ lo è, quindi
+dati $[\sigma],[\tau] \in \pi_1(X,x_0)$ si definisce il loro \emph{prodotto}
+la classe di $[\sigma \cdot \tau]$
+$$ [\sigma][\tau] := [\sigma\cdot\tau] \in \pi_1(X,x_0) $$\\
+
+Sia $x \in X$, si definisce $\epsilon_x$ il \emph{cammino costante} nel punto $x$.
+$$\epsilon_x(t) = x \quad \forall t \in[0,1]$$
+
+Sia $\sigma$ cammino in $X$, si definisce il \emph{cammino inverso}
+$\sigma^{-1}(t) = \sigma(1-t)$ (si tratta dello stesso cammino, con senso
+di percorrenza opposto).
+
+\begin{proposition}
+   Il gruppo fondamentale $\pi_1(X,x_0)$ è un \emph{gruppo} con l'operazione di
+   prodotto tra due classi di equivalenza di cammini.
+   L'elemento neutro è dato da $[\epsilon_x]$,
+   l'inverso è dato da $[\sigma]^{-1} = [\sigma^{-1}]$.
+\end{proposition}
+\begin{proof}
+   La dimostrazione non è immediata. Si vedano le referenze.
+\end{proof}
+
+\begin{proposition}(\emph{Dipendenza del gruppo fondamentale dal punto base}):
+   Siano $x_0, x_1 \in X$. Se esiste un cammino $\tau$ in $X$ che collega i due
+   punti ($\tau(0)=x_0$ e $\tau(1)=x_1$) allora i gruppi fondamentali con base
+   $x_0$ e $x_1$ sono isomorfi
+      $$ \pi_1(X,x_0) \cong \pi_1(X,x_1) $$
+   con isomorfismo dato da $\tau_\# : \pi_1(X,x_0) \to \pi_1(X,x_1)$
+      $$  \tau_\# [\sigma] = [\tau^{-1} \cdot \sigma \cdot \tau] $$
+\end{proposition}
+\textcolor{red}{Intuitivamente, ...}
+\begin{proof} Si vedano le referenze. \end{proof}
+
+\textcolor{red}{Perchè si classificano gli spazi in base ai gruppi di Omotopia,
+cosa ha a che fare con la topologia/geometria dello spazio.}\\
+\begin{definition}(\emph{Numero di avvolgimento}):
+
+\end{definition}
+%------------------------------------------------------------------------------%
+\subsubsection{Esempi di gruppo fondamentale}
+%------------------------------------------------------------------------------%
+\subsubsection{Gruppi di omotopia superiori}
+Si può pensare a un laccio in $X$ come una mappa tra $S^1$ e $X$\footnote{
+Siccome l'intervallo $[0,1]$ con gli estremi identificati
+(dal fatto che un laccio è un cammino chiuso) è identificato con il cerchio}.
+Quindi la relazione di omotopia tra cammini può essere vista come una relazione
+di equivalenza tra le funzioni continue $\sigma : S^1 \to X$, secondo la definizione
+di omotopia tra funzioni continue \ref{def:omotopia} e ridefinire
+il gruppo fondamentale come l'insieme di queste classi di omotopia\\
+
+Si può allora generalizzare il procedimento alle mappe continue da $S^n \to X$ e
+definire i gruppi superiori di omotopia.
+
+\begin{definition}(\emph{$n$-esimo gruppo di omotopia}):
+   Sia $x_0 \in X$. Si definisce l'\textbf{$n$-esimo gruppo di omotopia}
+   dello spazio $X$ l'insieme delle classi di equivalenza delle funzioni continue
+   $\sigma : S^n \to X$.
+\end{definition}

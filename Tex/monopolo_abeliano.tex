@@ -78,6 +78,7 @@ monopolo di Wu-Yang.
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \section{Fibrato di Monopolo di Wu–Yang}
+\textcolor{red}{Riscrivere meglio}\\
 Si consideri un fibrato principale con $M = S^2$ e $G = U(1)$.\\
 Il gruppo di gauge $U(1) = \{g = e^{i\alpha} \}$ è parametrizzato da un
 parametro $\alpha$, che è una coordinata ciclica lungo la fibra, ed è identificato
@@ -114,7 +115,8 @@ $$
 $$
 Osservando che i versori delle coordinate sferiche sono dati da
 $\vec u _\phi = \sin\theta d\phi$ e $ \vec u _\theta = d\theta$, si riconosce in
-$F$ la componente radiale del campo magnetico di un monopolo (scriverla).\\
+$F$ la componente radiale del campo magnetico di un monopolo
+{\textcolor{red}(scriverla)}.\\
 
 La 2-forma $F$ è chiusa ($dF = d^2A = 0$ su entrambi gli emisferi),
 analogamente al caso precedente, ma questa volta non è esatta perchè i due potenziali
@@ -129,7 +131,9 @@ a $\theta = \pi/2$ e quindi le $\Phi$ sono funzioni della sola coordinata azimut
 $ \Phi = e^{in\phi}$ con $n$ intero.\\
 
 Le funzioni di transizione $\Phi$ sono una mappa dell'equatore $S^1$ nel gruppo
-di gauge $U(1)$, sono quindi cammini in $U(1)$ (spiegare meglio), e possono essere
+di gauge $U(1)$, sono quindi cammini in $U(1)$,
+\textcolor{red}{(spiegare meglio)}
+e possono essere
 classificate in base alla classe di omotopia in $\pi_1(U(1))$ a cui appartengono.
 L'intero $n$ assume il significato topologico di \emph{numero di avvolgimento}
 della corrispondente classe di omotopia.\\
@@ -146,7 +150,7 @@ relativa a $c_1$
 \end{equation*}
 La carica magnetica coincide quindi con il primo numero di Chern. Per $n=0$ il
 fibrato è banale e ha la forma $S^2 \times S^1$, mentre per $n=1$ si ha il
-\emph{fibrato di Hopf}, di seguito descritto.
+\emph{fibrato di Hopf}, di seguito descritto.\\
 
 Si osserva infine che anche la funzione d'onda di una particella carica in un
 campo di monopolo non può essere definita globalmente.
@@ -155,3 +159,86 @@ da $\psi^+ = \Phi \psi^-$.
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \section{Fibrato di Hopf}
+Il fibrato di Hopf descrive la sfera $S^3$ come fibrato con spazio
+base $S^2$ (parametrizzato dagli angoli $\theta,\phi$) e come fibra $S^1$ (parametrizzato,
+dal paramentro $\alpha$, come sopra).\\
+
+La sfera $S^3$ è definita da:
+$$ S^3 = \{ \vec p \in \mathbb{R}^4 \: : \: |\vec p|^2 = 1 \} $$
+e può essere parametrizzata in coordinate cartesiane da $(p_1,p_2,p_3,p_4)$
+tali che:
+\begin{equation}
+   \begin{cases}
+      p_1 = \cos \frac{\theta}{2} \cos \alpha \\
+      p_2 = \cos \frac{\theta}{2} \sin \alpha \\
+      p_3 = \sin \frac{\theta}{2} \cos (\phi + \alpha) \\
+      p_4 = \sin \frac{\theta}{2} \sin (\phi + \alpha) \\
+   \end{cases}
+\end{equation}
+
+Assegnata una base $ \{ \partial/\partial p_\mu \} $ dello spazio tangente
+$T_p S^3$, si può definire la metrica
+\begin{equation}
+   d s^2 = g_{\mu\nu} dx^\mu dx^\nu
+         = \frac{1}{4} d\theta^2 + d\alpha^2 + sin^2\frac{\theta}{2}d\phi^2
+         + 2\sin^2\frac{\theta}{2} d\phi d\alpha
+\end{equation}
+La proiezione $\pi : S^3 \to S^2$ (mappa di Hopf) è defnita nel modo seguente
+$\vec p = (p_1,p_2,p_3,p_4) \mapsto \vec x = (x,y,z)$
+\begin{equation}
+   \begin{cases}
+      x = 2(p_1 p_3 + p_2 p_4)          = \sin\theta \cos\phi \\
+      y = 2(p_1 p_4 - p_2 p_3)          = \sin\theta \sin\phi \\
+      z = p_1^2 + p_2^2 - p_3^2 - p_4^2 = \cos\theta          \\
+   \end{cases}
+\end{equation}
+Si osservi che si perde completamente la dipendenza dalla variabile $\alpha$.
+L'effetto della mappa di Hopf è di mappare un cerchio $S^1$ in un punto
+della sfera $S^2$.\\
+
+La sezione del fibrato può essere presa fissando un particolare valore di $\alpha$.
+Si richiede che la metrica sulla sfera $S^3$ si riduca alla tradizionale metrica
+$ds^2 = d\theta^2 + \sin^2\theta d\phi$ sulla sfera $S^2$ sia nell'emisfero
+nord $U^+$($ \theta/2 \mapsto \theta $) che nell'emisfero sud $U^-$
+($\pi/2 - \theta/2 \mapsto \theta $). Si vede immediatamente da \ref{} che la
+condizione è verificata per $\alpha = 0$ e $\alpha = -\phi$, rispettivamente.
+Con questa scelta, la forma di connessione globale $\omega$ su $S^3$
+viene mappata dal pullback della sezione appena descritta nella forma locale $A$
+come prima \ref{}\\
+
+Le funzioni di transizione $\Phi$ sono definite nella regione di transizione
+$U^0 = U^+ \cap U^-$, l'equatore, come mappe $S^1 \to S^1$
+\begin{equation}
+   \begin{aligned}
+  \Phi_\pm & = \Phi_+ \circ \Phi_- ^{-1}
+             = \frac{p_3 +  i \, p_4}{p_1 + i \, p_2}
+                \sqrt{ \frac{p_1^2 + p_2^2}{p_3^2 + p_4^2} }
+             = e^{i\phi} \\
+  \Phi_\mp & = \Phi_- \circ \Phi_+ ^{-1}
+             = \frac{p_1 + i \, p_2}{p_3 +  i \, p_4}
+                  \sqrt{ \frac{p_3^2 + p_4^2}{p_1^2 + p_2^2}}
+             = e^{-i\phi}
+   \end{aligned}
+\end{equation}
+
+
+Si definisce allora la 1-forma di connessione $\omega$
+\begin{equation}
+   \begin{aligned}
+      \omega & = p_1 d p_2 - p_2 d p_1 + p_3 d p_4 - p_4 d p_3 \\
+             & = d\alpha + \frac{1}{2}(1 - cos\theta) d \phi
+   \end{aligned}
+\end{equation}
+
+e la curvatura $\Omega$
+$$
+   \Omega = d \omega = 2 ( d p_1 \wedge d p_2 + d p_3 \wedge d p_4)
+          = \frac{1}{2} \sin\theta \, d\theta \wedge d\phi
+$$
+Questa forma è chiusa ed esatta su $S^3$ e si nota subito che corrisponde a $1/2$
+della forma di volume della sfera $S^2$\footnote{
+che è appunto $dV = \sin\theta d\theta \wedge d\phi$}. Si ha allora, integrando
+su $S^2$ come sottospazio di $S^3$\footnote{abuso di notazione}
+$$
+   \int_{S^2} \Omega = 2\pi
+$$
