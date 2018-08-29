@@ -12,33 +12,39 @@
 \contentsline {section}{\numberline {3.1}Fibrato di Monopolo di Wu\IeC {\textendash }Yang}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Fibrato di Hopf}{10}{section.3.2}
 \contentsline {chapter}{\numberline {4}Monopoli in teorie di gauge non abeliane}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Monopolo di \IeC {\textquoteright }t Hooft\IeC {\textendash }Polyakov}{12}{section.4.1}
-\contentsline {chapter}{\numberline {A}Cenni preliminari di matematica}{13}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Topologia Generale e Algebrica}{13}{section.Alph1.1}
-\contentsline {subsection}{\numberline {A.1.1}Definizioni base}{13}{subsection.Alph1.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Omotopia e Classi di omotopia}{14}{subsection.Alph1.1.2}
-\contentsline {subsubsection}{Esempi di gruppo fondamentale}{16}{section*.3}
-\contentsline {subsubsection}{Gruppi di omotopia superiori}{16}{section*.4}
-\contentsline {section}{\numberline {A.2}Variet\IeC {\`a} differenziali}{16}{section.Alph1.2}
-\contentsline {subsection}{\numberline {A.2.1}Spazio tangente e cotangente}{17}{subsection.Alph1.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Mappe tra variet\IeC {\`a}}{18}{subsection.Alph1.2.2}
-\contentsline {subsection}{\numberline {A.2.3}Variet\IeC {\`a} con bordo}{18}{subsection.Alph1.2.3}
-\contentsline {subsection}{\numberline {A.2.4}Orientazione}{18}{subsection.Alph1.2.4}
-\contentsline {section}{\numberline {A.3}Tensori e Forme differenziali}{18}{section.Alph1.3}
-\contentsline {subsection}{\numberline {A.3.1}Forme differenziali}{19}{subsection.Alph1.3.1}
-\contentsline {subsection}{\numberline {A.3.2}Differenziale esterno}{20}{subsection.Alph1.3.2}
-\contentsline {subsection}{\numberline {A.3.3}Coomologia di de Rham}{20}{subsection.Alph1.3.3}
-\contentsline {subsection}{\numberline {A.3.4}Integrazione}{20}{subsection.Alph1.3.4}
-\contentsline {subsection}{\numberline {A.3.5}Variet\IeC {\`a} Riemanniane}{21}{subsection.Alph1.3.5}
-\contentsline {subsection}{\numberline {A.3.6}Derivata covariante}{21}{subsection.Alph1.3.6}
-\contentsline {section}{\numberline {A.4}Gruppo e azione di gruppo}{22}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Gruppi e Algebre di Lie}{23}{subsection.Alph1.4.1}
-\contentsline {section}{\numberline {A.5}Fibrati}{25}{section.Alph1.5}
-\contentsline {subsection}{\numberline {A.5.1}Fibrato Tangente}{25}{subsection.Alph1.5.1}
-\contentsline {subsection}{\numberline {A.5.2}Fibrato}{26}{subsection.Alph1.5.2}
-\contentsline {subsection}{\numberline {A.5.3}Fibrato Principale e Connessione}{27}{subsection.Alph1.5.3}
-\contentsline {subsubsection}{Definizione geometrica }{28}{section*.5}
-\contentsline {subsubsection}{Definizione tramite 1-forma}{29}{section*.6}
-\contentsline {subsection}{\numberline {A.5.4}Classi caratteristiche}{31}{subsection.Alph1.5.4}
-\contentsline {chapter}{\numberline {B}Notazione}{32}{appendix.Alph2}
-\contentsline {chapter}{Bibliografia}{33}{appendix*.7}
+\contentsline {section}{\numberline {4.1}Monopolo di Wu-Yang non Abeliano}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Monopolo di \IeC {\textquoteright }t Hooft\IeC {\textendash }Polyakov}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Modello di Georgi-Glashow}{14}{subsection.4.2.1}
+\contentsline {subsubsection}{Descrizione del modello}{14}{section*.2}
+\contentsline {subsubsection}{Classificazione delle soluzioni}{15}{section*.3}
+\contentsline {subsubsection}{Carica magnetica}{15}{section*.4}
+\contentsline {subsection}{\numberline {4.2.2}Ansatz di \IeC {\textquoteright }t Hooft\IeC {\textendash }Polyakov}{16}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {A}Cenni preliminari di matematica}{17}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Topologia Generale e Algebrica}{17}{section.Alph1.1}
+\contentsline {subsection}{\numberline {A.1.1}Definizioni base}{17}{subsection.Alph1.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Omotopia e Classi di omotopia}{18}{subsection.Alph1.1.2}
+\contentsline {subsubsection}{Esempi di gruppo fondamentale}{20}{section*.6}
+\contentsline {subsubsection}{Gruppi di omotopia superiori}{20}{section*.7}
+\contentsline {section}{\numberline {A.2}Variet\IeC {\`a} differenziali}{20}{section.Alph1.2}
+\contentsline {subsection}{\numberline {A.2.1}Spazio tangente e cotangente}{21}{subsection.Alph1.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Mappe tra variet\IeC {\`a}}{22}{subsection.Alph1.2.2}
+\contentsline {subsection}{\numberline {A.2.3}Variet\IeC {\`a} con bordo}{22}{subsection.Alph1.2.3}
+\contentsline {subsection}{\numberline {A.2.4}Orientazione}{22}{subsection.Alph1.2.4}
+\contentsline {section}{\numberline {A.3}Tensori e Forme differenziali}{22}{section.Alph1.3}
+\contentsline {subsection}{\numberline {A.3.1}Forme differenziali}{23}{subsection.Alph1.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Differenziale esterno}{24}{subsection.Alph1.3.2}
+\contentsline {subsection}{\numberline {A.3.3}Coomologia di de Rham}{24}{subsection.Alph1.3.3}
+\contentsline {subsection}{\numberline {A.3.4}Integrazione}{24}{subsection.Alph1.3.4}
+\contentsline {subsection}{\numberline {A.3.5}Variet\IeC {\`a} Riemanniane}{25}{subsection.Alph1.3.5}
+\contentsline {subsection}{\numberline {A.3.6}Derivata covariante}{25}{subsection.Alph1.3.6}
+\contentsline {section}{\numberline {A.4}Gruppo e azione di gruppo}{26}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Gruppi e Algebre di Lie}{27}{subsection.Alph1.4.1}
+\contentsline {section}{\numberline {A.5}Fibrati}{29}{section.Alph1.5}
+\contentsline {subsection}{\numberline {A.5.1}Fibrato Tangente}{29}{subsection.Alph1.5.1}
+\contentsline {subsection}{\numberline {A.5.2}Fibrato}{30}{subsection.Alph1.5.2}
+\contentsline {subsection}{\numberline {A.5.3}Fibrato Principale e Connessione}{31}{subsection.Alph1.5.3}
+\contentsline {subsubsection}{Definizione geometrica }{32}{section*.8}
+\contentsline {subsubsection}{Definizione tramite 1-forma}{33}{section*.9}
+\contentsline {subsection}{\numberline {A.5.4}Classi caratteristiche}{35}{subsection.Alph1.5.4}
+\contentsline {chapter}{\numberline {B}Notazione}{36}{appendix.Alph2}
+\contentsline {chapter}{Bibliografia}{37}{appendix*.10}

@@ -1,12 +1,157 @@
 \chapter{Monopoli in teorie di gauge non abeliane}
 \textcolor{red}{(da scrivere)}\\
 \textcolor{red}{Si veda Shnir, pag 106 per connessione tra non abeliano e dirac}\\
-%We can look at this map from a different point of view. Note that the
-%sphere S 3 coincides with the group manifold of the group SU(2). Thus we
-%reformulate the Hopf map (3.84) in terms of elements of this group, the
-%matrices U (theta, phi, alpha) in SU (2) (we use a slightly different parameterization
-%in Appendix A, where general properties of the SU (2) group matrices are
-%described)
-%------------------------------------------------------------------------%
-\section{Monopolo di ’t Hooft–Polyakov}
+
+%------------------------------------------------------------------------------%
+Si vuole dare ora un'interpretazione differente alla mappa di Hopf $\pi : S^3 \to S^2$
+definita in \ref{eq:hopfmap}. Innanzitutto si nota che la sfera $S^3$
+coincide\footnote{
+   Una matrice $U \in SU(2)$ ha la forma \ref{eq:matSU2} per due numeri complessi
+   $z,w \in \mathbb{C} \: | \: zz^* + ww* = 1$ (condizione di determinante unitario).\\
+   Se $z = z_1 + i \, z_2$ e $w = w_1 + i \, w_2$, la condizione diventa
+   $zz^* + ww^* = z_1^2 + z_2^2 + w_1^2 + w_2^2 = 1$. \\
+   Si vede immediatamente allora che la mappa $SU(2) \to S^3$ che
+   $U(z,w) \mapsto (z_1,z_2,w_1,w_2)$ identifica i due spazi
+}
+con il gruppo $SU(2)$ inteso come varietà differenziale. Una matrice $U \in SU(2)$
+può essere parametrizzata nella forma
+\begin{equation}\label{eq:matSU2}
+   U =
+        \begin{pmatrix}
+          z^* & w^* \\
+          -w  & z   \\
+        \end{pmatrix}
+     =
+       \begin{pmatrix}
+          \cos \frac{\theta}{2} e^{-i\alpha} & \sin \frac{\theta}{2} e^{-i(\phi + \alpha)} \\
+         -\sin \frac{\theta}{2} e^{i(\phi + \alpha)} & \cos \frac{\theta}{2} e^{i\alpha}  \\
+       \end{pmatrix}
+\end{equation}
+Dove $z,w \in \mathbb{C}$ tali che $zz^* + ww^* = 1$
+(affinchè $U^\dagger U = UU^\dagger = 1$), $\theta,\phi$ sono gli angoli delle
+coordinate polari e $\alpha$ è il parametro ciclico del gruppo $U(1)$\footnote{
+   $g \in U(1) \to g = e^{i\alpha}$
+}.
+
+Identificando $U = U(z,w) \in SU(2)$ con $\vec z = (z,w) \in \mathbb{C} \times \mathbb{C}$,
+la mappa di Hopf può essere alternativamente vista\footnote{
+   Si confronti con l'espressione \ref{eq:hopfmap}
+}
+come $\mathbb{C} \times \mathbb{C} \to S^2$ che $\vec z \mapsto x = (x_1,x_2,x_3)$
+$$
+   x_i = \vec z ^\dagger \sigma_i \vec z
+$$
+dove $\sigma_i$ sono le matrici di Pauli \ref{eq:paulimatrix}. Si ha allora
+\begin{equation}\label{eq:hopfmap2}
+   \sigma_i \cdot x_i = U^{-1} \sigma_3 U
+\end{equation}
+che corrisponde a una rotazione\footnote{
+   Le matrici $SU(2)$ possono essere scritte $U = \sum_i x_i \sigma_i$ quindi le
+   matrici di pauli possono essere intese come un sistma di assi (base dello spazio)
+   di cui $\sigma_3$ è il terzo asse.
+} nello spazio del gruppo $SU(2)$ del terzo asse $\sigma_3$
+
+\begin{equation}
+   \begin{aligned}
+      U & \mapsto gU = e^{i \sigma_3 \alpha} U ,  g = e^{i\sigma_3 \alpha \in U(1)} \\
+      \sigma_i x_i & \mapsto
+         (U^{-1} g^*) \sigma_3 (g U)
+         = U^{-1}e^{-i \sigma_3 \alpha}\, \sigma_3 \, e^{i \sigma_3 \alpha}U
+         = U^{-1}\sigma_3 U =\sigma_i x_i
+   \end{aligned}
+\end{equation}
+%------------------------------------------------------------------------------%
+\section{Monopolo di Wu-Yang non Abeliano}
+Il monopolo magnetico in una teoria di gauge abeliana può essere definito tramite
+un potenziale non definito globalmente sulla varietà base. Questo però presenta
+vari problemi quando lo si vuole estendere a una teoria quantistica\footnote{
+   Si veda \cite{nakahara}.
+}.
+La situazione può essere risolta se si considera l'elettrodinamica, teoria
+di gauge $U(1)$ abeliana, come parte di una teoria unificata più ampia. La versione
+più semplice è una teoria di gauge $SU(2)$ che ha come sottogruppo il gruppo
+di gauge dell'elettrodinamica $U(1)$. Una teoria di questo tipo prende il nome
+di \emph{modello di Yang-Mills}. \\
+
+Si consideri il potenziale di Dirac \ref{eq:diracpotential}, qui denotato con
+$\tilde{\vec A}$, e si definisca il corrispondente quadrivettore $\tilde{A}_\mu$
+$$
+   \tilde{\vec A} = -g(1 + \cos\theta) \nabla \phi
+   \quad \to \quad
+   \tilde{A}_\mu = -g(1 + \cos\theta) \partial_\mu \phi
+$$
+Si definisce ora il \emph{potenziale vettore (di Dirac) non-Abeliano} $A_\mu$, \textcolor{red}{
+immerso in $SU(2)$,} tramite una combinazione delle matrici di Pauli
+$A_\mu := A_\mu^a \sigma_i/2$ con $a = 1,2,3$ e con coefficienti $A_\mu^a$ dati da
+
+\begin{equation}\label{eq:wuyangpotential}
+   \begin{aligned}
+      A_\mu^1 &= 0, & A_\mu^2 &= 0, & A_\mu^3 &= \tilde{A}_\mu =
+         -g(1 + \cos\theta) \partial_\mu \phi
+   \end{aligned}
+\end{equation}
+Si ricorda che $\partial_\mu \phi$, dalla definizione, è singolare lungo l'asse $z$
+$$
+   \partial_\mu \phi = \frac{1}{r \sin\theta} (0,-\sin\phi,\cos\phi,0)
+$$
+
+Sia $U \in SU(2)$ come \ref{eq:matSU2}. La trasformazione di gauge del potenziale
+vettore non-Abeliano è
+\begin{equation}\label{eq:nonabeliangauge}
+   A_\mu \quad \mapsto \quad A'-\mu = U A_\mu U^{-1} + \frac{i}{e} U \partial_i U^{-1}
+\end{equation}
+Sia $\alpha = 0$ in \ref{eq:matSU2} e si consideri la trasformazione di gauge con
+matrice data dalla seguente matrice
+\begin{equation}
+   U = U(\theta,\phi) = e^{i \sigma_3 \frac{\phi}{2}} \, e^{i \sigma_2 \frac{\theta}{2}}
+      \, e^{-i \sigma_3 \frac{\theta}{2}}
+      = \begin{pmatrix}
+         \cos \frac{\theta}{2} & -\sin \frac{\theta}{2} e^{-i \phi} \\
+         \sin \frac{\theta}{2} e^{i \phi} & \cos \frac{\theta}{2}  \\
+      \end{pmatrix}\footnote{
+         l'angolo $\phi$ varia da $4\pi$ in corrispondenza di $\theta = 0$
+         a $0$ per $\theta = \phi$. Per un gruppo $SU(N)$ $\phi$ è periodico di $2\pi N$
+      }
+\end{equation}
+Inserendo $U$ nella trasformazione di gauge si ottiene (per le componenti spaziali
+$k = 1,2,3$):
+\begin{equation}
+   A'_k = A_k^a \frac{\sigma _a}{2} = \epsilon_{ibc} \frac{r_b}{r^2}\frac{\sigma_c}{2}
+\end{equation}
+Questo potenziale è regolare ovunque tranne che nell'origine. Si è rimossa
+la stringa di singolarità iniziale.\\
+
+Il motivo è che la trasformazione di gauge stessa \ref{eq:nonabeliangauge} è singolare
+e ha la stessa singolarità del potenziale $\tilde{A}_\mu$, infatti si ha che
+\begin{equation}
+   \begin{aligned}
+      (U \partial _i U^{-1})_1 & = 0 \, , &
+      (U \partial _i U^{-1})_2 & = 0 \, , &
+      (U \partial _i U^{-1})_3 & = -(1 + \cos\theta) \partial _i \phi
+   \end{aligned}
+\end{equation}
+L'esatta cancellazione delle singolarità è possibile solo se è soddisfatta la condizione
+di quantizzazione della caria \ref{eq:diracquantumcharge}.\\
+
+L'espressione \ref{eq:wuyangpotential} è la soluzione classica della teoria di Yang-Mills puramente
+$SU(2)$, ad opera di Wu e Yang.\\
+
+La connessione tra la soluzione \ref{eq:wuyangpotential} e il monopolo magnetico
+è immediata inserendo l'espressione trovata nel tensore elettromagnetico non-Abeliano
+\begin{equation}
+   F_{\mu\nu} = \partial _\mu A_\nu - \partial _\nu A _\mu + i e [A_\mu,A_\nu]
+              = \frac{1}{2} F_{\mu\nu}^a \sigma _a ,
+\end{equation}
+dove $F_{\mu\nu}^a = \partial _\mu A_\nu^a - \partial _\nu A_\mu^a$
+ottenendo
+\begin{equation}
+   F^a_{ij} = \epsilon_{ijk} \frac{r^a r^k}{e r^4} \sim \frac{1}{r^2}
+\end{equation}
+
+La soluzione presenta però ancora alcune problematiche. Se si prova a calcolare
+il flusso di questo campo su una superficie chiusa, si ottiene zero. Inoltre, si
+hanno problemi di definizone dell'energia della configurazione.\\
+
+L'accoppiamento del campo di gauge con il campo di Higgs e il meccanismo di
+rottura spontanea della simmetria risolveranno questi probemi.
 %------------------------------------------------------------------------%
