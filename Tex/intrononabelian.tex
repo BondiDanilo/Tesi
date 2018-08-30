@@ -1,0 +1,40 @@
+Si vuole dare ora un'interpretazione differente alla mappa di Hopf $\pi : S^3 \to S^2$
+definita in \ref{eq:hopfmap}. Innanzitutto si nota che la sfera $S^3$
+coincide\footnote{
+   Una matrice $U \in SU(2)$ ha la forma \ref{eq:matSU2} per due numeri complessi
+   $z,w \in \mathbb{C} \: | \: zz^* + ww* = 1$ (condizione di determinante unitario).\\
+   Se $z = z_1 + i \, z_2$ e $w = w_1 + i \, w_2$, la condizione diventa
+   $zz^* + ww^* = z_1^2 + z_2^2 + w_1^2 + w_2^2 = 1$. \\
+   Si vede immediatamente allora che la mappa $SU(2) \to S^3$ che
+   $U(z,w) \mapsto (z_1,z_2,w_1,w_2)$ identifica i due spazi
+}
+con il gruppo $SU(2)$ inteso come varietà differenziale. Una matrice $U \in SU(2)$
+può essere parametrizzata nella forma
+
+Identificando $U = U(z,w) \in SU(2)$ con $\vec z = (z,w) \in \mathbb{C} \times \mathbb{C}$,
+la mappa di Hopf può essere alternativamente vista\footnote{
+   Si confronti con l'espressione \ref{eq:hopfmap}
+}
+come $\mathbb{C} \times \mathbb{C} \to S^2$ che $\vec z \mapsto x = (x_1,x_2,x_3)$
+$$
+   x_i = \vec z ^\dagger \sigma_i \vec z
+$$
+dove $\sigma_i$ sono le matrici di Pauli \ref{eq:paulimatrix}. Si ha allora
+\begin{equation}\label{eq:hopfmap2}
+   \sigma_i \cdot x_i = U^{-1} \sigma_3 U
+\end{equation}
+che corrisponde a una rotazione\footnote{
+   Le matrici $SU(2)$ possono essere scritte $U = \sum_i x_i \sigma_i$ quindi le
+   matrici di pauli possono essere intese come un sistma di assi (base dello spazio)
+   di cui $\sigma_3$ è il terzo asse.
+} nello spazio del gruppo $SU(2)$ del terzo asse $\sigma_3$
+
+\begin{equation}
+   \begin{aligned}
+      U & \mapsto gU = e^{i \sigma_3 \alpha} U ,  g = e^{i\sigma_3 \alpha \in U(1)} \\
+      \sigma_i x_i & \mapsto
+         (U^{-1} g^*) \sigma_3 (g U)
+         = U^{-1}e^{-i \sigma_3 \alpha}\, \sigma_3 \, e^{i \sigma_3 \alpha}U
+         = U^{-1}\sigma_3 U =\sigma_i x_i
+   \end{aligned}
+\end{equation}

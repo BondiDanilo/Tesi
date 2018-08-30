@@ -5,7 +5,8 @@ incorrendo nella stringa di singolarità. Il primo approccio è stato di rendere
 equivalenti tutte le possibili configurazioni di direzione della stringa, tramite
 trasformazione di gauge di tipo $U(1)$. Si è arrivato a definire due potenziali
 (\ref{eq:localdiracpotential}) $\vec A ^\pm$ che hanno la stringa situata rispettivamente
-lungo l'asse $z$ negativo/positivo, quindi regolari su $\pm z$ ripettivamente.\\
+lungo l'asse $z$ negativo/positivo, quindi regolari su asse $z$ positivo/negativo
+ripettivamente.\\
 L'approccio qui seguito, proposto da Wu e Yang (1968) \cite{wuyang}, è di
 rinunciare a una definizione globale del potenziale di Dirac
 in favore di una descrizione tramite due potenziali definiti localmente su due aperti
@@ -15,36 +16,36 @@ di gauge.\\
 Innanzitutto, Poichè $\mathbb{R}^3 \setminus \{0\}$ è equivalente omotopicamente
 a $S^2$, si vuole studiare il problema sulla sfera. Siano allora $U^\pm$ l'emisfero
 nord e sud della sfera
-\begin{equation*}
+\begin{equation}\label{eq:U+U-}
    \begin{aligned}
       U^+ &= \{(x,y,z) \in S^2 \: | \: z > 0 \}
-          = \{(r,\theta,\phi) \in S^2 \: | \: 0 \leq \theta \leq \pi/2 \} \\
+          = \{(r,\theta,\varphi ) \in S^2 \: | \: 0 \leq \theta \leq \pi/2 \} \\
       U^- &= \{(x,y,z) \in S^2 \: | \: z < 0 \}
-          = \{(r,\theta,\phi) \in S^2 \: | \: \pi/2 \leq \theta \leq \pi \}
+          = \{(r,\theta,\varphi ) \in S^2 \: | \: \pi/2 \leq \theta \leq \pi \}
    \end{aligned}
-\end{equation*}
+\end{equation}
 La regione di intersezione è l'equatore
-$$
+\begin{equation*}
    U^0 = U^+ \cap U^- = \{(x,y,z) \in S^2 \: | \: z = 0 \}
-       = \{(r,\theta,\phi) \in S^2 \: | \: \theta = \pi/2 \}
-$$
+       = \{(r,\theta,\varphi ) \in S^2 \: | \: \theta = \pi/2 \}
+\end{equation*}
 Si possono allora definire i potenziali $\vec A^\pm$ su $U^\pm$, che nella regione
 $U^0$ sono legati, come visto nella sezione \ref{sec:gaugestring}, da
 $$
-   \vec A ^+ - \vec A^- = \nabla \lambda = \nabla (2g\phi) = \frac{2g}{r\sin\theta} \, \vec u _\phi
+   \vec A ^+ - \vec A^- = \nabla \lambda = \nabla (2g\varphi ) = \frac{2g}{r\sin\theta} \, \vec u _\varphi
 $$
 Si noti che $\nabla \lambda$ è singolare in $\theta = 0,\pi$, ma nella regione $U^0$
 si ha $\theta = \pi/2$.\\
 Si calcola allora il flusso totale come:
 \begin{equation*}
    \begin{aligned}
-      \int_{S^2} d\sigma \: \nabla \times \vec A & =
-         \int_{U^+} d\sigma \: \nabla \times \vec A^+ +
-         \int_{U^-} d\sigma \: \nabla \times \vec A^-
-        = \oint_{U^0} d\vec l \: \vec A^+ -
-          \oint_{U^0} d\vec l \: \vec A^- \\
-      & = \oint_{U^0} d\vec l \: \nabla \, (2g\phi)
-        = \int_0^{2\pi} \, 2g \, \phi \, d\phi
+      \int_{S^2} \dd \sigma \: \nabla \times \vec A & =
+         \int_{U^+} \dd \sigma \: \nabla \times \vec A^+ +
+         \int_{U^-} \dd \sigma \: \nabla \times \vec A^-
+        = \oint_{U^0} \dd \vec l \: \vec A^+ -
+          \oint_{U^0} \dd \vec l \: \vec A^- \\
+      & = \oint_{U^0} \dd \vec l \: \nabla \, (2g\varphi )
+        = \int_0^{2\pi} \, 2g \, \varphi  \, \dd \varphi
         = 4g\pi
    \end{aligned}
 \end{equation*}
@@ -66,7 +67,7 @@ Si consideri una teoria di gauge con gruppo $G = U(1)$, come l'elettrodinamica c
 Se si prende come base $M = \mathbb{R}^3$, che è uno spazio contraibile, può essere
 ricoperto da un'unica carta e il potenziale di gauge $A$ è definito globalmente su $M$,
 continuo e differenziabile, e il tensore elettromagnetico $F$ è una 2-forma
-sia chiusa $DF = 0$ che esatta $F = dA$.\\
+sia chiusa $DF = 0$ che esatta $F = \dd sA$.\\
 
 Se invece lo spazio base è $M = \mathbb{R}^3 \setminus \{0\}$, che non è uno spazio
 contraibile, la situazione cambia drasticamente. $\mathbb{R}^3 \setminus \{0\}$ è
@@ -84,53 +85,54 @@ Il gruppo di gauge $U(1) = \{g = e^{i\alpha} \}$ è parametrizzato da un
 parametro $\alpha$, che è una coordinata ciclica lungo la fibra, ed è identificato
 quindi con la sfera $S^1$.\\
 Una parametrizzazione per la sfera di raggio unitario è data dalle usuali
-coordinate polari $\phi \in[0,2\pi)$ e $\theta \in [0,\pi)$,
+coordinate polari $\varphi  \in[0,2\pi)$ e $\theta \in [0,\pi)$,
 quindi si può definire una base per lo spazio tangente $T_pS^2$ come
-$\{ \frac{\partial}{\partial \theta} \: , \: \frac{\partial}{\partial \phi } \}$
-e per lo spazio cotangente $T^*_pS^2$ come $\{ d\theta \: , \: d\phi \}$.
+$\{ \partial / \partial \theta \: , \: \partial / \partial \varphi  \}$
+e per lo spazio cotangente $T^*_pS^2$ come $\{ \dd \theta \: , \: \dd \varphi  \}$.
 La derivata esterna è data da
 $$
-   d = d\theta \frac{\partial}{\partial \theta}
-     + d\phi   \frac{\partial}{\partial \phi }
+   \dd  = \dd \theta \frac{\partial}{\partial \theta}
+        + \dd \varphi    \frac{\partial}{\partial \varphi  }
 $$
 Siano $U^\pm$ emisferi nord e sud e $U^0$ l'equatore come sopra.
 Si hanno allora le due carte locali per il fibrato
 $$
-   ( U^+ \times S^1 , \{ \theta, \phi,\alpha^+ \} ) \quad \mathrm{e}\quad
-   ( U^- \times S^1 , \{ \theta, \phi,\alpha^- \} )
+   ( U^+ \times S^1 , \{ \theta, \varphi ,\alpha^+ \} ) \quad \mathrm{e}\quad
+   ( U^- \times S^1 , \{ \theta, \varphi ,\alpha^- \} )
 $$
 La 1-forma di connesione $\omega$\footnote{Si veda \ref{}}
 definita globalmente sul fibrato, portata su $U^\pm$ tramite pullback,
 dà il potenziale $A$
 $$
-   A = A(\theta)\wedge dr =  \begin{cases}
-      A^+ =  \frac{n}{2}(1 - \cos\theta ) d\phi & \mathrm{su \:} U^+ \\
-      A^- = -\frac{n}{2}(1 + \cos\theta ) d\phi & \mathrm{su \:} U^-
+   A = A(\theta)\wedge \dd r =  \begin{cases}
+      A^+ =  \frac{n}{2}(1 - \cos\theta ) \dd \varphi  & \mathrm{su \:} U^+ \\
+      A^- = -\frac{n}{2}(1 + \cos\theta ) \dd \varphi  & \mathrm{su \:} U^-
    \end{cases}
 $$
 e la 2-forma di curvatura $\Omega$\footnote{Si veda \ref{}} viene portata
 sul tensore elettromagnetico $F$
 $$
-   F = dA = \frac{n}{2} \: \sin\theta \: d\theta \wedge d\phi
+   F = \dd A = \frac{n}{2} \: \sin\theta \: \dd \theta \wedge \dd \varphi
 $$
 Osservando che i versori delle coordinate sferiche sono dati da
-$\vec u _\phi = \sin\theta d\phi$ e $ \vec u _\theta = d\theta$, si riconosce in
-$F$ la componente radiale del campo magnetico di un monopolo
-{\textcolor{red}(scriverla)}.\\
+$\vec u _\varphi  = \sin\theta \dd \varphi $ e $ \vec u _\theta = \dd \theta$,
+si riconosce in $F$ la componente radiale del campo magnetico di un monopolo
+\textcolor{red}{(scriverla)}.\\
 
-La 2-forma $F$ è chiusa ($dF = d^2A = 0$ su entrambi gli emisferi),
+La 2-forma $F$ è chiusa ($\dd F = \dd ^2A = 0$ su entrambi gli emisferi),
 analogamente al caso precedente, ma questa volta non è esatta perchè i due potenziali
 sono definiti su insiemi differenti.\\
 
 Nella regione di intersezione $U^0$ i due potenziali sono vincolati dalla condizione
 di compatibilità \ref{eq:condcompatibility}, la trasformazione di gauge
-$A^+ = A^- + n d \phi$. Si definiscono allora le funzioni di transizione \ref{}
-che sono elementi di $\Phi \in U(1)$ che collegano le coordinate delle fibre
-$e^{i\alpha^+} = \Phi e^{i\alpha^-}$. Su $U^0$ si ha fissata la coordinata polare
-a $\theta = \pi/2$ e quindi le $\Phi$ sono funzioni della sola coordinata azimutale,
-$ \Phi = e^{in\phi}$ con $n$ intero.\\
+$A^+ = A^- + n \dd  \varphi $. Si definiscono allora le funzioni di transizione
+\ref{eq:transfunctions}
+che sono elementi di $\varphi  \in U(1)$ che collegano le coordinate delle fibre
+$e^{i\alpha^+} = \varphi  e^{i\alpha^-}$. Su $U^0$ si ha fissata la coordinata polare
+a $\theta = \pi/2$ e quindi le $\varphi $ sono funzioni della sola coordinata azimutale,
+$ \varphi  = e^{in\varphi }$ con $n$ intero.\\
 
-Le funzioni di transizione $\Phi$ sono una mappa dell'equatore $S^1$ nel gruppo
+Le funzioni di transizione $\varphi $ sono una mappa dell'equatore $S^1$ nel gruppo
 di gauge $U(1)$, sono quindi cammini in $U(1)$,
 \textcolor{red}{(spiegare meglio)}
 e possono essere
@@ -143,9 +145,9 @@ relativa a $c_1$
 \begin{equation*}
 %   \begin{aligned}
       c_1   = \frac{1}{2\pi} \int_{S^2} F
-            = \frac{1}{2\pi} \left( \int_{U^+} dA^+ \int_{U^-} dA^- \right)
+            = \frac{1}{2\pi} \left( \int_{U^+} \dd A^+ \int_{U^-} \dd A^- \right)
             = \frac{1}{2\pi} \int_{S^1} (A^+-A^-)
-            = \frac{1}{2\pi} \int_0^{2\pi} nd\phi  = n
+            = \frac{1}{2\pi} \int_0^{2\pi} n\dd \varphi   = n
 %   \end{aligned}
 \end{equation*}
 La carica magnetica coincide quindi con il primo numero di Chern. Per $n=0$ il
@@ -155,12 +157,12 @@ fibrato è banale e ha la forma $S^2 \times S^1$, mentre per $n=1$ si ha il
 Si osserva infine che anche la funzione d'onda di una particella carica in un
 campo di monopolo non può essere definita globalmente.
 Si definiscono su $U^\pm$ le funzioni d'onda $\psi^\pm$ che su $U^0$ sono collegate
-da $\psi^+ = \Phi \psi^-$.
+da $\psi^+ = \varphi  \psi^-$.
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \section{Fibrato di Hopf}
 Il fibrato di Hopf descrive la sfera $S^3$ come fibrato con spazio
-base $S^2$ (parametrizzato dagli angoli $\theta,\phi$) e come fibra $S^1$ (parametrizzato,
+base $S^2$ (parametrizzato dagli angoli $\theta,\varphi $) e come fibra $S^1$ (parametrizzato,
 dal paramentro $\alpha$, come sopra).\\
 
 La sfera $S^3$ è definita da:
@@ -171,24 +173,24 @@ tali che:
    \begin{cases}
       p_1 = \cos \frac{\theta}{2} \cos \alpha \\
       p_2 = \cos \frac{\theta}{2} \sin \alpha \\
-      p_3 = \sin \frac{\theta}{2} \cos (\phi + \alpha) \\
-      p_4 = \sin \frac{\theta}{2} \sin (\phi + \alpha) \\
+      p_3 = \sin \frac{\theta}{2} \cos (\varphi  + \alpha) \\
+      p_4 = \sin \frac{\theta}{2} \sin (\varphi  + \alpha) \\
    \end{cases}
 \end{equation}
 
 Assegnata una base $ \{ \partial/\partial p_\mu \} $ dello spazio tangente
 $T_p S^3$, si può definire la metrica
 \begin{equation}
-   d s^2 = g_{\mu\nu} dx^\mu dx^\nu
-         = \frac{1}{4} d\theta^2 + d\alpha^2 + sin^2\frac{\theta}{2}d\phi^2
-         + 2\sin^2\frac{\theta}{2} d\phi d\alpha
+   \dd  s^2 = g_{\mu\nu} \dd x^\mu \dd x^\nu
+         = \frac{1}{4} \dd \theta^2 + \dd \alpha^2 + \sin^2\frac{\theta}{2}\dd \varphi ^2
+         + 2\sin^2\frac{\theta}{2} \dd \varphi  \dd \alpha
 \end{equation}
 La proiezione $\pi : S^3 \to S^2$ (mappa di Hopf) è defnita nel modo seguente
 $\vec p = (p_1,p_2,p_3,p_4) \mapsto \vec x = (x,y,z)$
 \begin{equation}\label{eq:hopfmap}
    \begin{cases}
-      x = 2(p_1 p_3 + p_2 p_4)          = \sin\theta \cos\phi \\
-      y = 2(p_1 p_4 - p_2 p_3)          = \sin\theta \sin\phi \\
+      x = 2(p_1 p_3 + p_2 p_4)          = \sin\theta \cos\varphi  \\
+      y = 2(p_1 p_4 - p_2 p_3)          = \sin\theta \sin\varphi  \\
       z = p_1^2 + p_2^2 - p_3^2 - p_4^2 = \cos\theta          \\
    \end{cases}
 \end{equation}
@@ -198,26 +200,26 @@ della sfera $S^2$.\\
 
 La sezione del fibrato può essere presa fissando un particolare valore di $\alpha$.
 Si richiede che la metrica sulla sfera $S^3$ si riduca alla tradizionale metrica
-$ds^2 = d\theta^2 + \sin^2\theta d\phi$ sulla sfera $S^2$ sia nell'emisfero
+$\dd s^2 = \dd \theta^2 + \sin^2\theta \dd \varphi $ sulla sfera $S^2$ sia nell'emisfero
 nord $U^+$($ \theta/2 \mapsto \theta $) che nell'emisfero sud $U^-$
-($\pi/2 - \theta/2 \mapsto \theta $). Si vede immediatamente da \ref{} che la
-condizione è verificata per $\alpha = 0$ e $\alpha = -\phi$, rispettivamente.
+($\pi /2 - \theta /2 \mapsto \theta $). Si vede immediatamente da \ref{eq:hopfmap} che la
+condizione è verificata per $\alpha = 0$ e $\alpha = -\varphi $, rispettivamente.
 Con questa scelta, la forma di connessione globale $\omega$ su $S^3$
 viene mappata dal pullback della sezione appena descritta nella forma locale $A$
-come prima \ref{}\\
+come prima \ref{eq:hopfmap}\\
 
-Le funzioni di transizione $\Phi$ sono definite nella regione di transizione
+Le funzioni di transizione $\phi $ sono definite nella regione di transizione
 $U^0 = U^+ \cap U^-$, l'equatore, come mappe $S^1 \to S^1$
 \begin{equation}
    \begin{aligned}
-  \Phi_\pm & = \Phi_+ \circ \Phi_- ^{-1}
+  \phi _\pm & = \phi _+ \circ \phi _- ^{-1}
              = \frac{p_3 +  i \, p_4}{p_1 + i \, p_2}
                 \sqrt{ \frac{p_1^2 + p_2^2}{p_3^2 + p_4^2} }
-             = e^{i\phi} \\
-  \Phi_\mp & = \Phi_- \circ \Phi_+ ^{-1}
+             = e^{i\varphi } \\
+  \phi _\mp & = \phi _- \circ \phi _+ ^{-1}
              = \frac{p_1 + i \, p_2}{p_3 +  i \, p_4}
                   \sqrt{ \frac{p_3^2 + p_4^2}{p_1^2 + p_2^2}}
-             = e^{-i\phi}
+             = e^{-i\varphi }
    \end{aligned}
 \end{equation}
 
@@ -225,20 +227,21 @@ $U^0 = U^+ \cap U^-$, l'equatore, come mappe $S^1 \to S^1$
 Si definisce allora la 1-forma di connessione $\omega$
 \begin{equation}
    \begin{aligned}
-      \omega & = p_1 d p_2 - p_2 d p_1 + p_3 d p_4 - p_4 d p_3 \\
-             & = d\alpha + \frac{1}{2}(1 - cos\theta) d \phi
+      \omega & = p_1 \dd  p_2 - p_2 \dd  p_1 + p_3 \dd  p_4 - p_4 \dd  p_3 \\
+             & = \dd \alpha + \frac{1}{2}(1 - cos\theta) \dd  \varphi
    \end{aligned}
 \end{equation}
 
 e la curvatura $\Omega$
 $$
-   \Omega = d \omega = 2 ( d p_1 \wedge d p_2 + d p_3 \wedge d p_4)
-          = \frac{1}{2} \sin\theta \, d\theta \wedge d\phi
+   \Omega = \dd  \omega = 2 ( \dd  p_1 \wedge \dd  p_2 + \dd  p_3 \wedge \dd  p_4)
+          = \frac{1}{2} \sin\theta \dd \theta \wedge \dd \varphi
 $$
 Questa forma è chiusa ed esatta su $S^3$ e si nota subito che corrisponde a $1/2$
 della forma di volume della sfera $S^2$\footnote{
-che è appunto $dV = \sin\theta d\theta \wedge d\phi$}. Si ha allora, integrando
-su $S^2$ come sottospazio di $S^3$\footnote{abuso di notazione}
+   che è appunto $\dd V = \sin\theta \dd \theta \wedge \dd \varphi $}.
+Si ha allora, integrando su $S^2$ come sottospazio di $S^3$\footnote{
+   abuso di notazione}
 $$
    \int_{S^2} \Omega = 2\pi
 $$

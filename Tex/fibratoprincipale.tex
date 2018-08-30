@@ -40,7 +40,7 @@ Sia $A \in \mathfrak{g}$
 Richiamando la definizione \ref{def:inducedvectfield}, si definisce il vettore
 $A^\# \in T_u(P)$ dall'azione su una generica funzione $f \in C\infty(P)$
 $$
-   (A^\#)_u [f] := \left. \frac{d}{dt} f(u \exp(tA)) \right|_{t=0}
+   (A^\#)_u [f] := \left. \frac{\dd}{\dd t} f(u \exp(tA)) \right|_{t=0}
 $$
 
 Analogamente a quanto visto per i gruppi di matrici, se $A$ è nell'algebra di Lie
@@ -48,7 +48,7 @@ $g = \exp(t_0 A)$ per $t_0$ fissato è un elemento del gruppo di Lie $G$.
 Al variare di $t$, $g_t = \exp(tA)$ è una curva in $G$, quindi $u = \exp(tA) = ug_t$
 è una curva lungo la fibra in $p = \pi(u)$ in quanto trasla $u$ per azione
 destra di $G$. La funzione $f$ è quindi ristretta alla curva $ug_t$. \\
-Allora  l'espressione a destra indica il vettore ($\frac{d}{dt}$) tangente alla curva
+Allora  l'espressione a destra indica il vettore ($\dd / \dd t$) tangente alla curva
 (si pensi al vettore velocità istantanea) $ug_t$ all'istante $t=0$, cioè nel punto
 $u\exp(0A) = ue = u$.\\
 Il significato dell'espressione a destra è esattamente definire
@@ -227,7 +227,7 @@ può identificare la derivata covariante $D$ con la derivata esterna $d$.\\
 Se la 1-forma $\omega$ trasforma come un vettore $\omega \mapsto g\omega$ per
 $g \in G$, allora anche la derivata covariante trasforma $ D\omega \mapsto
 g D\omega $. Si definisce allora:
-   $$ D\omega := d\omega + A \wedge \omega $$
+   $$ D\omega := \dd\omega + A \wedge \omega $$
 dove $A$ è la 1-forma definita in precedenza, che ripetta la legge di
 trasformazione \ref{eq:condcompatibility}. In maniera analoga si può definire la
 derivata covariante di 1-forme di connessione che trasformano come tensori o sono

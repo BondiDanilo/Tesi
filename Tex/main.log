@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  29 AUG 2018 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  30 AUG 2018 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -657,9 +657,9 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 \c@example=\count139
 \c@axiom=\count140
 \tindent=\skip50
-Package hyperref Info: Option `colorlinks' set `true' on input line 74.
-Package hyperref Info: Option `linktocpage' set `true' on input line 74.
-Package hyperref Info: Option `pageanchor' set `true' on input line 74.
+Package hyperref Info: Option `colorlinks' set `true' on input line 77.
+Package hyperref Info: Option `linktocpage' set `true' on input line 77.
+Package hyperref Info: Option `pageanchor' set `true' on input line 77.
 ) (./main.aux
 
 LaTeX Warning: Label `label' multiply defined.
@@ -781,14 +781,14 @@ Package pdftex.def Info: /home/dan/Desktop/UNI/TESI/Images/logo.jpg used on inp
 ut line 14.
 (pdftex.def)             Requested size: 154.35889pt x 165.32658pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--29
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/dan/Desktop/UNI/TESI
-/Images/logo.jpg>] (./main.toc
+/Images/logo.jpg>] [2] (./main.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -803,12 +803,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `main.toc'.
 
 )
-(./monopolo_dirac.texpdfTeX warning (ext4): destination with the same identifie
-r (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Monopolo di Dirac} [1
+(./monopolo_dirac.tex [3
 
 ]
 Capitolo 1.
@@ -822,7 +817,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
  []
 
-[2
+[4
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 94--105
@@ -830,44 +825,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--105
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--116
+Underfull \hbox (badness 10000) in paragraph at lines 111--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--148
+Underfull \hbox (badness 10000) in paragraph at lines 142--149
 
  []
 
-[3]) (./calcoli.tex
-Underfull \hbox (badness 10000) in paragraph at lines 191--1
+[5]) (./calcoli.tex
+Underfull \hbox (badness 10000) in paragraph at lines 192--1
 
  []
 
-[4]
-Overfull \hbox (13.3524pt too wide) detected at line 72
-\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = ([] \OML/cmm/m/it/10 ^^R [] ^^^u[] \OT1/
-cmr/m/n/10 + [] \OML/cmm/m/it/10 ^^R [] ^^^u[] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm
-/m/it/10 ^^Ru[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 a\OT1/cm
-r/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OMS/cmsy/m/n/
-10 r\OML/cmm/m/it/10 ^^^ \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a\OT1/cmr/m/n/10 (\
-OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g [] \OT1/cmr/m/n/10 = 0
+[6]
+Overfull \hbox (16.85237pt too wide) detected at line 64
+\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = ([] \OML/cmm/m/it/10 ^^R [] 'u[] \OT1/cm
+r/m/n/10 + [] \OML/cmm/m/it/10 ^^R [] 'u[] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm/m/i
+t/10 ^^Ru[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 a\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OMS/cmsy/m/n/10 r
+\OML/cmm/m/it/10 ' \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a\OT1/cmr/m/n/10 (\OML/cm
+m/m/it/10 ^^R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g [] \OT1/cmr/m/n/10 = 0
  []
 
-[5]
-Overfull \hbox (0.68169pt too wide) in paragraph at lines 140--144
+[7]
+Overfull \hbox (0.68169pt too wide) in paragraph at lines 132--136
 []\T1/cmr/m/n/10 Il se-con-do in-te-gra-le ha con-tri-bu-to non nul-lo so-la-me
 n-te sul-la fac-cia su-pe-rio-re del ci-lin-dro $\OML/cmm/m/it/10 C \OT1/cmr/m/
 n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/
 10 ) \OMS/cmsy/m/n/10 2
  []
 
-) (./gauge.tex [6]
+) (./gauge.tex [8]
 Capitolo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -891,136 +886,126 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-) (./monopolo_abeliano.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--1
-
- []
-
-[7
+) (./monopolo_abeliano.tex [9
 
 ]
 Capitolo 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--14
+Underfull \hbox (badness 10000) in paragraph at lines 2--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--63
+Underfull \hbox (badness 10000) in paragraph at lines 59--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
-[8
+[10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 115--120
+Underfull \hbox (badness 10000) in paragraph at lines 116--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--124
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--132
+Underfull \hbox (badness 10000) in paragraph at lines 126--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--140
+Underfull \hbox (badness 10000) in paragraph at lines 135--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--154
+Underfull \hbox (badness 10000) in paragraph at lines 152--156
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 162--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--198
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 164--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--208
+Underfull \hbox (badness 10000) in paragraph at lines 196--200
 
  []
 
-[10]) (./monopolo_non_abeliano.tex [11]
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--210
+
+ []
+
+[12]) (./monopolo_non_abeliano.tex [13]
 Capitolo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
+Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--75
+Underfull \hbox (badness 10000) in paragraph at lines 7--17
 
  []
 
-[12
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
+
+ []
+
+[14
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--135
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--154
-
- []
-
-) (./monopolo_thooft.tex [13]
+) (./monopolo_thooft.tex
 LaTeX Font Info:    Try loading font information for U+euf on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
@@ -1035,12 +1020,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 115--123
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 124--129
 
  []
@@ -1065,22 +1050,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 227--17
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--176
 
  []
 
-(./appendice.tex (./topologia.tex [16]
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
+
+ []
+
+[17])
+Underfull \hbox (badness 10000) in paragraph at lines 230--17
+
+ []
+
+(./appendice.tex (./topologia.tex [18]
 Appendice A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--25
@@ -1102,60 +1097,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
  []
 
-[17
+[19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+) (./omotopia.tex [20]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--121
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-) (./omotopia.tex [18]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-[19]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--145
+Underfull \hbox (badness 10000) in paragraph at lines 140--147
 
  []
 
-) (./varieta.tex
+) (./varieta.tex [22]
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-[20]
+
 Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--74
+Underfull \hbox (badness 10000) in paragraph at lines 67--75
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--109
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
@@ -1164,7 +1154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -1174,7 +1164,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--16
 
  []
 
-[22]
+
 Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
@@ -1214,7 +1204,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
 
-
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
@@ -1224,82 +1214,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
 
-[23]
+
 Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
 
-Overfull \hbox (12.93364pt too wide) in paragraph at lines 130--130
+Overfull \hbox (16.09001pt too wide) in paragraph at lines 131--131
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--164
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 165--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--200
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--210
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--224
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 238--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
-
- []
-
-) (./gruppo.tex
-Underfull \hbox (badness 10000) in paragraph at lines 272--1
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
 
 [26]
+Underfull \hbox (badness 10000) in paragraph at lines 161--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 217--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+
+ []
+
+) (./gruppo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 273--1
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
@@ -1309,7 +1289,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
-
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -1324,7 +1304,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--124
 
  []
 
-[27]
+
 Underfull \hbox (badness 10000) in paragraph at lines 125--128
 
  []
@@ -1349,27 +1329,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
-
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--193
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 201--204
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--250
+Underfull \hbox (badness 10000) in paragraph at lines 202--205
 
  []
 
-) (./fibrati.tex [29]
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--251
+
+ []
+
+) (./fibrati.tex [31]
 Underfull \hbox (badness 10000) in paragraph at lines 35--45
 
  []
@@ -1394,7 +1374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
-
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
@@ -1404,7 +1384,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--101
 
  []
 
-[30]
+
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
@@ -1434,7 +1414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--160
 
  []
 
-) (./fibratoprincipale.tex
+[33]) (./fibratoprincipale.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
@@ -1444,7 +1424,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
-[31]
+
 Underfull \hbox (badness 10000) in paragraph at lines 18--27
 
  []
@@ -1469,17 +1449,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--62
 
  []
 
-
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 80--96
 
  []
 
-[32]
+
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
@@ -1494,12 +1474,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
-[33]
+
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-) (./chern.tex
+[36]) (./chern.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -1509,7 +1489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-[34]
+
 Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
@@ -1524,15 +1504,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
 
-) (./notazione.tex [35]
+[37]) (./notazione.tex [38]
 Appendice B.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
 
  []
 
@@ -1541,11 +1521,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-)) (./bibliografia.tex [36
+[39
 
-])
+])) (./bibliografia.tex [40])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
- [37
+ [41
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.label}) 
 has been already used, duplicate ignored
@@ -1570,52 +1550,50 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9018 strings out of 493029
- 122493 string characters out of 6136234
- 236382 words of memory out of 5000000
- 12090 multiletter control sequences out of 15000+600000
- 25838 words of font info for 64 fonts, out of 8000000 for 9000
+ 9036 strings out of 493029
+ 122644 string characters out of 6136234
+ 237448 words of memory out of 5000000
+ 12096 multiletter control sequences out of 15000+600000
+ 26525 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,18n,30p,810b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
-st, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1000.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (38 pages, 770234 bytes).
+ 31i,18n,30p,810b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1000.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+rm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfti1440.pfb>
+Output written on main.pdf (41 pages, 792563 bytes).
 PDF statistics:
- 876 PDF objects out of 1000 (max. 8388607)
- 791 compressed objects within 8 object streams
- 261 named destinations out of 1000 (max. 500000)
+ 897 PDF objects out of 1000 (max. 8388607)
+ 807 compressed objects within 9 object streams
+ 272 named destinations out of 1000 (max. 500000)
  342 words of extra memory for PDF output out of 10000 (max. 10000000)
 

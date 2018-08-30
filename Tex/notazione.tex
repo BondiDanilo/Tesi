@@ -1,21 +1,30 @@
 \chapter{Notazione}
 %
-\textbf{Coordinate polari:}\\
+\subsubsection{Coordinate polari:}
  $\theta \in[0,\pi]$ Angolo polare\\
- $\phi \in [0,2\pi]$ Angolo azimutale\\
+ $\varphi \in [0,2\pi]$ Angolo azimutale\\
  $r \in (0,\infty)$ Raggio\\
 
-\textbf{Versori:}\\
+\subsubsection{Versori:}
 $\vec u_x = (1,0,0)$ Versore asse x \\
 $\vec u_y = (0,1,0)$ Versore asse y \\
 $\vec u_z = (0,0,1)$ Versore asse z \\
 
 $\vec u _\theta = (,,)$ Versore angolo polare \\
-$\vec u _\phi = (-x,y,0)$ Versore angolo azimutale \\
+$\vec u _\varphi = (-x,y,0)$ Versore angolo azimutale \\
 $\vec u _r = (,,) = \frac{\vec r}{r}$ Versore radiale \\
 
+\begin{equation}\label{eq:versors}
+   \begin{cases}
+       \vec u_r = \sin\theta \cos\varphi \vec u _x
+                + \sin\theta \sin\varphi \vec u _y + \cos\theta \vec u _z\\
+       \vec u_\theta = \cos\theta \cos\varphi \vec u _x +
+                       \cos\theta \sin\varphi \vec u _y - \sin\theta \vec u _z\\
+       \vec u_\varphi = -\sin\varphi \vec u _x + \cos\theta \vec u _y
+   \end{cases}
+\end{equation}
 
-\textbf{Funzioni:}\\
+\subsubsection{Funzioni:}
 $\Theta$ funzione di Heaviside
 $$
     \Theta(x) = \begin{cases}
@@ -23,8 +32,51 @@ $$
        1 & x > 0
     \end{cases}
 $$
-Aggiungere i vari gruppi di matrici e le sfere $S^n$\\
-Matrici di Pauli
+
+\subsubsection{Spazi topologici}
+$S^n = \{ x \in \mathbb{R}^{n+1} \tc |x| = 1 \}$: Sfera n-dimensionale di raggio unitario.
+
+\subsubsection{Gruppi di matrici}
+\begin{itemize}
+   \item $GL(n,\mathbb{F}) = \{M \in Mat(n,\mathbb{F}) \tc detM \neq 0)\}$\\
+      \ttab Gruppo Lineare Generale: Matrici $n \times n$ sul campo $\mathbb{F}$,
+      invertibili.
+
+   \item $SL(n,\mathbb{F}) = \{ M \in GL(n,\mathbb{F}) \tc det(M) = 1)\}$\\
+      \ttab Gruppo Lineare Speciale: Matrici a determinante 1.
+
+   \item $O(n) = \{ M \in GL(n,\mathbb{R}) \tc  M^T M = M M^T = 1 \}$\\
+      \ttab Gruppo Ortogonale: Matrici ortogonali.
+
+   \item $SO(n) = \{ M \in O(n)\tc det(M) = 1  \}$\\
+      \ttab Gruppo Ortogonale Speciale: Matrici ortogonali a determinante 1.
+
+   \item $U(n) = \{ M \in GL(n,\mathbb{C})\tc M^dagger M = M M^\dagger = 1\}$\\
+      \ttab Gruppo Unitario: Matrici unitarie.
+
+   \item $SU(n) = \{ M \in U(n)\tc det(M) = 1  \}$\\
+      \ttab Gruppo Unitario Speciale: Matrici unitarie a determinante 1.
+\end{itemize}
+
+Le matrici di $SU(2)$ hanno la forma
+\begin{equation}\label{eq:matSU2}
+   U =
+        \begin{pmatrix}
+          z^* & w^* \\
+          -w  & z   \\
+        \end{pmatrix}
+     =
+       \begin{pmatrix}
+          \cos \frac{\theta}{2} e^{-i\alpha} & \sin \frac{\theta}{2} e^{-i(\varphi + \alpha)} \\
+         -\sin \frac{\theta}{2} e^{i(\varphi + \alpha)} & \cos \frac{\theta}{2} e^{i\alpha}  \\
+       \end{pmatrix}
+\end{equation}
+Dove $z,w \in \mathbb{C}$ tali che $zz^* + ww^* = 1$
+(affinchè $U^\dagger U = UU^\dagger = 1$), $\theta,\varphi$ sono gli angoli delle
+coordinate polari e $\alpha$ è il parametro ciclico del gruppo $U(1)$, cioè
+$g \in U(1) \to g = e^{i\alpha}$
+
+\subsubsection{Matrici di Pauli}
 \begin{equation}\label{eq:paulimatrix}
    \begin{aligned}
       \sigma_1 &= \begin{pmatrix} 0 & 1  \\ 1 & 0  \end{pmatrix}&
@@ -32,3 +84,4 @@ Matrici di Pauli
       \sigma_3 &= \begin{pmatrix} 1 & 0  \\ 0 & -1 \end{pmatrix}&
    \end{aligned}
 \end{equation}
+\subsubsection{(pseudo)Tensore di Levi-Civita}

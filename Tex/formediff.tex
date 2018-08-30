@@ -24,7 +24,7 @@ Si può facilmente dimostrare la seguente
          a_{i_1,\dots, i_r}^{j_1,\dots,j_s}
          \frac{\partial}{\partial x^{i_1}} \otimes \dots
          \otimes \frac{\partial}{\partial x^{i_r}}
-         \otimes dx^{j_1} \otimes \dots \otimes dx^{j_s}
+         \otimes \dd x^{j_1} \otimes \dots \otimes \dd x^{j_s}
    $$
 \end{proposition}
 Ovvero le basi di $T_p(M)$ e $T_p^*(M)$ inducono una base per $\mathcal{T}^r(T_p(M))$
@@ -81,7 +81,7 @@ Analogamente alla \ref{prop:base1}, vale anche
    allora esistono le funzioni $a_{i_1,\dots i_r}$ tali che in coordinate locali\\
    $$
       \omega = \sum_{(i_1,\dots, i_r)} a_{i_1,\dots, i_r}
-         dx^{i_1} \wedge \dots \wedge dx^{i_r}
+         \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r}
    $$
 \end{proposition}
 
@@ -103,37 +103,38 @@ $\omega \in \Lambda^r(p)$ associa la (r+1)-forma $d\omega \in \Lambda^{r+1}(p)$,
 definita in coordinate locali da\\
 $$
    \omega = \sum_{(i_1,\dots, i_r)} a_{i_1,\dots, i_r}
-      dx^{i_1} \wedge \dots \wedge dx^{i_r} \to
-   d\omega = \sum_{(i_1,\dots, i_r)} da_{i_1,\dots, i_r}\wedge
-      dx^{i_1} \wedge \dots \wedge dx^{i_r}
+      \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r} \to
+   \dd \omega = \sum_{(i_1,\dots, i_r)} \dd a_{i_1,\dots, i_r}\wedge
+      \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r}
 $$
 ossia
 $$
-   d : \Lambda^r(p) \to \Lambda^{r+1}(p) \quad \omega \mapsto
-   d\omega = \sum_{(i_1,\dots, i_r,k)} \frac {\partial a_{i_1,\dots, i_r}}{\partial x^k} dx^k
-   \wedge dx^{i_1} \wedge \dots \wedge dx^{i_r}
+   \dd : \Lambda^r(p) \to \Lambda^{r+1}(p) \quad \omega \mapsto
+   \dd \omega = \sum_{(i_1,\dots, i_r,k)} \frac {\partial a_{i_1,\dots, i_r}}
+   {\partial x^k} \dd x^k \wedge \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r}
 $$
-Dall'antisimmetria del prodotto wedge discende immediatamente che $d^2\omega = d(d\omega) = 0$
+Dall'antisimmetria del prodotto wedge discende immediatamente che $\dd ^2\omega
+= \dd (\dd \omega) = 0$
 \begin{equation*}
    \begin{split}
-      d^2\omega & = d \left( \sum_{(i_1,\dots, i_r,k)}
-            \frac {\partial a_{i_1,\dots, i_r}}{\partial x^k} dx^k
-               \wedge dx^{i_1} \wedge \dots \wedge dx^{i_r} \right)
+      \dd ^2\omega & = \dd  \left( \sum_{(i_1,\dots, i_r,k)}
+            \frac {\partial a_{i_1,\dots, i_r}}{\partial x^k} \dd x^k
+               \wedge \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r} \right)
           = \sum_{(i_1,\dots, i_r,k)}
-            d\left( \frac {\partial a_{i_1,\dots, i_r}}{\partial x^k} \right)
-               \wedge dx^k \wedge dx^{i_1} \wedge \dots \wedge dx^{i_r} \\
+            \dd \left( \frac {\partial a_{i_1,\dots, i_r}}{\partial x^k} \right)
+               \wedge \dd x^k \wedge \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r} \\
        & = \sum_{(i_1,\dots, i_r,k,j)}
             \frac {\partial^2 a_{i_1,\dots, i_r}}{\partial x^k \partial x^j}
-               \wedge dx^j \wedge dx^k \wedge dx^{i_1} \wedge \dots \wedge dx^{i_r}
+               \wedge \dd x^j \wedge \dd x^k \wedge \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r}
          = 0
    \end{split}
 \end{equation*}
 in quanto contrazione del termine simmetrico $\frac {\partial^2 a_{i_1,\dots, i_r}}
-{\partial x^k \partial x^j}$ e del termine antisimmetrico $dx^j \wedge dx^k $\\
+{\partial x^k \partial x^j}$ e del termine antisimmetrico $\dd x^j \wedge \dd x^k $\\
 
 Si definisce forma \textbf{esatta} una r-forma $\omega$ se esiste una
-(r-1)-forma $\alpha$ che verifica $\omega = d\alpha$\\
-Si definisce forma \textbf{chiusa} una r-forma $\omega$ tale che $d\omega = 0$.\\
+(r-1)-forma $\alpha$ che verifica $\omega = \dd \alpha$\\
+Si definisce forma \textbf{chiusa} una r-forma $\omega$ tale che $\dd \omega = 0$.\\
 Segue immediatamente che ogni forma esatta è chiusa. L'inverso è vero solo localmente.
 \begin{lemma}{(di Poincarè)}
     Sia $M \subset \mathbb{R}^n$ una palla aperta. Una r-forma $\omega$ chiusa
@@ -151,12 +152,12 @@ Una trattazione rigorosa richiederebbe l'introduzione del concetto di
 Si vedano \cite{boothby},\cite{nakahara} per una trattazione rigorosa. \\
 In maniera intuitiva, sia $(U,\phi)$ una carta della
 varietà $M$, dove $U$ intorno del punto $p \in M$, e $R = \phi(U)$ e
-$\omega = dx^1 \wedge \dots \wedge dx^n$ una n-forma.
+$\omega = \dd x^1 \wedge \dots \wedge \dd x^n$ una n-forma.
 Sia $f : U \to \mathbb{R}$ una funzione integranda.
-Si definisce automaticamente la misura di integrazione $d\mu = dx^1 \dots dx^n$.
+Si definisce automaticamente la misura di integrazione $\dd \mu = \dd x^1 \dots \dd x^n$.
 e si può dare senso all'espressione in coordinate locali:
 $$
-   \int_U f\omega = \int_R f(x_1,\dots,x_n) dx^1 \dots dx ^n
+   \int_U f\omega = \int_R f(x_1,\dots,x_n) \dd x^1 \dots \dd x ^n
 $$
 Si vuole poi ripetere questa operazione per tutte le carte di un atlante dato e
 "incollare" assieme i risultati in maniera che l'integrale sulla varietà sia uguale
@@ -164,10 +165,10 @@ alla somma degli integrali sulle singole carte.\\
 
 Si osserva che è possibile integrare solamente n-forme su varietà di dimensione $n$
 perchè le forme con $r>n$ sono tutte nulle, e gli spazi di dimensione $r<n$ hanno
-misura nulla in $\mathbb{R}^n$.\\
+misura nulla in $\mathbb{R}^n$.
 
-\textbf{Hodge star}:\\
-\textbf{Teorema di Stokes}:\\
+\subsubsection{Teorema di Stokes}
+\textcolor{red}{(da scrivere)}
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \subsection{Varietà Riemanniane}
@@ -190,7 +191,7 @@ misura nulla in $\mathbb{R}^n$.\\
 
 Data una carta $(U,\phi)$ di $M$ con coordinate $\{x^\mu\}$ il tensore $g$ può
 essere scritto come
-$$ g_p = g_{\mu\nu}(p) dx^\mu dx^\nu =: ds^2$$
+$$ g_p = g_{\mu\nu}(p) \dd x^\mu \dd x^\nu =: \dd s^2$$
 Dove $g_{\mu\nu}(p)$ può essere considerato come la $\mu\nu$-esima entrata di una matrice.\\
 Il numero $(p,n)$ di autovalori positivi $p$ e negativi $n$ è detto \emph{indice} della
 metrica. Se $n=1$ la metrica è detta Lorentziana.\\

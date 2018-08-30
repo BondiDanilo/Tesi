@@ -27,8 +27,8 @@ $B = \nabla \times \vec A = g \frac{\vec r}{r^3}$.\\
 Come calcolato nella sezione \ref{sec:dirac_potential} un potenziale che soddisfa
 questa relazione è:
 \begin{equation}\label{eq:diracpotential}
-  \vec A = g(1 + \cos\theta)\left( \frac{\sin\phi}{r\sin\theta},
-     \frac{-\cos\phi}{r\sin\theta},0 \right)
+  \vec A = g(1 + \cos\theta)\left( \frac{\sin\varphi}{r\sin\theta},
+     \frac{-\cos\varphi}{r\sin\theta},0 \right)
 \end{equation}
 Si presenta immediatamente il seguente problema. Se si ammette l'esistenza di una carica
 magnetica, il teorema di Gauss garantsce che $\nabla \cdot \vec B = 4\pi g\delta^{(3)}(\vec r)$,
@@ -37,44 +37,44 @@ la carica magnetica $g$ è pari a $4\pi g$, in contraddizione con
 $\nabla \cdot \vec B = \nabla \cdot (\nabla \times \vec A) = 0$, che genera un
 flusso nullo.
 \begin{equation}\label{eq:B4gpi}
-   \int_S d\sigma \vec B = \int_V d^3 x \nabla \cdot \vec B = 4g\pi
+   \int_S \dd\sigma \vec B = \int_V d^3 x \, \nabla \cdot \vec B = 4g\pi
 \end{equation}
 \begin{equation}
-   \int_S d\sigma \vec B = \int_V d^3 x \nabla \cdot \vec B
-      = \int_V d^3 x \nabla \cdot (\nabla \times \vec A) = 0
+   \int_S d\sigma  \vec B = \int_V d^3 x \, \nabla \cdot \vec B
+      = \int_V d^3 x \, \nabla \cdot (\nabla \times \vec A) = 0
 \end{equation}
 Il potenziale $\vec A$ presenta però delle discontinuità per $\sin\theta = 0$.
 Si verifica immediatamente che $\theta = 0$ è un punto singolare, mentre $\vec A$
 è continuo in $\theta = \pi$. Il calcolo fatto non è quindi corretto lungo l'asse z
 positivo ($\theta = 0$), e occorre regolarizzare il potenziale.\\
-Siano $\epsilon > 0$  e $r_\epsilon = \sqrt{r^2 + \epsilon^2}$. Si definiscono ora
+Siano $\varepsilon > 0$  e $r_\varepsilon = \sqrt{r^2 + \varepsilon^2}$. Si definiscono ora
 %
 \begin{align*}
-   \vec A_\epsilon &:= \frac{g}{r_\epsilon}\frac{1}{r_\epsilon - z} \vec u _\phi  \\
-   \vec B _\epsilon & = \nabla \times \vec A_\epsilon = \frac{g}{r_\epsilon^3}\vec r
-      - g\epsilon^2 \left( \frac{1}{r_\epsilon^3(r_\epsilon - z)}
-         + \frac{1}{r_\epsilon^2(r_\epsilon-z)^2} \right)\vec u _z
+   \vec A_\varepsilon &:= \frac{g}{r_\varepsilon}\frac{1}{r_\varepsilon - z} \vec u _\varphi  \\
+   \vec B _\varepsilon & = \nabla \times \vec A_\varepsilon = \frac{g}{r_\varepsilon^3}\vec r
+      - g\varepsilon^2 \left( \frac{1}{r_\varepsilon^3(r_\varepsilon - z)}
+         + \frac{1}{r_\varepsilon^2(r_\varepsilon-z)^2} \right)\vec u _z
 \end{align*}
 %
-e si vuole definire $\tilde{\vec B} := \lim_{\epsilon \to 0} \vec B _\epsilon$
+e si vuole definire $\tilde{\vec B} := \lim_{\varepsilon \to 0} \vec B _\varepsilon$
 $$
-   \lim_{\epsilon \to 0} \vec B_\epsilon = \lim_{\epsilon \to 0} \left[
-      \frac{g}{r^3}\vec r - 2g\epsilon^2 \left( \frac{1}{r^2(x^2 + y^2 + \epsilon^2)}
-            + \frac{2}{(x^2 + y^2 + \epsilon^2)^2} \right) \Theta(z) \vec u _z \right]
+   \lim_{\varepsilon \to 0} \vec B_\varepsilon = \lim_{\varepsilon \to 0} \left[
+      \frac{g}{r^3}\vec r - 2g\varepsilon^2 \left( \frac{1}{r^2(x^2 + y^2 + \varepsilon^2)}
+            + \frac{2}{(x^2 + y^2 + \varepsilon^2)^2} \right) \Theta(z) \vec u _z \right]
 $$
 dove $\Theta(z)$ è la funzione di Heaviside per l'asse z.\\
 Si vuole ora valutare il flusso del campo magnetico regolarizzato $\tilde{\vec B}$
 attraverso una superficie chiusa $S$ centrata nell'origine e di raggio unitario, supponendo
 che sia possibile scambiare il limite e l'integrale
 $$
-  \int_S \mathrm{d} \sigma \lim_{\epsilon \to 0} \vec B_\epsilon = \lim_{\epsilon \to 0} \int_S \mathrm{d}\sigma \vec B_\epsilon
+  \int_S \mathrm{d}{\sigma} \lim_{\varepsilon \to 0} \vec B_\varepsilon = \lim_{\varepsilon \to 0} \int_S \mathrm{d}\sigma \vec B_\varepsilon
 $$
 Si veda la sezione \ref{sec:flusso_regolarizzato} per il calcolo esplicito.
-L'unico termine in $\epsilon$ che porta contributo al flusso è il secondo e si
+L'unico termine in $\varepsilon$ che porta contributo al flusso è il secondo e si
 ha:
 $$
-   \int_S \mathrm{d}\sigma \tilde{\vec B}
-      = \int_S \mathrm{d}\sigma \left( \frac{g}{r^3}\vec r
+   \int_S \dd\sigma \tilde{\vec B}
+      = \int_S \dd \sigma \left( \frac{g}{r^3}\vec r
          - 4\pi g \delta(x)\delta(y)\Theta(z) \vec u _z \right)
       = 4\pi g - 4\pi g = 0
 $$
@@ -100,43 +100,44 @@ configurazione fisica.\\
 Naturalmente la scelta del sistema di coordinate per la descrizione del monopolo
 è arbitraria, quindi il primo approccio è di richiedere che tutte le configurazioni
 possibili della stringa ($\theta$) siano fisicamente equivalenti.
-Ossia si vogliono trovare le trasformazioni tra le configurazioni di stringa e
-le condizioni che rendano tali configurazioni identiche.\\
+Ossia, si vogliono trovare le trasformazioni tra le varie configurazioni di stringa,
+e le condizioni che rendano tali configurazioni identiche.\\
 
 Si ricorda che l'elettrodinamica è invariante per trasformazioni del potenziale
-vettore del tipo
+vettore del tipo\footnote{$e =$ carica dell'elettrone}
 \begin{equation}
-   \vec A \mapsto \vec A' = A + \nabla \lambda (\vec r) = A + \frac{i}{e
-   \footnote{Carica dell'elettrone} } U^{-1}\nabla U
+   \vec A \mapsto \vec A' = A + \nabla \lambda (\vec r) = A + \frac{i}{e}
+    U^{-1}\nabla U
 \end{equation}
 dove $U(\vec r) = \exp(ie\lambda(\vec r))$ e $\lambda$ è un'arbitraria funzione
 delle coordinate. Una trasformazione di questo tipo è detta
 \textbf{trasformazione di gauge}  del gruppo $U(1)$, in quanto $U$ appartiene
-al gruppo $U(1)$ delle matrici unitarie $1x1$ a coefficienti complessi.\\
+  al gruppo $U(1)$ delle matrici unitarie $1 \times 1$ a coefficienti complessi
+  (semplicemente, la moltiplicazione per un fattore di fase).\\
 
 Si vuole trovare la trasformazione di gauge che risolve la singolarità.\\
 
 Si consideri il flusso del campo magnetico attraverso una superficie chiusa $S$
 prima e dopo la trasformazione di gauge e si valuti quale è la sua variazione
 $$
-   \int_S d\sigma B' - \int_S d\sigma B = \int_S d\sigma (\nabla \times \nabla \lambda)
-      = \oint_{\partial S} d\vec l \cdot \nabla \lambda
+   \int_S \dd\sigma B' - \int_S \dd\sigma B = \int_S \dd\sigma (\nabla \times \nabla \lambda)
+      = \oint_{\partial S} \dd\vec l \cdot \nabla \lambda
 $$
 Il flusso non cambia solo se la funzione $\nabla \lambda$ è periodica $\nabla
-\lambda(\phi) = \nabla \lambda( \phi + 2\pi)$. Si consideri allora la trasformazione
+\lambda(\varphi) = \nabla \lambda( \varphi + 2\pi)$. Si consideri allora la trasformazione
 $$
-\lambda(\vec r) = 2g\phi = 2g\arctan\left(\frac{y}{x}\right) \to U = \exp(2ieg\phi)
+\lambda(\vec r) = 2g\varphi = 2g\arctan\left(\frac{y}{x}\right) \to U = \exp(2ieg\varphi)
 $$
 Si nomina $\vec A^-$ il potenziale di dirac trovato in precedenza (in quanto ben
 definito per $z$ negative)
 $$
-   \vec A^- = \frac{g}{r}\frac{-1 - \cos\theta}{\sin\theta} \vec u _\phi  \\
+   \vec A^- = \frac{g}{r}\frac{-1 - \cos\theta}{\sin\theta} \vec u _\varphi  \\
 $$
 $$
-  \vec A ^- \mapsto \vec A ^- - \frac{i}{e} \exp( -2ieg\phi )\nabla \exp(2ieg\phi ) =
-     -\frac{g}{r}\frac{1+\cos\theta}{\sin\theta}\vec u _\phi
-     + \frac{2g}{r\sin\theta}\vec u _\phi
-     = \frac{g}{r}\frac{1 - \cos\theta}{\sin\theta} \vec u _\phi
+  \vec A ^- \mapsto \vec A ^- - \frac{i}{e} \exp( -2ieg\varphi )\nabla \exp(2ieg\varphi ) =
+     -\frac{g}{r}\frac{1+\cos\theta}{\sin\theta}\vec u _\varphi
+     + \frac{2g}{r\sin\theta}\vec u _\varphi
+     = \frac{g}{r}\frac{1 - \cos\theta}{\sin\theta} \vec u _\varphi
      =: \vec A ^+
 $$
 Il potenziale trasformato è singolare per $\theta = \pi$ e regolare per
@@ -155,7 +156,7 @@ un approccio differente nelle sezioni successive
 Si riporta l'espressione dei due potenziali di dirac definiti in precedenza, che
 sarà utile nella trattazione successiva.
 \begin{equation}\label{eq:localdiracpotential}
-  \vec A^\pm = \frac{g}{r}\frac{\pm 1 - \cos\theta}{\sin\theta} \vec u _\phi
+  \vec A^\pm = \frac{g}{r}\frac{\pm 1 - \cos\theta}{\sin\theta} \vec u _\varphi
 \end{equation}
 
 %------------------------------------------------------------------------------%
@@ -168,15 +169,15 @@ della particella è
 \begin{equation}
    \frac{1}{2m}\left( \vec{\hat{p}} - \frac{e}{c} \vec{\hat{A}} \right)^2 \psi(\vec r) = E\psi(\vec r)
 \end{equation}
-Siano $\vec A^\pm$ su $U^\pm$ e le funzioni d'onda $\psi^\pm$ su $U^\pm$ e $\lambda =2g\phi$.
-In seguito alla trasformazione di gauge $ \vec A^+ \mapsto \vec A + \nabla (2g\phi)$ (dimostrare)
+Siano $\vec A^\pm$ su $U^\pm$ e le funzioni d'onda $\psi^\pm$ su $U^\pm$ e $\lambda =2g\varphi$.
+In seguito alla trasformazione di gauge $ \vec A^+ \mapsto \vec A + \nabla (2g\varphi)$ (dimostrare)
 la funzione d'onda trasforma
-$$ \psi^- \mapsto \exp \left( - \frac{2ige}{\hbar c} \phi \right) \psi^+$$
+$$ \psi^- \mapsto \exp \left( - \frac{2ige}{\hbar c} \varphi \right) \psi^+$$
 Affinchè la funzione d'onda non sia multivalore, la fase deve essere periodica di
-periodo $2\pi$ in $\phi$, ossia
+periodo $2\pi$ in $\varphi$, ossia
 $$
-   \exp \left( - \frac{2ige}{\hbar c} \phi \right)
-      = \exp \left( - \frac{2ige}{\hbar c} (\phi + 2\pi) \right)
+   \exp \left( - \frac{2ige}{\hbar c} \varphi \right)
+      = \exp \left( - \frac{2ige}{\hbar c} (\varphi + 2\pi) \right)
    \Rightarrow
    \exp \left( - \frac{2ige}{\hbar c} 2\pi \right) = 1
    \Rightarrow

@@ -12,8 +12,8 @@ Sia $[\omega] \in H^r(M)$.\\
 Un modo per classificare le classi di equivalenza si ottiene integrando una forma
 nella stessa classe $[\omega]$. Si ricorda che esiste quindi una forma $\alpha$
 tale che $\omega' = \omega + d\alpha$. Per il teorema di Stokes:
-$$ \int_M \omega' = \int_M (\omega + d\alpha) = \int_M \omega
-   + \int_{\partial M} \alpha = int_M \omega $$
+$$ \int_M \omega' = \int_M (\omega + \dd \alpha) = \int_M \omega
+   + \int_{\partial M} \alpha = \int_M \omega $$
 I due integrali si equivalgono perchè la varietà è senza bordo. Allora questo integrale
 può essere usato come caratteristica, per classificare le classi di equivalenza.\\
 
@@ -24,7 +24,7 @@ Si introduce ora il \emph{polinomio caratteristico} della forma $\Omega$ una qua
 invariante della algebra di Lie $\mathfrak{g}$ nella fibra
 $$ det(1+\Omega) = 1 + tr\Omega + \frac{1}{2}[(tr\Omega)^2 - tr(\Omega^2)] + \dots $$
 che permette di definire una forma sullo spazio base $M$, detta \emph{forma di Chern}
-$$ det(1 + \frac{\lambda}{2\pi}F) = \sum_{k=0}^\infty \lambda^k c_k $$
+$$ det\left(1 + \frac{\lambda}{2\pi}F\right) = \sum_{k=0}^\infty \lambda^k c_k $$
 dove $1/2\pi$ è solo un fattore di normalizzazione. Si ricorda che $F$ è il pullback
 di $\Omega$. I coefficienti di espansione $c_k$ sono forme chiuse invarianti su $M$,
 la cui espressione esplicita per $k = 1,2$ è:
@@ -56,8 +56,8 @@ Questi integrali sono detti \emph{classi caratteristiche di Chern}.\\
    Si ha quindi trF = 0 e i coefficienti $k = 0,1,2$ sono
    \begin{equation}
       \begin{aligned}
-         c_0 & = 1
-         c_1 & = 0
+         c_0 & = 1 \, ,&
+         c_1 & = 0 \, ,&
          c_2 & = \frac{1}{32\pi^2}[ F^a \wedge F^a ]
       \end{aligned}
    \end{equation}

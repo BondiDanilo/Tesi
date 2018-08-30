@@ -1,5 +1,4 @@
 \subsection{Omotopia e Classi di omotopia}
-\textcolor{red}{(da scrivere)}\\
 Nel seguito, se non diversamente specificato siano $X,Y$ spazi topologici con
 topologia assegnata $T_X , T_Y$ rispettivamente. \\
 Le dimostrazioni dei teoremi vengono omesse per brevità di trattazione. Si veda
@@ -30,7 +29,7 @@ deformate con continuità (senza "strappare" l'insieme) una nell'altra.
    L'equivalenza omotopica è una relazione di equivalenza tra spazi topologici.
 \end{lemma}
 
-Esempi:
+\subsubsection{Esempi:}
 \begin{example}
    Siano $X = \mathbb{R}^n\setminus\{0\}$ e $Y = S^{n-1}$. I due spazi sono
    omotopicamente equivalenti. Le funzioni di equivalenza omotopica sono
@@ -78,7 +77,7 @@ Sia $x_0\ in X$. Un laccio $\sigma$ tale che $\sigma(0) = x_0$ si dice
    dello spazio $X$, denotato con $\pi_1(X,x_0)$, l'insieme delle classi di
    equivalenza dei lacci di base $x_0$.
 \end{definition}
-\textcolor{red}{Intuitivamente, ...}\\
+\textcolor{red}{Intuitivamente, se è possibile ridurre un circuito a un punto...}\\
 
 Uno gruppo fondamentale composto da una sola classe di equivalenza è detto \emph{banale}.
 
@@ -96,8 +95,8 @@ dati $[\sigma],[\tau] \in \pi_1(X,x_0)$ si definisce il loro \emph{prodotto}
 la classe di $[\sigma \cdot \tau]$
 $$ [\sigma][\tau] := [\sigma\cdot\tau] \in \pi_1(X,x_0) $$\\
 
-Sia $x \in X$, si definisce $\epsilon_x$ il \emph{cammino costante} nel punto $x$.
-$$\epsilon_x(t) = x \quad \forall t \in[0,1]$$
+Sia $x \in X$, si definisce $\varepsilon_x$ il \emph{cammino costante} nel punto $x$.
+$$\varepsilon_x(t) = x \quad \forall t \in[0,1]$$
 
 Sia $\sigma$ cammino in $X$, si definisce il \emph{cammino inverso}
 $\sigma^{-1}(t) = \sigma(1-t)$ (si tratta dello stesso cammino, con senso
@@ -106,7 +105,7 @@ di percorrenza opposto).
 \begin{proposition}
    Il gruppo fondamentale $\pi_1(X,x_0)$ è un \emph{gruppo} con l'operazione di
    prodotto tra due classi di equivalenza di cammini.
-   L'elemento neutro è dato da $[\epsilon_x]$,
+   L'elemento neutro è dato da $[\varepsilon_x]$,
    l'inverso è dato da $[\sigma]^{-1} = [\sigma^{-1}]$.
 \end{proposition}
 \begin{proof}
@@ -121,18 +120,21 @@ di percorrenza opposto).
    con isomorfismo dato da $\tau_\# : \pi_1(X,x_0) \to \pi_1(X,x_1)$
       $$  \tau_\# [\sigma] = [\tau^{-1} \cdot \sigma \cdot \tau] $$
 \end{proposition}
-\textcolor{red}{Intuitivamente, ...}
+\textcolor{red}{Intuitivamente, ridefinisci un cammino attaccandone un altro che
+va dal punto nuovo a quello vecchio}
 \begin{proof} Si vedano le referenze. \end{proof}
 
 
 Spazi con stesso tipo di omotopia hanno gruppo fondamentale isomofo\\
 \textcolor{red}{Perchè si classificano gli spazi in base ai gruppi di Omotopia,
 cosa ha a che fare con la topologia/geometria dello spazio.}\\
+
 \begin{definition}(\emph{Numero di avvolgimento}):
 
 \end{definition}
 %------------------------------------------------------------------------------%
 \subsubsection{Esempi di gruppo fondamentale}
+\textcolor{red}{(da scrivere)}
 %------------------------------------------------------------------------------%
 \subsubsection{Gruppi di omotopia superiori}
 Si può pensare a un laccio in $X$ come una mappa tra $S^1$ e $X$\footnote{
@@ -154,4 +156,5 @@ definire i gruppi superiori di omotopia.
 
 Valgono teoremi analoghi a quelli del gruppo fondamentale
 
-Gruppi di omotopia delle sfere.
+\subsubsection{Gruppi di omotopia delle sfere}
+\textcolor{red}{(da scrivere)}
