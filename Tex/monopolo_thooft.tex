@@ -13,7 +13,7 @@ Sia $\mathcal{M}$ lo spazio dei campi $\phi$, denominato spazio di \emph{isospin
 Si consideri la seguente densità lagrangiana per $\phi$ ($\lambda$ e $v$ sono due
 parametri).
 $$
-   \mathcal{L} = \frac{1}{2} \partial _\mu \phi ^a \partial ^\mu \phi^a
+   \L = \frac{1}{2} \partial _\mu \phi ^a \partial ^\mu \phi^a
                 + V(\phi)
                = \frac{1}{2} \partial _\mu \phi ^a \partial ^\mu \phi^a
                 + \frac{\lambda}{4}( \phi^a \phi^a - v^2 )^2
@@ -44,7 +44,7 @@ data dalle matrici
    \end{aligned}
 \end{equation}
 La simmetria di tipo $SU(2)$ è allora data dalla trasfomazione
-$\phi \to \phi' = e^{iT^a\theta^a}$, per arbitrari $\theta^a \in \mathbb{R} ^3 $.\\
+$\phi \to \phi' = e^{iT^a\theta^a}$, per arbitrari $\theta^a \in \R ^3 $.\\
 
 Si osserva immediatamente potenziale $V(\phi)$ ha un minimo quando il valore di
 aspettazione del campo $\phi$ è pari a $v^2$. Un esempio di configurazione dei
@@ -66,7 +66,7 @@ simmetria che si conserva è la simmetria di tipo $U(1)$ associata al generatore
 Il modello di Georgi-Glashow descrive l'accoppiamento dei 3 campi scalari
 $\{\phi^a\}$ con il campo di gauge $A_\mu$. La densità lagrangiana del modello è
 \begin{equation}
-   \mathcal{L} = - \frac{1}{4} F^a_{\mu\nu}F^{a\mu\nu}
+   \L = - \frac{1}{4} F^a_{\mu\nu}F^{a\mu\nu}
                  + \frac{1}{2} D^\mu\phi^a D_\mu \phi^a - V(\phi)
                = - \frac{1}{4} F^a_{\mu\nu}F^{a\mu\nu}
                  + \frac{1}{2} D^\mu\phi^a D_\mu \phi^a
@@ -95,13 +95,13 @@ dove $\phi^2 = \phi^a\phi^a$. Il tensore energia-impulso simmetrizzato è
 \begin{equation}
    \begin{aligned}
       T_{\mu\nu} & =
-         F^a _{\mu\rho}F^{a\rho}_\nu - g_{\mu\nu} \mathcal{L}
+         F^a _{\mu\rho}F^{a\rho}_\nu - g_{\mu\nu} \L
    \end{aligned}
 \end{equation}
 E l'energia è data da
 \begin{equation}
-   E = \int_{\mathbb{R}^3} d^3x T_{00}
-     = \int_{\mathbb{R}^3} d^3x \left[ \frac{1}{4} F^a_{\mu\nu}F^{a\mu\nu}
+   E = \int_{\R^3} d^3x T_{00}
+     = \int_{\R^3} d^3x \left[ \frac{1}{4} F^a_{\mu\nu}F^{a\mu\nu}
         + \frac{1}{2} (D_\mu \phi^a) (D^\mu \phi^a)
         + \frac{\lambda}{4}(\phi^2 - v^2)^2 \right]
 \end{equation}
@@ -139,15 +139,15 @@ nell'altra appartengono a classi distinte. Ciò che caratterizzerà le soluzioni
 sarà il comportamento asintotico (per $r \to \infty$) dei campi $\phi(\vec r)$.\\
 
 Si definisce allora la \emph{sfera all'ininito} spaziale $S^2_\infty$ come il bordo di
-$\mathbb{R}^3$ e si vuole caratterizzare il comportamento dei campi $\phi$ ristretti a
+$\R^3$ e si vuole caratterizzare il comportamento dei campi $\phi$ ristretti a
 $S^2_\infty$. Le restrizioni $\phi^*$ dei campi sono funzioni continue da $S^2_\infty$
 a $\mathcal{W}$.
 Topologicamente sono funzioni $\phi : S^2 \to S^2$ e allora possono essere
-classificate in base ai gruppi di omotopia, in particolare $\pi_2(S^2) \cong \mathbb{Z}$.\\
+classificate in base ai gruppi di omotopia, in particolare $\pi_2(S^2) \cong \Z$.\\
 
 Le soluzioni del modello di Georgi-Glashow sono allora classificate topologicamente
 in base al rappresentante della classe di $\pi_2(S^2)$ a cui appartengono.
-Tale rappresentante è detto \textbf{numero di avvolgimento} $W \in \mathbb{Z}$.\\
+Tale rappresentante è detto \textbf{numero di avvolgimento} $W \in \Z$.\\
 
 Se si tenta di deformare una soluzione in un'altra con diverso numero di avvolgimento
 il funzionale di energia diverge. Le soluzioni sono pertanto separate da barriere
@@ -171,7 +171,23 @@ Si definice quindi il tensore elettromagnetico gauge invariante
    \mathcal{F}_{\mu\nu} := \hat{\phi}^a F^a_{\mu\nu}
           + \frac{1}{e} \varepsilon_{abc} \hat{\phi}^a D_\mu\hat{\phi}^b D_\nu \hat{\phi}^c
 \end{equation}
-dove $\hat{\phi}^a = \phi^a/|\phi^a|$ è un campo normalizzato.
+dove $\hat{\phi}^a = \phi^a/|\phi^a|$ è un campo normalizzato. Si deve avere che
+la derivata covariante si annulli per $r \to \infty$
+$$
+   D _k \phi^a = (\partial _k + ie A _k ^a T^a) \phi^a
+      \to \partial _k \frac{r^a}{r}  - e \varepsilon_{abc} A^b_k \frac{r^c}{r}
+      = 0
+$$
+Poichè
+$$
+   \partial _k \frac{r^a}{r} = \frac{r^2 \delta _{ak} - r_a r_k}{r^3}
+      = \cdots
+      = - \varepsilon _{abc}\varepsilon _{bkj} \frac{r_c r_j}{r^3}
+$$
+si deve avere che per $r \to \infty$
+$$
+   A^a_k \to \frac{1}{e} \varepsilon _{ajk} \frac{r_j}{r^2} 
+$$
 \textcolor{red}{(mostrare l'andamento del campo all'infinito)}\\
 
 %------------------------------------------------------------------------------%
@@ -197,7 +213,7 @@ $$
 $$
 Svolgendo i conti, si ottiene
 \begin{equation}\label{eq:nonabelianquantumcharge}
-   g = \frac{4\pi n}{e} \quad,\quad n \in \mathbb{Z}
+   g = \frac{4\pi n}{e} \quad,\quad n \in \Z
 \end{equation}
 Che è l'analogo della condizione di quantizzazione della carica alla Dirac
 \ref{eq:diracquantumcharge}

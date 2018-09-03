@@ -1,0 +1,45 @@
+%------------------------------------------------------------------------------%
+\begin{definition}(\emph{Prodotto di cammini}):
+   Siano $\sigma,\tau$ cammini in $X$ tali che $\sigma(1) = \tau(0)$. Si definisce
+   il \emph{cammino prodotto} o l'\emph{incollamento} $\sigma \cdot \tau$ in $X$:
+   \begin{equation}
+      \sigma \cdot \tau (t) = \begin{cases}
+         \sigma(2t) & t \in [0,1/2] \\
+         \tau(2t-1) & t \in (1/2,1]
+      \end{cases}
+   \end{equation}
+\end{definition}
+
+Se $\sigma,\tau$ sono lacci di base $x_0$ anche $\sigma \cdot \tau$ lo è, quindi
+dati $[\sigma],[\tau] \in \pi_1(X,x_0)$ si definisce il loro \emph{prodotto}
+la classe di $[\sigma \cdot \tau]$
+$$ [\sigma][\tau] := [\sigma\cdot\tau] \in \pi_1(X,x_0) $$\\
+
+Sia $x \in X$, si definisce $\varepsilon_x$ il \emph{cammino costante} nel punto $x$.
+$$\varepsilon_x(t) = x \quad \forall t \in[0,1]$$
+
+Sia $\sigma$ cammino in $X$, si definisce il \emph{cammino inverso}
+$\sigma^{-1}(t) = \sigma(1-t)$ (si tratta dello stesso cammino, con senso
+di percorrenza opposto).
+
+\begin{proposition}
+   Il gruppo fondamentale $\pi_1(X,x_0)$ è un \emph{gruppo} con l'operazione di
+   prodotto tra due classi di equivalenza di cammini.
+   L'elemento neutro è dato da $[\varepsilon_x]$,
+   l'inverso è dato da $[\sigma]^{-1} = [\sigma^{-1}]$.
+\end{proposition}
+\begin{proof}
+   La dimostrazione non è immediata. Si vedano le referenze.
+\end{proof}
+
+\begin{proposition}(\emph{Dipendenza del gruppo fondamentale dal punto base}):
+   Siano $x_0, x_1 \in X$. Se esiste un cammino $\tau$ in $X$ che collega i due
+   punti ($\tau(0)=x_0$ e $\tau(1)=x_1$) allora i gruppi fondamentali con base
+   $x_0$ e $x_1$ sono isomorfi
+      $$ \pi_1(X,x_0) \cong \pi_1(X,x_1) $$
+   con isomorfismo dato da $\tau_\# : \pi_1(X,x_0) \to \pi_1(X,x_1)$
+      $$  \tau_\# [\sigma] = [\tau^{-1} \cdot \sigma \cdot \tau] $$
+\end{proposition}
+\textcolor{red}{Intuitivamente, ridefinisci un cammino attaccandone un altro che
+va dal punto nuovo a quello vecchio}
+\begin{proof} Si vedano le referenze. \end{proof}

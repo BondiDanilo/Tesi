@@ -1,15 +1,162 @@
 \chapter{Teorie di gauge}
-\textcolor{red}{(da scrivere)}\\
-\begin{itemize}
-   \item Principio di invarianza di gauge, trasformazioni, gruppi abeliani e non abeliani.\\
-   \item simmetrie globali e locali (es rotazione rigida, forza centrifuga)\\
-   \item formalismo dei Fibrati. analogia con forma di connessione\\
-   fibrato banale > coperto da una sola carta > simmetria globale.\\
-   fibrato non banale > non coperto da una sola carta > simmetria locale.
-\end{itemize}
 
-esempi:
- \begin{itemize}
-   \item elettrodinamica classica\\
-   \item teoria scalare O(n)\\
-\end{itemize}
+Una teoria di gauge è una teoria di campo la cui lagrangiana è invariante sotto
+l'azione di un gruppo di Lie\footnote{
+   Cfr. definizioni \ref{def:groupaction} e \ref{def:liegroup}.
+} $G$, denominato \emph{gruppo di gauge}. Se il gruppo di gauge è un gruppo (non)
+abeliano la teoria di gauge viene detta (non) abeliana.\\
+
+Si consideri, ad esempio, la seguente lagrangiana per un campo scalare complesso
+$\phi : \R \times \R^3 \to \C$ (dove $V$ è un generico funzionale, il potenziale).
+$$
+   \Ll [\phi] = \partial _\mu \phi^*  \partial ^\mu \phi + V[\phi ^* \phi]
+$$
+È invariante per una trasformazione di fase globale del campo, ossia in seguito
+alla trasformazione
+$
+  \phi \mapsto \phi' = e^{i \alpha}\phi
+$
+(dove $\alpha \in \R$) la lagrangiana non cambia.
+$$
+   \Ll [\phi'] = (\partial _\mu \phi')^*  \partial ^\mu \phi' + V[(\phi')^* \phi']
+                = \partial _\mu  e^{-i \alpha}\phi^*  \partial ^\mu  e^{i \alpha}\phi
+                   +  V[e^{-i \alpha}\phi ^*  e^{i \alpha}\phi]
+                = \partial _\mu \phi^*  \partial ^\mu \phi + V[\phi ^* \phi]
+                = \Ll [\phi]
+$$
+Una simmetria di questo tipo è detta \emph{simmetria globale}, in quanto non dipende
+dal punto dello spazio-tempo in cui è applicata ($\alpha$ è infatti una costante).\\
+
+Un altro esempio di simmetria globale è, nella meccanica Newtoniana, una
+trasformazione di Galileo tra due sistemi inerziali (es: una rotazione degli assi):
+in seguito a tale trasformazione non cambia la descrizione fisica del fenomeno,
+ma solamente i "numeri" che ogni osservatore usa come coordinate. È quindi importante
+evidenziare quali siano le trasformazioni tra un sistema di coordinate e l'altro.\\
+
+Un caso più interessante è quello in cui il sistema presenta una simmetria definita
+non globalmente, ma localmente. Si può pensare, ad esempio, a una trasformazione
+di coordinate tra un osservatore inerziale e uno non inerziale (ad esempio sottoposto
+a un moto rotatorio). Le descrizioni che i due osservatori danno del sistema
+non sono equivalenti: il secondo, ad esempio è costretto ad introdurre l'esistenza
+di forze fittizie (ad esempio la forza centrifuga), che in generale possono dipendere
+in maniera non banale dalle coordinate (ad esempio può dipendere dalla distanza
+un un punto dall'osservatore).\\
+
+In relazione alla lagrangiana scritta in precedenza, si può considerare una trasformazione
+di fase in cui $\alpha = \alpha(x,t)$ è una generica funzione delle coordinate
+$\phi \mapsto \phi' = e^{i\alpha(x,t)}\phi$. Se la lagrangiana è invariante per
+trasformazione di questo tipo, tale trasformazione è detta \emph{simmetria locale}
+o simmetria di gauge.\\
+
+Il principio cardine delle teorie di gauge è allora promuovere le simmetrie globali
+di una lagrangiana a simmetrie locali (simmetrie che possano essere applicate
+solamente nell'intorno di un punto, senza affligere il resto dello spazio), e studiare
+i casi in cui queste si conservano come simmetrie della teoria. \\
+
+Matematicamente, una teoria di gauge è descritta da un fibrato principale\footnote{
+   Cfr. definzione \ref{def:principalbundle}.
+}, in cui
+la varietà di base $M$ è (ad esempio) lo spaziotempo $\R\times\R^3$ con metrica
+Minkowskiana ($g_{\mu\nu} =\eta= \mathrm{diag}(-1,1,1,1$)) e la fibra $G$ è il
+gruppo di gauge.\\
+Data la simmetria globale del gruppo di gauge, l'assegnazione di una simmetria
+locale (ossia la scelta della particolare funzione $\alpha(x,t)$, nell' esempio
+ precedente) corrisponde alla scelta di un ricoprimento $\{U_i\}$ della varietà
+ e di sezioni locali $s_i$ sul fibrato\footnote{
+   Cfr. definizione \ref{eq:section}.
+ }, che nelle regioni di intersezione dei rispettivi domini ($U_i \cap U_j$)
+ sono legate dalle fuzioni di transizione \ref{eq:transfunctions}.
+Le funzioni di transizione sono dette \emph{trasformazioni di gauge}.\\
+
+Assegnata una 1-forma di connessione $\omega$ sul fibrato e delle sezioni locali
+$s_i$, i pullback di $\omega$ tramite le sezioni sono 1-forme sullo spaziotempo
+$A_i = s_i^* \omega$ e sono detti \emph{potenziali di gauge}.\\
+Si sottolinea l'importanza del teorema \ref{thm:gaugepotential} che dati i
+potenziali di gauge definiti sugli intorni locali $U_i$ esiste sempre la 1-forma
+di connessione $\omega$ sul fibrato.\\
+
+Il pullback della curvatura $\Omega$, definita come differenziale esterno della
+1-forma di connessione $\omega$, è detto \emph{tensore forza di campo} $F$.\\
+
+Se il fibrato è banale, ossia può essere ricoperto da una sola carta ed ha la
+struttura globale di prodotto diretto $M \times G$, allora esiste una simmetria
+globale per il sistema. Se invece il fibrato è non banale, ossia non è descritto
+tramite un'unica carta, non può essere definita una simmetria globale e il potenziale
+di gauge può essere descritto solo tramite diverse carte locali, concordanti sulle
+regioni di intersezione tramite una trasformazione di gauge\footnote{
+  Si veda il monopolo di Wu-Yang nella sezione successiva \ref{sec:wuyangmonopole}.
+}.\\
+
+\subsubsection{Esempio: Elettrodinamica classica}
+Si vuole descrivere ora l'accoppiamento di un campo complesso $\phi$ con il campo
+elettromagnetico (si pensi ad esempio alla funzione d'onda di una particella carica).\\
+Si consideri la lagrangiana $\Ll$ definita in precedenza, che si è già visto
+essere invariante per trasformazioni \emph{globali} di fase $\phi \mapsto e^{iq\alpha}\phi = U\phi$,
+dove il parametro $q \in \R$ è detto la costante di accoppiamento della teoria
+(in questo caso la carica elettrica).
+\begin{equation*}
+  \begin{aligned}
+     \Ll [\phi] & = \partial _\mu \phi^*  \partial ^\mu \phi + V[\phi ^* \phi] &
+     & \Rightarrow \Ll[\phi] = \Ll[\phi'] & ,\quad
+     \phi &\mapsto \phi' = e^{i\alpha}\phi
+  \end{aligned}
+\end{equation*}
+
+Si vuole ora promuovere la simmetria a simmetria locale $\alpha \mapsto \alpha(x,t)$
+e richiedere che la lagrangiana rimanga invariata per trasformazione di fase locale.
+Si sostituisce la derivata pariale $\partial \mu$ con la derivata covariante
+definita da
+$$
+   D _\mu := \partial _\mu -iq A _\mu
+$$
+dove il campo $A _\mu : \R \times \R^3 \to \R \times \R^3$ è il potenziale
+di gauge (in questo caso, il potenziale elettromagnetico). La lagrangiana
+gauge-invariante diventa:
+$$
+   \Ll ' =  D _\mu \phi^*  D ^\mu \phi + V[\phi ^* \phi].
+$$
+La richiesta di invarianza della lagrangiana per trasformazione
+di fase locale si traduce nella richiesta che la derivata covariante $D _\mu$
+sia invariante. $D _\mu \mapsto D' _\mu = U^{-1} D _\mu U = D _\mu $.
+\begin{equation}
+   \begin{aligned}
+      iq \partial _\mu \alpha(x,t) + (\partial _\mu - iq A _\mu)
+         & = (\partial _\mu -iq A' _\mu) \Rightarrow \\
+      \Rightarrow A' _\mu = A _\mu - \partial _\mu  \alpha(x,t)
+         & = U ^{-1} A _\mu U + \frac{i}{q} U \dd U
+   \end{aligned}
+\end{equation}
+che si traduce nella condizione che il potenziale $A _\mu$ trasformi secondo la
+trasformazione di gauge sopra scritta.\\
+
+Se si calcola il tensore energia impulso della lagrangiana così scritta (si indica
+$\phi| ^{\mu} = \partial \phi / \partial x_\mu$ e
+$\phi| _{\mu} = \partial \phi / \partial x^\mu$ ), si vede immediatamente che non si
+conserva.
+\begin{equation}
+   \begin{aligned}
+      T'_{\mu\nu} & = \frac{\partial \Ll'}{\partial \phi|^{\mu}}\phi|_{\nu}
+      - \eta _{\mu\nu} \Ll' &
+      \Rightarrow \partial ^\mu T'_{\mu\nu} & \neq 0
+   \end{aligned}
+\end{equation}
+Occorre allora tenere conto anche della dinamica del campo elettromagnetico, costruendo
+la lagrangiana per l'accoppiamento del campo $\phi$ con il campo elettromagnetico
+che è Lorentz-invariante, con simmetria di gauge $U(1)$ e che conserva energia e
+quantità di moto\footnote{
+   Si osserva che definendo la lagrangiana del campo elettromagnetico libero
+   $$
+   \Ll _{em} = - \frac{1}{4}F^{\mu\nu} F_{\mu\nu}
+   $$
+   Si ottengono come equazioni del moto esattamente le equazioni di Maxwell nel vuoto.
+}.
+
+\begin{equation}
+\Ll = -\frac{1}{4} F^{\mu\nu}F_{\mu\nu}
++ \frac{1}{2} (D^\mu \phi)^* D _\mu \phi - V[\phi^* \phi]
+\end{equation}
+Dove $F_{\mu\nu}$ è il \textbf{tensore elettromagnetico}, cioè il tensore forza
+di campo definito da $F = \dd A$, o in coordinate:
+$$
+   F_{\mu\nu} = \partial _\mu A _\nu - \partial _\nu A _\mu
+$$

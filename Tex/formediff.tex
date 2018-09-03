@@ -1,10 +1,9 @@
 \section{Tensori e Forme differenziali}
-Sia $V$ uno spazio vettoriale su su $\mathbb{R}$.\\
+Sia $V$ uno spazio vettoriale su su $\R$.
 Si definisce \textbf{tensore} misto con $r$ indici covarianti e $s$ indici
 controvarianti un'\emph{applicazione multilineare} $F : V^r \times V^{*s} \to
-\mathbb{R}$ , dove $V^r = V \times \dots \times V$ e
-$V^{*s} =  V^* \times \dots \times V^*$.\\
-
+\R$ , dove $V^r = V \times \dots \times V$ e
+$V^{*s} =  V^* \times \dots \times V^*$. 
 Si indica con $\mathcal{T}^{(r,s)}(V)$ lo spazio dei (r,s)-tensori su $V$\\
 
 Si definisce il \textbf{prodotto tensoriale} (indicato col simbolo $\otimes$) tra
@@ -13,22 +12,6 @@ $$ F \otimes G (v_1,\dots,v_{r+s}) = F(v_1,\dots,v_r)G(v_{r+1},\dots,v_{r+s})$$
 dove a destra dell'uguale si ha il prodotto tra i due numeri reali
 $F(v_1,\dots,v_r)$ e $G(v_{r+1},\dots,v_{r+s})$.\\
 Analogamente, si definisce il prodotto tensoriale tra due tensori controvarianti.\\
-
-Si può facilmente dimostrare la seguente
-\begin{proposition}\label{prop:base1}
-   Sia $M$ varietà differenziale e $p \in M$. Siano $V = T_p(M)$ e $V^* = T_p^*(M)$
-   Sia $F \in \mathcal{T}^{(r,s)}(V)$, allora esistono $a_{i_1,\dots i_r}^{j_1,\dots,j_s}$
-   tali che in coordinate locali\\
-   $$
-      F = \sum_{\substack{(i_1,\dots, i_r)\\(j_1,\dots,j_s)}}
-         a_{i_1,\dots, i_r}^{j_1,\dots,j_s}
-         \frac{\partial}{\partial x^{i_1}} \otimes \dots
-         \otimes \frac{\partial}{\partial x^{i_r}}
-         \otimes \dd x^{j_1} \otimes \dots \otimes \dd x^{j_s}
-   $$
-\end{proposition}
-Ovvero le basi di $T_p(M)$ e $T_p^*(M)$ inducono una base per $\mathcal{T}^r(T_p(M))$
-e $\mathcal{T}^s(T_p^*(M))$.\\
 
 Si definisce \textbf{campo tensoriale} sulla varietà $M$ con $r$ indici covarianti
 e $s$ indici controvarianti un'applicazione $ M \to \mathcal{T}^{(r,s)}(T_p^*(M)) $
@@ -39,51 +22,15 @@ Si definice \textbf{r-forma} un r-tensore covariante \emph{totalmente antisimmet
 
 Lo spazio delle r-forme sulla varietà $M$ nel punto $p$ si indica con $\Lambda^r(p)$.
 La dimensione di $\Lambda^r(p)$ è ${n}\choose{k}$ se $n$ è la dimensione di $M$
-\footnote{ Si veda \cite{sernesi},\cite{boothby},\cite{nakahara} }.\\
+\footnote{ Si veda \cite{sernesi},\cite{boothby},\cite{nakahara} }.
 %------------------------------------------------------------------------------%
 \subsection{Forme differenziali}
 \begin{definition}{(Forma differenziale)}
    Si definice \emph{r-forma differenziale} un campo tensoriale covariante
   totalmente antisimmetrico, ossia un'applicazione multilineare
-  $\omega : M \to \Lambda^r(p)$ che a $p \in M$ associa la $r$-forma $\omega_p$
+  $\omega : M \to \Lambda^r(p)$ che a $p \in M$ associa la $r$-forma $\omega_p$.
+  Lo spazio delle r-forme differenziali su $M$ si indica con $\Omega^r(M)$.
 \end{definition}
-Lo spazio delle r-forme differenziali su $M$ si indica con $\Omega^r(M)$.\\
-
-Analogamente a quanto fatto per il prodotto tensoriale, si vuole definire un prodotto
-tra $r$ e $s$ forme differenziali che dia una $r+s$ forma differenziale (cioè un
-prodotto tensoriale che mantenga l'antisimmetria del tensore).\\
-
-Si definisce \textbf{prodotto esterno} o \textbf{prodotto wedge} tra due forme
-differenziali $\alpha \in \Omega^r(M)$ e $\omega \in \Omega^s(M)$ la $r+s$ forma
-differenziale definita da:
-$$ \alpha \wedge \omega (V_1,\dots,V_{r+s})(p) =
-   \frac{1}{r!s!}\sum_{\sigma \in S^{r+s} } (-1)^\sigma
-   \alpha_p\otimes\omega_p (V_{\sigma(1)}, \dots , V_{\sigma(r),
-      V_{\sigma(r+1)}, \dots , V_,\sigma(r+s)})$$
-Dove $S^{r+s}$ è il gruppo delle permutazioni di $r+s$ elementi e $(-1)^\sigma$
-è il segno della permutazione $\sigma$.\\
-E gode delle seguenti proprietà, di immediata dimostrazione:
-\begin{enumerate}
-    \item $(\alpha + \beta) \wedge \omega = \alpha\wedge\omega + \beta\wedge\omega$ e
-          $\omega \wedge(\alpha + \beta)  = \omega\wedge\alpha + \omega\wedge\beta$
-    \item $(c\alpha)\wedge\omega = c(\alpha\wedge\omega) = \alpha\wedge(c\omega)$
-    \item $\omega\wedge\alpha = (-1)^{r+s} \alpha\wedge\omega$
-    \item $(\alpha\wedge\omega)\wedge\tau = \alpha\wedge(\omega\wedge\tau)$
-       (valida grazie alla normalizzazione scelta nella definizione di $\wedge$)
-\end{enumerate}
-$\forall c\in \mathbb{R} \: , \: \forall \alpha,\beta \in \Omega^r(M) \: , \:
-   \forall \omega \in \Omega^s(M) \: , \: \forall \tau \in \Omega^k(M)$
-\\
-
-Analogamente alla \ref{prop:base1}, vale anche
-\begin{proposition}\label{prop:base2}
-   Sia $M$ varietà differenziale e $p \in M$. Sia $\omega \in \Omega^r(T_p(M))$,
-   allora esistono le funzioni $a_{i_1,\dots i_r}$ tali che in coordinate locali\\
-   $$
-      \omega = \sum_{(i_1,\dots, i_r)} a_{i_1,\dots, i_r}
-         \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r}
-   $$
-\end{proposition}
 
 Si osservi che per la proprietà di antisimmetria se $u = v$ si ha
 $$\omega(v,\dots,u,\dots) = - \omega(u,\dots,v,\dots) = - \omega(v,\dots,u,\dots) = 0$$
@@ -95,6 +42,57 @@ $$
    \omega(v^1,\dots,v^n,u) = \dots = a_1\omega(v^1,\dots,v^n,v^1) + \dots
       + a_n\omega(v^1,\dots,v^n,v^n) = 0
 $$
+
+Analogamente a quanto fatto per il prodotto tensoriale, si vuole definire un prodotto
+tra $r$ e $s$ forme differenziali che dia una $r+s$ forma differenziale (cioè un
+prodotto tensoriale che mantenga l'antisimmetria del tensore).\\
+
+Si definisce \textbf{prodotto esterno} o \textbf{prodotto wedge} tra due forme
+differenziali $\alpha \in \Omega^r(M)$ e $\omega \in \Omega^s(M)$ la $r+s$ forma
+differenziale definita da:
+$$
+   \alpha \wedge \omega (V_1,\dots,V_{r+s})(p) =
+   \frac{1}{r!s!}\sum_{\sigma \in S^{r+s} } (-1)^\sigma
+   \alpha_p\otimes\omega_p (V_{\sigma(1)}, \dots , V_{\sigma(r),
+      V_{\sigma(r+1)}, \dots , V_,\sigma(r+s)})
+$$
+
+Dove $S^{r+s}$ è il gruppo delle permutazioni di $r+s$ elementi e $(-1)^\sigma$
+è il segno della permutazione $\sigma$.\\
+
+Il prodotto wedge gode delle seguenti proprietà, di immediata dimostrazione:
+
+\begin{enumerate}
+    \item $(\alpha + \beta) \wedge \omega = \alpha\wedge\omega + \beta\wedge\omega$ e
+          $\omega \wedge(\alpha + \beta)  = \omega\wedge\alpha + \omega\wedge\beta$
+    \item $(c\alpha)\wedge\omega = c(\alpha\wedge\omega) = \alpha\wedge(c\omega)$
+    \item $\omega\wedge\alpha = (-1)^{r+s} \alpha\wedge\omega$
+    \item $(\alpha\wedge\omega)\wedge\tau = \alpha\wedge(\omega\wedge\tau)$
+       (valida grazie alla normalizzazione scelta nella definizione di $\wedge$)
+\end{enumerate}
+$
+   \forall c\in \R \: , \:
+   \forall \alpha,\beta \in \Omega^r(M) \: , \:
+   \forall \omega \in \Omega^s(M) \: , \:
+   \forall \tau \in \Omega^k(M)
+$\\
+
+Vale la seguente proposizione.
+\begin{proposition}\label{prop:base2}
+   Sia $M$ varietà differenziale e $p \in M$. Sia $\{ x^i \}$ una base di coordinate
+   locali per $T_p M$ e $ \{ \dd x^i \}$ la base duale in coordinate locali
+   per $T^*_p M$. Queste due basi inducono una base locale per le forme differenziali.\\
+   Ossia, sia $\omega \in \Omega^r(T_p M)$, $(U,\phi)$ una carta locale,
+   allora esistono le funzioni funzioni continue $a_{i_1,\dots, i_r}$ tali che
+   in coordinate locali:
+   $$
+      \phi^{-1*} \omega = \sum_{(i_1,\dots, i_r)} a_{i_1,\dots, i_r}
+         \dd x^{i_1} \wedge \dots \wedge \dd x^{i_r}
+   $$
+   La forma differenziale $\phi^{-1*}\omega$ su $\phi(U)$ è esprimibile come
+   combinazione lineare dei $\dd x^i$, che costituiscono una base per $\Omega(\phi(U))$.
+\end{proposition}
+
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \subsection{Differenziale esterno}
@@ -137,23 +135,36 @@ Si definisce forma \textbf{esatta} una r-forma $\omega$ se esiste una
 Si definisce forma \textbf{chiusa} una r-forma $\omega$ tale che $\dd \omega = 0$.\\
 Segue immediatamente che ogni forma esatta è chiusa. L'inverso è vero solo localmente.
 \begin{lemma}{(di Poincarè)}
-    Sia $M \subset \mathbb{R}^n$ una palla aperta. Una r-forma $\omega$ chiusa
+    Sia $M \subset \R^n$ una palla aperta. Una r-forma $\omega$ chiusa
     definita su $M$ è esatta.
 \end{lemma}
 %------------------------------------------------------------------------------%
 \subsection{Coomologia di de Rham}
-\textcolor{red}{(da scrivere)}
+Poichè ogni forma esatta è anche chiusa, ma non vale il viceversa, si vuole
+dare una classificazione delle forme chiuse.\\
+Siano $W^k(M)$ lo spazio delle k-forme esatte su $M$ e $Z^k(M)$ lo spazio delle
+forme chiuse, $Z^k(M) \subset W^k(M)$. Si definisce il \emph{k-esimo gruppo di
+comologia di De Rham} lo spazio quoziente
+$$
+   H^k(M) = W^k(M)/Z^k(M)
+$$
+Gli elementi di $H^k(M)$ sono quindi forme che differiscono per una forma esatta
+$$
+    [\omega] = \{ \alpha \in W^k(M)\tc \omega -\alpha = \dd \theta \}
+$$
+I gruppi di comologia di De Rham sono strettamente legati alla topologia della
+varietà. Si veda il teorema di De Rham.
 %------------------------------------------------------------------------------%
 \subsection{Integrazione}
 L'integrazione di una forma su una varietà può essere definita
-tramite coordinate locali e ricondotta a integrazione su aperti di $\mathbb{R}^n$.
+tramite coordinate locali e ricondotta a integrazione su aperti di $\R^n$.
 Una trattazione rigorosa richiederebbe l'introduzione del concetto di
 \emph{partizione dell'unità}, che esula dallo scopo di questo elaborato.
 Si vedano \cite{boothby},\cite{nakahara} per una trattazione rigorosa. \\
 In maniera intuitiva, sia $(U,\phi)$ una carta della
 varietà $M$, dove $U$ intorno del punto $p \in M$, e $R = \phi(U)$ e
 $\omega = \dd x^1 \wedge \dots \wedge \dd x^n$ una n-forma.
-Sia $f : U \to \mathbb{R}$ una funzione integranda.
+Sia $f : U \to \R$ una funzione integranda.
 Si definisce automaticamente la misura di integrazione $\dd \mu = \dd x^1 \dots \dd x^n$.
 e si può dare senso all'espressione in coordinate locali:
 $$
@@ -165,10 +176,18 @@ alla somma degli integrali sulle singole carte.\\
 
 Si osserva che è possibile integrare solamente n-forme su varietà di dimensione $n$
 perchè le forme con $r>n$ sono tutte nulle, e gli spazi di dimensione $r<n$ hanno
-misura nulla in $\mathbb{R}^n$.
+misura nulla in $\R^n$.
 
 \subsubsection{Teorema di Stokes}
-\textcolor{red}{(da scrivere)}
+\begin{theorem}{(di Stokes)}:
+   Sia $M$ una n-varietà differenziale con bordo $\partial M$ e si supponga assegnata
+   un'orientazione. Sia $\omega$ una (n-1)-forma su $M$. Allora
+   \begin{equation}\label{eq:stokestheorem}
+      \int_M \dd \omega = \int_{\partial M} \omega
+   \end{equation}
+\end{theorem}
+Questo teorema porta come corollari e casi particolari i vari teoremi del rotore,
+divergenza, etc.
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \subsection{Varietà Riemanniane}
@@ -197,7 +216,7 @@ Il numero $(p,n)$ di autovalori positivi $p$ e negativi $n$ è detto \emph{indic
 metrica. Se $n=1$ la metrica è detta Lorentziana.\\
 Si può diagonalizzare la metrica e riscalare gli autovettori in modo da ottenere
 solamente $\pm 1$ sulla diagonale. Ad esempio si ha la metrica Euclidea
-$\delta = diag(1,1,\dots,1)$ o Minkowskiana $\eta = diag(-1,1,...,1)$.\\
+$\delta = \mathrm{diag}(1,1,\dots,1)$ o Minkowskiana $\eta = \mathrm{diag}(-1,1,...,1)$.\\
 
 Se una varietà differenziale $M$ è dotata di una metrica Riemanniana $g$, la coppia $(M,g)$
 è detta \textbf{varietà Riemanianna} (analogamente se $g$ è pseudo-Riemann).\\
@@ -205,11 +224,11 @@ Se una varietà differenziale $M$ è dotata di una metrica Riemanniana $g$, la c
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \subsection{Derivata covariante}
-\textcolor{red}{Cosa è, Cosa è in questo contesto. (piccola intro)}\\
-Si vuole estendere il concetto di derivata direzionale agli (r,s)-tensori definiti
-su una varietà differenziale $M$\\
+Si vuole estendere il concetto di derivata direzionale ai campi vettoriali definiti
+su una varietà differenziale $M$. Lo stesso processo può essere usato per definire
+la derivata di tensori e forme differenziali.\\
 
-Sia $X$ un campo vettoriale sulla varietà $M$ (supponiamo $M = \mathbb{R}^n$,
+Sia $X$ un campo vettoriale sulla varietà $M$ (supponendo $M = \R^n$,
 per semplicità), $p \in M$ e $h \in M$ pensato come piccolo spostamento da $p$, in $M$.
 Volendo definire la derivata direzionale di un campo vettoriale nel modo usuale
 $$
@@ -221,54 +240,42 @@ Occorre un modo di trasportare il vettore $X_{p+h}$ da $T_{p+h}(M)$ a $T_p(M)$
 lasciandolo inalterato. Questo processo è chiamato \textbf{trasporto parallelo}.
 Purtroppo non esiste una maniera univoca per trasportare un vettore tangente in
 una varietà, quindi è necessario specificare come viene effettuato il trasporto
-parallelo.\\
+parallelo. Di seguito alcuni esempi.
 
-\textcolor{red}{(qua si può tagliare o riassumere ulteriormente)}
-\begin{definition}{(Connessione affine):}\label{def:affineconnection}
-   Una connessione affine $\nabla$ è una mappa $\nabla : \mathcal{X}(M) \times
-   \mathcal{X}(M)\to \mathcal{X}(M)$ t.c $(X,Y) \mapsto \nabla_X Y$ che verifica
-   \begin{enumerate}
-      \item $ \nabla_X (Y+Z) = \nabla_X Y + \nabla_X Z $
-      \item $ \nabla_{X+Y} Z = \nabla_X Z + \nabla_Y Z $
-      \item $ \nabla_{fX} Y = f\nabla_X Y $
-      \item $ \nabla_X (fY) = X[f] Y + f\nabla_X Y $
-   \end{enumerate}
-   per $f \in C^\infty(M)$ e $X,Y,Z \in \mathcal{X}(M)$
-\end{definition}
+\subsubsection{Spazio euclideo}
+Sia $X$ un campo vettoriale su $M = \R^n$ e $X_p$ il vettore tangente al punto $p \in \R ^n$.
+Nel caso di uno spazio euclideo di solito si confrontano i vettori
+$X_{p+h}$ e $X_p$ semplicemente traslando ($\tau$) il vettore $X_{p+h}$ fino al punto $p$,
+mantenendolo parallelo, e valutando la differenza tra i due vettori ora tangenti
+a $p$, definendo il vettore spostamento $\Delta X = \tau \cdot X_{p+h} - X_p$.
+La derivata covariante allora è semplicemente la derivata direzionale in
+direzione di $\Delta X$.
 
-Sia $(U,\phi)$ una carta di $M$ con coordinate $x = \phi(p) \:,\: p\in M$.
-L'azione di $\nabla$ sugli elementi $\{ e_\mu = \partial/ \partial x^\mu \}$
-della base di $T_p(M)$ ne determina univocamente l'azione su qualsiasi vettore $X_p$.\\
+\subsubsection{Curva nel piano}
+Sia ora la varietà differenziale $M$ una curva $\sigma : [0,1] \to \R^2$. Si scelga
+una parametrizzazione della curva in coordinate polari $\sigma(t) = (r(t),\theta(t))$ e
+siano $\vec u _r$ e $\vec u _\theta$ i versori delle coordinate polari tangenti
+alla curva. In generale, a istanti $t$ successivi, i vettori
+($\vec u _r (t+\Delta t) ,\vec u _\theta (t + \Delta t)$) risulteranno ruotati
+rispetto a ($\vec u _r (t), \vec u _\theta (t) $), quindi la semplice traslazione
+parallela di un vettore $X_{\sigma{t+\Delta t}}$ tangente al punto $\sigma(t + \Delta t)$
+non è adeguata. Occorre tener conto anche della rotazione dei versori
+$\vec u _r$ e $\vec u _\theta$, che è una proprietà intrinseca della curva legata
+alla sua curvatura.
 
-Si definiscono i \textbf{coefficienti di connessione} $\Gamma^\lambda_{\nu\mu}$ da
-(per semplicità di notazione si indica $\nabla_{e_\nu} = \nabla_\nu$):
-$$
-   \nabla (e_\nu,e_\mu) = \nabla_\nu e_\mu =
-      e_\lambda \Gamma^\lambda_{\nu\mu}
-$$
-Presi allora due campi $X = X^\mu e_\mu \: , \: Y = Y^\nu e_\nu \:
-\in \mathcal{X}(M)$ si ha:
-$$
-   \nabla_X Y
-      = X^\mu \nabla_\mu(Y^\nu e_\nu)
-      = X^\mu(e_\mu[Y^\nu]e_\nu + Y^\nu \nabla_\mu e_\nu)
-      = X^\mu \left(\frac{\partial Y^\lambda }{\partial x^\mu}
-         + Y^\nu \Gamma^\lambda_{\nu\mu} \right)
-$$
-il risultato dipende solo dalle $(\mathrm{dim} M)^3$ funzioni $\Gamma^\lambda_{\nu\mu}$.\\
+\subsubsection{Sfera}
+Sia $M=S^2$ la sfera bidimensionale. Una sfera è uno spazio non curvo. Il tipico
+esempio per spiegare la curvatura della sfera, legato anche al trasporto parallelo,
+è il seguente. Sia $p$ un punto dell'equatore e $X$ un vettore tangente a $p$. Si
+supponga di trasportare parralelamente $X$ lungo l'equatore fino a un altro punto
+$q$ dell'equatore, dopodichè lo si trasporti da $q$ al polo nord lungo un meridiano
+e di nuovo dal polo nord a $p$ lungo un altro meridiano. Si osserva che il vettore
+$X'$ così trasportato non ritorna in se stesso, ma ha un'altra orientazione. Un
+risultato diverso si otterrebbe se fosse scelto un altro cammino sulla sfera.
+Questa è una proprietà intrinseca dovuta alla curvatura della sfera e di ciò
+bisogna tener conto nel definire la derivata covariante.\\
 
-Una connessione $\nabla$ è dette simmetrica se in coordinate vale
-$\Gamma^\lambda_{\nu\mu} = \Gamma^\lambda_{\mu\nu}$
-
-\begin{theorem}{(Teorema fondamentale della geometria (pseudo-)Riemanniana):}
-  Sia $(M,g)$ una varietà (pseudo-)Riemanniana. Esiste un unica connessione
-  \emph{simmetrica} che è \emph{compatibile} con la metrica $g$. Questa connessione
-  è chiamata \textbf{connessione di Levi-Civita} definita da
-  $$
-       \Gamma^\kappa_{\mu\nu} = \frac{1}{2} g^{\kappa\lambda}
-           (\partial_\mu g_{\lambda\nu}  + \partial_\nu g_{\lambda\mu}
-              - \partial_\lambda g_{\mu\nu}) = : \chrsym{\kappa}{\mu\nu}
-  $$
-\end{theorem}
-$\chrsym{\kappa}{\mu\nu}$ è detto simbolo di Christoffel.
-Si veda \cite{nakahara} per la dimostrazione del teorema.\\
+La derivata covariante dipende dalla geometria intrinseca della varietà su cui
+si vuole applicare l'operazione, e può essere usata (in senso opposto al ragionamento
+appena fatto) per definire curvatura e torsione di una varietà.\\
+Si vedano le referenze \cite{boothby},\cite{nakahara} per una definzione formale.

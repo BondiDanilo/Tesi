@@ -1,12 +1,11 @@
 \section{Calcoli}
 %------------------------------------------------------------------------------%
-\textcolor{red}{(si può togliere)}
 \subsection{Calcolo del potenziale vettore di Dirac}
 \label{sec:dirac_potential}
 Si consideri il campo classico di monopolo generato da una carica magnetica $g$ posta
-nell'origine del sistema di riferimento, $\vec B : \mathbb{R} ^3 \to \mathbb{R} ^3$
+nell'origine del sistema di riferimento, $\vec B : \R ^3 \to \R ^3$
     $$ \vec B = g\frac{\vec r}{r^3} = \frac{g}{r^2} \vec u _r $$
-Si vuole trovare un potenziale vettore $\vec A : U \subset \mathbb{R} ^3 \to \mathbb{R} ^3$ tale che
+Si vuole trovare un potenziale vettore $\vec A : U \subset \R ^3 \to \R ^3$ tale che
 $ B = \nabla \times \vec A $ in $U$. Si osserva innanzitutto che per la simmetria
 sferica del campo $\vec B$, il potenziale vettore può essere scritto come:
    $$ \vec A = g \cdot a(\theta) \nabla \varphi $$
@@ -99,8 +98,8 @@ $$
      = -\frac{g}{r} \frac{1}{r-r\cos\theta} \vec u _\varphi
      = -\frac{g}{r(r-z)} \vec u _\varphi
 $$
-Ciò giustifica la definizione della forma differenziale $ A : \mathbb{R}^3 \setminus \{0\}
-\to \Omega(\mathbb{R}^3 \setminus \{0\})$ che mappa ogni punto $p \in \mathbb{R}^3 \setminus \{0\} , p = (x,y,z)$ nella forma
+Ciò giustifica la definizione della forma differenziale $ A : \R^3 \setminus \{0\}
+\to \Omega(\R^3 \setminus \{0\})$ che mappa ogni punto $p \in \R^3 \setminus \{0\} , p = (x,y,z)$ nella forma
 $$
     A_p = \frac{g}{r(r-z)}(x \dd  y - y \dd  x) = \frac{g}{r(r-z)} \dd  \varphi
 $$
@@ -114,7 +113,7 @@ Supponendo valga (dimostrare)
 $$
   \int_S \dd \sigma \lim_{\varepsilon \to 0} \vec B_\varepsilon = \lim_{\varepsilon \to 0} \int_S \dd \sigma \vec B_\varepsilon
 $$
-Sia $S = \{(x,y,z) \in \mathbb{R}^3 \setminus \{0\} : x^2 + y^2 \leq \varepsilon ^2\ ,-h<z<h\}$,
+Sia $S = \{(x,y,z) \in \R^3 \setminus \{0\} : x^2 + y^2 \leq \varepsilon ^2\ ,-h<z<h\}$,
 cilindro centrato attorno all'asse z di raggio $\varepsilon$ e altezza $2h$, con $h>0$.
 
 \begin{equation*}
@@ -130,7 +129,7 @@ cilindro centrato attorno all'asse z di raggio $\varepsilon$ e altezza $2h$, con
 \end{equation*}
 
 Il secondo integrale ha contributo non nullo solamente sulla faccia superiore del cilindro
-$C = \{ (x,y,z) \in \mathbb{R}^3 \setminus \{0\} : x^2 + y^2 \leq \varepsilon^2, z = h \}$
+$C = \{ (x,y,z) \in \R^3 \setminus \{0\} : x^2 + y^2 \leq \varepsilon^2, z = h \}$
 poichè l'integranda è nulla per $z<0$ e il campo è parallelo all'asse z, quindi il flusso
 attraverso le pareti del cilindro è nullo.
 \begin{equation*}

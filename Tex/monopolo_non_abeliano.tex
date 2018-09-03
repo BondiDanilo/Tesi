@@ -15,9 +15,8 @@ più semplice è una teoria di gauge $SU(2)$ che ha come sottogruppo il gruppo
 di gauge dell'elettrodinamica $U(1)$. Una teoria di questo tipo prende il nome
 di \emph{modello di Yang-Mills}. \\
 
-\textcolor{red}{Collegare a esempio }\ref{ex:istantonchern}\\
+% \textcolor{red}{Collegare a esempio }\ref{ex:istantonchern}\\
 
-\textcolor{red}{(spiegare meglio)}\\
 Si consideri il potenziale di Dirac \ref{eq:diracpotential}, qui denotato con
 $\tilde{\vec A}$, e si definisca il corrispondente quadrivettore $\tilde{A}_\mu$
 $$
@@ -25,26 +24,29 @@ $$
    \quad \to \quad
    \tilde{A}_\mu = -g(1 + \cos\theta) \partial_\mu \varphi
 $$
-Si definisce ora il \emph{potenziale vettore (di Dirac) non-Abeliano} $A_\mu$, \textcolor{red}{
-immerso in $SU(2)$,} tramite una combinazione delle matrici di Pauli
-$A_\mu := A_\mu^a \sigma_i/2$ con $a = 1,2,3$ e con coefficienti $A_\mu^a$ dati da
+Si vuole costruire ora un potenziale generalizzato, che trasformi attraverso
+gli elementi di $SU(2)$.
+Definendo il potenziale $A_\mu$ tramite una combinazione delle matrici di Pauli,
+$A_\mu := A_\mu^a \sigma_a/2$ con $a = 1,2,3$ con
 
 \begin{equation}\label{eq:wuyangpotential}
    \begin{aligned}
       A_\mu^1 &= 0, & A_\mu^2 &= 0, & A_\mu^3 &= \tilde{A}_\mu =
-         -g(1 + \cos\theta) \partial_\mu \varphi
+         -g(1 + \cos\theta) \partial_\mu \varphi \, ,
    \end{aligned}
 \end{equation}
+si ottiene che la trasformazione di gauge tramite $U \in SU(2)$ (come \ref{eq:matSU2})
+è:
+
+\begin{equation}\label{eq:nonabeliangauge}
+A_\mu \quad \mapsto \quad A'_\mu = U A_\mu U^{-1} + \frac{i}{e} U \partial_i U^{-1}
+\end{equation}
+
 Si ricorda che $\partial_\mu \varphi$, dalla definizione, è singolare lungo l'asse $z$
 $$
-   \partial_\mu \varphi = \frac{1}{r \sin\theta} (0,-\sin\varphi,\cos\phi,0)
+   \partial_\mu \varphi = \frac{1}{r \sin\theta} (0,-\sin\varphi,\cos\varphi,0)
 $$
 
-Sia $U \in SU(2)$ come \ref{eq:matSU2}. La trasformazione di gauge del potenziale
-vettore non-Abeliano è
-\begin{equation}\label{eq:nonabeliangauge}
-   A_\mu \quad \mapsto \quad A'-\mu = U A_\mu U^{-1} + \frac{i}{e} U \partial_i U^{-1}
-\end{equation}
 Sia $\alpha = 0$ in \ref{eq:matSU2} e si consideri la trasformazione di gauge con
 matrice data dalla seguente matrice
 \begin{equation}
@@ -58,16 +60,17 @@ matrice data dalla seguente matrice
          a $0$ per $\theta = \varphi$. Per un gruppo $SU(N)$ $\varphi$ è periodico di $2\pi N$
       }
 \end{equation}
+
 Inserendo $U$ nella trasformazione di gauge si ottiene (per le componenti spaziali
 $k = 1,2,3$):
+
 \begin{equation}
-   A'_k = A_k^a \frac{\sigma _a}{2} = \varepsilon_{ibc} \frac{r_b}{r^2}\frac{\sigma_c}{2}
+   A'_k = A_k^a \frac{\sigma _a}{2} = \varepsilon_{kbc} \frac{r_b}{r^2}\frac{\sigma_c}{2}
 \end{equation}
 Questo potenziale è regolare ovunque tranne che nell'origine. Si è rimossa
-la stringa di singolarità iniziale.\\
-
+la stringa di singolarità iniziale.
 Il motivo è che la trasformazione di gauge stessa \ref{eq:nonabeliangauge} è singolare
-e ha la stessa singolarità del potenziale $\tilde{A}_\mu$, infatti si ha che
+e ha la stessa singolarità del potenziale $\tilde{A}_\mu$. Infatti si ha che
 \begin{equation}
    \begin{aligned}
       (U \partial _i U^{-1})_1 & = 0 \, , &
@@ -78,22 +81,19 @@ e ha la stessa singolarità del potenziale $\tilde{A}_\mu$, infatti si ha che
 L'esatta cancellazione delle singolarità è possibile solo se è soddisfatta la condizione
 di quantizzazione della caria \ref{eq:diracquantumcharge}.\\
 
-L'espressione \ref{eq:wuyangpotential} è la soluzione classica della teoria di Yang-Mills puramente
-$SU(2)$, ad opera di Wu e Yang.\\
-
-La connessione tra la soluzione \ref{eq:wuyangpotential} e il monopolo magnetico
-è immediata inserendo l'espressione trovata nel tensore elettromagnetico non-Abeliano
+Se ora si inserisce l'espressione di $A _\mu$ nel tensore elettromagnetico non-Abeliano
+definito da
 \begin{equation}
    F_{\mu\nu} = \partial _\mu A_\nu - \partial _\nu A _\mu + i e [A_\mu,A_\nu]
               = \frac{1}{2} F_{\mu\nu}^a \sigma _a ,
 \end{equation}
-dove $F_{\mu\nu}^a = \partial _\mu A_\nu^a - \partial _\nu A_\mu^a$
-ottenendo
+dove $F_{\mu\nu}^a = \partial _\mu A_\nu^a - \partial _\nu A_\mu^a$, si ottiene
 \begin{equation}
    F^a_{ij} = \varepsilon_{ijk} \frac{r^a r^k}{e r^4} \sim \frac{1}{r^2}
 \end{equation}
+Riottenendo, asintoticamente, l'andamento del campo magnetico di monopolo.\\
 
-La soluzione presenta però ancora alcune problematiche. Se si prova a calcolare
+Questa soluzione presenta però ancora alcune problematiche. Se si prova a calcolare
 il flusso di questo campo su una superficie chiusa, si ottiene zero. Inoltre, si
 hanno problemi di definizone dell'energia della configurazione.\\
 

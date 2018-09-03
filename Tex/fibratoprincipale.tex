@@ -1,6 +1,6 @@
 %------------------------------------------------------------------------------%s
 \subsection{Fibrato Principale e Connessione}
-\begin{definition}{(Fibrato principale)}:
+\begin{definition}{(Fibrato principale)}\label{def:principalbundle}:
    Un \emph{fibrato principale} è un fibrato $P$ sullo spazio base $M$ la cui
    fibra $F$ è un gruppo di Lie e coincide con il gruppo di struttura
    $G$\footnote{Si veda \cite{nakahara}, \cite{shnir}, \cite{eguchi}
@@ -29,7 +29,7 @@ Sia $M$ lo spazio base di dimensione $n$, $G$ il gruppo di struttura e fibra e
 $P$ il fibrato principale.
 Sia $(U,\phi)$ una carta con coordinate $x_\mu = \phi_\mu(p) \:,p \in M$. \\
 
-\subsubsection{Definizione geometrica }
+\subsubsection{Definizione geometrica}
 Sia $u$ un punto del fibrato principale $P(M,G)$, sia $p = \pi(u) \in M$ e
 $G_p$ la fibra in $p$\\
 
@@ -176,7 +176,7 @@ $$
 Viceversa, sia $A_i$ una 1-forma a valori in una algebra di Lie assegnata su su $U_i$.
 Si può sempre costruire una 1-forma di connessione $\omega$ che trasportata tramite
 $s_i^*$ sia esattamente $A_i$.
-\begin{theorem}
+\begin{theorem}\label{thm:gaugepotential}
    Data una 1-forma $A_i$ a valori in $\mathfrak{g}$ su $U_i$ e una sezione locale
    $s_i : U_i \to \pi^{-1}(U_i)$, esiste una 1-forma di connessione $\omega$
    tale che $A_i = s_i \omega$, che ristretta a $\pi^{-1}(U_i)$ assume la forma

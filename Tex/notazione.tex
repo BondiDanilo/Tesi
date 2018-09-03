@@ -10,9 +10,9 @@ $\vec u_x = (1,0,0)$ Versore asse x \\
 $\vec u_y = (0,1,0)$ Versore asse y \\
 $\vec u_z = (0,0,1)$ Versore asse z \\
 
-$\vec u _\theta = (,,)$ Versore angolo polare \\
-$\vec u _\varphi = (-x,y,0)$ Versore angolo azimutale \\
-$\vec u _r = (,,) = \frac{\vec r}{r}$ Versore radiale \\
+$\vec u _\theta = \frac{1}{r\sqrt{r^2-z^2}}(xz,yz,-z^2-r^2)$ Versore angolo polare \\
+$\vec u _\varphi = \frac{1}{\sqrt{r^2-z^2}}(-x,y,0)$ Versore angolo azimutale \\
+$\vec u _r = \frac{1}{r}(x,y,z) = \frac{\vec r}{r}$ Versore radiale \\
 
 \begin{equation}\label{eq:versors}
    \begin{cases}
@@ -20,7 +20,7 @@ $\vec u _r = (,,) = \frac{\vec r}{r}$ Versore radiale \\
                 + \sin\theta \sin\varphi \vec u _y + \cos\theta \vec u _z\\
        \vec u_\theta = \cos\theta \cos\varphi \vec u _x +
                        \cos\theta \sin\varphi \vec u _y - \sin\theta \vec u _z\\
-       \vec u_\varphi = -\sin\varphi \vec u _x + \cos\theta \vec u _y
+       \vec u_\varphi = -\sin\varphi \vec u _x + \cos\varphi \vec u _y
    \end{cases}
 \end{equation}
 
@@ -34,27 +34,27 @@ $$
 $$
 
 \subsubsection{Spazi topologici}
-$S^n = \{ x \in \mathbb{R}^{n+1} \tc |x| = 1 \}$: Sfera n-dimensionale di raggio unitario.
+$S^n = \{ x \in \R^{n+1} \tc |x| = 1 \}$: Sfera n-dimensionale di raggio unitario.
 
 \subsubsection{Gruppi di matrici}
 \begin{itemize}
-   \item $GL(n,\mathbb{F}) = \{M \in Mat(n,\mathbb{F}) \tc detM \neq 0)\}$\\
+   \item $GL(n,\mathbb{F}) = \{M \in Mat(n,\mathbb{F}) \tc \mathrm{det} M \neq 0)\}$\\
       \ttab Gruppo Lineare Generale: Matrici $n \times n$ sul campo $\mathbb{F}$,
       invertibili.
 
-   \item $SL(n,\mathbb{F}) = \{ M \in GL(n,\mathbb{F}) \tc det(M) = 1)\}$\\
+   \item $SL(n,\mathbb{F}) = \{ M \in GL(n,\mathbb{F}) \tc \mathrm{det} M = 1)\}$\\
       \ttab Gruppo Lineare Speciale: Matrici a determinante 1.
 
-   \item $O(n) = \{ M \in GL(n,\mathbb{R}) \tc  M^T M = M M^T = 1 \}$\\
+   \item $O(n) = \{ M \in GL(n,\R) \tc  M^T M = M M^T = 1 \}$\\
       \ttab Gruppo Ortogonale: Matrici ortogonali.
 
-   \item $SO(n) = \{ M \in O(n)\tc det(M) = 1  \}$\\
+   \item $SO(n) = \{ M \in O(n)\tc \mathrm{det} M  = 1  \}$\\
       \ttab Gruppo Ortogonale Speciale: Matrici ortogonali a determinante 1.
 
-   \item $U(n) = \{ M \in GL(n,\mathbb{C})\tc M^dagger M = M M^\dagger = 1\}$\\
+   \item $U(n) = \{ M \in GL(n,\C)\tc M^\dagger M = M M^\dagger = 1\}$\\
       \ttab Gruppo Unitario: Matrici unitarie.
 
-   \item $SU(n) = \{ M \in U(n)\tc det(M) = 1  \}$\\
+   \item $SU(n) = \{ M \in U(n)\tc \mathrm{det}M = 1  \}$\\
       \ttab Gruppo Unitario Speciale: Matrici unitarie a determinante 1.
 \end{itemize}
 
@@ -71,7 +71,7 @@ Le matrici di $SU(2)$ hanno la forma
          -\sin \frac{\theta}{2} e^{i(\varphi + \alpha)} & \cos \frac{\theta}{2} e^{i\alpha}  \\
        \end{pmatrix}
 \end{equation}
-Dove $z,w \in \mathbb{C}$ tali che $zz^* + ww^* = 1$
+Dove $z,w \in \C$ tali che $zz^* + ww^* = 1$
 (affinchè $U^\dagger U = UU^\dagger = 1$), $\theta,\varphi$ sono gli angoli delle
 coordinate polari e $\alpha$ è il parametro ciclico del gruppo $U(1)$, cioè
 $g \in U(1) \to g = e^{i\alpha}$
@@ -85,3 +85,10 @@ $g \in U(1) \to g = e^{i\alpha}$
    \end{aligned}
 \end{equation}
 \subsubsection{(pseudo)Tensore di Levi-Civita}
+$$
+   \varepsilon_{ijk} := \begin{cases}
+      1  & \mathrm{se \:} i,j,k \mathrm{\: permutazione \:   pari \: di\:} 1,2,3 \\
+      -1 & \mathrm{se \:} i,j,k \mathrm{\: permutazione \: dispari\: di\:} 1,2,3 \\
+      0  & \mathrm{altrimenti}
+   \end{cases}
+$$
