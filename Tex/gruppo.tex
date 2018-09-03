@@ -1,4 +1,5 @@
 \section{Gruppo e azione di gruppo}
+
 \begin{definition}{(Gruppo)}:
    Sia $G$ un insieme e $*$ un'operazione binaria su $G$. $G$ si definisce
    \emph{gruppo} con l'operazione $*$ se valgono le seguenti proprietà:
@@ -48,14 +49,12 @@ L'azione di $G$ su $X$ si dice:
 \end{itemize}
 %------------------------------------------------------------------------------%
 \subsection{Gruppi e Algebre di Lie}
-Si veda la sezione \ref{sec:vardiff} per una breve trattazione su varietà differenziali,
-spazi tangenti e campi vettoriali.
 
 \begin{definition}{(Gruppo di Lie):}\label{def:liegroup}
-   Un gruppo di Lie $G$ è una varietà differenziale\footnote{Si veda la sezione
-   \ref{sec:vardiff}}, dotata di di una struttura di gruppo in cui la
-   moltiplicazione e l'inverso sono funzioni lisce. In altre parole è liscia la mappa
-      $$ (x.y) \mapsto x^{-1}y \quad \forall x,y \in G$$
+   Un gruppo di Lie $G$ è una varietà differenziale, dotata di di una struttura
+   di gruppo in cui la moltiplicazione e l'inverso sono funzioni lisce.
+   In altre parole, è liscia la mappa
+      $$ (x,y) \mapsto x^{-1}y \quad \forall x,y \in G$$
 \end{definition}
 La dimensione del gruppo equivale alla dimensione della varietà.
 Esempi di gruppi di Lie sono $GL(n,\mathbb{R})$ e $GL(n,\C)$ i gruppi
@@ -69,20 +68,6 @@ $GL(n,\mathbb{R})$.\\
 
 Essendo un gruppo di Lie $G$ contemporaneamente gruppo e varietà differenziale, si
 può definire l'azione di $G$ (come gruppo) su se stesso (come varietà differenziale).
-
-\begin{definition}\label{def:adjrep}
-   Sia $h \in G$ si definisce la \emph{rappresentazione aggiunta} di G come
-   l'omomorfismo $ ad_a : G \to G $
-   $$
-      ad_h : g \mapsto h g h^{-1}
-   $$
-\end{definition}
-E induce la mappa tra gli spazi tangenti $(ad_h)_* : T_g(G) \to T_{h^{-1}gh}$.
-Poichè $ad_h e = e$ si può valutare la restrizione di $(ad_h)_*$ al solo $g=e$,
-ottenendo una mappa di $T_e(G)$ in se stesso
-$$
-   Ad_h : T_e(G) \to T_e(G) \quad Ad_h := (ad_h)_* |_{T_e(G)}
-$$
 
 %------------------------------------------------------------------------------%
 \begin{definition}{(Algebra di Lie):}\label{def:LieAlgebra}
@@ -101,9 +86,9 @@ $$
           (discende dalla precedente)
    \end{enumerate}
 \end{definition}
-La dimensione dell'algebra di Lie è la sua dimensione come spazio vettoriale.\\
-Un set di elementi dell'algebra $\mathfrak{g}$ si dice set di \emph{generatori}
-se la sottoalgebra più piccola che lo contiene è $\mathfrak{g}$ stessa.\\
+
+%Un set di elementi dell'algebra $\mathfrak{g}$ si dice set di \emph{generatori}
+%se la sottoalgebra più piccola che lo contiene è $\mathfrak{g}$ stessa.\\
 
 Ad ogni gruppo di Lie si può associare un'algebra di Lie.\\
 
@@ -151,11 +136,11 @@ $$
   $$
 \end{definition}
 La mappa che a un vettore tangente all'identità in $G$ associa un campo vettoriale
-invariante a sinistra
+invariante a sinistra è un isomorfismo.
 $$
-   T_e(G) \to \mathfrak{g}  \quad V \mapsto X_V
+   T_e(G) \to \mathfrak{g} \:,\: \quad V \mapsto X_V
 $$
-è un isomorfismo. \\
+
 Si dimostra che $\mathfrak{g}$ è uno spazio vettoriale con l'operazione di
 traslazione a sinistra (?), e quindi $\mathfrak{g} \cong T_e(G)$.
 In particolare dim $\mathfrak{g}$ = dim $G$.\\
@@ -192,62 +177,71 @@ quindi $\mathfrak{g}$ è chiuso rispetto all'operazione $[,]$ così definita.\\
 L'algebra di Lie associata a un gruppo viene indicata con lo stesso nome del gruppo,
 in carattere gotico minuscolo, ad esempio $SO(n)\to \mathfrak{so(n)}$.\\
 
+%------------------------------------------------------------------------------%
+Scelta una base  $\{T^a\}$ per l'algebra di Lie $\mathfrak{g}$(che è uno spazio
+vettoriale), $[T^a,T^b]$ è ancora un elemento dell'algebra di Lie,
+quindi scomponibile sulla base scelta. Si ha allora
+$$
+    [T^a,T^b] = c^{ab}_{\hphantom{ab}c} T^c .
+$$
+I coefficenti $ c^{ab}_{\hphantom{ab}c}$ si dicono \textbf{costanti di struttura}
+e determinano completamente la struttura del gruppo di Lie $G$ in quanto non
+dipendono dalla scelta della base (Teorema di Lie).\\
+Gli elementi della base di $\mathfrak{g}$, $\{T^a\}$, vengono detti
+\emph{generatori} del gruppo di Lie $G$.\\
+%------------------------------------------------------------------------------%
+Nel caso di un gruppo di Lie $G$ di matrici reali, l'algebra di Lie può essere
+formulata in termini della funzione esponenziali di matrici, ovvero
+$$
+\mathfrak{g} = \{ A \in \mathrm{Mat}(n,\C) \: | \:
+\forall t \in \mathbb{R} \:\to \exp (tA) \in G \},
+$$
+la parentesi di Lie è il commutatore di matrici e quindi le costanti di struttura
+sono determinate dalle regole di commutazione dei generatori $\{T^a\}$.\\
+
+%------------------------------------------------------------------------------%
+\begin{definition}
+   Sia $G$ un gruppo di Lie e $V$ uno spazio vettoriale su $\R$ o $\C$. Una
+   \textbf{rappresentazione} del gruppo $G$ è un omomorfismo tra gruppi
+   $$ \rho : G \to GL $$
+   ossia una applicazione che a un gruppo associa un operatore lineare, che conservi
+   l'operazione di gruppo.
+   $$ \rho(g \cdot h) = \rho(g) \cdot \rho(h) $$
+   Analogamente si definisce la rappresentazione di un'algebra di Lie $\mathfrak{g}$.
+\end{definition}
+Se la rappresentazione è anche iniettiva, si chiama \emph{fedele}. Una rappresentazione
+\textbf{fondamentale} è la più piccola rappresentazione fedele del gruppo.
+
+\begin{definition}\label{def:adjrep}
+   Sia $h \in G$ si definisce la \emph{rappresentazione aggiunta} di G come
+   l'omomorfismo $ \mathrm{ad}_a : G \to G $
+   $$
+      \mathrm{ad}_h : g \mapsto h g h^{-1}
+   $$
+\end{definition}
+
+E induce la mappa tra gli spazi tangenti $(\mathrm{ad}_h)_* : T_g(G) \to T_{h^{-1}gh}$.
+Poichè $\mathrm{ad}_h e = e$ si può valutare la restrizione di $(\mathrm{ad}_h)_*$ al solo $g=e$,
+ottenendo una mappa di $T_e(G)$ in se stesso
+$$
+   \mathrm{Ad}_h : T_e(G) \to T_e(G) \quad \mathrm{Ad}_h := (\mathrm{ad}_h)_* |_{T_e(G)}
+$$
+
 \begin{definition}
    Identificando $\mathfrak{g}$ con $T_e(G)$ tramite l'isomorfismo dell'azione sinistra
    (indicato qua con $\lambda : T_e(G) \to \mathfrak{g}$) e richiamando la definizione
    \ref{def:adjrep}, si definisce la \textbf{mappa aggiunta} del gruppo di Lie $G$.
    $$
-      Ad : G \times \mathfrak{g} \to \mathfrak{g} \quad , \quad
-      (h,X) \mapsto \lambda \circ Ad_h \circ \lambda^{-1}(X)
+      \mathrm{Ad} : G \times \mathfrak{g} \to \mathfrak{g} \quad , \quad
+      (h,X) \mapsto \lambda \circ \mathrm{Ad}_h \circ \lambda^{-1}(X)
    $$
    dove $h \in G$, $X \in \mathfrak{g}$.
-   Applicando la definizione si trova che $Ad_a Ad_b = Ad_ab$ e $Ad_{a^{-1}} = Ad_a^{-1}$ .\\
+   Applicando la definizione si trova che $\mathrm{Ad}_a \mathrm{Ad}_b =
+   \mathrm{Ad}_ab$ e $\mathrm{Ad}_{a^{-1}} = \mathrm{Ad}_a^{-1}$ .\\
 \end{definition}
 
-\begin{definition}\label{def:inducedvectfield}
-   Sia $G$ un gruppo di Lie che agisce sulla varietà $M$ a sinistra. Sia $V \in T_e(G)$
-   un vettore tangente all'identità di $G$.
-   Si definisce il \textbf{campo vettoriale indotto} da $V$ il campo $V^\#$ su $M$
-   $$
-      V^\# |_p = \left. \frac{\dd}{\dd t} (\exp(tV)p) \right |_{t=0} \quad p \in M
-   $$
-   E si definisce quindi una mappa $\# : T_e(G) \to \mathcal{X}(M)$
-   con $V \mapsto V^\#$
-\end{definition}
+\begin{example}
+   Rappresentazione fondamentale e aggiunta di $\mathfrak{su(2)}$
+\end{example}
 
-Nel caso di un gruppo di Lie $G$ di matrici reali, l'algebra di Lie può essere
-formulata in termini della funzione esponenziali di matrici, ovvero
-$$
-\mathfrak{g} = \{ A \in \mathrm{Mat}(n,\C) \: | \:
-\forall t \in \mathbb{R} \:\to \exp (tA) \in G \}
-$$
-Gli elementi dell'algebra di Lie vengono detti \emph{generatori} del gruppo di Lie
-e, come visto sopra, la struttura del gruppo $G$ è completamente determinata
-dalle costanti di struttura. In questo caso in cui $G$ è un gruppo di matrici,
-la parentesi di Lie è il commutatore di matrici e quindi le costanti di struttura
-si dice sono determinate dalle regole di commutazione dei generatori $\{T_\mu\}$:
-$$
-   [T_\mu, T_\nu] = T_\mu T_\nu - T_\nu T_\mu
-      = c_{\mu\nu}^{\hphantom{\mu\nu}\lambda} T_\lambda
-$$
-
-\textcolor{red}{(non ancora usato)}\\
-Poichè si ha che $\mathfrak{g} \cong T_e(G)$ sia $\{ V_1,\dots,V_n \}$ una base
-per $T_e(G)$. Questa definisce, tramite l'azione sinistra, un set di campi vettoriali
-$\{ X_1, \dots, X_n \} \in \mathfrak{g}$ linearmente indipendenti in ogni punto $g \in G$
-$$
-   X_\mu |_g := L_{g*}V_\mu \quad \forall \mu = 1,\dots,n
-$$
-che per ogni $T_g(G)$ è una base. Poichè anche $[X_\mu,X_\nu]|_g \in \mathfrak{g}$
-nel punto $g$, può essere sviluppato $ \forall g \in G$ in termini dei vettori
-$\{X_\mu|_g\}$, e quindi si ha:
-$$
-   [X_\mu,X_\nu] = \sum_\lambda c_{\mu\nu}^{\hphantom{\mu\nu}\lambda} X_\lambda
-$$
-i coefficienti $c_{\mu\nu}^{\hphantom{\mu\nu}\lambda}$ si chiamano
-\textbf{costanti di struttura}.
-Si dimostrano essere indipendenti dal particolare $g \in G$ preso in considerazione,
-e determinano quindi completamente la struttura del gruppo di Lie $G$ (Teorema di Lie).\\
-
-
-%------------------------------------------------------------------------------%
+Un sottogruppo di Cartan di un gruppo di Lie è un sottogruppo abeliano massimale.

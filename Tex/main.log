@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  3 SEP 2018 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  3 SEP 2018 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,14 +660,7 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 Package hyperref Info: Option `colorlinks' set `true' on input line 82.
 Package hyperref Info: Option `linktocpage' set `true' on input line 82.
 Package hyperref Info: Option `pageanchor' set `true' on input line 82.
-) (./main.aux
-
-LaTeX Warning: Label `label' multiply defined.
-
-
-LaTeX Warning: Label `label' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -788,63 +781,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--35
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/dan/Desktop/UNI/TESI
-/Images/logo.jpg>] [2] (./main.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+/Images/logo.jpg>] [2] (./main.toc)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
-)
-(./monopolo_dirac.tex [3
+) (./monopolo_dirac.tex [3
 
 ]
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 94--105
+Underfull \hbox (badness 10000) in paragraph at lines 93--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--117
+Underfull \hbox (badness 10000) in paragraph at lines 110--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--152
+Underfull \hbox (badness 10000) in paragraph at lines 144--151
 
  []
 
 [5]) (./calcoli.tex
-Underfull \hbox (badness 10000) in paragraph at lines 195--1
+Underfull \hbox (badness 10000) in paragraph at lines 194--1
 
  []
 
 [6]
+
+LaTeX Warning: Reference `eq:versors' on page 7 undefined on input line 28.
+
+
 Overfull \hbox (16.85237pt too wide) detected at line 63
 \OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = ([] \OML/cmm/m/it/10 ^^R [] 'u[] \OT1/cm
 r/m/n/10 + [] \OML/cmm/m/it/10 ^^R [] 'u[] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm/m/i
@@ -895,7 +889,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--55
  []
 
 
+LaTeX Warning: Reference `def:principalbundle' on page 9 undefined on input lin
+e 58.
+
+
 LaTeX Warning: Reference `eq:section' on page 9 undefined on input line 67.
+
+
+LaTeX Warning: Reference `eq:transfunctions' on page 9 undefined on input line 
+68.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 56--70
@@ -905,6 +907,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--70
 [9
 
 ]
+
+LaTeX Warning: Reference `thm:gaugepotential' on page 10 undefined on input lin
+e 74.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 71--77
 
  []
@@ -927,6 +934,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--131
 [10]) (./monopolo_abeliano.tex [11]
 Capitolo 3.
 
+LaTeX Warning: Citation `wuyang' on page 12 undefined on input line 10.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2--15
 
  []
@@ -935,6 +945,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--15
 Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
+
+
+LaTeX Warning: Reference `sec:fibrati' on page 12 undefined on input line 57.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 59--64
@@ -954,14 +967,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--71
 [12
 
 ]
+
+LaTeX Warning: Reference `ex:monopolechern' on page 13 undefined on input line 
+75.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
 
+LaTeX Warning: Reference `' on page 13 undefined on input line 109.
+
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 118.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 138--141
 
  []
+
+
+LaTeX Warning: Reference `eq:condcompatibility' on page 13 undefined on input l
+ine 143.
+
+
+LaTeX Warning: Reference `eq:transfunctions' on page 13 undefined on input line
+ 145.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 151--156
@@ -1001,9 +1033,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--6
  []
 
 
+LaTeX Warning: Citation `nakahara' on page 16 undefined on input line 11.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 7--17
 
  []
+
+
+LaTeX Warning: Reference `eq:matSU2' on page 16 undefined on input line 38.
+
+
+LaTeX Warning: Reference `eq:matSU2' on page 16 undefined on input line 50.
 
 [16
 
@@ -1023,11 +1064,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--99
  []
 
 ) (./monopolo_thooft.tex
-
-LaTeX Warning: Command \L invalid in math mode on input line 16.
-
-Missing character: There is no Š in font cmr10!
 LaTeX Font Info:    Try loading font information for U+euf on input line 25.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
@@ -1040,10 +1078,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
-
-LaTeX Warning: Command \L invalid in math mode on input line 69.
-
-Missing character: There is no Š in font cmr10!
 [17]
 
 LaTeX Warning: Command \L invalid in math mode on input line 98.
@@ -1084,27 +1118,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
-
- []
-
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+
+LaTeX Warning: Citation `nakahara' on page 19 undefined on input line 188.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
-
- []
-
-[19])
-Underfull \hbox (badness 10000) in paragraph at lines 246--17
+)
+Underfull \hbox (badness 10000) in paragraph at lines 233--17
 
  []
 
-[20]
+[19]
 Appendice A.
 (./appendice.tex (./varieta.tex
 Overfull \hbox (2.15958pt too wide) in paragraph at lines 6--13
@@ -1127,6 +1155,10 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
 
+
+LaTeX Warning: Citation `sernesi' on page 20 undefined on input line 59.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
@@ -1141,7 +1173,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--74
 
  []
 
-[21
+[20
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 126--129
@@ -1153,7 +1185,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--138
 
  []
 
-[22]) (./omotopia.tex [23]
+
+LaTeX Warning: Reference `sec:fibratotangente' on page 21 undefined on input li
+ne 150.
+
+[21]) (./omotopia.tex
+
+LaTeX Warning: Citation `sernesi' on page 22 undefined on input line 5.
+
+
+LaTeX Warning: Citation `fulton' on page 22 undefined on input line 5.
+
+
+LaTeX Warning: Citation `nakahara' on page 22 undefined on input line 5.
+
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 51--55
 
  []
@@ -1169,11 +1215,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--102
  []
 
 
+LaTeX Warning: Citation `fulton' on page 23 undefined on input line 121.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-[24]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 148--155
 
  []
@@ -1203,7 +1252,16 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 24.
 
-[25]
+
+LaTeX Warning: Citation `sernesi' on page 24 undefined on input line 25.
+
+
+LaTeX Warning: Citation `boothby' on page 24 undefined on input line 25.
+
+
+LaTeX Warning: Citation `nakahara' on page 24 undefined on input line 25.
+
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
@@ -1228,28 +1286,19 @@ Overfull \hbox (16.09001pt too wide) in paragraph at lines 129--129
 [] 
  []
 
-[26]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 129--132
 
  []
 
 
+LaTeX Warning: Citation `boothby' on page 26 undefined on input line 163.
+
+
+LaTeX Warning: Citation `nakahara' on page 26 undefined on input line 163.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 172--176
-
- []
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
 
  []
 
@@ -1258,22 +1307,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--230
 
  []
 
-[28]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 267--277
 
  []
 
-) (./gruppo.tex
+
+LaTeX Warning: Citation `boothby' on page 27 undefined on input line 281.
+
+
+LaTeX Warning: Citation `nakahara' on page 27 undefined on input line 281.
+
+) (./gruppo.tex [27]
 Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
-
-
-LaTeX Warning: Reference `sec:vardiff' on page 29 undefined on input line 51.
-
-[29]
-
-LaTeX Warning: Reference `sec:vardiff' on page 30 undefined on input line 56.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--69
@@ -1281,91 +1329,188 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--69
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+[28]
+
+LaTeX Warning: Reference `' on page 29 undefined on input line 103.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+LaTeX Warning: Reference `' on page 29 undefined on input line 106.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--124
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 157--162
+Underfull \hbox (badness 10000) in paragraph at lines 143--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--174
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--194
+Underfull \hbox (badness 10000) in paragraph at lines 199--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+LaTeX Warning: Reference `def:adjrep' on page 30 undefined on input line 234.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--242
+
+ []
+
+) (./fibrati.tex [30]
+Underfull \hbox (badness 10000) in paragraph at lines 40--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+
+ []
+
+
+LaTeX Warning: Reference `nontriv' on page 31 undefined on input line 70.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 246--251
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
 
  []
 
-) (./fibrati.tex
 
-LaTeX Warning: Reference `sec:vardiff' on page 32 undefined on input line 15.
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
+
+ []
+
+
+LaTeX Warning: Reference `nontriv' on page 32 undefined on input line 110.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
+
+ []
+
+) (./fibratoprincipale.tex
+
+LaTeX Warning: Citation `nakahara' on page 32 undefined on input line 7.
+
+
+LaTeX Warning: Citation `shnir' on page 32 undefined on input line 7.
+
+
+LaTeX Warning: Citation `eguchi' on page 32 undefined on input line 7.
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 35--45
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
+Underfull \hbox (badness 10000) in paragraph at lines 13--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--55
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--60
 
  []
 
@@ -1375,116 +1520,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--64
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--96
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--101
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+LaTeX Warning: Reference `def:liealgebraform' on page 33 undefined on input lin
+e 76.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+LaTeX Warning: Citation `nakahara' on page 34 undefined on input line 120.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+LaTeX Warning: Citation `nakahara' on page 34 undefined on input line 127.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
-
- []
-
-) (./fibratoprincipale.tex
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
-
- []
+LaTeX Warning: Reference `eq:transfunctions' on page 34 undefined on input line
+ 134.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--17
+LaTeX Warning: Reference `eq:condcompatibility' on page 34 undefined on input l
+ine 146.
 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--27
-
- []
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 28--31
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--57
+LaTeX Warning: Reference `eq:condcompatibility' on page 34 undefined on input l
+ine 164.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--96
-
- []
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-[36]) (./chern.tex
+[34]) (./chern.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
+
+
+LaTeX Warning: Reference `ex:cilindro' on page 35 undefined on input line 4.
+
+
+LaTeX Warning: Reference `ex:mobius' on page 35 undefined on input line 4.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-[37]
+
 Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
@@ -1495,11 +1613,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
  []
 
 
+LaTeX Warning: Reference `' on page 35 undefined on input line 47.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
 
-) (./notazione.tex [38]
+
+LaTeX Warning: Reference `eq:paulimatrix' on page 35 undefined on input line 54
+.
+
+[35]) (./notazione.tex [36]
 Appendice B.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
@@ -1516,25 +1641,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-[39
+[37
 
-])) (./bibliografia.tex [40])
+])) (./bibliografia.tex [38])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
- [41
+ [39
 
-pdfTeX warning (ext4): destination with the same identifier (name{cite.label}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.24 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{cite.label}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.24 \end{document}
-                   ]
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
@@ -1544,17 +1657,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 24.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 9027 strings out of 493029
- 122475 string characters out of 6136234
- 237599 words of memory out of 5000000
- 12096 multiletter control sequences out of 15000+600000
+ 9002 strings out of 493029
+ 122183 string characters out of 6136234
+ 236441 words of memory out of 5000000
+ 12091 multiletter control sequences out of 15000+600000
  24460 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,18n,30p,810b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,18n,30p,810b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
@@ -1574,24 +1687,23 @@ ype1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
-ls/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-rm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfti1440.pfb>
-Output written on main.pdf (41 pages, 796449 bytes).
+bols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+rm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfti1440.pfb>
+Output written on main.pdf (39 pages, 774332 bytes).
 PDF statistics:
- 880 PDF objects out of 1000 (max. 8388607)
- 791 compressed objects within 8 object streams
- 269 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 752 PDF objects out of 1000 (max. 8388607)
+ 667 compressed objects within 7 object streams
+ 249 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

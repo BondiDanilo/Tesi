@@ -3,7 +3,7 @@ Sia $V$ uno spazio vettoriale su su $\R$.
 Si definisce \textbf{tensore} misto con $r$ indici covarianti e $s$ indici
 controvarianti un'\emph{applicazione multilineare} $F : V^r \times V^{*s} \to
 \R$ , dove $V^r = V \times \dots \times V$ e
-$V^{*s} =  V^* \times \dots \times V^*$. 
+$V^{*s} =  V^* \times \dots \times V^*$.
 Si indica con $\mathcal{T}^{(r,s)}(V)$ lo spazio dei (r,s)-tensori su $V$\\
 
 Si definisce il \textbf{prodotto tensoriale} (indicato col simbolo $\otimes$) tra
@@ -190,36 +190,36 @@ Questo teorema porta come corollari e casi particolari i vari teoremi del rotore
 divergenza, etc.
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
-\subsection{Varietà Riemanniane}
-\begin{definition}
-   Una \emph{metrica Riemanniana} $g$ su una varietà $M$ è un (2,0)-campo tensoriale
-   su $M$ che per ogni punto $p \in M$ soddisfa:
-   \begin{enumerate}
-      \item $ g_p(U,V) = g_p(V,U) $
-      \item $ g_p(U,U) \geq 0 $ dove $ g(U,U) = 0 \iff U = 0$
-   \end{enumerate}
-   dove $U,V \in T_p(M)$.\\
-
-   Una \emph{metrica pseudo-Riemanniana} $g$ su una varietà $M$ è un
-   (2,0)-campo tensoriale su $M$ che per ogni punto $p \in M$ soddisfa:
-   \begin{enumerate}
-      \item $ g_p(U,V) = g_p(V,U) $
-      \item $ g_p(U,V) = 0 \: \forall U \in T_p(M) \Rightarrow V = 0$
-   \end{enumerate}
-\end{definition}
-
-Data una carta $(U,\phi)$ di $M$ con coordinate $\{x^\mu\}$ il tensore $g$ può
-essere scritto come
-$$ g_p = g_{\mu\nu}(p) \dd x^\mu \dd x^\nu =: \dd s^2$$
-Dove $g_{\mu\nu}(p)$ può essere considerato come la $\mu\nu$-esima entrata di una matrice.\\
-Il numero $(p,n)$ di autovalori positivi $p$ e negativi $n$ è detto \emph{indice} della
-metrica. Se $n=1$ la metrica è detta Lorentziana.\\
-Si può diagonalizzare la metrica e riscalare gli autovettori in modo da ottenere
-solamente $\pm 1$ sulla diagonale. Ad esempio si ha la metrica Euclidea
-$\delta = \mathrm{diag}(1,1,\dots,1)$ o Minkowskiana $\eta = \mathrm{diag}(-1,1,...,1)$.\\
-
-Se una varietà differenziale $M$ è dotata di una metrica Riemanniana $g$, la coppia $(M,g)$
-è detta \textbf{varietà Riemanianna} (analogamente se $g$ è pseudo-Riemann).\\
+%\subsection{Varietà Riemanniane}
+%\begin{definition}
+%   Una \emph{metrica Riemanniana} $g$ su una varietà $M$ è un (2,0)-campo tensoriale
+%   su $M$ che per ogni punto $p \in M$ soddisfa:
+%   \begin{enumerate}
+%      \item $ g_p(U,V) = g_p(V,U) $
+%      \item $ g_p(U,U) \geq 0 $ dove $ g(U,U) = 0 \iff U = 0$
+%   \end{enumerate}
+%   dove $U,V \in T_p(M)$.\\
+%
+%   Una \emph{metrica pseudo-Riemanniana} $g$ su una varietà $M$ è un
+%   (2,0)-campo tensoriale su $M$ che per ogni punto $p \in M$ soddisfa:
+%   \begin{enumerate}
+%      \item $ g_p(U,V) = g_p(V,U) $
+%      \item $ g_p(U,V) = 0 \: \forall U \in T_p(M) \Rightarrow V = 0$
+%   \end{enumerate}
+%\end{definition}
+%
+%Data una carta $(U,\phi)$ di $M$ con coordinate $\{x^\mu\}$ il tensore $g$ può
+%essere scritto come
+%$$ g_p = g_{\mu\nu}(p) \dd x^\mu \dd x^\nu =: \dd s^2$$
+%Dove $g_{\mu\nu}(p)$ può essere considerato come la $\mu\nu$-esima entrata di una matrice.\\
+%Il numero $(p,n)$ di autovalori positivi $p$ e negativi $n$ è detto \emph{indice} della
+%metrica. Se $n=1$ la metrica è detta Lorentziana.\\
+%Si può diagonalizzare la metrica e riscalare gli autovettori in modo da ottenere
+%solamente $\pm 1$ sulla diagonale. Ad esempio si ha la metrica Euclidea
+%$\delta = \mathrm{diag}(1,1,\dots,1)$ o Minkowskiana $\eta = \mathrm{diag}(-1,1,...,1)$.\\
+%
+%Se una varietà differenziale $M$ è dotata di una metrica Riemanniana $g$, la coppia $(M,g)$
+%è detta \textbf{varietà Riemanianna} (analogamente se $g$ è pseudo-Riemann).\\
 
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%

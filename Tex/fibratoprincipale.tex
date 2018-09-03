@@ -1,4 +1,4 @@
-%------------------------------------------------------------------------------%s
+%------------------------------------------------------------------------------%
 \subsection{Fibrato Principale e Connessione}
 \begin{definition}{(Fibrato principale)}\label{def:principalbundle}:
    Un \emph{fibrato principale} è un fibrato $P$ sullo spazio base $M$ la cui
@@ -6,160 +6,90 @@
    $G$\footnote{Si veda \cite{nakahara}, \cite{shnir}, \cite{eguchi}
    per una definizione più completa}.
 \end{definition}
-Si indica anche con $P(M,G)$ o solamente $P$ dando per scontato la fibra
-e lo spazio base, per brevità.\\
 
-Si vuole ora generalizzare il concetto di connessione\footnote{Il concetto di
-connessione generalizza quello di derivata direzionale ai tensori}
-(e di trasporto parallelo) estendendolo alla struttura del fibrato principale.
-Tale generalizzazione ha il vantaggio di definire un trasporto parallelo
-indipenente dalla metrica (a differenza della connessione di Levi-Civita). \\
+Si vuole ora generalizzare il concetto di derivata covariante
+(e di trasporto parallelo) estendendolo alla struttura del fibrato principale.\\
 
-Si sceglie di utilizzare due approcci per definire la connessione su un fibrato
-principale. Il primo è di suddividere lo spazio tangente al fibrato in componente
-"verticale" e "orizzontale" (l'affermazione verrà chiarita in seguito).
-Il secondo è di definirla come una 1-forma a valori nell'algebra di Lie che
-rispetta determinate proprietà. Le due definizioni si dimostrano essere
-equivalenti\footnote{Si veda \cite{nakahara}}.\\
-Il primo approccio, geometrico, ha il vantaggio di essere globale e non dipendere
-dalle coordinate scelte, mentre il secondo è più efficace a livello pratico e
-computazionale.\\
-
-Sia $M$ lo spazio base di dimensione $n$, $G$ il gruppo di struttura e fibra e
-$P$ il fibrato principale.
-Sia $(U,\phi)$ una carta con coordinate $x_\mu = \phi_\mu(p) \:,p \in M$. \\
-
-\subsubsection{Definizione geometrica}
-Sia $u$ un punto del fibrato principale $P(M,G)$, sia $p = \pi(u) \in M$ e
-$G_p$ la fibra in $p$\\
-
-Si definisce \textbf{sottospazio verticale} $V_u(P)$ un sottospazio di $T_u(P)$
-tangente alla fibra $G_p$ nel punto $u$. Gli elementi di $V_u(P)$ si costruiscono
-nel modo seguente.\\
-Sia $A \in \mathfrak{g}$
-Richiamando la definizione \ref{def:inducedvectfield}, si definisce il vettore
-$A^\# \in T_u(P)$ dall'azione su una generica funzione $f \in C\infty(P)$
-$$
-   (A^\#)_u [f] := \left. \frac{\dd}{\dd t} f(u \exp(tA)) \right|_{t=0}
-$$
-
-Analogamente a quanto visto per i gruppi di matrici, se $A$ è nell'algebra di Lie
-$g = \exp(t_0 A)$ per $t_0$ fissato è un elemento del gruppo di Lie $G$.
-Al variare di $t$, $g_t = \exp(tA)$ è una curva in $G$, quindi $u = \exp(tA) = ug_t$
-è una curva lungo la fibra in $p = \pi(u)$ in quanto trasla $u$ per azione
-destra di $G$. La funzione $f$ è quindi ristretta alla curva $ug_t$. \\
-Allora  l'espressione a destra indica il vettore ($\dd / \dd t$) tangente alla curva
-(si pensi al vettore velocità istantanea) $ug_t$ all'istante $t=0$, cioè nel punto
-$u\exp(0A) = ue = u$.\\
-Il significato dell'espressione a destra è esattamente definire
-un vettore tangente alla fibra passante in $u$, nel punto $u$, a partire da
-un elemento dell'algebra $A$, appunto $A^\#_u \in V_u(P)$.\\
-
-Definendo il vettore $A^\#_u$ per ogni punto $u \in P$ si costruisce il campo
-vettoriale $A^\#$, detto il \textbf{campo vettoriale fondamentale} generato
-dall'algebra Lie ($A \in \mathfrak{g}$, infatti).\\
-È immediatamente definito l'isomorfismo $\# : \mathfrak{g} \to V_u(P)$ da $A \mapsto A^\#$\\
-
-Si definisce \textbf{sottospazio orizzontale} $H_u(P)$ il complemento di $V_u(P)$
-in $T_u(P)$ ed è univocamente determinato.
-
-\begin{definition}\label{def:prbundleconnection}
-   Sia $P(M,G)$ un fibrato principale, $u \in P$. Una \textbf{connessione} su $P$ è una
-   suddivisione univoca dello spazio tangente $T_u(P)$ nei sottospazi orizzontale $H_u(P)$
-   e verticale $V_u(P)$ tale che:
-   \begin{enumerate}
-      \item $T_u(P) = H_u(P) \oplus V_u(P)$
-      \item Ogni campo vettoriale $X$ su $P$ è separato nelle componenti $X = X_h + H_v$ \\
-      dove $X_h \in H_u(P)$ e $X_v \in V_u(P)$
-      \item spazi orizzontali sulla stessa fibra $H_u(P)$ e $H_{ug}(P)$ sono legati
-      dalla mappa $(R_g)_*$ indotta dall'azione destra, ovvero
-      $ H_{ug}(P) = (R_g)_* H_u(P) \quad \forall u \in P \: , \: g\in G$
-   \end{enumerate}
-\end{definition}
-
-L'idea alla base di questo approccio è la seguente.
+L'idea alla base dell'approccio è la seguente.
 Per valutare la derivata direzionale di un campo su una varietà $M$ si vuole
 confrontare i valori del campo in due punti $p$ e $p'$ di $M$, connessi da un cammino.
 Si vuole "sollevare" i punti dallo spazio base $M$ in due punti $u$ e $u'$
 nel fibrato $P$ e confrontare i due spazi tangenti $T_u(P)$ e $T_{u'}(P)$.\\
 Il fibrato è definito localmente come prodotto $U \times G$
 (dove U è un intorno di $p$ in $M$), quindi un vettore tangente $X_u \in T_u$
-può essere scomposto in due componenti (proprietà 2 della defininizione):
+può essere scomposto in due componenti:
 una lungo la base (componente orizzontale) e una lungo la fibra (componente verticale).\\
-Il trasporto verticale è univocamente determinato dall'azione del gruppo $G$
-(proprietà 3 della definizione), mentre il trasporto orizzontale non è unico
+Il trasporto verticale è univocamente determinato dall'azione del gruppo $G$,
+mentre il trasporto orizzontale non è unico
 (come non è unico il cammino che unisce i due punti $p$ e $p'$ nello spazio base).\\
 È solamente quest'ultimo, però, di interesse in quanto mappa un cammino tra
 i due punti $u$ e $u'$ in un cammino attraverso le fibre.
-Il concetto alla base è quindi quello di scaricare il problema sul trasporto
+Il concetto alla base è quindi quello di scaricare il problema sul trasporto orizzontale
 attraverso le fibre del campo vettoriale di cui si vuole calcolare la derivata.\\
 
-Manca però un metodo pratico di calcolo del trasporto orizzontale, che sarà dato
-dall'approccio successivo.
-%------------------------------------------------------------------------------%
-\subsubsection{Definizione tramite 1-forma}
+Sia $M$ lo spazio base di dimensione $n$, $G$ il gruppo di struttura e fibra e
+$P$ il fibrato principale.
+Sia $(U,\phi)$ una carta con coordinate $x_\mu = \phi_\mu(p) \:,p \in M$. \\
+
+Sia $u$ un punto del fibrato principale $P(M,G)$, sia $p = \pi(u) \in M$ e
+$G_p$ la fibra in $p$\\
+
+Si definisce \textbf{sottospazio verticale} $V_u(P)$ un sottospazio di $T_u(P)$
+tangente alla fibra $G_p$ nel punto $u$.
+Si definisce \textbf{sottospazio orizzontale} $H_u(P)$ il complemento di $V_u(P)$
+in $T_u(P)$ ed è univocamente determinato.\\
+
+Si vuole costruire un isomorfismo tra l'algebra di Lie $\mathfrak{g}$ e
+il sottospazio verticale $V_u P$.\\
+
+Sia $A \in \mathfrak{g}$.
+Si definisce il vettore $A_u^\# \in T_u(P)$ tramite la sua azione su una generica
+funzione $f \in C^\infty(P)$
+$$
+   (A^\#)_u [f] := \left. \frac{\dd}{\dd t} f(u \exp(tA)) \right|_{t=0}
+$$
+
+Analogamente a quanto visto per i gruppi di matrici, se $A$ è nell'algebra di Lie
+$g = \exp(t_0 A)$, per $t_0$ fissato, è un elemento del gruppo di Lie $G$.
+Al variare di $t$, $g_t = \exp(tA)$ è una curva in $G$, quindi $u = \exp(tA) = ug_t$
+è una curva lungo la fibra in $p = \pi(u)$ in quanto trasla $u$ per azione
+destra di $G$. La funzione $f$ è quindi ristretta alla curva $ug_t$. \\
+Allora  l'espressione a destra indica il vettore ($\dd / \dd t$) tangente alla curva
+(si pensi al vettore velocità istantanea) $ug_t$ all'istante $t=0$, cioè nel punto
+$u\exp(0A) = ue = u$.\\
+
+Il significato dell'espressione a destra è esattamente definire
+un vettore tangente alla fibra passante in $u$, nel punto $u$, a partire da
+un elemento dell'algebra $A$, appunto $A^\#_u \in V_u(P)$.\\
+
+Definendo il vettore $A^\#_u$ per ogni punto $u \in P$ si costruisce il campo
+vettoriale $A^\#$, detto il \emph{campo vettoriale fondamentale} generato
+dall'algebra Lie.\\
+
+È immediatamente definito l'isomorfismo $\# : \mathfrak{g} \to VP$ da $A \mapsto A^\#$.\\
+
+Si definisce ora una 1-forma sul fibrato, che prende il ruolo del trasporto
+orizzontale.
+
 \begin{definition}\label{def:connection1form}
-   Una 1-forma di connessione $\omega \in \mathfrak{g} \otimes T^*P$\footnote{
+   Una \textbf{1-forma di connessione} $\omega \in \mathfrak{g} \otimes T^*P$\footnote{
    Cfr. definizione \ref{def:liealgebraform}}
    è una proiezione dello spazio $T_u(P)$ su $V_u(P)$, che è isomorfo all'algebra
    di Lie $\mathfrak{g}$, tale che
    \begin{enumerate}
       \item $\omega(A^\#) = A   \quad A^\# \in T_u(P) \: ,  \: A \in \mathfrak{g}$
-      \item $R_g^* \omega = Ad_{g^-1} \omega\footnote{Definizione \ref{def:adjrep}} $ \\
+      \item $R_g^* \omega = g^{-1} \omega_u(X) g $ \\
    \end{enumerate}
 \end{definition}
-La proprietà 2 corrisponde a
- $$ R_g^* \omega_u(X) = \omega_{ug}((R_g)_*X) = g^{-1} \omega_u(X) g .$$
-
-Lo spazio orizzontale è definito come il kernel di $\omega$
+La 1-forma di connessione $\omega$ così definita prende il nome di \emph{connessione
+di Ehresmann}.\\
+La prima proprietà garantisce che ogni vettore verticale venga mandato nell'opportuno
+elemento dell'algebra, mentre la seconda garantisce il corretto trasporto dello
+spazio orizzontale lungo una fibra.\\
+Lo spazio orizzontale è definito come il kernel di $\omega$.
 $$
    H_u(P) := \{ X \in T_u(P) \: | \: \omega (X) = 0 \}
 $$
-La prima proprietà garantisce che ogni vettore verticale venga mandato nell'opportuno
-elemento dell'algebra, mentre la seconda garantisce il corretto trasporto dello
-spazio orizzontale lungo una fibra e fa si che la definizione appena data combaci
-con la precedente, come dimostrato da:
-\begin{proposition}
-   Lo spazio orizzontale verifica
-   $$
-        (R_g)_* H_u P = H_{ug} P
-   $$
-\end{proposition}
-\begin{proof}
-   Sia $u \in P$ e si consideri lo spazio orizzontale $H_u(P) = ker\omega$.
-   Sia $X \in H_u(P)$ e gli si applichi la mappa indotta dall'azione sinistra
-   $(R_g)_*$, costruendo $(R_g)_*X \in T_{ug}(P)$. Si ha che:
-   $$
-      \omega( (R_g)_* X) = R_g^* \omega(X) = g^{-1}\omega(X)g \footnote{Per la
-      proprietà 2.} = 0 \footnote{Poichè $\omega(X) = 0$}
-   $$
-   Quindi anche $(R_g)_*X$ sta nel kernel di $\omega$ e quindi $(R_g)_*X \in H_{ug}(P)$.\\
-   Poichè $(R_g)_*$ è una mappa invertibile, qualsiasi vettore $Y \in H_{ug}(P)$ è
-   esprimibile come $Y = (R_g)^* X$ per qualche $X \in H_u(P)$.\\
-   Di conseguenza lo spazio $T_u(P)$ è separato in $H_u(P) \oplus V_u(P)$ da $\omega$,
-   rendendo la definizione di 1-forma di connessione analoga a quella di connessione
-   \ref{def:prbundleconnection}.
-\end{proof}
-La 1-forma di connessione $\omega$ così definita prende il nome di \emph{connessione
-di Ehresmann}.\\
-
-%\begin{definition}
-%   Una 1-forma canonica (o forma di Maurer-Cartan) è una $\theta : T_g(G) \to T_e(G)$
-%   $$ \theta : X \mapsto (L_{g^{-1}})_* X \quad X \in T_g(G)$$
-%   $L$ è l'azione sinistra.
-%\end{definition}
-%\footnote{Vedi \cite{nakahara}, pag 234}
-%
-%Quello che fa è prendere un vettore in $T_g(G)$ e lo manda in $T_e(G)$ facendo il
-%trasporto parallelo. $T_e(G)$ è isomorfo a $\mathfrak{g}$\\
-%L'algebra sono i campi vettoriali left invarianti ricorda \\
-%
-%Può essere espressa come $\theta = V_\mu \otimes \theta^\mu$.\\
-%Scegliamone una particolare $\theta = g^{-1}dg$\\
-%
-%La connessione è definita come proiezione sul verticale e mappata nel tangente a e
-%che è isomorfo all'algebra
-%$\omega = \theta \circ \pi$
 
 Si osserva che la 1-forma di connessione è definita \emph{globalmente} su P, quindi
 assegnare una forma di connessione fornisce un metodo per il trasporto parallelo,
@@ -176,6 +106,7 @@ $$
 Viceversa, sia $A_i$ una 1-forma a valori in una algebra di Lie assegnata su su $U_i$.
 Si può sempre costruire una 1-forma di connessione $\omega$ che trasportata tramite
 $s_i^*$ sia esattamente $A_i$.
+
 \begin{theorem}\label{thm:gaugepotential}
    Data una 1-forma $A_i$ a valori in $\mathfrak{g}$ su $U_i$ e una sezione locale
    $s_i : U_i \to \pi^{-1}(U_i)$, esiste una 1-forma di connessione $\omega$
@@ -183,8 +114,8 @@ $s_i^*$ sia esattamente $A_i$.
    $$
       \omega|_{\pi^{-1}(U_i)} = \omega_i := g_i^{-1} \pi^* A_i g_i + g_i^{-1} d_P g_i
    $$
-   dove $d_P$ è la derivata esterna su $P$ e $g_i$ la canonica local trivialization
-   data da $\phi_i^{-1}(u) = (p,g_i)$ per $u = s_i(p)g_i$
+   dove $d_P$ è la derivata esterna su $P$ e $g_i$ data da $\phi_i^{-1}(u) = (p,g_i)$
+   per $u = s_i(p)g_i$.
 \end{theorem}
 Si veda \cite{nakahara} per la dimostrazione.\\
 
@@ -193,7 +124,7 @@ forma $A_i$ su un aperto $U_i$ di $M$, unitamente alla condizione di unicità de
 1-forma di connessione $\omega$, vincola tutte le altre forme defnite sugli aperti
 $U_{j\neq i}$ del ricoprimento. La condizione da rispettare è la seguente\footnote{
 Si veda \cite{nakahara} per la derivazione completa.
-}.
+}.\\
 
 Siano $U_i$ e $U_j$ due aperti del ricoprimento aperto di $M$ a intersezione non vuota.
 Affinchè la forma di connessione $\omega$ sia definita \textbf{univocamente} su tutto $P$,
@@ -202,7 +133,7 @@ Affinchè ciò sia verificato, le forme locali $\omega_i,\omega_j$ devono verifi
 la seguente condizione di compatibilità. Siano $\Phi_{ij}$ le funzioni di transizione
 definite in \ref{eq:transfunctions}
 $$
-   s^*_j \omega (X) = \Phi_{ij}^{-1} \omega( (s_i)_*X ) \Phi_{ij}
+   s^*_j \omega (X) = \Phi_{ij}^{-1} \omega( s_{i*} X ) \Phi_{ij}
                          + \Phi_{ij}^{-1}d\Phi_{ij}(X)
 $$
 Che deve essere valida per ogni campo $X \in T_p(M)$. Quindi si traduce nella
@@ -213,17 +144,18 @@ condizione per le forme $A_i$:
 
 Se, al contrario, sono dati $\{U_i\}$ ricoprimento aperto di $M$, $\{s_i\}$
 sezioni, e $\{A_i\}$ forme che rispettano \ref{eq:condcompatibility}, si può
-ricostruire la forma di connessione $\omega$\\
+ricostruire la forma di connessione $\omega$.\\
+
 Si sottolinea che se il fibrato $P$ non è banale, non è possibile definire in
 maniera univoca una sezione globale, quindi la forma $A_i$ esiste solo localmente.
 La forza di questa costruzione è che invece la forma di connessione $\omega$
-è definita globalmente su $P$.
+è definita globalmente su $P$.\\
 %------------------------------------------------------------------------------%
+
 Si vuole ora definire la derivata covariante di una
 1-forma di connessione $\omega$.
-In maniera intuitiva, la si vuole definire in maniera tale che trasformi allo
-allo stesso modo di $\omega$ sotto l'azione del gruppo $G$. Così facendo si
-può identificare la derivata covariante $D$ con la derivata esterna $d$.\\
+In maniera intuitiva, la si vuole definire tale che si trasformi allo
+allo stesso modo di $\omega$ sotto l'azione del gruppo $G$.\\
 Se la 1-forma $\omega$ trasforma come un vettore $\omega \mapsto g\omega$ per
 $g \in G$, allora anche la derivata covariante trasforma $ D\omega \mapsto
 g D\omega $. Si definisce allora:
@@ -232,11 +164,13 @@ dove $A$ è la 1-forma definita in precedenza, che ripetta la legge di
 trasformazione \ref{eq:condcompatibility}. In maniera analoga si può definire la
 derivata covariante di 1-forme di connessione che trasformano come tensori o sono
 invarianti.
+
 \begin{definition}
    Sia $\omega$ la 1-forma di connessione di un fibrato principale $P$. Si definisce
-   la 2-forma di textbf{curvatura} $\Omega$ come la derivata covariante di $\omega$
+   la 2-forma di \textbf{curvatura} $\Omega$ come la derivata covariante di $\omega$
    $$ \Omega := D\omega $$
 \end{definition}
+
 Poichè $A_i$ è il pullback di $\omega$ su un aperto di $U_i \subset M$
 tramite una sezione $s_i$, si definisce una 2-forma su $U_i$ tramite
 \begin{equation} F_i := s_i^* \Omega \end{equation}
