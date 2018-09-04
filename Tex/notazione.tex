@@ -3,16 +3,22 @@
 \subsubsection{Coordinate polari:}
  $\theta \in[0,\pi]$ Angolo polare\\
  $\varphi \in [0,2\pi]$ Angolo azimutale\\
- $r \in (0,\infty)$ Raggio\\
+ $r \in (0,\infty)$ Raggio
 
 \subsubsection{Versori:}
-$\vec u_x = (1,0,0)$ Versore asse x \\
-$\vec u_y = (0,1,0)$ Versore asse y \\
-$\vec u_z = (0,0,1)$ Versore asse z \\
-
-$\vec u _\theta = \frac{1}{r\sqrt{r^2-z^2}}(xz,yz,-z^2-r^2)$ Versore angolo polare \\
-$\vec u _\varphi = \frac{1}{\sqrt{r^2-z^2}}(-x,y,0)$ Versore angolo azimutale \\
-$\vec u _r = \frac{1}{r}(x,y,z) = \frac{\vec r}{r}$ Versore radiale \\
+\begin{table}[h]
+   \begin{tabular}{llll}
+      $\vec u_x = (1,0,0)$ Versore asse x & &
+         $\vec u _\theta = \frac{1}{r\sqrt{r^2-z^2}}(xz,yz,-z^2-r^2)$ &
+         Versore angolo polare \\
+      $\vec u_y = (0,1,0)$ Versore asse y & &
+         $\vec u _\varphi = \frac{1}{\sqrt{r^2-z^2}}(-x,y,0)$ &
+         Versore angolo azimutale \\
+      $\vec u_z = (0,0,1)$ Versore asse z & &
+         $\vec u _r = \frac{1}{r}(x,y,z) = \frac{\vec r}{r}$ &
+         Versore radiale
+   \end{tabular}
+\end{table}
 
 \begin{equation}\label{eq:versors}
    \begin{cases}
@@ -23,18 +29,6 @@ $\vec u _r = \frac{1}{r}(x,y,z) = \frac{\vec r}{r}$ Versore radiale \\
        \vec u_\varphi = -\sin\varphi \vec u _x + \cos\varphi \vec u _y
    \end{cases}
 \end{equation}
-
-\subsubsection{Funzioni:}
-$\Theta$ funzione di Heaviside
-$$
-    \Theta(x) = \begin{cases}
-       0 & x < 0\\
-       1 & x > 0
-    \end{cases}
-$$
-
-\subsubsection{Spazi topologici}
-$S^n = \{ x \in \R^{n+1} \tc |x| = 1 \}$: Sfera n-dimensionale di raggio unitario.
 
 \subsubsection{Gruppi di matrici}
 \begin{itemize}

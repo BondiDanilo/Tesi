@@ -1,5 +1,4 @@
 \chapter{Monopoli in teorie di gauge non abeliane}
-\textcolor{red}{(scrivere intro)}\\
 %------------------------------------------------------------------------------%
 %\input{intrononabelian}
 %------------------------------------------------------------------------------%
@@ -24,11 +23,16 @@ $$
    \quad \to \quad
    \tilde{A}_\mu = -g(1 + \cos\theta) \partial_\mu \varphi
 $$
-Si vuole costruire ora un potenziale generalizzato, che trasformi attraverso
+Si vuole costruire ora un potenziale generalizzato $A _\mu$, che trasformi attraverso
 gli elementi di $SU(2)$.
-Definendo il potenziale $A_\mu$ tramite una combinazione delle matrici di Pauli,
-$A_\mu := A_\mu^a \sigma_a/2$ con $a = 1,2,3$ con \\
-\textcolor{red}{Uniformare la notazione rappresentazione fondamentale/aggiunta}
+$A_\mu$ deve essere una 1-forma locale, a valori in $\mathfrak{su(2)}$, quindi,
+scelta una base per l'algebra data dalle matrici di Pauli\footnote{
+   Si osservi che $SU(2)$ ha dimensione $3$, quindi si sceglie la rappresentazone
+   fondamentale.
+} $\sigma_a/2$, si costruisce il generico potenziale tramite una combinazione
+degli elementi della base, $A_\mu := A_\mu^a \sigma_a/2$ con $a = 1,2,3$. \\
+Affinchè il sottospazio $U(1)$ abbia come potenziale esattamente il potenziale
+di Dirac, si scelgono i coefficienti $A_\mu^a$ come:
 
 \begin{equation}\label{eq:wuyangpotential}
    \begin{aligned}
@@ -42,6 +46,9 @@ si ottiene che la trasformazione di gauge tramite $U \in SU(2)$ (come \ref{eq:ma
 \begin{equation}\label{eq:nonabeliangauge}
 A_\mu \quad \mapsto \quad A'_\mu = U A_\mu U^{-1} + \frac{i}{e} U \partial_i U^{-1}
 \end{equation}
+
+Si osserva che in questo caso non è possible commutare $U$ e $A _\mu$ in quanto
+si tratta di una teoria di gauge non abeliana.
 
 Si ricorda che $\partial_\mu \varphi$, dalla definizione, è singolare lungo l'asse $z$
 $$
@@ -66,12 +73,13 @@ Inserendo $U$ nella trasformazione di gauge si ottiene (per le componenti spazia
 $k = 1,2,3$):
 
 \begin{equation}
-   A'_k = A_k^a \frac{\sigma _a}{2} = \varepsilon_{kbc} \frac{r_b}{r^2}\frac{\sigma_c}{2}
+   A'_k = A_k^a \frac{\sigma _a}{2} = \varepsilon_{kbc} \frac{x_b}{r^2}\frac{\sigma_c}{2}
 \end{equation}
 Questo potenziale è regolare ovunque tranne che nell'origine. Si è rimossa
 la stringa di singolarità iniziale.
 Il motivo è che la trasformazione di gauge stessa \ref{eq:nonabeliangauge} è singolare
 e ha la stessa singolarità del potenziale $\tilde{A}_\mu$. Infatti si ha che
+
 \begin{equation}
    \begin{aligned}
       (U \partial _i U^{-1})_1 & = 0 \, , &
@@ -79,19 +87,24 @@ e ha la stessa singolarità del potenziale $\tilde{A}_\mu$. Infatti si ha che
       (U \partial _i U^{-1})_3 & = -(1 + \cos\theta) \partial _i \varphi
    \end{aligned}
 \end{equation}
+
 L'esatta cancellazione delle singolarità è possibile solo se è soddisfatta la condizione
 di quantizzazione della caria \ref{eq:diracquantumcharge}.\\
 
 Se ora si inserisce l'espressione di $A _\mu$ nel tensore elettromagnetico non-Abeliano
 definito da
+
 \begin{equation}
    F_{\mu\nu} = \partial _\mu A_\nu - \partial _\nu A _\mu + i e [A_\mu,A_\nu]
               = \frac{1}{2} F_{\mu\nu}^a \sigma _a ,
 \end{equation}
+
 dove $F_{\mu\nu}^a = \partial _\mu A_\nu^a - \partial _\nu A_\mu^a$, si ottiene
+
 \begin{equation}
-   F^a_{ij} = \varepsilon_{ijk} \frac{r^a r^k}{e r^4} \sim \frac{1}{r^2}
+   F^a_{ij} = \varepsilon_{ijb} \frac{x^a x^b}{e r^4} \sim \frac{1}{r^2}
 \end{equation}
+
 Riottenendo, asintoticamente, l'andamento del campo magnetico di monopolo.\\
 
 Questa soluzione presenta però ancora alcune problematiche. Se si prova a calcolare

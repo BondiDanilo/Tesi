@@ -23,8 +23,10 @@ Si osserva che è invariante per rotazione del vettore $\phi$ nello spazio $\mat
 quindi ha una simmetria di tipo $SO(3)$\footnote{
   lo spazio $SO(3)$ è localmente isomorfo a $SU(2)$
 } in $\mathcal{M}$.
-Sia ${T^a}$ la rappresentazione fondamentale di $\mathfrak{su(2)}$ di dimensione 3
-data dalle matrici
+In questo caso è più conveniente scegliere una rappresentazione aggiunta di $SU(2)$,
+data dalle matrici ${T^a}$ che rispettano le regole di commutazione
+$[T^a,T^b] = i \varepsilon_{abc} T^c$ e tali che Tr$(T^aT^b) = 1/2\delta_{ab}$.
+
 \begin{equation}
    \begin{aligned}
       i T_1 & = \begin{pmatrix}
@@ -161,7 +163,7 @@ non dipende dalle componenti spaziali, della forma
 Le soluzioni non banali sono anch'esse tali che all'infinito $|\phi| = v$,
 ma hanno dipendenza esplicita dalle coordinate spaziali anche all'infinito
 \begin{equation}\label{eq:nonabelianw1phi}
-   \phi^a(r) \to \frac{vr^a}{r}
+   \phi^a(r) \to \frac{vx^a}{r}
 \end{equation}
 Queste soluzioni sono caratterizzate da un numero di avvolgimento $n=1$ e vengono
 dette \textbf{campo a riccio}.
@@ -173,7 +175,7 @@ condizione di annullamento della derivata covariante $D _\mu$ all'infinito, che
 produce la condizione sull'andamento asintotico del campo di gauge
 
 \begin{equation}\label{eq:nonabelianw1A}
-   A_k^a (r) \to \frac{1}{e} \varepsilon_{abk} \frac{r^b}{r^2}
+   A_k^a (r) \to \frac{1}{e} \varepsilon_{abk} \frac{x^b}{r^2}
 \end{equation}
 
 Si definice quindi il tensore elettromagnetico gauge invariante
@@ -212,9 +214,9 @@ della carica alla Dirac \ref{eq:diracquantumcharge}.
 Come soluzione del modello di Georgi-Glashow, ’t Hooft e Polyakov proposero questo Ansatz:
 \begin{equation}
    \begin{aligned}
-      \phi^a & = \frac{r^a}{er^2}H(r) \, ,&
+      \phi^a & = \frac{x^a}{er^2}H(r) \, ,&
       A_0^a & = 0 \, ,&
-      A_k^a = \varepsilon_{abk}\frac{r^b}{er^2}(1-K(r))
+      A_k^a = \varepsilon_{abk}\frac{x^b}{er^2}(1-K(r))
    \end{aligned}
 \end{equation}
 con $H$ e $K$ funzioni da determinarsi inserendo queste espressioni nelle equazioni

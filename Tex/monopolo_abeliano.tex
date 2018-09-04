@@ -141,12 +141,30 @@ sono definiti su insiemi differenti.\\
 
 Nella regione di intersezione $U^0$ i due potenziali sono vincolati dalla condizione
 di compatibilità \ref{eq:condcompatibility}, la trasformazione di gauge \ref{eq:gaugetrasf}
-$A^+ = A^- + 2g \dd  \varphi = A^- + n \dd  \varphi $. Si definiscono allora le
-funzioni di transizione \ref{eq:transfunctions}
-che sono elementi di $\Phi = e^{i n \varphi} \in U(1)$ che collegano le coordinate delle fibre
 $$
-    e^{i\alpha^+} = \Phi  e^{i\alpha^-} = e^{in\varphi } e^{i\alpha^-}
+   A^+ = \Phi A^- \Phi ^{-1} + \frac{i}{e}\Phi ^{-1} \dd \Phi
+       = A^- + 2g \dd  \varphi
 $$
+Si osserva che siccome il gruppo di gauge è abeliano si può far commutare $A^+$
+con $\Phi$ e semplificarlo nel primo termine. Questo non sarà possibile in una
+teoria di gauge non abeliana. \\
+Si definiscono allora le funzioni di transizione \ref{eq:transfunctions}
+che sono elementi di $\Phi = e^{i 2eg \varphi} \in U(1)$ che collegano le coordinate delle fibre
+$$
+    e^{i\alpha^+} = \Phi  e^{i\alpha^-} = e^{i2eg\varphi } e^{i\alpha^-}
+$$
+
+Si osserva inoltre che anche la funzione d'onda di una particella carica in un
+campo di monopolo non può essere definita globalmente.
+Si definiscono su $U^\pm$ le funzioni d'onda $\psi^\pm$ che su $U^0$ sono collegate
+da $\psi^+ = \Phi  \psi^-$. L'effetto della trasformazione di gauge è di cambiare la fase
+della funzione d'onda. Affinchè la fase sia ben definita e non multivalore, è necessario
+che sia rispettato
+$$
+   e^{2ige \varphi} \psi ^- = \psi ^+ =  e^{2ige (\varphi + 2\pi)} \Rightarrow
+    2ge = n \:,\: n \in \Z
+$$
+Che è la condizione di quantizzazione della carica alla Dirac \ref{diracquantumcharge}.\\
 
 Le funzioni di transizione $\Phi$ sono mappe dell'equatore $S^1 \subset S^2$ nel gruppo
 di gauge $U(1)$: sono quindi cammini in $U(1)$ e possono essere
@@ -161,17 +179,14 @@ relativa a $c_1$
       c_1   = \frac{1}{2\pi} \int_{S^2} F
             = \frac{1}{2\pi} \left( \int_{U^+} \dd A^+ \int_{U^-} \dd A^- \right)
             = \frac{1}{2\pi} \int_{S^1} (A^+-A^-)
-            = \frac{1}{2\pi} \int_0^{2\pi} n\dd \varphi   = n = 2g
+            = \frac{1}{2\pi} \int_0^{2\pi} n\dd \varphi   = n
 %   \end{aligned}
 \end{equation*}
-La carica magnetica coincide quindi con il primo numero di Chern. Per $n=0$ il
-fibrato è banale e ha la forma $S^2 \times S^1$, mentre per $n=1$ si ha il
-\emph{fibrato di Hopf}, di seguito descritto.\\
+La carica magnetica coincide quindi con la prima classe di Chern, in quanto
+può essere interpretata come il flusso del campo magnetico $F$ attraverso una sfera.\\
+Per $n=0$ il fibrato è banale e ha la forma $S^2 \times S^1$, mentre per $n=1$ si ha il
+\emph{fibrato di Hopf}, di seguito descritto.
 
-Si osserva infine che anche la funzione d'onda di una particella carica in un
-campo di monopolo non può essere definita globalmente.
-Si definiscono su $U^\pm$ le funzioni d'onda $\psi^\pm$ che su $U^0$ sono collegate
-da $\psi^+ = \Phi  \psi^-$.
 %------------------------------------------------------------------------------%
 %------------------------------------------------------------------------------%
 \section{Fibrato di Hopf}
@@ -255,7 +270,7 @@ $$
 $$
 Questa forma è chiusa ed esatta su $S^3$ e si nota subito che corrisponde a $1/2$
 della forma di volume della sfera $S^2$\footnote{
-   che è appunto $\dd V = \sin\theta \dd \theta \wedge \dd \varphi $}.
+   che è appunto $\dd S = \sin\theta \dd \theta \wedge \dd \varphi $}.
 Si ha allora, integrando su $S^2$ come sottospazio di $S^3$\footnote{
    Abuso di notazione.}
 $
