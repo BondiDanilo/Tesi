@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  4 SEP 2018 12:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.8.26)  4 SEP 2018 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -797,12 +797,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [3
 
-] (./abstract.tex))
-Underfull \hbox (badness 10000) in paragraph at lines 2--10
+] (./abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-(./monopolo_dirac.tex [4
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--31
+
+ []
+
+)) (./monopolo_dirac.tex [4
 
 ]
 Capitolo 1.
@@ -1452,12 +1457,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
@@ -1481,10 +1486,10 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  9007 strings out of 493029
- 122251 string characters out of 6136234
+ 122249 string characters out of 6136234
  237464 words of memory out of 5000000
  12092 multiletter control sequences out of 15000+600000
- 24460 words of font info for 62 fonts, out of 8000000 for 9000
+ 24457 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  31i,18n,30p,810b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -1516,13 +1521,12 @@ e1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 frm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-rm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfti1440.pfb>
-Output written on main.pdf (41 pages, 781005 bytes).
+rm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (41 pages, 774728 bytes).
 PDF statistics:
- 842 PDF objects out of 1000 (max. 8388607)
- 754 compressed objects within 8 object streams
+ 838 PDF objects out of 1000 (max. 8388607)
+ 751 compressed objects within 8 object streams
  251 named destinations out of 1000 (max. 500000)
  310 words of extra memory for PDF output out of 10000 (max. 10000000)
 
