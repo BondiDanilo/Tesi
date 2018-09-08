@@ -2,9 +2,44 @@
 
 Una teoria di gauge è una teoria di campo la cui lagrangiana è invariante sotto
 l'azione di un gruppo di Lie\footnote{
-   Cfr. definizioni \ref{def:groupaction} e \ref{def:liegroup}.
+   Oltre che Lorentz-invariante.
+   Si vedano le definizioni \ref{def:groupaction} e \ref{def:liegroup}
+   (azione di gruppo e gruppo di Lie, rispettivamente).
 } $G$, denominato \emph{gruppo di gauge}. Se il gruppo di gauge è un gruppo (non)
 abeliano la teoria di gauge viene detta (non) abeliana.\\
+
+Una simmetria della lagrangiana (ossia  l'azione di un gruppo di gauge) è detta
+\emph{simmetria globale} se non dipende dal punto dello spazio-tempo in cui è applicata.\\
+
+Si vuole costruire degli invarianti di gauge, da utilzzare nella lagrangiana,
+per una teoria che descrive l'accoppiamento di un campo scalare $\phi$ con un campo
+di gauge $A_\mu$.
+
+Sia $g \in G$ e $\rho(g)$ una sua
+rappresentazione, che si suppone unitaria senza perdita di generalità.
+In seguito alla trasformazione $\phi \mapsto  \phi' = \rho(g) \cdot \phi$,
+si vuole valutare come trasformano le derivate del campo $\partial _\mu \phi$.
+Se $g$ è una simmetria globale\footnote{
+   Abuso di notazione. Si sta identificando un singolo elemento del gruppo, con
+   l'azione di gruppo valutata in quell'elemento.
+} (indipendente dallo spaziotempo), si ha
+
+$$
+   \partial _\mu [\rho(g) \phi]
+      = \partial _\mu [\rho(g)] \phi + \rho(g) \partial _\mu [\phi]
+      = \rho(g) \partial _\mu [\phi]
+$$
+
+Allora è di immediata verifica che, grazie alla unitarietà di $\rho$, le seguenti
+quantità\footnote{Prodotti interni.} sono gauge-invarianti:
+
+\begin{equation*}
+   \begin{aligned}
+      \phi & \cdot \phi \,,& \quad
+      \partial _\mu \phi & \cdot \partial ^\mu \phi \,,& \quad
+      \phi & \cdot \partial _\mu \phi
+   \end{aligned}
+\end{equation*}
 
 Si consideri, ad esempio, la seguente lagrangiana per un campo scalare complesso
 $\phi : \R \times \R^3 \to \C$ (dove $V$ è un generico funzionale, il potenziale).
@@ -24,8 +59,6 @@ $$
                 = \partial _\mu \phi^*  \partial ^\mu \phi + V[\phi ^* \phi]
                 = \Ll [\phi]
 $$
-Una simmetria di questo tipo è detta \emph{simmetria globale}, in quanto non dipende
-dal punto dello spazio-tempo in cui è applicata ($\alpha$ è infatti una costante).\\
 
 Un altro esempio di simmetria globale è, nella meccanica Newtoniana, una
 trasformazione di Galileo tra due sistemi inerziali (es: una rotazione degli assi):
@@ -33,14 +66,14 @@ in seguito a tale trasformazione non cambia la descrizione fisica del fenomeno,
 ma solamente i "numeri" che ogni osservatore usa come coordinate. È quindi importante
 evidenziare quali siano le trasformazioni tra un sistema di coordinate e l'altro.\\
 
-Un caso più interessante è quello in cui il sistema presenta una simmetria definita
-non globalmente, ma localmente. Si può pensare, ad esempio, a una trasformazione
-di coordinate tra un osservatore inerziale e uno non inerziale (ad esempio sottoposto
-a un moto rotatorio). Le descrizioni che i due osservatori danno del sistema
-non sono equivalenti: il secondo, ad esempio è costretto ad introdurre l'esistenza
-di forze fittizie (ad esempio la forza centrifuga), che in generale possono dipendere
-in maniera non banale dalle coordinate (ad esempio può dipendere dalla distanza
-un un punto dall'osservatore).\\
+% Un caso più interessante è quello in cui il sistema presenta una simmetria definita
+% non globalmente, ma localmente. Si può pensare, ad esempio, a una trasformazione
+% di coordinate tra un osservatore inerziale e uno non inerziale (ad esempio sottoposto
+% a un moto rotatorio). Le descrizioni che i due osservatori danno del sistema
+% non sono equivalenti: il secondo, ad esempio è costretto ad introdurre l'esistenza
+% di forze fittizie (ad esempio la forza centrifuga), che in generale possono dipendere
+% in maniera non banale dalle coordinate (ad esempio può dipendere dalla distanza
+% un un punto dall'osservatore).\\
 
 In relazione alla lagrangiana scritta in precedenza, si può considerare una trasformazione
 di fase in cui $\alpha = \alpha(x,t)$ è una generica funzione delle coordinate
@@ -53,17 +86,193 @@ di una lagrangiana a simmetrie locali (simmetrie che possano essere applicate
 solamente nell'intorno di un punto, senza affligere il resto dello spazio), e studiare
 i casi in cui queste si conservano come simmetrie della teoria. \\
 
+Per simmetrie locali (dove $g = g(x)$), la derivata $\partial _\mu$ non trasforma
+più in maniera omogenea\footnote{
+    Si veda Derivata covariante e trasporto parallelo, sezione \ref{sec:covariantderivative}.
+}, ossia per $\phi \mapsto \phi'(x) = \rho(g(x))\phi(x)$:
+$$
+   \partial _\mu [\, \rho(\, g(x) \,) \, \phi(x)\, ]
+       \neq  \rho(\, g(x) \,) \partial _\mu [\, \phi(x) \,]
+$$
+Si sostituisce allora alla derivata tradizionale la derivata covariante $D _\mu$,
+definita in maniera tale che
+\begin{equation}\label{eq:covdercondition}
+   D _\mu[\, \rho(\, g(x) \,) \phi(x) \,] = \rho(\, g(x) \,) D _\mu[\, \phi(x) \,]
+\end{equation}
+Una derivata covariante così definita si costruisce nel modo seguente.\\
+
+Si consideri l'algebra di Lie $\mathfrak{g}$ associata al gruppo di gauge e sia
+$\{ t^a \}$ una base ($a = 1, \dots, \mathrm{dim}\mathfrak{g}$). Ad ogni generatore
+$ t^a $ è associato un campo di gauge $ A^a_\mu $. Si costruisce allora $ D _\mu $ tramite
+combinaizione lineare dei campi di gauge, dove $q$ è la costante di accoppiamento della
+teoria.
+\begin{equation}
+   D _\mu := \partial _\mu + q \, A^a_\mu t^a
+\end{equation}
+Si può definire il campo matriciale $A _\mu = (A^a_\mu t^a)$. Dalla condizione
+\ref{eq:covdercondition} si ottiene allora una condizione per la trasformazione
+ $A _\mu \mapsto A' _\mu$, che risulta essere\footnote{ Il calcolo per ricavare
+la condizione è immediato.}
+\begin{equation}\label{eq:gaugetrasform}
+   A'_\mu = g A_\mu g^{-1} + \frac{1}{q} g \partial _\mu g^ {-1}
+\end{equation}
+
+%------------------------------------------------------------------------------%
+\section{Caso abeliano: Elettrodinamica classica}
+Si vuole descrivere ora l'accoppiamento di un campo complesso $\phi$ con il campo
+elettromagnetico (si pensi ad esempio alla funzione d'onda di una particella carica).\\
+Si consideri la lagrangiana $\Ll$ definita in precedenza, che si è già visto
+essere invariante per trasformazioni \emph{globali} di fase $\phi \mapsto e^{iq\alpha}\phi = g\phi$,
+dove il parametro $q \in \R$ è la costante di accoppiamento della teoria
+(in questo caso la carica elettrica). Trasfornazioni di questo tipo appartengono
+al gruppo di Lie $U(1)$.
+%
+\begin{equation*}
+  \begin{aligned}
+     \Ll [\phi] & = \partial _\mu \phi^*  \partial ^\mu \phi + V[\phi ^* \phi] &
+     & \Rightarrow \Ll[\phi] = \Ll[\phi'] & ,\quad
+     \phi &\mapsto \phi' = e^{i\alpha}\phi
+  \end{aligned}
+\end{equation*}
+
+Si vuole ora promuovere la simmetria globale appena definita a simmetria locale
+$\alpha \mapsto \alpha(x,t)$ e richiedere che la lagrangiana rimanga invariata
+per trasformazione di fase locale.
+Si sostituisce la derivata tradizionale $\partial _\mu$ con la derivata covariante
+definita da
+%
+$$
+   D _\mu := \partial _\mu -iq A _\mu
+$$
+dove il campo $A _\mu : \R \times \R^3 \to \R \times \R^3$ è il potenziale
+di gauge (in questo caso, il potenziale elettromagnetico). La lagrangiana
+gauge-invariante diventa:
+$$
+   \Ll ' =  D _\mu \phi^*  D ^\mu \phi + V[\phi ^* \phi].
+$$
+
+La richiesta di invarianza della lagrangiana per trasformazione
+di fase locale si traduce nella richiesta che la derivata covariante $D _\mu$
+sia invariante. $D _\mu \mapsto D' _\mu = g^{-1} D _\mu g = D _\mu $.
+
+\begin{equation}
+   \begin{aligned}
+      iq \, \partial _\mu \alpha(x,t) + (\partial _\mu - iq A _\mu)
+         & = (\partial _\mu -iq A' _\mu) \Rightarrow \\
+      \Rightarrow A' _\mu = A _\mu - \partial _\mu  \alpha(x,t)
+         & = g ^{-1} A _\mu \, g + \frac{i}{q} \, g \, \partial _\mu g
+   \end{aligned}
+\end{equation}
+
+che si traduce nella condizione che il potenziale $A _\mu$ trasformi secondo la
+trasformazione di gauge sopra scritta.
+Si sottolinea che nell'ultimo passaggio si è potuto seplificare $g$ e $ g^{-1} $
+perchè il gruppo di gauge è abeliano ed è stato possibile commutare $ A _\mu $
+con $g$. Ciò non può accadere se il gruppo di gauge non è abeliano.  \\
+
+Se si calcola il tensore energia impulso della lagrangiana così scritta (si indica
+$\phi| ^{\mu} = \partial \phi / \partial x_\mu$ e
+$\phi| _{\mu} = \partial \phi / \partial x^\mu$ ), si vede immediatamente che non si
+conserva\footnote{
+   $\eta _{\mu\nu} = \mathrm{diag}(-1,1,1,1)$ è il tensore metricoMinkowskiano
+}.
+
+\begin{equation}
+   \begin{aligned}
+      T'_{\mu\nu} & = \frac{\partial \Ll'}{\partial \phi|^{\mu}}\phi|_{\nu}
+      - \eta _{\mu\nu} \Ll' &
+      \Rightarrow \partial ^\mu T'_{\mu\nu} & \neq 0
+   \end{aligned}
+\end{equation}
+
+Occorre allora tenere conto anche della dinamica del campo elettromagnetico, costruendo
+la lagrangiana per l'accoppiamento del campo $\phi$ con il campo elettromagnetico
+che è Lorentz-invariante, con simmetria di gauge $U(1)$ e che conserva energia e
+quantità di moto\footnote{
+   Si osserva che definendo la lagrangiana del campo elettromagnetico libero
+   $
+      \Ll _{em} = - \frac{1}{4}F^{\mu\nu} F_{\mu\nu}
+   $
+   si ottengono come equazioni del moto esattamente le equazioni di Maxwell nel vuoto.
+}.
+
+\begin{equation}
+\Ll = -\frac{1}{4} F^{\mu\nu}F_{\mu\nu}
++ \frac{1}{2} (D^\mu \phi)^* D _\mu \phi - V[\phi^* \phi]
+\end{equation}
+
+Dove $F_{\mu\nu}$ è il \textbf{tensore elettromagnetico} definito da
+
+$$
+   F_{\mu\nu} = \partial _\mu A _\nu - \partial _\nu A _\mu
+$$
+
+%------------------------------------------------------------------------------%
+\section{Caso non abeliano}
+Se il gruppo di gauge non è abeliano i generatori $t^a$ non commutano: $[t^a,t^b] \neq 0$.
+Inoltre, $[t^a,t^b]$ è ancora un elemento dell'algebra $\mathfrak{g}$, quindi può a sua
+volta essere espresso rispetto alla base dei generatori, tramite i coefficienti
+$C^{ab}_{\hphantom{ab}c}$ detti costanti di struttura
+$$
+   [t^a,t^b] = C^{ab}_{\hphantom{ab}c} \, t^c
+$$
+La struttura del gruppo di gauge è quindi determinata dalle regole di commutazione
+dei generatori, che vengono solitamente scelti tali da rispetare la condizione di
+normalizzazione Tr$(t^a t^b) = 1/2 \delta_{ab}$.\\
+
+Poichè il gruppo di gauge è non commutativo, nella trasformazione di gauge
+\ref{eq:gaugetrasform}, non è possibile semplificare $g$ e $g^{-1}$
+$$
+   A'_\mu = g A_\mu g^{-1} + \frac{1}{q} g \partial _\mu g^ {-1}.
+$$
+
+Di conseguenza il tensore elettromagnetico, se definito come nel caso abeliano,
+non può rispettare la corretta regola di trasformazione $F_{\mu\nu}
+\mapsto F'_{\mu\nu} = g F_{\mu\nu} g^{-1}$ (di immediata verifica). Occorre quindi
+correggerlo per un termine che tiene conto della commutazione dei generatori. Si
+definisce allora il \textbf{tensore elettromagnetico non abeliano}:
+
+\begin{equation}
+   F _{\mu\nu} := \partial _\mu A_\nu - \partial _\nu A_\mu + g \, [A_\mu,A_\nu]
+\end{equation}
+
+Ricordando che $ A_\mu = A^a_\mu t^a $, le tre componenti del tensore matrciale sopracitato
+sono
+
+\begin{equation}
+   F_{\mu\nu}^a = \partial _\mu A^a_\nu
+       - \partial _\nu A^a_\mu + g \,C^{a}_{\hphantom{a}bc} A^b_\mu A^c_\nu
+\end{equation}
+
+Il termine corretto da inserire nella lagrangiana per ottenere l'invarianza di gauge
+è, analogamente al precedente caso abeliano:
+$$
+   \mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})
+$$
+Seguendo la costruzione delineata ad inizio capitolo, si può allora costruire
+un esempio di lagrangiana per una teoria di gauge non abeliana:
+\begin{equation}\label{eq:nonabelianlagrangian}
+  \Ll = -\frac{1}{4} \, F^a_{\mu\nu}F^{a\mu\nu}
+        + \frac{1}{2} \, D^\mu \phi^a D_\mu \phi^a
+        - V[\, \phi^a \phi^a \,]
+\end{equation}\\
+
+%------------------------------------------------------------------------------%
+
+\section{Formalismo dei fibrati}
 Matematicamente, una teoria di gauge è descritta da un fibrato principale\footnote{
    Cfr. definzione \ref{def:principalbundle}.
 }, in cui
 la varietà di base $M$ è (ad esempio) lo spaziotempo $\R\times\R^3$ con metrica
-Minkowskiana ($g_{\mu\nu} =\eta= \mathrm{diag}(-1,1,1,1$)) e la fibra $G$ è il
+Minkowskiana ($ \eta _{\mu\nu} = \mathrm{diag}(-1,1,1,1$)) e la fibra $G$ è il
 gruppo di gauge.\\
-Data la simmetria globale del gruppo di gauge, l'assegnazione di una simmetria
+Data una simmetria globale appartenente al gruppo di gauge,
+come la simmetria di fase globale $e^{i\alpha}$ nel caso abeliano,
+l'assegnazione di una simmetria
 locale (ossia la scelta della particolare funzione $\alpha(x,t)$, nell' esempio
- precedente) corrisponde alla scelta di un ricoprimento $\{U_i\}$ della varietà
+ abeliano) corrisponde alla scelta di un ricoprimento $\{U_i\}$ della varietà
  e di sezioni locali $s_i$ sul fibrato\footnote{
-   Cfr. definizione \ref{eq:section}.
+   Cfr. definizione \ref{def:sectionbundle}.
  }, che nelle regioni di intersezione dei rispettivi domini ($U_i \cap U_j$)
  sono legate dalle fuzioni di transizione \ref{eq:transfunctions}.
 Le funzioni di transizione sono dette \emph{trasformazioni di gauge}.\\
@@ -76,7 +285,7 @@ potenziali di gauge definiti sugli intorni locali $U_i$ esiste sempre la 1-forma
 di connessione $\omega$ sul fibrato.\\
 
 Il pullback della curvatura $\Omega$, definita come differenziale esterno della
-1-forma di connessione $\omega$, è detto \emph{tensore forza di campo} $F$.\\
+1-forma di connessione $\omega$, è detto \emph{tensore forza di campo} $F = \dd A$.\\
 
 Se il fibrato è banale, ossia può essere ricoperto da una sola carta ed ha la
 struttura globale di prodotto diretto $M \times G$, allora esiste una simmetria
@@ -86,77 +295,3 @@ di gauge può essere descritto solo tramite diverse carte locali, concordanti su
 regioni di intersezione tramite una trasformazione di gauge\footnote{
   Si veda il monopolo di Wu-Yang nella sezione successiva \ref{sec:wuyangmonopole}.
 }.\\
-
-\subsubsection{Esempio: Elettrodinamica classica}
-Si vuole descrivere ora l'accoppiamento di un campo complesso $\phi$ con il campo
-elettromagnetico (si pensi ad esempio alla funzione d'onda di una particella carica).\\
-Si consideri la lagrangiana $\Ll$ definita in precedenza, che si è già visto
-essere invariante per trasformazioni \emph{globali} di fase $\phi \mapsto e^{iq\alpha}\phi = U\phi$,
-dove il parametro $q \in \R$ è detto la costante di accoppiamento della teoria
-(in questo caso la carica elettrica).
-\begin{equation*}
-  \begin{aligned}
-     \Ll [\phi] & = \partial _\mu \phi^*  \partial ^\mu \phi + V[\phi ^* \phi] &
-     & \Rightarrow \Ll[\phi] = \Ll[\phi'] & ,\quad
-     \phi &\mapsto \phi' = e^{i\alpha}\phi
-  \end{aligned}
-\end{equation*}
-
-Si vuole ora promuovere la simmetria a simmetria locale $\alpha \mapsto \alpha(x,t)$
-e richiedere che la lagrangiana rimanga invariata per trasformazione di fase locale.
-Si sostituisce la derivata pariale $\partial \mu$ con la derivata covariante
-definita da
-$$
-   D _\mu := \partial _\mu -iq A _\mu
-$$
-dove il campo $A _\mu : \R \times \R^3 \to \R \times \R^3$ è il potenziale
-di gauge (in questo caso, il potenziale elettromagnetico). La lagrangiana
-gauge-invariante diventa:
-$$
-   \Ll ' =  D _\mu \phi^*  D ^\mu \phi + V[\phi ^* \phi].
-$$
-La richiesta di invarianza della lagrangiana per trasformazione
-di fase locale si traduce nella richiesta che la derivata covariante $D _\mu$
-sia invariante. $D _\mu \mapsto D' _\mu = U^{-1} D _\mu U = D _\mu $.
-\begin{equation}
-   \begin{aligned}
-      iq \partial _\mu \alpha(x,t) + (\partial _\mu - iq A _\mu)
-         & = (\partial _\mu -iq A' _\mu) \Rightarrow \\
-      \Rightarrow A' _\mu = A _\mu - \partial _\mu  \alpha(x,t)
-         & = U ^{-1} A _\mu U + \frac{i}{q} U \dd U
-   \end{aligned}
-\end{equation}
-che si traduce nella condizione che il potenziale $A _\mu$ trasformi secondo la
-trasformazione di gauge sopra scritta.\\
-
-Se si calcola il tensore energia impulso della lagrangiana così scritta (si indica
-$\phi| ^{\mu} = \partial \phi / \partial x_\mu$ e
-$\phi| _{\mu} = \partial \phi / \partial x^\mu$ ), si vede immediatamente che non si
-conserva.
-\begin{equation}
-   \begin{aligned}
-      T'_{\mu\nu} & = \frac{\partial \Ll'}{\partial \phi|^{\mu}}\phi|_{\nu}
-      - \eta _{\mu\nu} \Ll' &
-      \Rightarrow \partial ^\mu T'_{\mu\nu} & \neq 0
-   \end{aligned}
-\end{equation}
-Occorre allora tenere conto anche della dinamica del campo elettromagnetico, costruendo
-la lagrangiana per l'accoppiamento del campo $\phi$ con il campo elettromagnetico
-che è Lorentz-invariante, con simmetria di gauge $U(1)$ e che conserva energia e
-quantità di moto\footnote{
-   Si osserva che definendo la lagrangiana del campo elettromagnetico libero
-   $$
-   \Ll _{em} = - \frac{1}{4}F^{\mu\nu} F_{\mu\nu}
-   $$
-   Si ottengono come equazioni del moto esattamente le equazioni di Maxwell nel vuoto.
-}.
-
-\begin{equation}
-\Ll = -\frac{1}{4} F^{\mu\nu}F_{\mu\nu}
-+ \frac{1}{2} (D^\mu \phi)^* D _\mu \phi - V[\phi^* \phi]
-\end{equation}
-Dove $F_{\mu\nu}$ è il \textbf{tensore elettromagnetico}, cioè il tensore forza
-di campo definito da $F = \dd A$, o in coordinate:
-$$
-   F_{\mu\nu} = \partial _\mu A _\nu - \partial _\nu A _\mu
-$$

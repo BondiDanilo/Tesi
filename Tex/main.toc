@@ -8,51 +8,53 @@
 \contentsline {subsection}{\numberline {1.4.1}Calcolo del potenziale vettore di Dirac}{7}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Calcolo del flusso del campo regolarizzato}{9}{subsection.1.4.2}
 \contentsline {chapter}{\numberline {2}Teorie di gauge}{10}{chapter.2}
-\contentsline {subsubsection}{Esempio: Elettrodinamica classica}{11}{section*.3}
-\contentsline {chapter}{\numberline {3}Monopoli in teorie di gauge abeliane}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Fibrato di Monopolo di Wu\IeC {\textendash }Yang}{14}{section.3.1}
-\contentsline {section}{\numberline {3.2}Fibrato di Hopf}{15}{section.3.2}
-\contentsline {chapter}{\numberline {4}Monopoli in teorie di gauge non abeliane}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Monopolo di Wu-Yang non Abeliano}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Monopolo di \IeC {\textquoteright }t Hooft\IeC {\textendash }Polyakov}{18}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Modello di Georgi-Glashow}{18}{subsection.4.2.1}
-\contentsline {subsubsection}{Descrizione del modello}{19}{section*.4}
-\contentsline {subsubsection}{Classificazione delle soluzioni}{19}{section*.5}
-\contentsline {subsubsection}{Carica magnetica}{20}{section*.6}
-\contentsline {subsection}{\numberline {4.2.2}Ansatz di \IeC {\textquoteright }t Hooft\IeC {\textendash }Polyakov}{20}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {A}Cenni preliminari di matematica}{22}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Variet\IeC {\`a} differenziali}{22}{section.Alph1.1}
-\contentsline {subsection}{\numberline {A.1.1}Definizioni}{22}{subsection.Alph1.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Spazio tangente e cotangente}{23}{subsection.Alph1.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Mappe tra variet\IeC {\`a}}{24}{subsection.Alph1.1.3}
-\contentsline {section}{\numberline {A.2}Omotopia e Classi di omotopia}{24}{section.Alph1.2}
-\contentsline {subsubsection}{Esempio:}{25}{section*.7}
-\contentsline {subsubsection}{Primo gruppo di omotopia}{25}{section*.8}
-\contentsline {subsubsection}{Esempi di gruppo fondamentale}{26}{section*.9}
-\contentsline {subsubsection}{Gruppi di omotopia superiori}{26}{section*.10}
-\contentsline {subsubsection}{Gruppi di omotopia delle sfere}{26}{section*.11}
-\contentsline {section}{\numberline {A.3}Tensori e Forme differenziali}{26}{section.Alph1.3}
-\contentsline {subsection}{\numberline {A.3.1}Forme differenziali}{27}{subsection.Alph1.3.1}
-\contentsline {subsection}{\numberline {A.3.2}Differenziale esterno}{27}{subsection.Alph1.3.2}
-\contentsline {subsection}{\numberline {A.3.3}Coomologia di de Rham}{28}{subsection.Alph1.3.3}
-\contentsline {subsection}{\numberline {A.3.4}Integrazione}{28}{subsection.Alph1.3.4}
-\contentsline {subsubsection}{Teorema di Stokes}{28}{section*.12}
-\contentsline {subsection}{\numberline {A.3.5}Derivata covariante}{29}{subsection.Alph1.3.5}
-\contentsline {subsubsection}{Spazio euclideo}{29}{section*.13}
-\contentsline {subsubsection}{Curva nel piano}{29}{section*.14}
-\contentsline {subsubsection}{Sfera}{29}{section*.15}
-\contentsline {section}{\numberline {A.4}Gruppo e azione di gruppo}{29}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Gruppi e Algebre di Lie}{30}{subsection.Alph1.4.1}
-\contentsline {section}{\numberline {A.5}Fibrati}{32}{section.Alph1.5}
-\contentsline {subsection}{\numberline {A.5.1}Fibrato Tangente}{33}{subsection.Alph1.5.1}
-\contentsline {subsection}{\numberline {A.5.2}Fibrato}{33}{subsection.Alph1.5.2}
-\contentsline {subsection}{\numberline {A.5.3}Fibrato Principale e Connessione}{35}{subsection.Alph1.5.3}
-\contentsline {subsection}{\numberline {A.5.4}Classi caratteristiche}{37}{subsection.Alph1.5.4}
-\contentsline {chapter}{\numberline {B}Notazione}{39}{appendix.Alph2}
-\contentsline {subsubsection}{Coordinate polari:}{39}{section*.16}
-\contentsline {subsubsection}{Versori:}{39}{section*.17}
-\contentsline {subsubsection}{Gruppi di matrici}{39}{section*.18}
-\contentsline {subsubsection}{Matrici di Pauli}{40}{section*.19}
-\contentsline {subsubsection}{(pseudo)Tensore di Levi-Civita}{40}{section*.20}
-\contentsline {subsubsection}{Equazioni di Maxwell nel vuoto}{40}{section*.21}
-\contentsline {chapter}{Bibliografia}{41}{appendix*.22}
+\contentsline {section}{\numberline {2.1}Caso abeliano: Elettrodinamica classica}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Caso non abeliano}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}Formalismo dei fibrati}{13}{section.2.3}
+\contentsline {chapter}{\numberline {3}Monopoli in teorie di gauge abeliane}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}Fibrato di Monopolo di Wu\IeC {\textendash }Yang}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Fibrato di Hopf}{16}{section.3.2}
+\contentsline {chapter}{\numberline {4}Monopoli in teorie di gauge non abeliane}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Monopolo di Wu-Yang non Abeliano}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Monopolo di \IeC {\textquoteright }t Hooft\IeC {\textendash }Polyakov}{19}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Modello di Georgi-Glashow}{19}{subsection.4.2.1}
+\contentsline {subsubsection}{Descrizione del modello}{20}{section*.2}
+\contentsline {subsubsection}{Classificazione delle soluzioni}{20}{section*.3}
+\contentsline {subsubsection}{Carica magnetica}{21}{section*.4}
+\contentsline {subsection}{\numberline {4.2.2}Ansatz di \IeC {\textquoteright }t Hooft\IeC {\textendash }Polyakov}{21}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {A}Cenni preliminari di matematica}{23}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Variet\IeC {\`a} differenziali}{23}{section.Alph1.1}
+\contentsline {subsection}{\numberline {A.1.1}Definizioni}{23}{subsection.Alph1.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Spazio tangente e cotangente}{24}{subsection.Alph1.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Mappe tra variet\IeC {\`a}}{25}{subsection.Alph1.1.3}
+\contentsline {section}{\numberline {A.2}Omotopia e Classi di omotopia}{25}{section.Alph1.2}
+\contentsline {subsubsection}{Esempio:}{26}{section*.5}
+\contentsline {subsubsection}{Primo gruppo di omotopia}{26}{section*.6}
+\contentsline {subsubsection}{Esempi di gruppo fondamentale}{27}{section*.7}
+\contentsline {subsubsection}{Gruppi di omotopia superiori}{27}{section*.8}
+\contentsline {subsubsection}{Gruppi di omotopia delle sfere}{27}{section*.9}
+\contentsline {section}{\numberline {A.3}Tensori e Forme differenziali}{27}{section.Alph1.3}
+\contentsline {subsection}{\numberline {A.3.1}Forme differenziali}{28}{subsection.Alph1.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Differenziale esterno}{28}{subsection.Alph1.3.2}
+\contentsline {subsection}{\numberline {A.3.3}Coomologia di de Rham}{29}{subsection.Alph1.3.3}
+\contentsline {subsection}{\numberline {A.3.4}Integrazione}{29}{subsection.Alph1.3.4}
+\contentsline {subsubsection}{Teorema di Stokes}{29}{section*.10}
+\contentsline {subsection}{\numberline {A.3.5}Derivata covariante}{30}{subsection.Alph1.3.5}
+\contentsline {subsubsection}{Spazio euclideo}{30}{section*.11}
+\contentsline {subsubsection}{Curva nel piano}{30}{section*.12}
+\contentsline {subsubsection}{Sfera}{30}{section*.13}
+\contentsline {section}{\numberline {A.4}Gruppo e azione di gruppo}{30}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Gruppi e Algebre di Lie}{31}{subsection.Alph1.4.1}
+\contentsline {section}{\numberline {A.5}Fibrati}{33}{section.Alph1.5}
+\contentsline {subsection}{\numberline {A.5.1}Fibrato Tangente}{34}{subsection.Alph1.5.1}
+\contentsline {subsection}{\numberline {A.5.2}Fibrato}{34}{subsection.Alph1.5.2}
+\contentsline {subsection}{\numberline {A.5.3}Fibrato Principale e Connessione}{36}{subsection.Alph1.5.3}
+\contentsline {subsection}{\numberline {A.5.4}Classi caratteristiche}{38}{subsection.Alph1.5.4}
+\contentsline {chapter}{\numberline {B}Notazione}{40}{appendix.Alph2}
+\contentsline {subsubsection}{Coordinate polari:}{40}{section*.14}
+\contentsline {subsubsection}{Versori:}{40}{section*.15}
+\contentsline {subsubsection}{Gruppi di matrici}{40}{section*.16}
+\contentsline {subsubsection}{Matrici di Pauli}{41}{section*.17}
+\contentsline {subsubsection}{(pseudo)Tensore di Levi-Civita}{41}{section*.18}
+\contentsline {subsubsection}{Equazioni di Maxwell nel vuoto}{41}{section*.19}
+\contentsline {chapter}{Bibliografia}{42}{appendix*.20}

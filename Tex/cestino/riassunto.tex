@@ -1,0 +1,79 @@
+\input{preamble}
+\begin{document}
+
+Non sono mai stati osservati in natura i monopoli magnetici. La ragione non è però
+spiegata dall'elettrodinamica classica, in quanto le equazioni di Maxwell
+si limitano a constatarne la non esistenza. Le leggi dell'elettrodinamica
+sono leggi basate sulle osservazioni sperimentali, non teoremi derivati da assiomi primi.
+Non si esclude quindi a priori l'esistenza dei monopoli magnetici, ma non se ne
+è trovata, ad oggi, conferma sperimentale. \\
+Nonostante lo scarso successo dell'ipotesi del monopolo magnetico a livello sperimentale,
+nel corso del secolo scorso non è cessato l'interesse nel formularne una teoria
+completa e consistente. Una delle ragioni principali per cui la ricerca viene
+portata avanti, oltre alle numerose implicazioni sia a livello
+teorico che sperimentale, è che tuttora non si è riusciti a spiegare la motivazione
+per cui non siano mai stati osservati monopoli magnetici in natura.\\
+
+Un primo approccio per introdurre una teoria del monopolo magnetico, volto solamente
+a evidenziarne le problematiche, è la costruzione di un elementare modello classico (in maniera
+naive) che consiste nell'assumere l'esistenza di una carica magnetica $g$ per arrivare
+a scrivere le equazioni del moto di un elettrone immerso in un campo magnetico di
+monopolo, analogo al campo elettrico coulombiano prodotto da una carica elettrica isolata
+(monopolo elettrico). Occorre quindi modificare le equazioni di Maxwell,
+eguagliando la divergenza del campo magnetico $\vec B$ alla densità di carica magnetica
+locale $\rho_g$.
+Si arriva però subito a una contradizione: se si vuole definire
+un potenziale elettromagnetico $\vec A$, di cui il campo magnetico $\vec B$ è il rotore,
+si ha incompatibilità tra le due condizioni $\nabla \cdot \vec B = 4 \pi\rho_g$ e
+$\vec B = \nabla \times \vec A$. Il motivo è che non è possibile definire ovunque un
+potenziale vettore regolare: si ha un semiasse in cui il potenziale è singolare.\\
+
+Per costruire una teoria non contradditoria bisogna rinunciare alla definizione
+di un potenziale globale, in favore di una descrizione con più potenziali definiti
+localmente e che si raccordino in maniera "corretta" nelle regioni in cui si intersecano.\\
+Il formalismo più adatto a questa descrizione è quello delle teorie di gauge, in
+cui l'accento è posto sul comportamento locale dei campi.\\
+
+Ricordando che l'elettrodinamica classica è una teoria di gauge con simmetria
+di gruppo $U(1)$, si inizia tentando di definire, su due aperti, due potenziali
+gauge che sono legati, nella regione di intersezione, da una trasformazione di
+gauge di tipo $U(1)$. Si arriva in questo modo a costruire il campo di monopolo
+con l'andamento corretto (già definito nell'esempio "alla Coulomb"), risolvendo
+la contraddizione evidenziata in precedenza, e a dare un significato topologico
+alla carica magnetica, che viene associata alle classi di Chern della varietà
+in esame.
+Osservazioni sulla non polidromia della trasformazione dei campi permettono di
+ottenere una relazione tra le cariche elettrica e magnetica, che costiuisce
+uno dei principali interessi nel costruire una teoria del monopolo magnetico.\\
+Il modello abeliano presenta però alcuni punti critici nell'estensione
+del modello a una teoria di campo quantistica.\\
+
+Si vuole allora generalizzare la teoria a un gruppo di gauge non abeliano di cui
+$U(1)$ è sottogruppo, che si riduca alla teoria abeliana in condizioni "normali",
+ad esempio a basse energie.
+Questo processo di rottura spontanea della simmetria, che
+favorisce il sottogruppo $U(1)$ rispetto al gruppo di gauge generale, ha il
+vantaggio di contenere già tutte le previsioni del modello abeliano ed è
+in grado di risolverne le criticità. Teorie di campo che generalizzano
+l'elettrodinamica in questo modo prenndono il nome di teorie di \emph{Yang-Mills}.\\
+Il caso più semplice è quello in cui viene preso come gruppo di gauge il gruppo
+$SU(2)$, che ha appunto $U(1)$ come sottogruppo.
+Vengono presi in esame due modelli di monopolo magnetico.
+Il primo, proposto da Wu e Yang nel 1969, risolve i problemi del modello abeliano,
+ma deficita nella definizione delle energie di configurazione dei campi, che
+risulta divergente.
+Il secondo modello in esame è un caso
+particolare del modello proposto da Georgi e Glashow nel 1974, in cui
+si accoppia il potenziale di gauge a un campo, il campo di Higgs. Si manifesta
+immediatamente il processo di rottura di simmetria da $SU(2)$ a $U(1)$ e viene
+risolto il problema delle configurazioni a energia divergente. Si arriva inoltre
+a dare un ulteriore definizione della carica magnetica, associandola alla
+conservazione del tensore elettromagnetico, discendente quindi dalle equazioni di
+Maxwell stesse.\\
+
+Le difficoltà di un modello non abeliano sono certamente anche di natura
+computazionale. Si danno allora alcuni cenni, in conclusione, al modello di
+soluzione proposto da 't Hooft e Polyakov, che è un punto di partenza per le
+soluzioni numeriche del modello di Georgi-Glashow.
+
+\end{document}
