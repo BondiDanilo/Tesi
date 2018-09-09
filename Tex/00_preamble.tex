@@ -6,6 +6,8 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{amsthm}             %stili teoremi
+\usepackage{mathtools}
+
 \usepackage{amssymb,amsmath}
 \usepackage[colorlinks = true,
           linkcolor = blue,
@@ -26,21 +28,21 @@
 \usepackage[nottoc]{tocbibind} %bibliografia
 %------------------------------------------------------------------------------%
 
-% Stile+numerazione teoremi, definizinoni, etc...
+% Stile + numerazione teoremi, definizinoni, etc...
 \theoremstyle{plain}
-\newtheorem{theorem}{Teorema}[equation]
+\newtheorem{theorem}{Teorema}[section]
 
 \theoremstyle{definition}
-\newtheorem{definition}{Definizione}[equation]
+\newtheorem{definition}{Definizione}[section]
 
 \theoremstyle{plain}
-\newtheorem{proposition}{Proposizione}[equation]
+\newtheorem{proposition}{Proposizione}[section]
 
 \theoremstyle{plain}
-\newtheorem{lemma}{Lemma}[equation]
+\newtheorem{lemma}{Lemma}[section]
 
 \theoremstyle{remark}
-\newtheorem{example}{Esempio}[equation]
+\newtheorem{example}{Esempio}[section]
 
 \theoremstyle{definition}
 \newtheorem{axiom}{}[section]
@@ -66,7 +68,9 @@
 \newcommand{\C}{\mathbb{C}} % insieme dei complessi
 \newcommand{\Z}{\mathbb{Z}} % insieme degli interi
 \newcommand{\Ll}{\mathcal{L}} % lagrangiana
-
+\newcommand\Chapter[2]{
+  \chapter*[#1: {\itshape#2}]{#1\\[2ex]\Large\itshape#2}
+} %sottotitolo al capitolo
 
 %------------------------------------------------------------------------------%
 % Metadati

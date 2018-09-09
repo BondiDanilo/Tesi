@@ -1,41 +1,50 @@
-\chapter{Monopolo di Dirac}
+\chapter{Monopolo di Dirac}\label{cap:diracmonopole}
 %------------------------------------------------------------------------%
 \section{Potenziale di Dirac}
 Si vuole dare un primo approccio classico al monopolo magnetico.
 La prima idea è di sostituire la carica elettrica con un'ipotetica carica magnetica
 $g$ e studiare il problema come in elettrostatica.\\
 Il campo magnetico generato da una carica magnetica $g$ situata nell'origine è
-$$
+%
+\begin{equation}\label{eq:monopolefield}
    B = g \frac{\vec r}{r^3} = \frac{g}{r^2} \vec u _r
-$$
+\end{equation}
+%
 dove $\vec r = (x,y,z)$ , $r = \sqrt{x^2 + y^2 + z^2}$ e $\vec u _r = \frac{\vec r}{r}$
 il versore radiale.\\
 Le equazioni del moto di una carica elettrica $e$ nel campo $\vec B$,
 generate dalla Lagrangiana di minima interazione tra una carica elettrica e un campo
 magnetico
+%
 $$
    L = \frac{1}{2} m \dot{\vec r} ^2 + e \dot{\vec r} \cdot \vec A
 $$
+%
 sono
+%
 $$
    m \ddot{\vec r} = e\dot{\vec r} \times \vec B =
       \frac{eg}{r^3}(\dot{\vec r} \times \vec r)
 $$
+%
 dove il vettore potenziale che compare nella Lagrangiana deve soddisfare
-$B = \nabla \times \vec A = g \frac{\vec r}{r^3}$.\\
+$\vec B = \nabla \times \vec A = g \frac{\vec r}{r^3}$.\\
 
 Come calcolato nella sezione \ref{sec:dirac_potential} un potenziale che soddisfa
 questa relazione è:
+
 \begin{equation}\label{eq:diracpotential}
   \vec A = g(1 + \cos\theta)\left( \frac{\sin\varphi}{r\sin\theta},
-     \frac{-\cos\varphi}{r\sin\theta},0 \right)
+     \frac{-\cos\varphi}{r\sin\theta},0 \right) = - g (1+cos\theta) \nabla \varphi
 \end{equation}
+
 Si presenta immediatamente il seguente problema. Se si ammette l'esistenza di una carica
-magnetica, il teorema di Gauss garantsce che $\nabla \cdot \vec B = 4\pi g\delta^{(3)}(\vec r)$,
-ossia che il flusso del campo attraverso una qualsiasi superficie chiusa contenente
-la carica magnetica $g$ è pari a $4\pi g$, in contraddizione con
-$\nabla \cdot \vec B = \nabla \cdot (\nabla \times \vec A) = 0$, che genera un
-flusso nullo.
+magnetica, il flusso del campo magnetico attraverso una qualsiasi supericie chiusa
+contenente la carica $g$ è pari a $4\pi g$ e, applicando il teorema di Gauss,
+si ottiene $\nabla \cdot \vec B = 4\pi g\delta^{(3)}(\vec r)$.
+Ciò è in contraddizione con $\nabla \cdot \vec B = \nabla \cdot
+(\nabla \times \vec A) = 0$, che genera un flusso nullo.
+
 \begin{equation}\label{eq:B4gpi}
    \int_S \dd\sigma \vec B = \int_V d^3 x \, \nabla \cdot \vec B = 4g\pi
 \end{equation}
@@ -43,32 +52,40 @@ flusso nullo.
    \int_S d\sigma  \vec B = \int_V d^3 x \, \nabla \cdot \vec B
       = \int_V d^3 x \, \nabla \cdot (\nabla \times \vec A) = 0
 \end{equation}
+
 Il potenziale $\vec A$ presenta però delle discontinuità per $\sin\theta = 0$.
 Si verifica immediatamente che $\theta = 0$ è un punto singolare, mentre $\vec A$
 è continuo in $\theta = \pi$. Il calcolo fatto non è quindi corretto lungo l'asse z
 positivo ($\theta = 0$), e occorre regolarizzare il potenziale.\\
-Siano $\varepsilon > 0$  e $r_\varepsilon = \sqrt{r^2 + \varepsilon^2}$. Si definiscono ora
+Siano $\varepsilon > 0$  e $r_\varepsilon = \sqrt{r^2 + \varepsilon^2}$.
+Si definiscono ora\footnote{Si veda \cite{shnir} per la trattazione completa.}
 %
 \begin{align*}
    \vec A_\varepsilon &:= \frac{g}{r_\varepsilon}\frac{1}{r_\varepsilon - z} \vec u _\varphi  \\
    \vec B _\varepsilon & = \nabla \times \vec A_\varepsilon = \frac{g}{r_\varepsilon^3}\vec r
       - g\varepsilon^2 \left( \frac{1}{r_\varepsilon^3(r_\varepsilon - z)}
-         + \frac{1}{r_\varepsilon^2(r_\varepsilon-z)^2} \right)\vec u _z
+         + \frac{1}{r_\varepsilon^2(r_\varepsilon-z)^2} \right) \Theta(z) \vec u _z
 \end{align*}
 %
-e si vuole definire $\tilde{\vec B} := \lim_{\varepsilon \to 0} \vec B _\varepsilon$
+dove $\vec u _\varphi $ è il versore dell'angolo azimutale come nell'appendice
+\ref{sec:notation} e $\Theta(z)$ è la funzione di Heaviside per l'asse z.\\
+Si vuole definire $\tilde{\vec B} := \lim_{\varepsilon \to 0} \vec B _\varepsilon$
+%
 $$
    \lim_{\varepsilon \to 0} \vec B_\varepsilon = \lim_{\varepsilon \to 0} \left[
       \frac{g}{r^3}\vec r - 2g\varepsilon^2 \left( \frac{1}{r^2(x^2 + y^2 + \varepsilon^2)}
             + \frac{2}{(x^2 + y^2 + \varepsilon^2)^2} \right) \Theta(z) \vec u _z \right]
 $$
-dove $\Theta(z)$ è la funzione di Heaviside per l'asse z.\\
+%
+
 Si vuole ora valutare il flusso del campo magnetico regolarizzato $\tilde{\vec B}$
 attraverso una superficie chiusa $S$ centrata nell'origine e di raggio unitario, supponendo
 che sia possibile scambiare il limite e l'integrale
+%
 $$
   \int_S \mathrm{d}{\sigma} \lim_{\varepsilon \to 0} \vec B_\varepsilon = \lim_{\varepsilon \to 0} \int_S \mathrm{d}\sigma \vec B_\varepsilon
 $$
+%
 Si veda la sezione \ref{sec:flusso_regolarizzato} per il calcolo esplicito.
 L'unico termine in $\varepsilon$ che porta contributo al flusso è il secondo e si
 ha:
@@ -106,7 +123,7 @@ e le condizioni che rendano tali configurazioni identiche.\\
 Si ricorda che l'elettrodinamica è invariante per trasformazioni del potenziale
 vettore del tipo\footnote{$e =$ carica dell'elettrone}
 \begin{equation}
-   \vec A \mapsto \vec A' = A + \nabla \lambda (\vec r) = A + \frac{i}{e}
+   \vec A \mapsto \vec A' = A + \nabla \lambda (\vec r) = A - \frac{i}{e}
     U^{-1}\nabla U
 \end{equation}
 dove $U(\vec r) = \exp(ie\lambda(\vec r))$ e $\lambda$ è un'arbitraria funzione
@@ -165,38 +182,61 @@ sarà utile nella trattazione successiva.
 %------------------------------------------------------------------------------%
 
 \section{Condizione di quantizzazione della carica}
-Si consideri una particella di massa $m$ e di cariche elettrica $e$ e magnetica
+Si vuole studiare il moto di una una particella di massa $m$ e di cariche elettrica $e$ e magnetica
 $g$ in interazione con un campo di monopolo magnetico, descritto dal potenziale
-$A$. Sia $\psi$ la funzione d'onda della particella. L'equazione di Schrödinger
-della particella è
+$\vec A$. Sia $\psi$ la funzione d'onda della particella. Essa è soggetta
+all'equazione di Schrödinger, in unità naturali:
 \begin{equation}
-   \frac{1}{2m}\left( \vec{\hat{p}} - \frac{e}{c} \vec{\hat{A}} \right)^2 \psi(\vec r) = E\psi(\vec r)
+\frac{1}{2m}\left( -i\nabla - {e} \vec{\hat{A}} \right)^2 \psi(\vec r) = E\psi(\vec r)
 \end{equation}
-Siano $\vec A^\pm$ su $U^\pm$ e le funzioni d'onda $\psi^\pm$ su $U^\pm$ e $\lambda =2g\varphi$.
-In seguito alla trasformazione di gauge $ \vec A^+ \mapsto \vec A + \nabla (2g\varphi)$ (dimostrare)
-la funzione d'onda trasforma
-$$ \psi^- \mapsto \exp \left( - \frac{2ige}{\hbar c} \varphi \right) \psi^+$$
-Affinchè la funzione d'onda non sia multivalore, la fase deve essere periodica di
-periodo $2\pi$ in $\varphi$, ossia
+
+Si ricorda che le funzioni d'onda sono sempre definite a meno di un fattore di fase,
+che può in generale dipendere dalle coordinate $(t,\vec x)$. La differenza di fase
+tra due punti distinti non è univocamente definita e dipende dal cammino $\gamma$
+scelto tra i due punti.
+Sia $S = \int_0^t \Ll \, \dd t'$ l'azione tra due punti, si assuma per semplicità
+di calcolarla tra l'origine $(0,\vec 0)$ e un punto $(t, \vec x)$, suppondendo
+che non contengano singolarità del potenziale. Dirac \ref{dirac}
+arriva a scrivere la funzione d'onda della particella come
+%
 $$
-   \exp \left( - \frac{2ige}{\hbar c} \varphi \right)
-      = \exp \left( - \frac{2ige}{\hbar c} (\varphi + 2\pi) \right)
-   \Rightarrow
-   \exp \left( - \frac{2ige}{\hbar c} 2\pi \right) = 1
-   \Rightarrow
-   \left( - \frac{2ige}{\hbar c} 2\pi \right) = 2n\pi \quad n \in \Z
+   \psi (\vec x) = \psi_0(\vec x) e^{iS}
 $$
-Allora si deve avere che
+%
+dove $\psi_0$ è soluzione dell'equazione di Schrödinger e deve necessariamente
+essere continua, ma la fase può essere discontinua.\\
+
+In Meccanica Classica l'equazione del moto è invariante per trasformazione di gauge
+$U = e^{ie \lambda(\vec x) = e^{i2eg\varphi}}$,
+ma in Meccanica Quantistica è l'azione $S$, che non è gauge invariante, a produrre
+l'equazione del moto. Una variazione $\delta S$ dell'azione per trasformazione di gauge porta
+quindi a una variazione di fase della funzione d'onda di un fattore $e^{i\delta S}$,
+che può appunto essere discontinuo. Affinchè $\psi$ in ogni punto sia
+ben definita, non si può avere discontinuità di fase della funzione d'onda per
+cammini chiusi $\gamma$ prodotti dalla trasformazione di gauge.
+Per curve chiuse, per cui si ha
+$$
+   \delta S = 2eg \delta\varphi = 4\pi e g \, ,
+$$
+è necessario che la discontinuità della fase sia multipla di $2\pi$, ossia per $n \in \Z$
+si deve avere $\delta S = 2\pi n$. Si ottiene allora la condizione:
 
 \begin{equation}\label{eq:diracquantumcharge}
    \boxed{
-      \frac{2eg}{\hbar c} = n \quad  n \in \Z
+      eg = \frac{n}{2} \quad, \,  n \in \Z
    }
 \end{equation}
+
 Questa condizione è la celebre \textbf{condizione di quantizazione della carica
 di Dirac}, da cui risulta che se esiste una carica magnetica di monopolo $g$,
 la carica elettrica è quantizzata. Poichè si osserva che la carica elettrica è
 quantizzata, questa condizione costituirebbe uno spunto di ricerca dei monopoli
-magnetici.\\
-Esistono altre teorie che spiegano equivalentemente la quantizzazione della carica
-elettrica, ma non verranno qui indagate.\\
+magnetici\footnote{
+   Esistono altre teorie che spiegano equivalentemente la quantizzazione della carica
+   elettrica, ma non verranno qui indagate.\\
+}.\\
+
+Si sottolinea infine che la condizione \ref{eq:diracquantumcharge} di quantizzazione
+è solamente di natura topologica: non deriva dallo spettro di un operatore hermitiano,
+come accade ad esempio per l'oscillatore armonico o altri sistemi quantistici semplici.
+La natura topologica di tale condizione verrà chiarita nelle sezioni successive.

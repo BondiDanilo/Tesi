@@ -22,24 +22,33 @@ analoga per la forma di curvatura $\Omega$. Una classe di equivalenza è formata
 da tutte le 1-forme di connessione a cui corrisponde la stessa 2-forma di curvatura.\\
 Si introduce ora il \emph{polinomio caratteristico} della forma $\Omega$ una quantità
 invariante della algebra di Lie $\mathfrak{g}$ nella fibra
-$$ det(1+\Omega) = 1 + tr\Omega + \frac{1}{2}[(tr\Omega)^2 - tr(\Omega^2)] + \dots $$
+%
+$$
+   \mathrm{det}(1+\Omega) = 1 + \mathrm{tr}\Omega
+      + \frac{1}{2}[ ( \mathrm{tr}\Omega )^2 - \mathrm{tr}(\Omega^2) ] + \dots
+$$
+%
 che permette di definire una forma sullo spazio base $M$, detta \emph{forma di Chern}
 $$ det\left(1 + \frac{\lambda}{2\pi}F\right) = \sum_{k=0}^\infty \lambda^k c_k $$
 dove $1/2\pi$ è solo un fattore di normalizzazione. Si ricorda che $F$ è il pullback
 di $\Omega$. I coefficienti di espansione $c_k$ sono forme chiuse invarianti su $M$,
 la cui espressione esplicita per $k = 1,2$ è:
+
 \begin{equation}
    \begin{aligned}
-      c_1 &= \frac{1}{2\pi} \mathrm{tf} F &,
-      c_2 & = \frac{1}{8\pi^2}[ \mathrm{tf} F \wedge \mathrm{tf} F
-           - \mathrm{tf} (F \wedge F)]
+      c_1 &= \frac{1}{2\pi} \mathrm{tr} F &,
+      c_2 & = \frac{1}{8\pi^2}[ \mathrm{tr} F \wedge \mathrm{tr} F
+           - \mathrm{tr} (F \wedge F)]
    \end{aligned}
 \end{equation}
+
 I fattori del tipo $1/2\pi$ fanno si che sia normalizzato l'integrale sulla varietà
 compatta senza bordo $M$
+
 \begin{equation}
    \int_M c_k = n \quad , \quad n \in \Z
 \end{equation}
+
 Questi integrali sono detti \emph{classi caratteristiche di Chern}.\\
 
 \begin{example}\label{ex:monopolechern}

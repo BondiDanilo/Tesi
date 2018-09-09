@@ -6,8 +6,7 @@ Si consideri il campo classico di monopolo generato da una carica magnetica $g$ 
 nell'origine del sistema di riferimento, $\vec B : \R ^3 \to \R ^3$
     $$ \vec B = g\frac{\vec r}{r^3} = \frac{g}{r^2} \vec u _r $$
 Si vuole trovare un potenziale vettore $\vec A : U \subset \R ^3 \to \R ^3$ tale che
-$ B = \nabla \times \vec A $ in $U$. Si osserva innanzitutto che per la simmetria
-sferica del campo $\vec B$, il potenziale vettore può essere scritto come:
+$ B = \nabla \times \vec A $ in $U$. Si fa la seguente ipotesi sulla forma di $\vec A$:
    $$ \vec A = g \cdot a(\theta) \nabla \varphi $$
 per un'opportuna funzione $a(\theta)$.
 L'espressione del rotore in coordinate sferiche è:
@@ -31,38 +30,40 @@ $$
 $$
 Si deve avere che $ \nabla \times \vec A = g \cdot \frac{1}{r^2} \vec u _r$,
 ossia
-$$
-\begin{cases}
-    \frac{1}{r\sin\theta} \left(
-         \frac{\partial}{\partial\theta}(A_\varphi\sin\theta) -
-         \frac{\partial A_\theta}{\partial\varphi}
-         \right) = g \cdot \frac{1}{r^2} \\
-    \frac{1}{r} \left(
-         \frac{1}{\sin\theta}\frac{\partial A_r}{\partial\varphi} -
-         \frac{\partial}{\partial r}(r A_\varphi)
-         \right) = 0 \\
-    \frac{1}{r} \left(
-         \frac{\partial}{\partial r}(r A_\theta) - \frac{\partial A_r}{\partial\theta}
-         \right) = 0
-\end{cases}
-$$
+\begin{equation*}
+   \begin{dcases}
+       \frac{1}{r\sin\theta} \left(
+            \frac{\partial}{\partial\theta}(A_\varphi\sin\theta) -
+            \frac{\partial A_\theta}{\partial\varphi}
+            \right) = g \cdot \frac{1}{r^2} \\
+       \frac{1}{r} \left(
+            \frac{1}{\sin\theta}\frac{\partial A_r}{\partial\varphi} -
+            \frac{\partial}{\partial r}(r A_\varphi)
+            \right) = 0 \\
+       \frac{1}{r} \left(
+            \frac{\partial}{\partial r}(r A_\theta) - \frac{\partial A_r}{\partial\theta}
+            \right) = 0
+   \end{dcases}
+\end{equation*}
 Osservando che $A_\theta = \vec u _\theta \cdot \vec A $ e
 $A_\varphi = \vec u _\varphi \cdot \vec A$ e inserendo $ \vec A = g \cdot a(\theta) \nabla \varphi $
-$$
-         A_\varphi = (-\sin\varphi \vec u _x + \cos\varphi \vec u _y)
-                       \cdot a(\theta) g \nabla \varphi
-                = a(\theta)g\left( -\sin\varphi \frac{-\sin\varphi}{r\sin\theta}
+\begin{equation*}
+   \begin{aligned}
+         A_\varphi & = (-\sin\varphi \vec u _x + \cos\varphi \vec u _y)
+                       \cdot a(\theta) g \nabla \varphi \\
+                   & = a(\theta)g\left( -\sin\varphi \frac{-\sin\varphi}{r\sin\theta}
                       + \cos\varphi \frac{\cos\varphi}{r\sin\theta}\right)\\
-                = \frac{a(\theta)g}{r\sin\theta}
-$$
-$$         A_\theta = (\cos\theta \cos\varphi u_x + \cos\theta \sin\varphi u_y
-                          - \sin\theta u_z) \cdot a(\theta) g \nabla \varphi
-                    = a(\theta) g \left( \frac{-\sin\varphi}{r\sin\theta} \cos\theta \cos\varphi
-                          + \frac{\cos\varphi}{r\sin\theta} \cos\theta \sin\varphi \right)
-                    = 0
-$$
+                   & = \frac{a(\theta)g}{r\sin\theta} \\
+        A_\theta & = (\cos\theta \cos\varphi u_x + \cos\theta \sin\varphi u_y
+                          - \sin\theta u_z) \cdot a(\theta) g \nabla \varphi \\
+                 & = a(\theta) g \left( \frac{-\sin\varphi}{r\sin\theta} \cos\theta \cos\varphi
+                          + \frac{\cos\varphi}{r\sin\theta} \cos\theta \sin\varphi \right) \\
+                 & = 0
+   \end{aligned}
+\end{equation*}
 Segue quindi che
 $$
+   \Rightarrow
    \frac{1}{\sin\theta} \frac{\partial}{\partial\theta}(A_\varphi \sin\theta)
       = \frac{1}{\sin\theta} \frac{g}{r} \frac{\partial a(\theta)}{\partial \theta}
       = \frac{g}{r}
@@ -70,7 +71,7 @@ $$
 Da cui si ricava facilmente l'espressione di $a(\theta)$ integrando ambo i lati
 $$
    \int_0 ^\theta \frac{\partial a(\theta')}{\partial \theta'} \dd \theta'
-      = \int_0^\theta \sin\theta' \dd \theta' \Rightarrow\\
+      = \int_0^\theta \sin\theta' \dd \theta' 
    \Rightarrow a(\theta) = -(\cos\theta+1) + cost  = -(\cos\theta+1)
 $$
 Ponendo a zero la costante arbitraria di integrazione.\\
@@ -109,7 +110,7 @@ con $r = |p| = \sqrt{x^2+y^2+z^2}$.
 
 \subsection{Calcolo del flusso del campo regolarizzato}
 \label{sec:flusso_regolarizzato}
-Supponendo valga (dimostrare)
+Supponendo valga
 $$
   \int_S \dd \sigma \lim_{\varepsilon \to 0} \vec B_\varepsilon = \lim_{\varepsilon \to 0} \int_S \dd \sigma \vec B_\varepsilon
 $$

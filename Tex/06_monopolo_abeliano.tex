@@ -84,8 +84,6 @@ Il gruppo di gauge $U(1) = \{e^{i\alpha} \}$ è parametrizzato da un
 parametro $\alpha$, che è una coordinata ciclica lungo la fibra, ed è identificato
 quindi con la sfera $S^1$.\\
 
-
-
 Siano $U^\pm$ emisferi nord e sud e $U^0$ l'equatore come sopra.
 Si hanno allora le due carte locali per il fibrato
 \begin{equation}
@@ -109,12 +107,14 @@ $$
 La 1-forma di connesione $\omega$\footnote{Si veda \ref{}}
 definita globalmente sul fibrato, portata su $U^\pm$ tramite pullback,
 dà il potenziale $A$
-$$
+
+\begin{equation}\label{eq:hopfpotential}
    A = a(\theta)\dd \varphi =  \begin{cases}
       A^+ =  \frac{n}{2}(1 - \cos\theta ) \dd \varphi  & \mathrm{su \:} U^+ \\
       A^- = -\frac{n}{2}(1 + \cos\theta ) \dd \varphi  & \mathrm{su \:} U^-
    \end{cases}
-$$
+\end{equation}
+
 e la 2-forma di curvatura $\Omega$\footnote{Si veda \ref{}} viene portata
 sul tensore elettromagnetico $F$
 $$
@@ -136,7 +136,7 @@ $$
 %$$
 
 La 2-forma $F$ è chiusa ($\dd F = \dd ^2A = 0$ su entrambi gli emisferi),
-analogamente al caso precedente, ma questa volta non è esatta perchè i due potenziali
+analogamente al caso del fibrato banale, ma questa volta non è esatta perchè i due potenziali
 sono definiti su insiemi differenti.\\
 
 Nella regione di intersezione $U^0$ i due potenziali sono vincolati dalla condizione
@@ -227,41 +227,50 @@ Si osservi che si perde completamente la dipendenza dalla variabile $\alpha$.
 L'effetto della mappa di Hopf è di mappare un cerchio $S^1$ in un punto
 della sfera $S^2$.\\
 
-La sezione del fibrato può essere presa fissando un particolare valore di $\alpha$.
+La sezione del fibrato può essere presa fissando un particolare valore di $ \alpha $.
+Fissato un punto sulla sfera $ S^2 $ (parametrizzato da due coordinate angolari
+$ \theta,\phi $), può essere immerso in $ S^3 $ completando arbitrariamente il grado
+ di libertà mancante $\alpha$
+$$
+   (\theta,\varphi) \mapsto (\theta',\varphi',\alpha).
+$$
+Si costuiscono ($ \theta',\varphi' $) con opportune combinazioni lineari degli angoli
+($ \theta, \varphi $), tali che applicando la proiezione si ottenga correttamente il
+punto di partenza.\\
+
+Per eliminare l'arbitrarietà nella scelta di $\alpha$ occorre fissare un altro
+vincolo.
 Si richiede che la metrica sulla sfera $S^3$ si riduca alla tradizionale metrica
 $\dd s^2 = \dd \theta^2 + \sin^2\theta \dd \varphi $ sulla sfera $S^2$ sia nell'emisfero
 nord $U^+$($ \theta/2 \mapsto \theta $) che nell'emisfero sud $U^-$
 ($\pi /2 - \theta /2 \mapsto \theta $). Si vede immediatamente da \ref{eq:hopfmap} che la
-condizione è verificata per $\alpha = 0$ e $\alpha = -\varphi $, rispettivamente.
-Con questa scelta, la forma di connessione globale $\omega$ su $S^3$
-viene mappata dal pullback della sezione appena descritta nella forma locale $A$
-come prima \ref{eq:hopfmap}\\
+condizione è verificata per $\alpha = 0$ e $\alpha = -\varphi $, rispettivamente.\\
 
-Le funzioni di transizione $\Phi $ sono definite nella regione di transizione
-$U^0 = U^+ \cap U^-$, l'equatore, come mappe $S^1 \to S^1$
-\begin{equation}
-   \begin{aligned}
-  \Phi_\pm & = \Phi _+ \circ \Phi _- ^{-1}
-             = \frac{p_3 +  i \, p_4}{p_1 + i \, p_2}
-                \sqrt{ \frac{p_1^2 + p_2^2}{p_3^2 + p_4^2} }
-             = e^{i\varphi } \\
-  \Phi _\mp & = \Phi _- \circ \Phi _+ ^{-1}
-             = \frac{p_1 + i \, p_2}{p_3 +  i \, p_4}
-                  \sqrt{ \frac{p_3^2 + p_4^2}{p_1^2 + p_2^2}}
-             = e^{-i\varphi }
-   \end{aligned}
-\end{equation}
-
-Si definisce allora la 1-forma di connessione $\omega$
+Si definisce allora la 1-forma di connessione $\omega$ su $S^3$
 \begin{equation}
    \begin{aligned}
       \omega & = p_1 \dd  p_2 - p_2 \dd  p_1 + p_3 \dd  p_4 - p_4 \dd  p_3 \\
              & = \dd \alpha + \frac{1}{2}(1 - \cos\theta) \dd  \varphi
    \end{aligned}
 \end{equation}
-Si osserva, come detto in precedenza che il pullback di questa forma sulla sfera
-$S^2$ (ossia, rimuovere la dipendenza da $\alpha$) porta alla forma $A$ definita
-sopra, nel caso particolare di $n = 1$.\\
+Si osserva che $\omega$ viene mappata,
+dal pullback della sezione appena descritta, nella forma locale $A$
+definita in \ref{eq:hopfpotential}, nel caso particolare di $n = 1$.\\
+
+Le funzioni di transizione (\ref{eq:transfunctions}) $\Phi$ sono definite nella regione di transizione
+$U^0 = U^+ \cap U^-$, l'equatore, come mappe $S^1 \to S^1$
+\begin{equation}
+   \begin{aligned}
+  \Phi_{NS} & = \Phi _+ \circ \Phi _- ^{-1}
+             = \frac{p_3 +  i \, p_4}{p_1 + i \, p_2}
+                \sqrt{ \frac{p_1^2 + p_2^2}{p_3^2 + p_4^2} }
+             = e^{i\varphi } \\
+  \Phi _{SN} & = \Phi _- \circ \Phi _+ ^{-1}
+             = \frac{p_1 + i \, p_2}{p_3 +  i \, p_4}
+                  \sqrt{ \frac{p_3^2 + p_4^2}{p_1^2 + p_2^2}}
+             = e^{-i\varphi }
+   \end{aligned}
+\end{equation}
 
 Si definisce la curvatura $\Omega$
 $$
@@ -273,6 +282,26 @@ della forma di volume della sfera $S^2$\footnote{
    che è appunto $\dd S = \sin\theta \dd \theta \wedge \dd \varphi $}.
 Si ha allora, integrando su $S^2$ come sottospazio di $S^3$\footnote{
    Abuso di notazione.}
-$
-   \int_{S^2} \Omega = 2\pi
-$
+$$
+   \int_{S^2} \Omega = 2\pi.
+$$
+
+In sintesi, un modello abeliano del monopolo magnetico si costruisce definendo
+la struttura di fibrato di Hopf sulla sfera $S^2$. La definizione della 1-forma
+di connessione globale $\omega$ porta alla definizione del potenziale $A$
+e del tensore elettromagnetico $F$ che descrivono correttamente il campo
+generato da un monopolo (si veda \ref{eq:diracpotential} e \ref{eq:monopolefield}).\\
+Abbandonando l'idea del potenziale definito ovunque in favore di una descrizione
+in carte locali, viene risolto il problema della stringa di singolarità, evidenziato
+nel capitolo \ref{cap:diracmonopole}.\\
+Si sottolinea che, nella costruzione del modello, non si è prestata attenzione
+a una corretta formulazione relativistica o quantistica. Volendo applicare questi
+due formalismi al modello abeliano si incontrano delle difficoltà che non verranno
+qui trattate.\\
+
+Per concludere il capitolo, si vuole dare un'interpretazione del modello
+matematico appena discusso. L'esistenza di due classi di chern del tipo $c_1$,
+legate a $n = 0,1$, suggerisce la seguente considerazione: un monopolo abeliano
+può esistere solamente se la struttura topologica dell'universo è non banale ($n=1$).
+Il fallimento nell'osservazione di monopoli magnetici sarebbe quindi
+un argomento in favore di una struttura topologica banale ($n=0$).
