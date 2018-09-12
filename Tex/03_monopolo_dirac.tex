@@ -30,12 +30,13 @@ $$
 dove il vettore potenziale che compare nella Lagrangiana deve soddisfare
 $\vec B = \nabla \times \vec A = g \frac{\vec r}{r^3}$.\\
 
-Come calcolato nella sezione \ref{sec:dirac_potential} un potenziale che soddisfa
+Come calcolato nella sezione \ref{sec:dirac_potential} il potenziale che soddisfa
 questa relazione è:
 
 \begin{equation}\label{eq:diracpotential}
   \vec A = g(1 + \cos\theta)\left( \frac{\sin\varphi}{r\sin\theta},
      \frac{-\cos\varphi}{r\sin\theta},0 \right) = - g (1+cos\theta) \nabla \varphi
+     = \frac{g}{r}\frac{1}{r-z} \vec u _\varphi
 \end{equation}
 
 Si presenta immediatamente il seguente problema. Se si ammette l'esistenza di una carica
@@ -61,7 +62,7 @@ Siano $\varepsilon > 0$  e $r_\varepsilon = \sqrt{r^2 + \varepsilon^2}$.
 Si definiscono ora\footnote{Si veda \cite{shnir} per la trattazione completa.}
 %
 \begin{align*}
-   \vec A_\varepsilon &:= \frac{g}{r_\varepsilon}\frac{1}{r_\varepsilon - z} \vec u _\varphi  \\
+   \vec A_\varepsilon &= \frac{g}{r_\varepsilon}\frac{1}{r_\varepsilon - z} \vec u _\varphi  \\
    \vec B _\varepsilon & = \nabla \times \vec A_\varepsilon = \frac{g}{r_\varepsilon^3}\vec r
       - g\varepsilon^2 \left( \frac{1}{r_\varepsilon^3(r_\varepsilon - z)}
          + \frac{1}{r_\varepsilon^2(r_\varepsilon-z)^2} \right) \Theta(z) \vec u _z
@@ -78,12 +79,13 @@ $$
 $$
 %
 
-Si vuole ora valutare il flusso del campo magnetico regolarizzato $\tilde{\vec B}$
+e valutare il flusso del campo magnetico regolarizzato $\tilde{\vec B}$
 attraverso una superficie chiusa $S$ centrata nell'origine e di raggio unitario, supponendo
 che sia possibile scambiare il limite e l'integrale
 %
 $$
-  \int_S \mathrm{d}{\sigma} \lim_{\varepsilon \to 0} \vec B_\varepsilon = \lim_{\varepsilon \to 0} \int_S \mathrm{d}\sigma \vec B_\varepsilon
+  \int_S \mathrm{d}{\sigma} \lim_{\varepsilon \to 0} \vec B_\varepsilon
+     = \lim_{\varepsilon \to 0} \int_S \mathrm{d}\sigma \vec B_\varepsilon .
 $$
 %
 Si veda la sezione \ref{sec:flusso_regolarizzato} per il calcolo esplicito.
@@ -101,6 +103,8 @@ $$
    \tilde{\vec B} = \vec B + \vec B _{string} = \frac{g}{r^3}\vec r
       - 4\pi g \delta(x)\delta(y)\Theta(z) \vec u _z
 $$
+Il primo termine è identico al campo definito a inizio capitolo, mentre il secondo
+è un termine parallelo all'asse z e definito solo sul semiasse positivo.\\
 L'effetto del campo generato dalla stringa di singolarità lungo l'asse z positivo
 è quello di annullare il flusso del campo prodotto dalla carica, risolvendo la
 contraddizione evidenziata in precedenza.
@@ -112,8 +116,7 @@ Come evidenziato nella sezione precedente, non è possibile definire ovunque un
 potenziale di monopolo continuo e derivabile. L'effetto del potenziale singolare
 \ref{eq:diracpotential} conduce a un termine extra di campo della stringa,
 diretto lungo la singolarità.
-Per rimuovere questo termine singolare, si vuole far sì che non corrisponda a una
-configurazione fisica.\\
+
 Naturalmente la scelta del sistema di coordinate per la descrizione del monopolo
 è arbitraria, quindi il primo approccio è di richiedere che tutte le configurazioni
 possibili della stringa ($\theta$) siano fisicamente equivalenti.
@@ -163,9 +166,8 @@ $$
 Il potenziale trasformato è singolare per $\theta = \pi$ e regolare per
 $\theta =  0$ quindi, analogamente a quanto visto per $\vec A^-$ produce un termine
 di campo di stringa lungo l'asse $z$ negativo.\\
-La trasformazione di gauge scelta agisce come una rotazione della stringa
-di un angolo $\theta = \pi$, quindi il campo generato in questo modo non è
-considerato fisico (?).\\
+La trasformazione di gauge scelta agisce quindi come una rotazione della stringa
+di un angolo $\theta = \pi$.\\
 
 Si sottolinea che l'approccio di regolarizzazione dei potenziali singolari
 utilizzato in questo capitolo è non rigoroso e serve solo per dare un'introduzone
@@ -182,44 +184,29 @@ sarà utile nella trattazione successiva.
 %------------------------------------------------------------------------------%
 
 \section{Condizione di quantizzazione della carica}
-Si vuole studiare il moto di una una particella di massa $m$ e di cariche elettrica $e$ e magnetica
-$g$ in interazione con un campo di monopolo magnetico, descritto dal potenziale
-$\vec A$. Sia $\psi$ la funzione d'onda della particella. Essa è soggetta
-all'equazione di Schrödinger, in unità naturali:
-\begin{equation}
-\frac{1}{2m}\left( -i\nabla - {e} \vec{\hat{A}} \right)^2 \psi(\vec r) = E\psi(\vec r)
-\end{equation}
+Si vuole studiare il moto di una una particella di massa $m$ e di carica elettrica
+$-e$ in interazione con il campo di monopolo prodotto dalla carica magnetica $g$,
+sita nell'origine, e descritto dal potenziale $\vec A$ definito come in
+\ref{eq:diracpotential}.
+Sia $\psi$ la funzione d'onda della particella. \\
+Come visto nella sezione precedente, la carica magnetica genera una stringa di singolarità
+attorno all'asse $z$. Si considera una traiettoria circolare chiusa $\gamma$
+attorno alla stringa. Lungo questo tracciato la funzione d'onda dell'elettrone
+acquista un fattore di fase, per l'effetto Aharonov-Bohm\footnote{Si veda \cite{sakurai}.},
+data da
+$$
+   \psi \mapsto \exp \left(-ie \oint_\gamma \vec A \cdot \dd \vec r \right) \psi
+$$
+dove $\vec A \cdot \dd \vec r = -g(1+\cos\theta) \dd \varphi$.
+Affinchè l'effetto della stringa non sia osservabile, occorre che $\psi$ non
+sia multi-valore. Il fattore di fase deve essere quindi banale:
 
-Si ricorda che le funzioni d'onda sono sempre definite a meno di un fattore di fase,
-che può in generale dipendere dalle coordinate $(t,\vec x)$. La differenza di fase
-tra due punti distinti non è univocamente definita e dipende dal cammino $\gamma$
-scelto tra i due punti.
-Sia $S = \int_0^t \Ll \, \dd t'$ l'azione tra due punti, si assuma per semplicità
-di calcolarla tra l'origine $(0,\vec 0)$ e un punto $(t, \vec x)$, suppondendo
-che non contengano singolarità del potenziale. Dirac \ref{dirac}
-arriva a scrivere la funzione d'onda della particella come
-%
 $$
-   \psi (\vec x) = \psi_0(\vec x) e^{iS}
+   \exp \left(-ie \oint_\gamma \vec A \cdot \dd \vec r \right)
+      = \exp(i4 \pi eg) = 1.
 $$
-%
-dove $\psi_0$ è soluzione dell'equazione di Schrödinger e deve necessariamente
-essere continua, ma la fase può essere discontinua.\\
 
-In Meccanica Classica l'equazione del moto è invariante per trasformazione di gauge
-$U = e^{ie \lambda(\vec x) = e^{i2eg\varphi}}$,
-ma in Meccanica Quantistica è l'azione $S$, che non è gauge invariante, a produrre
-l'equazione del moto. Una variazione $\delta S$ dell'azione per trasformazione di gauge porta
-quindi a una variazione di fase della funzione d'onda di un fattore $e^{i\delta S}$,
-che può appunto essere discontinuo. Affinchè $\psi$ in ogni punto sia
-ben definita, non si può avere discontinuità di fase della funzione d'onda per
-cammini chiusi $\gamma$ prodotti dalla trasformazione di gauge.
-Per curve chiuse, per cui si ha
-$$
-   \delta S = 2eg \delta\varphi = 4\pi e g \, ,
-$$
-è necessario che la discontinuità della fase sia multipla di $2\pi$, ossia per $n \in \Z$
-si deve avere $\delta S = 2\pi n$. Si ottiene allora la condizione:
+Si ottiene allora la condizione:
 
 \begin{equation}\label{eq:diracquantumcharge}
    \boxed{
@@ -227,10 +214,10 @@ si deve avere $\delta S = 2\pi n$. Si ottiene allora la condizione:
    }
 \end{equation}
 
-Questa condizione è la celebre \textbf{condizione di quantizazione della carica
+nota come \textbf{condizione di quantizazione della carica
 di Dirac}, da cui risulta che se esiste una carica magnetica di monopolo $g$,
-la carica elettrica è quantizzata. Poichè si osserva che la carica elettrica è
-quantizzata, questa condizione costituirebbe uno spunto di ricerca dei monopoli
+la carica elettrica è quantizzata. Poichè si osserva precisamente che la carica elettrica è
+quantizzata, essa costituisce un motivo di ricerca dei monopoli
 magnetici\footnote{
    Esistono altre teorie che spiegano equivalentemente la quantizzazione della carica
    elettrica, ma non verranno qui indagate.\\

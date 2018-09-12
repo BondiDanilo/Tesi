@@ -66,15 +66,6 @@ in seguito a tale trasformazione non cambia la descrizione fisica del fenomeno,
 ma solamente i "numeri" che ogni osservatore usa come coordinate. È quindi importante
 evidenziare quali siano le trasformazioni tra un sistema di coordinate e l'altro.\\
 
-% Un caso più interessante è quello in cui il sistema presenta una simmetria definita
-% non globalmente, ma localmente. Si può pensare, ad esempio, a una trasformazione
-% di coordinate tra un osservatore inerziale e uno non inerziale (ad esempio sottoposto
-% a un moto rotatorio). Le descrizioni che i due osservatori danno del sistema
-% non sono equivalenti: il secondo, ad esempio è costretto ad introdurre l'esistenza
-% di forze fittizie (ad esempio la forza centrifuga), che in generale possono dipendere
-% in maniera non banale dalle coordinate (ad esempio può dipendere dalla distanza
-% un un punto dall'osservatore).\\
-
 In relazione alla lagrangiana scritta in precedenza, si può considerare una trasformazione
 di fase in cui $\alpha = \alpha(x,t)$ è una generica funzione delle coordinate
 $\phi \mapsto \phi' = e^{i\alpha(x,t)}\phi$. Se la lagrangiana è invariante per
@@ -174,7 +165,7 @@ Se si calcola il tensore energia impulso della lagrangiana così scritta (si ind
 $\phi| ^{\mu} = \partial \phi / \partial x_\mu$ e
 $\phi| _{\mu} = \partial \phi / \partial x^\mu$ ), si vede immediatamente che non si
 conserva\footnote{
-   $\eta _{\mu\nu} = \mathrm{diag}(-1,1,1,1)$ è il tensore metricoMinkowskiano
+   $\eta _{\mu\nu} = \mathrm{diag}(-1,1,1,1)$ è il tensore metrico Minkowskiano
 }.
 
 \begin{equation}
@@ -217,7 +208,7 @@ $$
    [t^a,t^b] = C^{ab}_{\hphantom{ab}c} \, t^c
 $$
 La struttura del gruppo di gauge è quindi determinata dalle regole di commutazione
-dei generatori, che vengono solitamente scelti tali da rispetare la condizione di
+dei generatori, che vengono solitamente scelti tali da rispettare la condizione di
 normalizzazione Tr$(t^a t^b) = 1/2 \delta_{ab}$.\\
 
 Poichè il gruppo di gauge è non commutativo, nella trasformazione di gauge
@@ -266,16 +257,20 @@ Matematicamente, una teoria di gauge è descritta da un fibrato principale\footn
 la varietà di base $M$ è (ad esempio) lo spaziotempo $\R\times\R^3$ con metrica
 Minkowskiana ($ \eta _{\mu\nu} = \mathrm{diag}(-1,1,1,1$)) e la fibra $G$ è il
 gruppo di gauge.\\
-Data una simmetria globale appartenente al gruppo di gauge,
+Data una simmetria globale della lagrangiana, ossia che agisce in maniera rigida su
+tutto lo spazio
 come la simmetria di fase globale $e^{i\alpha}$ nel caso abeliano,
-l'assegnazione di una simmetria
-locale (ossia la scelta della particolare funzione $\alpha(x,t)$, nell' esempio
- abeliano) corrisponde alla scelta di un ricoprimento $\{U_i\}$ della varietà
- e di sezioni locali $s_i$ sul fibrato\footnote{
-   Cfr. definizione \ref{def:sectionbundle}.
- }, che nelle regioni di intersezione dei rispettivi domini ($U_i \cap U_j$)
- sono legate dalle fuzioni di transizione \ref{eq:transfunctions}.
-Le funzioni di transizione sono dette \emph{trasformazioni di gauge}.\\
+l'assegnazione di una simmetria locale
+corrisponde alla scelta di un ricoprimento $\{U_i\}$ della varietà
+e di sezioni locali $\phi_i$ sul fibrato\footnote{
+  Cfr. definizione \ref{def:sectionbundle}.
+}. Queste, nelle regioni di intersezione dei rispettivi domini ($U_i \cap U_j$),
+sono legate dalle fuzioni di transizione \ref{eq:transfunctions},
+sono dette \emph{trasformazioni di gauge}.\\
+In analogia all'esempio abeliano, occore definire delle
+funzioni $\alpha_{ij}(x,t)$ in maniera tale che le funzioni di transizione siano
+date da4
+$\Phi_{ij} = e^{i\alpha_{ij}(x,t)}$.\\
 
 Assegnata una 1-forma di connessione $\omega$ sul fibrato e delle sezioni locali
 $s_i$, i pullback di $\omega$ tramite le sezioni sono 1-forme sullo spaziotempo
