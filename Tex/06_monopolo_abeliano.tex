@@ -3,7 +3,7 @@ Nella sezione \ref{sec:gaugestring} si è visto come non è possibile definire g
 (su tutto lo spazio $\R^3 \setminus \{0\}$) un potenziale di monopolo regolare,
 incorrendo nella stringa di singolarità. Il primo approccio è stato di rendere
 equivalenti tutte le possibili configurazioni di direzione della stringa, tramite
-trasformazione di gauge di tipo $U(1)$. Si è arrivato a definire due potenziali
+trasformazione di gauge di tipo $U(1)$. Si sono poi definiti due potenziali
 (\ref{eq:localdiracpotential}) $\vec A ^\pm$ che hanno la stringa situata rispettivamente
 lungo l'asse $z$ negativo/positivo, quindi regolari su asse $z$ positivo/negativo
 ripettivamente.\\
@@ -13,7 +13,7 @@ in favore di una descrizione tramite due potenziali definiti localmente su due a
 $U^\pm$, che concordano nella regione di intersezione tramite una trasformazione
 di gauge.\\
 
-Innanzitutto, Poichè $\R^3 \setminus \{0\}$ è equivalente omotopicamente
+Innanzitutto, poichè $\R^3 \setminus \{0\}$ è equivalente omotopicamente
 a $S^2$, si vuole studiare il problema sulla sfera. Siano allora $U^\pm$ l'emisfero
 nord e sud della sfera
 \begin{equation}\label{eq:U+U-}
@@ -109,9 +109,9 @@ definita globalmente sul fibrato, portata su $U^\pm$ tramite pullback,
 dà il potenziale $A$
 
 \begin{equation}\label{eq:hopfpotential}
-   A = a(\theta)\dd \varphi =  \begin{cases}
-      A^+ =  \frac{n}{2}(1 - \cos\theta ) \dd \varphi  & \mathrm{su \:} U^+ \\
-      A^- = -\frac{n}{2}(1 + \cos\theta ) \dd \varphi  & \mathrm{su \:} U^-
+   \vec A = a(\theta)\dd \varphi =  \begin{cases}
+      \vec A^+ =  \frac{n}{2}(1 - \cos\theta ) \dd \varphi  & \mathrm{su \:} U^+ \\
+      \vec A^- = -\frac{n}{2}(1 + \cos\theta ) \dd \varphi  & \mathrm{su \:} U^- .
    \end{cases}
 \end{equation}
 
@@ -120,20 +120,6 @@ sul tensore elettromagnetico $F$
 $$
    F = \dd A = \dd a(\theta)\wedge \dd \varphi= \frac{n}{2} \: \sin\theta \: \dd \theta \wedge \dd \varphi
 $$
-%Osservando che i versori delle coordinate sferiche sono dati da
-%$\vec u _\varphi  = r\sin\theta \dd \varphi $ e
-%$ \vec u _\theta = r\dd \theta$\footnote{
-%   Nel senso che l'azione del vettore $\vec u _\varphi \in \R^3$ su un vettore
-%   $X \in \R^3$ è uguale all'azione della forma $r\sin\theta \dd \varphi$ su un
-%   vettore tangente (nel senso di proiezione nella coordinata $\varphi$)
-%},
-%si riconosce in $F$ la componente radiale del campo magnetico di un monopolo, con
-%$g = n/2$.
-%$$
-%   \vec B = \frac{g}{r^2} \vec u _r
-%          = \frac{g}{r^2} \, (r\vec u _\theta) \times (r\sin\theta \vec u _\phi)
-%          = g \sin \theta \, \vec u _\theta \times \vec u _\phi
-%$$
 
 La 2-forma $F$ è chiusa ($\dd F = \dd ^2A = 0$ su entrambi gli emisferi),
 analogamente al caso del fibrato banale, ma questa volta non è esatta perchè i due potenziali
@@ -161,7 +147,7 @@ da $\psi^+ = \Phi  \psi^-$. L'effetto della trasformazione di gauge è di cambia
 della funzione d'onda. Affinchè la fase sia ben definita e non multivalore, è necessario
 che sia rispettato
 $$
-   e^{2ige \varphi} \psi ^- = \psi ^+ =  e^{2ige (\varphi + 2\pi)} \Rightarrow
+   e^{2ige \varphi} \psi ^- = \psi ^+ =  e^{2ige (\varphi + 2\pi)}
    \Rightarrow
    \boxed{
    2ge = n \:,\: n \in \Z
@@ -179,7 +165,7 @@ relativa a $c_1$
 \begin{equation*}
 %   \begin{aligned}
       c_1   = \frac{1}{2\pi} \int_{S^2} F
-            = \frac{1}{2\pi} \left( \int_{U^+} \dd A^+ \int_{U^-} \dd A^- \right)
+            = \frac{1}{2\pi} \left( \int_{U^+} \dd A^+ + \int_{U^-} \dd A^- \right)
             = \frac{1}{2\pi} \int_{S^1} (A^+-A^-)
             = \frac{1}{2\pi} \int_0^{2\pi} n\dd \varphi   = n
 %   \end{aligned}

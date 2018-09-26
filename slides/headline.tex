@@ -1,0 +1,39 @@
+
+% Set a frame surrounding the logo
+\newcommand{\LogoLine}{
+   \raisebox{1pt}[0pt][0pt]{
+      \begin{pgfpicture}{100mm}{40mm}{130mm}{0mm}
+         \pgfsetlinewidth{0.28mm}
+         \color{gray}
+         \pgfline{\pgfpoint{77mm}{65mm}}
+                 {\pgfpoint{77mm}{39mm}}
+         \pgfline{\pgfpoint{96.5mm}{65mm}}
+                 {\pgfpoint{96.5mm}{39mm}}
+         \pgfline{\pgfpoint{77mm}{39mm}}
+                 {\pgfpoint{96.5mm}{39mm}}
+      \end{pgfpicture}
+   }
+}
+% Line below the title
+\newcommand{\TitleLine}{
+   \raisebox{1pt}[0pt][0pt]{
+      \begin{pgfpicture}{0mm}{40mm}{130mm}{0mm}
+         \pgfsetlinewidth{2mm}
+         \color{Ftitle}
+         \pgfline{\pgfpoint{0mm}{40mm}}
+                 {\pgfpoint{50mm}{80mm}}
+      \end{pgfpicture}
+   }
+}
+
+% Logo on the right sidebar
+\setbeamertemplate{sidebar canvas right}{
+   \vspace*{5mm}\hspace*{-27mm}
+      {\includegraphics[height=20mm]{logo.jpg}}
+      {\LogoLine}
+}
+
+% Headiline
+%\setbeamertemplate{headline}{
+%   \TitleLine
+%}

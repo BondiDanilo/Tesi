@@ -1,0 +1,74 @@
+\usepackage{color}
+
+%%%%%%%%%%%%%%
+%%% Color theme
+%%%%%%%%%%%%%%
+
+%% NOTE: rgb goes from 0 to 1, RGB goes from 0 to 256
+
+\definecolor{Ftitle}{RGB}{0, 100, 20}
+\definecolor{Text}{RGB}{30, 30, 30}
+
+\definecolor{Descitem}{RGB}{0, 0, 139}
+
+\definecolor{StdTitle}{RGB}{0, 100, 20}
+\definecolor{StdBody}{RGB}{213,24,0}
+
+\definecolor{AlTitle}{RGB}{0, 100, 20}
+\definecolor{AlBody}{RGB}{213,24,0}
+
+\definecolor{ExTitle}{RGB}{0, 100, 20}
+\definecolor{ExBody}{RGB}{213,24,0}
+
+%%%%%%
+% Assign colours to different constitutens of the presentation as per the requriements.
+%%%%%%
+
+% Text color
+\setbeamercolor{normal text}{fg = Text}
+
+% Title of the presentation and titles of all the slides
+\setbeamercolor{frametitle}{fg = Ftitle}
+\setbeamercolor{title page}{fg = Ftitle}
+
+% Table of Contents, or the Outline slide.
+\setbeamercolor{section in toc}{fg = Ftitle}
+\setbeamercolor{section in toc shaded}{fg = Ftitle}
+
+% The colour of all the items, subitems and and subsubitems.
+\setbeamercolor{item}{fg = Ftitle}
+\setbeamercolor{subitem}{fg = Ftitle}
+\setbeamercolor{subsubitem}{fg = Ftitle}
+
+% This sets the color for each item heading of the description environment.
+\setbeamercolor{description item}{fg = Descitem}
+
+% NOTE: Setting the color for all the items also sets
+% the color for other environemnts like enumerate.
+
+% We also need to fix the colours for captions for figures and tables.
+\setbeamercolor{caption}{fg = Text}
+\setbeamercolor{caption name}{fg = Text}
+
+% Background colour of the slides
+% \setbeamercolor{background canvas}{bg = blue!5}
+
+%%%%%%
+% Now, there are three types of boxes in beamer:
+% 1. Simple, or standard block, which can be invoked
+%    using definition or theorem
+% 2. Alert block
+% 3. Example block
+
+% Standard block
+
+\setbeamercolor{block title}{fg = Descitem, bg = StdTitle!15!white}
+\setbeamercolor{block body}{bg = StdBody!5!white}
+
+% Alert block
+\setbeamercolor{block title alerted}{bg = AlTitle}
+\setbeamercolor{block body alerted}{bg = AlBody!5!white}
+
+% Example block
+\setbeamercolor{block title example}{bg = ExTitle}
+\setbeamercolor{block body example}{bg = ExBody!5!white}

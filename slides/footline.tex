@@ -1,0 +1,14 @@
+\newcommand{\Ffootline}{%
+\insertsection % The left end of the footline
+\hfill
+\textit{Footnote} % The center
+\hfill
+\insertframenumber/\inserttotalframenumber} % And the right end
+%
+\setbeamertemplate{footline}{%
+    \usebeamerfont{structure}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex]{title in head/foot}%
+         \Tiny\hspace*{4mm} \Ffootline \hspace{4mm}
+    \end{beamercolorbox}
+}
+%

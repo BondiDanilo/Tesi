@@ -46,7 +46,7 @@ $\phi : \R \times \R^3 \to \C$ (dove $V$ è un generico funzionale, il potenzial
 $$
    \Ll [\phi] = \partial _\mu \phi^*  \partial ^\mu \phi + V[\phi ^* \phi]
 $$
-È invariante per una trasformazione di fase globale del campo, ossia in seguito
+Essa è invariante per una trasformazione di fase globale del campo, ossia in seguito
 alla trasformazione
 $
   \phi \mapsto \phi' = e^{i \alpha}\phi
@@ -95,7 +95,7 @@ Una derivata covariante così definita si costruisce nel modo seguente.\\
 Si consideri l'algebra di Lie $\mathfrak{g}$ associata al gruppo di gauge e sia
 $\{ t^a \}$ una base ($a = 1, \dots, \mathrm{dim}\mathfrak{g}$). Ad ogni generatore
 $ t^a $ è associato un campo di gauge $ A^a_\mu $. Si costruisce allora $ D _\mu $ tramite
-combinaizione lineare dei campi di gauge, dove $q$ è la costante di accoppiamento della
+combinazione lineare dei campi di gauge, dove $q$ è la costante di accoppiamento della
 teoria.
 \begin{equation}
    D _\mu := \partial _\mu + q \, A^a_\mu t^a
@@ -115,7 +115,7 @@ elettromagnetico (si pensi ad esempio alla funzione d'onda di una particella car
 Si consideri la lagrangiana $\Ll$ definita in precedenza, che si è già visto
 essere invariante per trasformazioni \emph{globali} di fase $\phi \mapsto e^{iq\alpha}\phi = g\phi$,
 dove il parametro $q \in \R$ è la costante di accoppiamento della teoria
-(in questo caso la carica elettrica). Trasfornazioni di questo tipo appartengono
+(in questo caso la carica elettrica). Trasformazioni di questo tipo appartengono
 al gruppo di Lie $U(1)$.
 %
 \begin{equation*}
@@ -177,7 +177,7 @@ conserva\footnote{
 \end{equation}
 
 Occorre allora tenere conto anche della dinamica del campo elettromagnetico, costruendo
-la lagrangiana per l'accoppiamento del campo $\phi$ con il campo elettromagnetico
+la seguente lagrangiana per l'accoppiamento del campo $\phi$ con il campo elettromagnetico
 che è Lorentz-invariante, con simmetria di gauge $U(1)$ e che conserva energia e
 quantità di moto\footnote{
    Si osserva che definendo la lagrangiana del campo elettromagnetico libero
@@ -220,7 +220,7 @@ $$
 Di conseguenza il tensore elettromagnetico, se definito come nel caso abeliano,
 non può rispettare la corretta regola di trasformazione $F_{\mu\nu}
 \mapsto F'_{\mu\nu} = g F_{\mu\nu} g^{-1}$ (di immediata verifica). Occorre quindi
-correggerlo per un termine che tiene conto della commutazione dei generatori. Si
+correggerlo per un termine che tenga conto della commutazione dei generatori. Si
 definisce allora il \textbf{tensore elettromagnetico non abeliano}:
 
 \begin{equation}
@@ -251,13 +251,13 @@ un esempio di lagrangiana per una teoria di gauge non abeliana:
 %------------------------------------------------------------------------------%
 
 \section{Formalismo dei fibrati}
-Matematicamente, una teoria di gauge è descritta da un fibrato principale\footnote{
+Matematicamente una teoria di gauge è descritta da un fibrato principale\footnote{
    Cfr. definzione \ref{def:principalbundle}.
 }, in cui
 la varietà di base $M$ è (ad esempio) lo spaziotempo $\R\times\R^3$ con metrica
 Minkowskiana ($ \eta _{\mu\nu} = \mathrm{diag}(-1,1,1,1$)) e la fibra $G$ è il
 gruppo di gauge.\\
-Data una simmetria globale della lagrangiana, ossia che agisce in maniera rigida su
+Data una simmetria globale della lagrangiana, che agisce in maniera rigida su
 tutto lo spazio
 come la simmetria di fase globale $e^{i\alpha}$ nel caso abeliano,
 l'assegnazione di una simmetria locale
@@ -266,16 +266,15 @@ e di sezioni locali $\phi_i$ sul fibrato\footnote{
   Cfr. definizione \ref{def:sectionbundle}.
 }. Queste, nelle regioni di intersezione dei rispettivi domini ($U_i \cap U_j$),
 sono legate dalle fuzioni di transizione \ref{eq:transfunctions},
-sono dette \emph{trasformazioni di gauge}.\\
+dette \emph{trasformazioni di gauge}.\\
 In analogia all'esempio abeliano, occore definire delle
-funzioni $\alpha_{ij}(x,t)$ in maniera tale che le funzioni di transizione siano
-date da4
-$\Phi_{ij} = e^{i\alpha_{ij}(x,t)}$.\\
+funzioni $\alpha_{ij}(x,t)$ in maniera tale che le funzioni di transizione risultino
+essere $\Phi_{ij} = e^{i\alpha_{ij}(x,t)}$.\\
 
 Assegnata una 1-forma di connessione $\omega$ sul fibrato e delle sezioni locali
 $s_i$, i pullback di $\omega$ tramite le sezioni sono 1-forme sullo spaziotempo
 $A_i = s_i^* \omega$ e sono detti \emph{potenziali di gauge}.\\
-Si sottolinea l'importanza del teorema \ref{thm:gaugepotential} che dati i
+Si sottolinea l'importanza del teorema \ref{thm:gaugepotential}: dati i
 potenziali di gauge definiti sugli intorni locali $U_i$ esiste sempre la 1-forma
 di connessione $\omega$ sul fibrato.\\
 

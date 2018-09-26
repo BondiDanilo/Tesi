@@ -1,0 +1,94 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\begin{document}
+Come tutti sapete, $\nabla \cdot B = 0$ implica che non esistono nell'universo
+cariche magnetiche isolate. Questo è confermato sperimentalmente: non sono mai tutt'ora
+stati osservati monopoli magnetici. Ma.\\
+Facciamo finta per il prossimo quarto d'ora che ciò non sia vero.\\
+
+Supponiamo l'esistenza di una carica magnetica $g$ isolata, posta nell'origine
+del nostro sistema di riferimento, e consideriamo il campo magnetico che produce.
+Data la perfetta simmetria con l'elettrostatica, il campo sarà di tipo coulombiano
+(indicare slide). Vogliamo ora quindi modificare le equazioni di maxwell
+cambiando $\nabla \cdot B = 0$ con $\nabla \cdot B = 4\pi\rho_g$(spiegarla con il flusso),
+in analogia
+con la legge di gauss per il campo elettrico. Arriviamo subito però a una contraddizione.\\
+Se volessimo definire un potenziale vettore per la nostra teoria, si ha incompatibilità
+tra queste due (indicare slide). Vediamo come mai.\\
+
+Il potenziale vettore così definito (di immediata verifica che genera
+il campo magnetico di monopolo) è singolare lungo l'asse z negativo. Si può
+tentare di regolarizzarlo e definire un campo regolarizzato ritagliando
+un cilindro di raggio $\varepsilon$ attorno all'asse e valutando il limite per
+$\varepsilon \to 0$. Si ottiene questa regolarizzazione per il campo, che se integrata
+da un flusso totale nullo perchè i due contributi si cancellano esattamente.
+Il ruolo della stringa è quello di generare un campo costante lungo l'asse delle
+singolarità che annulli il flusso totale.\\
+Abbiamo, in maniera molto sporca, aggirato la contradizione. Osserviamo che il campo
+così ottenuto è analogo al campo prodotto da un solenoide infinito e infinitamente
+sottile, in prossimità di una delle estremità.
+Poniamoci a distanza infinitesima dalla stringa, tale che ci sia solo la sua linea
+di campo. Si ha una regione in cui c'è campo magnetico e una in cui no, ma il potenziale
+è non nullo. La configurazione richiama il tipico esperimento alla Aharonov-Bohm.
+(spiegare brevemente). Si ha quindi che un elettrone lungo cammini diversi acquisisce
+fasi differenti. \\
+La stringa però non è una cosa fisica, quindi occorre che il suo effetto non debba
+essere misurabile. Questo vuol dire che per un percorso chiuso attorno all'asse z
+la fase della funzione d'onda dell'elettrone non deve cambiare.\\
+Questo porta alla condizione di quantizzazione di dirac. \\
+Abbiamo allora che l'esistenza di una singola carica magnetica spiegherebbe perchè
+la carica elettrica è quantizzata. Siccome questo è precisamente ciò che si osserva,
+capiamo quale sia il tipo di interesse nella ricerca dei monopoli.\\
+
+Un modello teorico più completo va inserito nel contesto delle teorie di gauge.
+Poichè una teoria di gauge è una teoria che pone l'accento sul comportamento locale
+dei campi, rinunciamo ad una definizione globale del potenziale vettore
+in favore di più descrizioni in carte locali. Queste devono chiaramente
+concordare nelle regioni di intersezione con una trasformazione di gauge.\\
+
+L'elettrodinamica classica è una teoria di gauge del gruppo U(1). Si può costruire
+una teoria abeliana del monopolo magnetico, ma presenta vari problemi. Consideriamo
+allora una teoria che ha come gruppo di gauge un generico $G$, che contiene $U(1)$.
+Teorie di questo tipo vengono dette teorie di Yang-Mills. L'esempio più semplice
+è quello di $G=SU(2)$. Si ricorda, Innanzitutto, che l'algebra di Lie associata SU(2)
+ha dimensione 3, quindi il gruppo ha 3 generatori. Ad ogni generatore è associato un
+potenziale di gauge. Definiamo allora il potenziale generalizzato $A_\mu$, che generalizza
+il potenziale di monopolo trovato all'inizio.\\
+
+Vogliamo scrivere una teoria che descriva l'accoppiamento di $A_\mu$ con 3 campi scalari
+$\phi^a$. La Lagrangiana del modello, descritto da G.G., è questa (slide, commentare?)
+Dove le quantità sono così definite... Il tensore elettromagnetico però ha la componente
+di commutatore dei potenziali, perchè siamo in una teoria non abeliana. Il tensore elettromagnetico
+non abeliano generalizza correttamente il campo di monopolo magnetico. con l'andamento
+corretto all'infinito e in una zona vicino al monopolo è a determinare risolvendo
+numericamente le equazioni di moto dei campi (campo a riccio, non banale). esempio
+'t Hooft-Polyakov.\\
+
+Prendiamo il duale di questo tensore per una soluzione non banale di campo a riccio.
+si ha che la sua derivata è non nulla, ma uguale a un quadrivettore, che a sua volta
+ha derivata nulla. Esiste allora una quantità conservata, che definiamo essere
+la carica magnetica. Dopo conti si ottiene che ha questa espressione (slide).
+Dove n questa volta ha un significato topologico molto più profondo. È il numero
+di avvolgimento della soluzione di campo, all'infinito (spiegare numero di avvolgimento)
+Le varie soluzioni di campo a diverso n sono fisicamente separate da barriere
+infinite di energia, mentre topologicamente appartengono a classi di omotopia diverse.\\
+La condizione è l'analogo della condizione di dirac.\\
+
+Si vede allora come la carica magnetica assume un significato più profondo nel contesto
+di una teoria non abeliana: è legata alla topologia dell'universo. Topologia banale
+ha n = 0 e quindi no carica magnetica. Topologia non banale ha n >= 1 ed esistono i Monopoli.\\
+
+In conclusione, è adesso più chiaro perchè nonostante i fallimenti sperimentali
+sia vivo l'interesse per la ricerca dei monopoli magnetici.
+Molti altri sono gli ambiti in cui il monopolo magnetico risolverebbe i problemi, tipo...
+Ma più di tutti, ripristinerebbe la simmetria rotta tra campo elettrico e campo magnetico,
+scrivendo le equazioni
+$$ \nabla \cdot E = 4\pi \rho \quad \nabla \cdot B = 4\pi\rho_g $$
+e a noi fisici piace la simmetria, anche più della figa.\\
+
+Grazie del vostro tempo, e arrivederci. Ora vado a brindare con l'idromele.
+
+\end{document}
